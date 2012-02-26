@@ -14,6 +14,8 @@ var opHelper = new OperationHelper({
 var EXCLUDE_BINDINGS = ['Amazon Instant Video', 'Kindle Edition',
     'MP3 Download', 'Personal Computers', ];
 
+var EXCLUDE_NODES = ['Just Arrived'];
+
 var MAP_BINDINGS = {
   'Blu-ray': 'Video',
   'DVD': 'Video',
@@ -52,10 +54,11 @@ function search(keyword, opts, cb) {
     opHelper.execute('ItemSearch', {
       'SearchIndex': 'All',
       'Keywords': keyword,
-      'ResponseGroup': 'ItemAttributes,Offers',
+      'ResponseGroup': 'ItemAttributes,Offers,BrowseNodes',
       'Availability': 'Available',
       //'MinimumPrice': 333.50,
       //'Sort': 'salesrank',
+      //'BrowseNode'
     }, function(error, results) {
       if (error) {
         console.log('Error: ' + error + "\n")
@@ -65,22 +68,67 @@ function search(keyword, opts, cb) {
         console.log(results.Items.Request.Errors);
       }
       else {
-        var bindings = {};
+        var bindings_count = {};
+        var bindings_map = {};
+
+        // Grab item bindings (categories) from general search results
         _.map(results.Items.Item, function(item) {
+          //console.log(item);
+
           var binding = item.ItemAttributes.Binding;
           binding = MAP_BINDINGS[binding] || binding;
           if (!binding || EXCLUDE_BINDINGS.indexOf(binding) > -1) {
             // ignore
           }
           else {
-            if (!bindings[binding])
-              bindings[binding] = 0;
-            bindings[binding]++;
+            if (!bindings_count[binding]) {
+              bindings_count[binding] = 0;
+              bindings_map[binding] = [];
+            }
+            bindings_count[binding]++;
+            bindings_map[binding].push(item);
           }
         });
-        console.log(bindings);
-        console.log(results.Items.Item.length);
 
+        console.log(bindings_count);
+
+        // Choose the most interesting/popular categories
+        categories = _.keys(bindings_count)
+          .filter(function(a) {
+            return (bindings_count[a] >= 2)
+          })
+          .sort(function(a, b) {
+            return bindings_count[b] - bindings_count[a];
+          })
+          .slice(0, 2);
+
+        console.log(categories)
+
+        // Now grab the amazon browse nodes for these categories (bindings)
+        var nodes = {};
+        _.map(categories, function(cat) {
+          var items = bindings_map[cat];
+          _.map(items, function(item) {
+            // TODO record parent node, not this node
+            var browsenode = item.BrowseNodes.BrowseNode;
+            function addnode(bn) {
+              var name = bn.Name;
+              if (!nodes[name])
+                nodes[name] = 0;
+              nodes[name]++;
+            }
+            if (_.isArray(browsenode)) {
+              _.map(browsenode, addnode);
+            }
+            else {
+              addnode(browsenode);
+            }
+          }); // end items loop
+        }); // end categories loop
+
+        // Nodes contains the browse nodes for all the items that were
+        // in the top categories
+        console.log(nodes);
       }
     });
   });
