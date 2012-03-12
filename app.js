@@ -33,3 +33,5 @@ app.get('/lookup/:keyword', function(req, res) {
 });
 
 app.listen(8080);
+
+winston.info('Started listening on port 8080');

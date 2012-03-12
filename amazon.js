@@ -14,13 +14,12 @@ var opHelper = new OperationHelper({
 var EXCLUDE_BINDINGS = ['Amazon Instant Video', 'Kindle Edition',
     'MP3 Download', 'Personal Computers', ];
 
-var EXCLUDE_NODES = ['Just Arrived'];
+var EXCLUDE_NODES = ['Just Arrived', 'All product'];
 
 var MAP_BINDINGS = {
   'Blu-ray': 'Video',
   'DVD': 'Video',
 }
-
 
 function search(keyword, opts, cb) {
   // Search Amazon for a keyword
@@ -31,8 +30,9 @@ function search(keyword, opts, cb) {
   //sorting http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/SortingbyPopularityPriceorCondition.html
   //search http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/CommonItemSearchParameters.html
 
+  winston.info('Starting search with freebase');
   freebase.search(keyword, function(freebase_results) {
-    console.log(freebase_results);
+    winston.info('freebase results', freebase_results);
 
     if (freebase_results.length > 0) {
       if (freebase_results.length > 1
@@ -43,14 +43,15 @@ function search(keyword, opts, cb) {
         record.ambiguous_query(keyword);
       }
       else {
-        console.log('Coercing', keyword, 'to', freebase_results[0].name);
+        winston.info('Coercing ' + keyword + ' to ' + freebase_results[0].name);
         // put in list for classifer training later
         record.coercion(keyword, freebase_results[0].name);
         keyword = freebase_results[0].name;
       }
     }
 
-    console.log('Searching...', keyword);
+    winston.info('Searching...', keyword);
+
     opHelper.execute('ItemSearch', {
       'SearchIndex': 'All',
       'Keywords': keyword,
@@ -61,11 +62,11 @@ function search(keyword, opts, cb) {
       //'BrowseNode'
     }, function(error, results) {
       if (error) {
-        console.log('Error: ' + error + "\n")
+        winston.info('Error: ' + error + "\n")
         return;
       }
       if (results.Items.Request.IsValid == 'False') {
-        console.log(results.Items.Request.Errors);
+        winston.info(results.Items.Request.Errors);
       }
       else {
         var bindings_count = {};
@@ -73,7 +74,7 @@ function search(keyword, opts, cb) {
 
         // Grab item bindings (categories) from general search results
         _.map(results.Items.Item, function(item) {
-          //console.log(item);
+          //winston.info(item);
 
           var binding = item.ItemAttributes.Binding;
           binding = MAP_BINDINGS[binding] || binding;
@@ -90,7 +91,7 @@ function search(keyword, opts, cb) {
           }
         });
 
-        console.log(bindings_count);
+        winston.info('categories count: ', bindings_count);
 
         // Choose the most interesting/popular categories
         categories = _.keys(bindings_count)
@@ -102,7 +103,7 @@ function search(keyword, opts, cb) {
           })
           .slice(0, 2);
 
-        console.log(categories)
+        winston.info('qualifying top categories: ', categories)
 
         // Now grab the amazon browse nodes for these categories (bindings)
         var nodes = {};
@@ -111,12 +112,16 @@ function search(keyword, opts, cb) {
           _.map(items, function(item) {
             // TODO record parent node, not this node
             var browsenode = item.BrowseNodes.BrowseNode;
+
             function addnode(bn) {
+              getParentNode(bn.BrowseNodeId);
+
               var name = bn.Name;
               if (!nodes[name])
                 nodes[name] = 0;
               nodes[name]++;
             }
+
             if (_.isArray(browsenode)) {
               _.map(browsenode, addnode);
             }
@@ -128,13 +133,44 @@ function search(keyword, opts, cb) {
 
         // Nodes contains the browse nodes for all the items that were
         // in the top categories
-        console.log(nodes);
+        winston.info('browse nodes breakdown: ', nodes);
       }
     });
   });
 }
 
-function top(browsenode, cb) {
+function getParentNode(bid, cb) {
+
+  winston.info('Retrieving parent browse node for ' + bid + '...');
+
+  opHelper.execute('BrowseNodeLookup', {
+    'BrowseNodeId': bid,
+  }, function(error, results) {
+
+    if (error) {
+      winston.error('Error: ' + error + "\n")
+    }
+
+    //winston.info('browse node response', results);
+    //console.log(results);
+
+    var bn = results.BrowseNodes.BrowseNode;
+    if (!bn) {
+      console.log('no bn in: ');
+      console.log(results);
+      return;
+
+    }
+    var ancestor = bn.Ancestors;
+
+    console.log(bn.Name, '-->');
+    console.log(ancestor);
+
+  });
+
+}
+
+function top(bid, cb) {
   // Gets top items for a browse node
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/TopSellers.html
   // TODO options:
@@ -142,19 +178,25 @@ function top(browsenode, cb) {
   //  minprice
   //
   winston.log('Top items...');
-  opHelper.execute('BrowseNodeLookup', {
-    'BrowseNodeId': '20',
-    'ResponseGroup': 'BrowseNodes,TopSellers',
-  }, function(error, results) {
+  opHelper.execute('ItemSearch', {
+    'SearchIndex': 'All',
+    'Keywords': keyword,
+    'ResponseGroup': 'ItemAttributes,Offers',
+    'Availability': 'Available',
+    'BrowseNode': bid,
+    'Sort': 'salesrank',
+    //'MinimumPrice': 333.50,
+    }, function(error, results) {
     if (error) {
       winston.error('Error: ' + error + "\n")
     }
     _.all(results.Items.Item, function(item) {
-      console.log(item);
+      winston.info(item);
       return false;
 
     });
-  });
+
+    });
 }
 
 function similar() {
