@@ -108,18 +108,27 @@ function search(keyword, opts, cb) {
         // Now grab the amazon browse nodes for these categories (bindings)
         var nodes = {};
         _.map(categories, function(cat) {
+          winston.info('lookup category ' + cat);
           var items = bindings_map[cat];
+          var seen = {};
           _.map(items, function(item) {
             // TODO record parent node, not this node
             var browsenode = item.BrowseNodes.BrowseNode;
 
             function addnode(bn) {
-              getParentNode(bn.BrowseNodeId);
+              if (bn.Name in seen ||
+                  EXCLUDE_NODES.indexOf(bn.Name) > -1) {
+                return false;
+              }
+
+              //getParentNode(bn.BrowseNodeId);
+              top(bn);
 
               var name = bn.Name;
               if (!nodes[name])
                 nodes[name] = 0;
               nodes[name]++;
+              seen[name] = true;
             }
 
             if (_.isArray(browsenode)) {
@@ -170,31 +179,33 @@ function getParentNode(bid, cb) {
 
 }
 
-function top(bid, cb) {
+function top(bn, cb) {
   // Gets top items for a browse node
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/TopSellers.html
+  // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/FindingBrowseNodes.html
   // TODO options:
   //  maxprice
   //  minprice
   //
   winston.log('Top items...');
-  opHelper.execute('ItemSearch', {
-    'SearchIndex': 'All',
-    'Keywords': keyword,
-    'ResponseGroup': 'ItemAttributes,Offers',
-    'Availability': 'Available',
-    'BrowseNode': bid,
-    'Sort': 'salesrank',
-    //'MinimumPrice': 333.50,
+  opHelper.execute('BrowseNodeLookup', {
+    'ResponseGroup': 'TopSellers',
+    'BrowseNodeId': bn.BrowseNodeId,
     }, function(error, results) {
-    if (error) {
-      winston.error('Error: ' + error + "\n")
-    }
-    _.all(results.Items.Item, function(item) {
-      winston.info(item);
-      return false;
+      if (error) {
+        winston.error('Error: ' + error + "\n")
+      }
+      console.log(bn.Name, '-->');
+      console.log(results.BrowseNodes.BrowseNode.TopSellers);
 
-    });
+      /*
+      _.all(results.Items.Item, function(item) {
+        winston.info(item);
+        return false;
+      });
+      */
+
+      //cb();
 
     });
 }
