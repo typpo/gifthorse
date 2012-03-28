@@ -1,26 +1,9 @@
 var  _ = require('underscore')
-  , OperationHelper = require('apac').OperationHelper
   , freebase = require('freebase')
   , winston = require('winston')
   , record = require('./record.js')
   , config = require('./config.js')
   , stemmer = require('porter-stemmer').stemmer
-
-var opHelper = new OperationHelper({
-  awsId:     config.amazon.key,
-  awsSecret: config.amazon.secret,
-  assocId:   config.amazon.associate,
-});
-
-var EXCLUDE_BINDINGS = ['Amazon Instant Video', 'Kindle Edition',
-    'MP3 Download', 'Personal Computers', ];
-
-var EXCLUDE_NODES = ['Just Arrived', 'All product'];
-
-var MAP_BINDINGS = {
-  'Blu-ray': 'Video',
-  'DVD': 'Video',
-}
 
 function search(keyword, opts, cb) {
   // Search Amazon for a keyword
@@ -136,10 +119,12 @@ function runSearch(keyword) {
               return false;
             }
 
-            //getParentNode(bn.BrowseNodeId);
+            getParentNode(bn.BrowseNodeId);
+            /*
             top(bn, function() {
 
             });
+            */
 
             var name = bn.Name;
             if (!nodes[name])
@@ -165,6 +150,7 @@ function runSearch(keyword) {
 }
 
 function getParentNode(bid, cb) {
+  // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/FindingBrowseNodes.html
 
   winston.info('Retrieving parent browse node for ' + bid + '...');
 
@@ -177,7 +163,7 @@ function getParentNode(bid, cb) {
     }
 
     //winston.info('browse node response', results);
-    //console.log(results);
+    console.log(results);
 
     var bn = results.BrowseNodes.BrowseNode;
     if (!bn) {
@@ -198,7 +184,6 @@ function getParentNode(bid, cb) {
 function top(bn, cb) {
   // Gets top items for a browse node
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/TopSellers.html
-  // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/FindingBrowseNodes.html
   winston.log('Top items...');
   opHelper.execute('BrowseNodeLookup', {
     'ResponseGroup': 'TopSellers',
