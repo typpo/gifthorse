@@ -1,3 +1,6 @@
+//
+// This file contains mostly-static info about amazon
+//
 
 var topLevelNodes = [
   "Apparel & Accessories",
@@ -36,25 +39,9 @@ var topLevelNodes = [
   "Warehouse Deals",
 ];
 
-var OperationHelper = require('apac').OperationHelper;
-var opHelper = new OperationHelper({
-  awsId:     config.amazon.key,
-  awsSecret: config.amazon.secret,
-  assocId:   config.amazon.associate,
-});
-
-var EXCLUDE_BINDINGS = ['Amazon Instant Video', 'Kindle Edition',
-    'MP3 Download', 'Personal Computers', ];
-
-var EXCLUDE_NODES = ['Just Arrived', 'All product'];
-
-var MAP_BINDINGS = {
-  'Blu-ray': 'Video',
-  'DVD': 'Video',
-}
-
 
 module.exports = {
   TOP_LEVEL_NODES: topLevelNodes,
+
 
 }

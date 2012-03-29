@@ -1,9 +1,26 @@
-var  _ = require('underscore')
-  , freebase = require('freebase')
+var  _ = require('underscore') , freebase = require('freebase')
   , winston = require('winston')
   , record = require('./record.js')
   , config = require('./config.js')
+  , amazon_util = require('./amazon_util.js')
   , stemmer = require('porter-stemmer').stemmer
+
+var OperationHelper = require('apac').OperationHelper;
+var opHelper = new OperationHelper({
+  awsId:     config.amazon.key,
+  awsSecret: config.amazon.secret,
+  assocId:   config.amazon.associate,
+});
+
+var EXCLUDE_BINDINGS = ['Amazon Instant Video', 'Kindle Edition',
+    'MP3 Download', 'Personal Computers', ];
+
+var EXCLUDE_NODES = ['Just Arrived', 'All product'];
+
+var MAP_BINDINGS = {
+  'Blu-ray': 'Video',
+  'DVD': 'Video',
+}
 
 function search(keyword, opts, cb) {
   // Search Amazon for a keyword
@@ -181,6 +198,38 @@ function getParentNode(bid, cb) {
 
 }
 
+function getChildNode(bid, cb) {
+  // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/FindingBrowseNodes.html
+
+  winston.info('Retrieving child browse node for ' + bid + '...');
+
+  opHelper.execute('BrowseNodeLookup', {
+    'BrowseNodeId': bid,
+  }, function(error, results) {
+
+    if (error) {
+      winston.error('Error: ' + error + "\n")
+    }
+
+    //winston.info('browse node response', results);
+    console.log(results);
+
+    var bn = results.BrowseNodes.BrowseNode;
+    if (!bn) {
+      console.log('no bn in: ');
+      console.log(results);
+      return;
+
+    }
+    var ancestor = bn.Children;
+
+    console.log(bn.Name, '-->');
+    console.log(ancestor);
+
+  });
+
+}
+
 function top(bn, cb) {
   // Gets top items for a browse node
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/TopSellers.html
@@ -210,6 +259,18 @@ function top(bn, cb) {
 function similar() {
   // Motivating customers to buy
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/CHAP_MotivatingCustomerstoBuy.html
+
+}
+
+function spider() {
+  _.each(amazon_util.TOP_LEVEL_NODES, function() {
+
+    getChildNode(bid, function() {
+
+
+    });
+
+  });
 
 }
 
