@@ -136,7 +136,7 @@ function runSearch(keyword) {
               return false;
             }
 
-            getParentNode(bn.BrowseNodeId);
+            walkTree(bn.BrowseNodeId);
             /*
             top(bn, function() {
 
@@ -166,10 +166,10 @@ function runSearch(keyword) {
   });
 }
 
-function getParentNode(bid, cb) {
+function walkTree(bid, cb) {
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/FindingBrowseNodes.html
 
-  winston.info('Retrieving parent browse node for ' + bid + '...');
+  //winston.info('Retrieving parent browse node for ' + bid + '...');
 
   opHelper.execute('BrowseNodeLookup', {
     'BrowseNodeId': bid,
@@ -180,20 +180,41 @@ function getParentNode(bid, cb) {
     }
 
     //winston.info('browse node response', results);
-    console.log(results);
+    //console.log(results);
 
     var bn = results.BrowseNodes.BrowseNode;
     if (!bn) {
       console.log('no bn in: ');
       console.log(results);
       return;
-
     }
-    var ancestor = bn.Ancestors;
+
+    console.log('\n');
+
+    var ancestor = bn.Ancestors && bn.Ancestors.BrowseNode;
+    while (ancestor) {
+      console.log(ancestor.Name, '<-');
+      ancestor = ancestor.Ancestors && ancestor.Ancestors.BrowseNode;
+    }
+
+    console.log('***', bn.Name);
+
+    var child = bn.Children && bn.Children.BrowseNode;
+    while (child) {
+      console.log(child.Name, '->');
+      child = child.Children && child.Children.BrowseNode;
+    }
+
+    /*
+
+    var children = bn.Children;
 
     console.log(bn.Name, '-->');
-    console.log(ancestor);
+    console.log(ancestor.BrowseNode);
+    console.log(ancestor.BrowseNode.Ancestors.BrowseNode.Ancestors);
+    //console.log(children);
 
+    */
   });
 
 }
@@ -271,6 +292,10 @@ function spider() {
     });
 
   });
+
+}
+
+function mineReviews() {
 
 }
 
