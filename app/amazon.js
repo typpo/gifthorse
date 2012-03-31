@@ -15,7 +15,7 @@ var opHelper = new OperationHelper({
 var EXCLUDE_BINDINGS = ['Amazon Instant Video', 'Kindle Edition',
     'MP3 Download', 'Personal Computers', ];
 
-var EXCLUDE_NODES = ['Just Arrived', 'All product'];
+var EXCLUDE_NODES = ['Just Arrived', 'Just arrived', 'All product'];
 
 var MAP_BINDINGS = {
   'Blu-ray': 'Video',
@@ -136,12 +136,10 @@ function runSearch(keyword) {
               return false;
             }
 
-            walkTree(bn.BrowseNodeId);
-            /*
-            top(bn, function() {
+            //walkTree(bn.BrowseNodeId);
+            gifted(bn, function() {
 
             });
-            */
 
             var name = bn.Name;
             if (!nodes[name])
@@ -193,14 +191,24 @@ function walkTree(bid, cb) {
 
     var ancestor = bn.Ancestors && bn.Ancestors.BrowseNode;
     while (ancestor) {
-      console.log(ancestor.Name, '<-');
+      if (!ancestor.Name) {
+        // end of the line
+        break;
+      }
+      console.log(ancestor.Name,
+                  ancestor.IsCategoryRoot === '1' ? '(root)' : '',
+                  '->');
       ancestor = ancestor.Ancestors && ancestor.Ancestors.BrowseNode;
     }
 
     console.log('***', bn.Name);
 
+    // TODO children don't quite work the same - can have multiple children
     var child = bn.Children && bn.Children.BrowseNode;
     while (child) {
+      if (!child.Name) {
+        break;
+      }
       console.log(child.Name, '->');
       child = child.Children && child.Children.BrowseNode;
     }
@@ -219,51 +227,47 @@ function walkTree(bid, cb) {
 
 }
 
-function getChildNode(bid, cb) {
-  // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/FindingBrowseNodes.html
-
-  winston.info('Retrieving child browse node for ' + bid + '...');
-
-  opHelper.execute('BrowseNodeLookup', {
-    'BrowseNodeId': bid,
-  }, function(error, results) {
-
-    if (error) {
-      winston.error('Error: ' + error + "\n")
-    }
-
-    //winston.info('browse node response', results);
-    console.log(results);
-
-    var bn = results.BrowseNodes.BrowseNode;
-    if (!bn) {
-      console.log('no bn in: ');
-      console.log(results);
-      return;
-
-    }
-    var ancestor = bn.Children;
-
-    console.log(bn.Name, '-->');
-    console.log(ancestor);
-
-  });
-
-}
-
 function top(bn, cb) {
   // Gets top items for a browse node
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/TopSellers.html
   winston.log('Top items...');
+  bnLookup(bn, "TopSellers", cb);
+}
+
+function wishedfor(bn, cb) {
+  // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/BrowseNodeLookup.html
+  // BrowseNodeLookup ResponseGroup can be MostGifted | NewReleases | MostWishedFor | TopSellers
+
+  bnLookup(bn, "MostWishedFor", cb);
+
+}
+
+function gifted(bn, cb) {
+
+  bnLookup(bn, "MostGifted", cb);
+}
+
+function similar() {
+  // Motivating customers to buy
+  // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/SuggestingSimilarItemstoBuy.html
+}
+
+function reviews() {
+  // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/CHAP_MotivatingCustomerstoBuy.html#GettingCustomerReviews
+
+}
+
+function bnLookup(bn, responsegroup, cb) {
   opHelper.execute('BrowseNodeLookup', {
-    'ResponseGroup': 'TopSellers',
+    'ResponseGroup': responsegroup,
     'BrowseNodeId': bn.BrowseNodeId,
     }, function(error, results) {
       if (error) {
         winston.error('Error: ' + error + "\n")
       }
       console.log(bn.Name, '-->');
-      console.log(results.BrowseNodes.BrowseNode.TopSellers);
+      //console.log(results.BrowseNodes.BrowseNode.TopSellers);
+      console.log(results.BrowseNodes.BrowseNode)
 
       /*
       _.all(results.Items.Item, function(item) {
@@ -274,13 +278,7 @@ function top(bn, cb) {
 
       cb(results);
 
-    });
-}
-
-function similar() {
-  // Motivating customers to buy
-  // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/CHAP_MotivatingCustomerstoBuy.html
-
+  });
 }
 
 function spider() {
