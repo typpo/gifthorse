@@ -1,0 +1,33 @@
+div.container
+
+  div.span5.offset3.outline
+    div.row
+      div.span5
+        h1 GiftHorse
+        h4 The best way to find the <strong>perfect gift</strong>.
+
+    div.row
+      div.span5
+        form-inline
+          h2 Wanna find the perfect gift for someone?
+          h2 Enter two of their favorite things:
+          input.input-medium(placeholder='video games')
+          input.input-medium(placeholder='cooking')
+
+          p
+            input.btn.btn-primary(type='submit', value='Show me')
+
+
+
+
+//
+  div#feedback-modal.modal(style='display:none;')
+    div.modal-header
+      a.close(data-dismiss='modal') ×
+      h2 Feedback
+    div.modal-body
+      p
+        textarea.xlarge(rows=5, cols=80, style='width:500px')#feedback
+    div.modal-footer
+      a#submit-feedback.btn.btn-primary(data-dismiss='modal') Submit
+      a.btn(data-dismiss='modal') Close
