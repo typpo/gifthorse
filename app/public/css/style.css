@@ -1,10 +1,48 @@
 
 body {
   margin-top: 120px;
+  background-color: #1e776d;
 
+  background-image: url(/images/background.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+
+.logo {
+  font-family: 'Diplomata SC', cursive;
+  text-align: center;
+}
+.sublogo {
+  margin-left: 15px;
+}
+
+.pointer {
+  font-size: 25px;
+  font-weight: bold;
+  float: left;
+}
+
+.logoblurb {
+  vertical-align: middle;
 }
 
 .outline {
   border: 1px solid;
+  padding: 10px;
+
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+
+  background-color: #fff;
+
+}
+
+.topcontainer {
+  margin-bottom:15px;
 
 }

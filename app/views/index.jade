@@ -1,21 +1,28 @@
 div.container
 
-  div.span5.offset3.outline
+  div.span5.offset3
     div.row
-      div.span5
-        h1 GiftHorse
-        h4 The best way to find the <strong>perfect gift</strong>.
+      div.span5.topcontainer.outline
+        h1.logo GiftHorse
+        //
+          div.sublogo
+            span.pointer &#9758;
+            span.logoblurb <i>Don't waste time shopping.</i>
 
     div.row
-      div.span5
+      div.span5.outline
         form-inline
-          h2 Wanna find the perfect gift for someone?
-          h2 Enter two of their favorite things:
-          input.input-medium(placeholder='video games')
-          input.input-medium(placeholder='cooking')
+          h2(style='margin-left:15px;') &#9758; Looking for the perfect gift?
+          p(style='margin-left:30px;') <strong>Don't waste time shopping.</strong> We use special technology to show you the best customized gift choices with the click of a button.
+          hr
+          div(style='text-align:center')
+            h3 This person likes...
+            input.input-medium(placeholder='video games')
+            |  and
+            input.input-medium(placeholder='cooking')
 
-          p
-            input.btn.btn-primary(type='submit', value='Show me')
+            p
+              input.btn.btn-primary(type='submit', value='Show me')
 
 
 
