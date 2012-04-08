@@ -137,7 +137,12 @@ function runSearch(keyword, cb) {
         var items = bindings_map[cat];
         var seen = {};
 
-        function addnode(bn) {
+        function checkNode(bn) {
+          var name = bn.Name;
+          if (!nodes[name])
+            nodes[name] = 0;
+          nodes[name]++;
+
           // Don't query duplicate nodes
           if (bn.Name in seen ||
               EXCLUDE_NODES.indexOf(bn.Name) > -1) {
@@ -146,22 +151,18 @@ function runSearch(keyword, cb) {
 
           getTopGiftedForNode(bn);
 
-          var name = bn.Name;
-          if (!nodes[name])
-            nodes[name] = 0;
-          nodes[name]++;
           seen[name] = true;
-        }
+        } // end checkNode
 
         // Get all the items in this category and look up their browse node
         _.map(items, function(item) {
           var browsenode = item.BrowseNodes.BrowseNode;
 
           if (_.isArray(browsenode)) {
-            _.map(browsenode, addnode);
+            _.map(browsenode, checkNode);
           }
           else {
-            addnode(browsenode);
+            checkNode(browsenode);
           }
         }); // end items loop
       }); // end categories loop
