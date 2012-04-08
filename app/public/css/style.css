@@ -34,6 +34,7 @@ body {
 .outline {
   border: 1px solid;
   padding: 10px;
+  padding-left: 25px;
 
   -moz-border-radius: 15px;
   border-radius: 15px;
@@ -44,5 +45,35 @@ body {
 
 .topcontainer {
   margin-bottom:15px;
-
 }
+.middlecontainer {
+  margin-bottom:15px;
+}
+.stars {
+  background: url(/images/stars.png) repeat-x top left;
+  height: 43px; }
+  .stars.empty {
+    background-position: 0 -43px;
+    width: 220px; }
+  .stars.filled_0 {
+    width: 0px; }
+  .stars.filled_1 {
+    width: 22px; }
+  .stars.filled_2 {
+    width: 44px; }
+  .stars.filled_3 {
+    width: 66px; }
+  .stars.filled_4 {
+    width: 88px; }
+  .stars.filled_5 {
+    width: 110px; }
+  .stars.filled_6 {
+    width: 132px; }
+  .stars.filled_7 {
+    width: 154px; }
+  .stars.filled_8 {
+    width: 176px; }
+  .stars.filled_9 {
+    width: 198px; }
+  .stars.filled_10 {
+    width: 220px; }

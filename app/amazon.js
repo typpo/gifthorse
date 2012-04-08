@@ -63,7 +63,9 @@ function search(keyword, opts, cb) {
   });
 }
 
-function runSearch(keyword) {
+// cb(err, result)
+// This callback will be called multiple times
+function runSearch(keyword, cb) {
   winston.info('Searching...', keyword);
 
   opHelper.execute('ItemSearch', {
@@ -123,30 +125,37 @@ function runSearch(keyword) {
 
       // Now grab the amazon browse nodes for these categories (bindings)
       var nodes = {};
+      var results = [];
+      var done = _.after(categories.length, function (err, result) {
+        if (!err && result)
+          results.push(result);
+      });
+
+      // Loop through all of the top categories for this search result
       _.map(categories, function(cat) {
         winston.info('lookup category ' + cat);
         var items = bindings_map[cat];
         var seen = {};
+
+        function addnode(bn) {
+          // Don't query duplicate nodes
+          if (bn.Name in seen ||
+              EXCLUDE_NODES.indexOf(bn.Name) > -1) {
+            return false;
+          }
+
+          getTopGiftedForNode(bn);
+
+          var name = bn.Name;
+          if (!nodes[name])
+            nodes[name] = 0;
+          nodes[name]++;
+          seen[name] = true;
+        }
+
+        // Get all the items in this category and look up their browse node
         _.map(items, function(item) {
           var browsenode = item.BrowseNodes.BrowseNode;
-
-          function addnode(bn) {
-            if (bn.Name in seen ||
-                EXCLUDE_NODES.indexOf(bn.Name) > -1) {
-              return false;
-            }
-
-            //walkTree(bn.BrowseNodeId);
-            gifted(bn, function() {
-
-            });
-
-            var name = bn.Name;
-            if (!nodes[name])
-              nodes[name] = 0;
-            nodes[name]++;
-            seen[name] = true;
-          }
 
           if (_.isArray(browsenode)) {
             _.map(browsenode, addnode);
@@ -164,6 +173,27 @@ function runSearch(keyword) {
   });
 }
 
+function getTopGiftedForNode(bn) {
+  walkTree(bn.BrowseNodeId, function(err, ancestorCount) {
+    // We omit overly general browse nodes...must be at least 4 deep in hierarchy
+    if (ancestorCount > 3) {
+      gifted(bn, function(err, item) {
+        if (err) {
+          return;
+
+        }
+        console.log(item);
+
+      });
+    }
+    else {
+      console.log('omitting', bn.Name);
+    }
+  });
+} // end addNode
+
+// Walks the ancestor/child tree of a BrowseNode
+// callback(err, ancestorCount)
 function walkTree(bid, cb) {
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/FindingBrowseNodes.html
 
@@ -174,7 +204,9 @@ function walkTree(bid, cb) {
   }, function(error, results) {
 
     if (error) {
-      winston.error('Error: ' + error + "\n")
+      winston.error('Error: ' + error + "\n");
+      cb(true, null);
+      return;
     }
 
     //winston.info('browse node response', results);
@@ -184,26 +216,34 @@ function walkTree(bid, cb) {
     if (!bn) {
       console.log('no bn in: ');
       console.log(results);
+      cb(new Error('no browse node'), null);
       return;
     }
 
     console.log('\n');
 
     var ancestor = bn.Ancestors && bn.Ancestors.BrowseNode;
+    var ancestorCount = 0;
     while (ancestor) {
       if (!ancestor.Name) {
         // end of the line
         break;
       }
+      ancestorCount++;
+      /*
       console.log(ancestor.Name,
                   ancestor.IsCategoryRoot === '1' ? '(root)' : '',
                   '->');
+                  */
       ancestor = ancestor.Ancestors && ancestor.Ancestors.BrowseNode;
     }
 
-    console.log('***', bn.Name);
+    //console.log('***', bn.Name);
+
+    cb(null, ancestorCount);
 
     // TODO children don't quite work the same - can have multiple children
+    /*
     var child = bn.Children && bn.Children.BrowseNode;
     while (child) {
       if (!child.Name) {
@@ -212,6 +252,7 @@ function walkTree(bid, cb) {
       console.log(child.Name, '->');
       child = child.Children && child.Children.BrowseNode;
     }
+    */
 
     /*
 
@@ -243,8 +284,13 @@ function wishedfor(bn, cb) {
 }
 
 function gifted(bn, cb) {
-
-  bnLookup(bn, "MostGifted", cb);
+  bnLookup(bn, "MostGifted", function(err, results) {
+    if (err) {
+      cb(err, null);
+      return;
+    }
+    cb(null, results.BrowseNodes.BrowseNode.TopItemSet.TopItem[0]);
+  });
 }
 
 function similar() {
@@ -264,10 +310,13 @@ function bnLookup(bn, responsegroup, cb) {
     }, function(error, results) {
       if (error) {
         winston.error('Error: ' + error + "\n")
+        cb(error, null);
+        return;
       }
-      console.log(bn.Name, '-->');
+      console.log('bnLookup', responsegroup, bn.Name, '-->');
       //console.log(results.BrowseNodes.BrowseNode.TopSellers);
-      console.log(results.BrowseNodes.BrowseNode)
+
+      //console.log(results.BrowseNodes.BrowseNode.TopItemSet.TopItem[0])
 
       /*
       _.all(results.Items.Item, function(item) {
@@ -276,7 +325,7 @@ function bnLookup(bn, responsegroup, cb) {
       });
       */
 
-      cb(results);
+      cb(null, results);
 
   });
 }
