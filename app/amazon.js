@@ -22,7 +22,7 @@ var MAP_BINDINGS = {
   'DVD': 'Video',
 }
 
-function search(keyword, opts, cb) {
+function search(keyword, /*opts, */cb) {
   // Search Amazon for a keyword
   // TODO options:
   //  maxprice
@@ -31,10 +31,10 @@ function search(keyword, opts, cb) {
   //sorting http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/SortingbyPopularityPriceorCondition.html
   //search http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/CommonItemSearchParameters.html
 
-    runSearch(keyword);
-    return;
+  runSearch(keyword, cb);
 
   // stem and disambiguate
+  /*
   winston.info('Stemming ' + keyword);
   keyword = stemmer(keyword);
 
@@ -61,6 +61,7 @@ function search(keyword, opts, cb) {
     runSearch(keyword);
 
   });
+  */
 }
 
 // cb(err, result)
@@ -76,119 +77,150 @@ function runSearch(keyword, cb) {
     //'MinimumPrice': 333.50,
     //'Sort': 'salesrank',
     //'BrowseNode'
-  }, function(error, results) {
-    if (error) {
-      winston.info('Error: ' + error + "\n")
+  }, function(err, results) {
+    if (err) {
+      winston.info('Error: ' + err + "\n")
+      cb(err, null);
       return;
     }
     if (results.Items.Request.IsValid == 'False') {
       winston.info(results.Items.Request.Errors);
+      cb(err, null);
+      return;
     }
-    else {
-      var bindings_count = {};
-      var bindings_map = {};
 
-      // Grab item bindings (categories) from general search results
-      _.map(results.Items.Item, function(item) {
-        //winston.info(item);
+    var bindings_count = {};
+    var bindings_map = {};
 
-        var binding = item.ItemAttributes.Binding;
-        binding = MAP_BINDINGS[binding] || binding;
-        if (!binding || EXCLUDE_BINDINGS.indexOf(binding) > -1) {
-          // ignore
+    // Grab item bindings (categories) from general search results
+    _.map(results.Items.Item, function(item) {
+      //winston.info(item);
+
+      var binding = item.ItemAttributes.Binding;
+      binding = MAP_BINDINGS[binding] || binding;
+      if (!binding || EXCLUDE_BINDINGS.indexOf(binding) > -1) {
+        // ignore
+      }
+      else {
+        if (!bindings_count[binding]) {
+          bindings_count[binding] = 0;
+          bindings_map[binding] = [];
+        }
+        bindings_count[binding]++;
+        bindings_map[binding].push(item);
+      }
+    });
+
+    winston.info('categories count: ', bindings_count);
+
+    // Choose the most interesting/popular categories
+    // TODO instead of a threshold of 2, make it so that the threshold is
+    // half as much as the next popular category
+    categories = _.keys(bindings_count)
+      .filter(function(a) {
+        return (bindings_count[a] >= 2)
+      })
+      .sort(function(a, b) {
+        return bindings_count[b] - bindings_count[a];
+      })
+      .slice(0, 2);
+
+    winston.info('qualifying top categories: ', categories)
+
+    // Now grab the amazon browse nodes for these categories (bindings)
+    var nodes = {};
+    var top_gifted_items = [];
+    var request_queue = [];
+    var reqcount = 0;
+
+    // Loop through all of the top categories for this search result
+    _.map(categories, function(cat) {
+      winston.info('lookup category ' + cat);
+      var items = bindings_map[cat];
+      var seen = {};
+
+      function checkNode(bn) {
+        var name = bn.Name;
+        if (!nodes[name])
+          nodes[name] = 0;
+        nodes[name]++;
+
+        // Don't query duplicate nodes
+        if (bn.Name in seen ||
+            EXCLUDE_NODES.indexOf(bn.Name) > -1) {
+          return false;
+        }
+
+        request_queue.push(function() {
+          getTopGiftedForNode(bn, function(err, result) {
+            if (!err && result) {
+              top_gifted_items.push(result);
+            }
+            requestComplete();
+          });
+        });
+
+        seen[name] = true;
+      } // end checkNode
+
+      // Get all the items in this category and look up their browse node
+      _.map(items, function(item) {
+        var browsenode = item.BrowseNodes.BrowseNode;
+
+        if (_.isArray(browsenode)) {
+          _.map(browsenode, checkNode);
         }
         else {
-          if (!bindings_count[binding]) {
-            bindings_count[binding] = 0;
-            bindings_map[binding] = [];
-          }
-          bindings_count[binding]++;
-          bindings_map[binding].push(item);
+          checkNode(browsenode);
         }
-      });
+      }); // end items loop
+    }); // end categories loop
 
-      winston.info('categories count: ', bindings_count);
 
-      // Choose the most interesting/popular categories
-      // TODO instead of a threshold of 2, make it so that the threshold is
-      // half as much as the next popular category
-      categories = _.keys(bindings_count)
-        .filter(function(a) {
-          return (bindings_count[a] >= 2)
-        })
-        .sort(function(a, b) {
-          return bindings_count[b] - bindings_count[a];
-        })
-        .slice(0, 2);
+    // Fire request queue
+    _.map(request_queue, function(fn) {
+      fn();
+    });
 
-      winston.info('qualifying top categories: ', categories)
-
-      // Now grab the amazon browse nodes for these categories (bindings)
-      var nodes = {};
-      var results = [];
-      var done = _.after(categories.length, function (err, result) {
-        if (!err && result)
-          results.push(result);
-      });
-
-      // Loop through all of the top categories for this search result
-      _.map(categories, function(cat) {
-        winston.info('lookup category ' + cat);
-        var items = bindings_map[cat];
-        var seen = {};
-
-        function checkNode(bn) {
-          var name = bn.Name;
-          if (!nodes[name])
-            nodes[name] = 0;
-          nodes[name]++;
-
-          // Don't query duplicate nodes
-          if (bn.Name in seen ||
-              EXCLUDE_NODES.indexOf(bn.Name) > -1) {
-            return false;
-          }
-
-          getTopGiftedForNode(bn);
-
-          seen[name] = true;
-        } // end checkNode
-
-        // Get all the items in this category and look up their browse node
-        _.map(items, function(item) {
-          var browsenode = item.BrowseNodes.BrowseNode;
-
-          if (_.isArray(browsenode)) {
-            _.map(browsenode, checkNode);
-          }
-          else {
-            checkNode(browsenode);
-          }
-        }); // end items loop
-      }); // end categories loop
-
-      // Nodes contains the browse nodes for all the items that were
-      // in the top categories
-      winston.info('top category browse nodes breakdown: ', nodes);
+    // Collect responses
+    var completed = 0;
+    function requestComplete() {
+      completed++;
+      if (completed == request_queue.length) {
+        // Nodes contains the browse nodes for all the items that were
+        // in the top categories
+        console.log('top category browse nodes breakdown: ', nodes);
+        console.log(top_gifted_items);
+        if (top_gifted_items.length > 0)
+          cb(null, top_gifted_items[0]);
+        else
+          cb(null, null);
+      }
     }
   });
 }
 
-function getTopGiftedForNode(bn) {
+function getTopGiftedForNode(bn, cb) {
   walkTree(bn.BrowseNodeId, function(err, ancestorCount) {
+    if (err) {
+      cb(err, null);
+      return;
+    }
+
     // We omit overly general browse nodes...must be at least 4 deep in hierarchy
     if (ancestorCount > 3) {
       gifted(bn, function(err, item) {
         if (err) {
+          cb(err, null);
           return;
-
         }
-        console.log(item);
-
+        //console.log(item);
+        cb(null, item);
       });
     }
     else {
-      console.log('omitting', bn.Name);
+      //console.log('omitting', bn.Name);
+      cb(null, null);
     }
   });
 } // end addNode
@@ -221,7 +253,7 @@ function walkTree(bid, cb) {
       return;
     }
 
-    console.log('\n');
+    //console.log('\n');
 
     var ancestor = bn.Ancestors && bn.Ancestors.BrowseNode;
     var ancestorCount = 0;

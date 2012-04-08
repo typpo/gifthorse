@@ -26,9 +26,9 @@ app.get('/', function(req, res) {
 });
 
 app.get('/lookup/:keyword', function(req, res) {
-  amazon.search(req.params.keyword);
-
-  res.send('');
+  amazon.search(req.params.keyword, function(err, item) {
+    res.send(item);
+  });
 
 });
 

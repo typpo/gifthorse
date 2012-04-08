@@ -11,15 +11,15 @@ div.container
 
     div.row
       div.span5.middlecontainer.outline
-        form-inline
+        form
           h2 &#9758; Looking for the perfect gift?
           p(style='margin-left:30px;') <strong>Don't waste time shopping.</strong> We use special technology to show you the best customized gift choices with the click of a button.
           hr
           div(style='text-align:center')
             h3 This person likes...
-            input.input-medium(placeholder='skiing')
+            input#search1.input-medium(placeholder='skiing', value='skiing')
             |  and
-            input.input-medium(placeholder='cooking')
+            input#search2.input-medium(placeholder='cooking')
 
             p
               input#search.btn.btn-primary(type='submit', value='Go', style='font-size:15px;font-weight:bold;')
@@ -31,12 +31,15 @@ div.container
             h3 I'm thinkin'...
             img(src='/images/loader.gif')
         div#results
-          h2 &#9758; Warm Ski Gloves
-          div(style='margin-left:30px;')
-            h3 $11
-            div.stars.empty
-              div.stars.filled_3
-            p Yadda yadda yadda
+          h2 &#9758; <span id="item-title">Warm Ski Gloves</span>
+          h5
+            a#item-link(target='_blank') link
+          //
+            div(style='margin-left:30px;')
+              h3 $11
+              div.stars.empty
+                div.stars.filled_3
+              p Yadda yadda yadda
 
 
 //
