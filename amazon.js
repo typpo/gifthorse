@@ -165,6 +165,9 @@ function runSearch(keyword, cb) {
 
       // Get all the items in this category and look up their browse node
       _.map(items, function(item) {
+        if (!item.BrowseNodes)
+          return;
+
         var browsenode = item.BrowseNodes.BrowseNode;
 
         if (_.isArray(browsenode)) {
