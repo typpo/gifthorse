@@ -129,9 +129,8 @@ function runSearch(keyword, cb) {
 
     // Now grab the amazon browse nodes for these categories (bindings)
     var nodes = {};
-    var top_gifted_items = [];
+    var top_gifted_items = {};  // map from browse node name to items
     var request_queue = [];
-    var reqcount = 0;
 
     // Loop through all of the top categories for this search result
     _.map(categories, function(cat) {
@@ -154,7 +153,7 @@ function runSearch(keyword, cb) {
         request_queue.push(function() {
           getTopGiftedForNode(bn, function(err, result) {
             if (!err && result) {
-              top_gifted_items.push(result);
+              top_gifted_items[bn.Name] = (result);
             }
             requestComplete();
           });
@@ -194,8 +193,14 @@ function runSearch(keyword, cb) {
         // in the top categories
         console.log('top category browse nodes breakdown: ', nodes);
         console.log(top_gifted_items);
-        if (top_gifted_items.length > 0)
-          cb(null, top_gifted_items[0]);
+        var keys = _.keys(top_gifted_items);
+        if (keys.length > 0) {
+          keys.sort(function(a, b) {
+            return nodes[b] - nodes[a];
+          });
+          // TODO tiebreak by how deep the nodes are
+          cb(null, top_gifted_items[keys[0]]);
+        }
         else
           cb(null, null);
       }
