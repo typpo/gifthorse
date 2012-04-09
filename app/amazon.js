@@ -118,7 +118,7 @@ function runSearch(keyword, cb) {
     // half as much as the next popular category
     categories = _.keys(bindings_count)
       .filter(function(a) {
-        return (bindings_count[a] >= 2)
+        return true;//(bindings_count[a] >= 2)
       })
       .sort(function(a, b) {
         return bindings_count[b] - bindings_count[a];
