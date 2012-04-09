@@ -13,6 +13,7 @@ app.set('view engine', 'jade');
 app.use(express.cookieParser());
 //var RedisStore = require('connect-redis')(express);
 //app.use(express.session({secret: "some key", /*store: new RedisStore*/}));
+app.use(express.favicon(__dirname + '/public/favicon.ico'));
 app.use(express.static(__dirname + '/public'));
 app.use(express.bodyParser());
 
