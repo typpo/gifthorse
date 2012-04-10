@@ -99,19 +99,15 @@ function runSearch(keyword, cb) {
       var binding = item.ItemAttributes.Binding;
       binding = MAP_BINDINGS[binding] || binding;
       if (!binding || EXCLUDE_BINDINGS.indexOf(binding) > -1) {
-        // ignore
+        continue;
       }
-      else {
-        if (!bindings_count[binding]) {
-          bindings_count[binding] = 0;
-          bindings_map[binding] = [];
-        }
-        bindings_count[binding]++;
-        bindings_map[binding].push(item);
+      if (!bindings_count[binding]) {
+        bindings_count[binding] = 0;
+        bindings_map[binding] = [];
       }
+      bindings_count[binding]++;
+      bindings_map[binding].push(item);
     });
-
-    winston.info('categories count: ', bindings_count);
 
     // Choose the most interesting/popular categories
     // TODO instead of a threshold of 2, make it so that the threshold is
@@ -125,14 +121,15 @@ function runSearch(keyword, cb) {
       })
       .slice(0, 2);
 
+    winston.info('categories count: ', bindings_count);
     winston.info('qualifying top categories: ', categories)
 
-    getTopGiftsForBrowseNodes(categories, bindings_map, cb);
+    getTopGiftsForCategories(categories, bindings_map, cb);
   });
 }
 
-function getTopGiftsForBrowseNodes(categories, bindings_map, cb) {
-    // Now grab the amazon browse nodes for these categories (bindings)
+function getTopGiftsForCategories(categories, bindings_map, cb) {
+    // Grab the amazon browse nodes for these categories (bindings)
     var node_counts = {};
     var top_gifted_items = {};  // map from browse node name to items
     var request_queue = [];
