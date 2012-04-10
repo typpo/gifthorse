@@ -325,6 +325,7 @@ function wishedfor(bn, cb) {
 }
 
 function gifted(bn, cb) {
+  // TODO incorporate other responsegroups, such as MostWishedFor
   bnLookup(bn, "MostGifted", function(err, results) {
     if (err) {
       cb(err, null);
@@ -369,22 +370,6 @@ function bnLookup(bn, responsegroup, cb) {
       cb(null, results);
 
   });
-}
-
-function spider() {
-  _.each(amazon_util.TOP_LEVEL_NODES, function() {
-
-    getChildNode(bid, function() {
-
-
-    });
-
-  });
-
-}
-
-function mineReviews() {
-
 }
 
 module.exports = {
