@@ -127,8 +127,13 @@ function runSearch(keyword, cb) {
 
     winston.info('qualifying top categories: ', categories)
 
+    getTopGiftsForBrowseNodes(categories, bindings_map, cb);
+  });
+}
+
+function getTopGiftsForBrowseNodes(categories, bindings_map, cb) {
     // Now grab the amazon browse nodes for these categories (bindings)
-    var nodes = {};
+    var node_counts = {};
     var top_gifted_items = {};  // map from browse node name to items
     var request_queue = [];
 
@@ -140,9 +145,9 @@ function runSearch(keyword, cb) {
 
       function checkNode(bn) {
         var name = bn.Name;
-        if (!nodes[name])
-          nodes[name] = 0;
-        nodes[name]++;
+        if (!node_counts[name])
+          node_counts[name] = 0;
+        node_counts[name]++;
 
         // Don't query duplicate nodes
         if (bn.Name in seen ||
@@ -191,13 +196,13 @@ function runSearch(keyword, cb) {
       if (completed == request_queue.length) {
         // Nodes contains the browse nodes for all the items that were
         // in the top categories
-        console.log('top category browse nodes breakdown: ', nodes);
+        console.log('top category browse nodes breakdown: ', node_counts);
         console.log(top_gifted_items);
         var keys = _.keys(top_gifted_items);
         var final_results = [];
         keys.sort(function(a, b) {
           // TODO tiebreak by how deep the nodes are
-          return nodes[b] - nodes[a];
+          return node_counts[b] - node_counts[a];
         });
         _.each(keys, function(key) {
           final_results.push(top_gifted_items[key]);
@@ -213,7 +218,6 @@ function runSearch(keyword, cb) {
           cb(null, null);
       }
     }
-  });
 }
 
 function getTopGiftedForNode(bn, cb) {

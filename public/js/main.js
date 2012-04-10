@@ -1,6 +1,7 @@
 $(function() {
 
   var last_result = null;
+  $('#search1').focus();
 
   $('#search').on('click', function() {
     $('#loading').show();
