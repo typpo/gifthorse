@@ -196,10 +196,20 @@ function runSearch(keyword, cb) {
         var keys = _.keys(top_gifted_items);
         if (keys.length > 0) {
           keys.sort(function(a, b) {
+            // TODO tiebreak by how deep the nodes are
             return nodes[b] - nodes[a];
           });
-          // TODO tiebreak by how deep the nodes are
-          cb(null, top_gifted_items[keys[0]]);
+
+          var final_results = [];
+          _.each(keys, function(key) {
+            final_results.push(top_gifted_items[key]);
+          });
+
+          final_results = _.unique(final_results, false, function(item) {
+            return item.ASIN;
+          });
+
+          cb(null, final_results);
         }
         else
           cb(null, null);
@@ -222,7 +232,6 @@ function getTopGiftedForNode(bn, cb) {
           cb(err, null);
           return;
         }
-        //console.log(item);
         cb(null, item);
       });
     }
@@ -250,18 +259,11 @@ function walkTree(bid, cb) {
       return;
     }
 
-    //winston.info('browse node response', results);
-    //console.log(results);
-
     var bn = results.BrowseNodes.BrowseNode;
     if (!bn) {
-      console.log('no bn in: ');
-      console.log(results);
       cb(new Error('no browse node'), null);
       return;
     }
-
-    //console.log('\n');
 
     var ancestor = bn.Ancestors && bn.Ancestors.BrowseNode;
     var ancestorCount = 0;
@@ -271,11 +273,6 @@ function walkTree(bid, cb) {
         break;
       }
       ancestorCount++;
-      /*
-      console.log(ancestor.Name,
-                  ancestor.IsCategoryRoot === '1' ? '(root)' : '',
-                  '->');
-                  */
       ancestor = ancestor.Ancestors && ancestor.Ancestors.BrowseNode;
     }
 
@@ -356,17 +353,6 @@ function bnLookup(bn, responsegroup, cb) {
         return;
       }
       console.log('bnLookup', responsegroup, bn.Name, '-->');
-      //console.log(results.BrowseNodes.BrowseNode.TopSellers);
-
-      //console.log(results.BrowseNodes.BrowseNode.TopItemSet.TopItem[0])
-
-      /*
-      _.all(results.Items.Item, function(item) {
-        winston.info(item);
-        return false;
-      });
-      */
-
       cb(null, results);
 
   });
