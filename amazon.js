@@ -129,92 +129,92 @@ function runSearch(keyword, cb) {
 }
 
 function getTopGiftsForCategories(categories, bindings_map, cb) {
-    // Grab the amazon browse nodes for these categories (bindings)
-    var node_counts = {};
-    var top_gifted_items = {};  // map from browse node name to items
-    var request_queue = [];
+  // Grab the amazon browse nodes for these categories (bindings)
+  var node_counts = {};
+  var top_gifted_items = {};  // map from browse node name to items
+  var request_queue = [];
 
-    // Loop through all of the top categories for this search result
-    _.map(categories, function(cat) {
-      winston.info('lookup category ' + cat);
-      var items = bindings_map[cat];
-      var seen = {};
+  // Loop through all of the top categories for this search result
+  _.map(categories, function(cat) {
+    winston.info('lookup category ' + cat);
+    var items = bindings_map[cat];
+    var seen = {};
 
-      function checkNode(bn) {
-        var name = bn.Name;
-        if (!node_counts[name])
-          node_counts[name] = 0;
-        node_counts[name]++;
+    function checkNode(bn) {
+      var name = bn.Name;
+      if (!node_counts[name])
+        node_counts[name] = 0;
+      node_counts[name]++;
 
-        // Don't query duplicate nodes
-        if (bn.Name in seen ||
-            EXCLUDE_NODES.indexOf(bn.Name) > -1) {
-          return false;
-        }
-
-        request_queue.push(function() {
-          getTopGiftedForNode(bn, function(err, result) {
-            if (!err && result) {
-              top_gifted_items[bn.Name] = (result);
-            }
-            requestComplete();
-          });
-        });
-
-        seen[name] = true;
-      } // end checkNode
-
-      // Get all the items in this category and look up their browse node
-      _.map(items, function(item) {
-        if (!item.BrowseNodes)
-          return;
-
-        var browsenode = item.BrowseNodes.BrowseNode;
-
-        if (_.isArray(browsenode)) {
-          _.map(browsenode, checkNode);
-        }
-        else {
-          checkNode(browsenode);
-        }
-      }); // end items loop
-    }); // end categories loop
-
-
-    // Fire request queue
-    _.map(request_queue, function(fn) {
-      fn();
-    });
-
-    // Collect responses
-    var completed = 0;
-    function requestComplete() {
-      completed++;
-      if (completed == request_queue.length) {
-        // Nodes contains the browse nodes for all the items that were
-        // in the top categories
-        console.log('top category browse nodes breakdown: ', node_counts);
-        console.log(top_gifted_items);
-        var keys = _.keys(top_gifted_items);
-        var final_results = [];
-        keys.sort(function(a, b) {
-          // TODO tiebreak by how deep the nodes are
-          return node_counts[b] - node_counts[a];
-        });
-        _.each(keys, function(key) {
-          final_results.push(top_gifted_items[key]);
-        });
-
-        final_results = _.unique(final_results, false, function(item) {
-          return item.ASIN;
-        });
-        if (final_results.length > 0) {
-          cb(null, final_results);
-        }
-        else
-          cb(null, null);
+      // Don't query duplicate nodes
+      if (bn.Name in seen ||
+          EXCLUDE_NODES.indexOf(bn.Name) > -1) {
+        return false;
       }
+
+      request_queue.push(function() {
+        getTopGiftedForNode(bn, function(err, result) {
+          if (!err && result) {
+            top_gifted_items[bn.Name] = (result);
+          }
+          requestComplete();
+        });
+      });
+
+      seen[name] = true;
+    } // end checkNode
+
+    // Get all the items in this category and look up their browse node
+    _.map(items, function(item) {
+      if (!item.BrowseNodes)
+        return;
+
+      var browsenode = item.BrowseNodes.BrowseNode;
+
+      if (_.isArray(browsenode)) {
+        _.map(browsenode, checkNode);
+      }
+      else {
+        checkNode(browsenode);
+      }
+    }); // end items loop
+  }); // end categories loop
+
+
+  // Fire request queue
+  _.map(request_queue, function(fn) {
+    fn();
+  });
+
+  // Collect responses
+  var completed = 0;
+  function requestComplete() {
+    completed++;
+    if (completed == request_queue.length) {
+      // Nodes contains the browse nodes for all the items that were
+      // in the top categories
+      console.log('top category browse nodes breakdown: ', node_counts);
+      console.log(top_gifted_items);
+      var keys = _.keys(top_gifted_items);
+      var final_results = [];
+      keys.sort(function(a, b) {
+        // TODO tiebreak by how deep the nodes are
+        return node_counts[b] - node_counts[a];
+      });
+      _.each(keys, function(key) {
+        final_results.push(top_gifted_items[key]);
+      });
+
+      final_results = _.unique(final_results, false, function(item) {
+        return item.ASIN;
+      });
+      if (final_results.length > 0) {
+        cb(null, final_results);
+      }
+      else
+        cb(null, null);
     }
+  }
 }
 
 function getTopGiftedForNode(bn, cb) {
