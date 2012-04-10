@@ -194,21 +194,19 @@ function runSearch(keyword, cb) {
         console.log('top category browse nodes breakdown: ', nodes);
         console.log(top_gifted_items);
         var keys = _.keys(top_gifted_items);
-        if (keys.length > 0) {
-          keys.sort(function(a, b) {
-            // TODO tiebreak by how deep the nodes are
-            return nodes[b] - nodes[a];
-          });
+        var final_results = [];
+        keys.sort(function(a, b) {
+          // TODO tiebreak by how deep the nodes are
+          return nodes[b] - nodes[a];
+        });
+        _.each(keys, function(key) {
+          final_results.push(top_gifted_items[key]);
+        });
 
-          var final_results = [];
-          _.each(keys, function(key) {
-            final_results.push(top_gifted_items[key]);
-          });
-
-          final_results = _.unique(final_results, false, function(item) {
-            return item.ASIN;
-          });
-
+        final_results = _.unique(final_results, false, function(item) {
+          return item.ASIN;
+        });
+        if (final_results.length > 0) {
           cb(null, final_results);
         }
         else
