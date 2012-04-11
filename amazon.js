@@ -202,13 +202,8 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
       var min_score = _.min(scores_list);
       var max_score = _.max(scores_list);
 
-      console.log(scores_list);
-      console.log(min_score);
-      console.log(max_score);
-
       var final_results = [];
-      var browsenodes = _.keys(top_gifted_items);
-      browsenodes.sort(function(keya,keyb) {
+      var browsenodes = _.keys(top_gifted_items).sort(function(keya,keyb) {
         var a = top_gifted_items[keya];
         var b = top_gifted_items[keyb];
         return a.ASIN < b.ASIN ? -1 : a.ASIN > b.ASIN ? 1 : 0;
@@ -217,7 +212,8 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
         var key = browsenodes[i];
 
         // this is a base score
-        var score = (node_counts[key]) / max_score*100;
+        // initially, scores are out of 50
+        var score = ((node_counts[key]) / (max_score))*100;
 
         var result;
         if (i < browsenodes.length - 1 && top_gifted_items[browsenodes[i]].ASIN === top_gifted_items[browsenodes[i+1]].ASIN) {
@@ -236,7 +232,7 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
           };
         }
 
-        result.score = Math.min(100, Math.floor(result.score));
+        result.score = Math.min(100, Math.floor(result.score*2.85));
         final_results.push(result);
       }
 
