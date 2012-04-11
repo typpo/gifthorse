@@ -2,7 +2,7 @@ var  _ = require('underscore') , freebase = require('freebase')
   , winston = require('winston')
   , record = require('./record.js')
   , config = require('./config.js')
-  , amazon_util = require('./amazon_util.js')
+  , amazon_static = require('./static.js')
   , stemmer = require('porter-stemmer').stemmer
 
 var OperationHelper = require('apac').OperationHelper;
