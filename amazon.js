@@ -1,9 +1,10 @@
 var  _ = require('underscore') , freebase = require('freebase')
   , winston = require('winston')
+  , stemmer = require('porter-stemmer').stemmer
   , record = require('./record.js')
   , config = require('./config.js')
   , amazon_static = require('./static.js')
-  , stemmer = require('porter-stemmer').stemmer
+  , scoring= require('./scoring.js')
 
 var OperationHelper = require('apac').OperationHelper;
 var opHelper = new OperationHelper({
@@ -195,10 +196,9 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
       // in the top categories
       console.log('top category browse nodes breakdown: ', node_counts);
       console.log(top_gifted_items);
-      var final_results = [];
-      var scores = {};
       var keys = _.keys(top_gifted_items).sort(function(a, b) {
         // TODO tiebreak by how deep the nodes are
+        // TODO this sort doesn't matter nwo that we have our own scoring function.
         return node_counts[b] - node_counts[a];
       });
 
@@ -211,21 +211,60 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
       console.log(min_score);
       console.log(max_score);
 
+      var results = [];
       _.each(keys, function(key) {
         // compute percentage score for this item
         // by how deep the nodes are
         var score = Math.floor((node_counts[key]) / max_score*100);
 
         // save result
-        final_results.push({
+        results.push({
           score: score,
           item: top_gifted_items[key]
         });
       });
 
+      var final_results = [];
+      results.sort(function(a, b) {
+        return a.item.ASIN < b.item.ASIN ? -1 : a.item.ASIN > b.item.ASIN ? 1 : 0;
+      });
+
+      keys.sort(function(keya,keyb) {
+        var a = top_gifted_items[keya];
+        var b = top_gifted_items[keyb];
+        return a.ASIN < b.ASIN ? -1 : a.ASIN > b.ASIN ? 1 : 0;
+      });
+      for (var i=0; i < keys.length; i++) {
+        var key = keys[i];
+
+        // this is a base score
+        var score = Math.floor((node_counts[key]) / max_score*100);
+
+        if (i < results.length - 1 && top_gifted_items[keys[i]].ASIN === top_gifted_items[keys[i+1]].ASIN) {
+          // adjust score if the item showed up multiple times in our results
+          console.log('skippin ', results[i].score, scoring.DUPLICATE_WEIGHT);
+          score *= scoring.DUPLICATE_WEIGHT;
+          final_results.push({
+            score: score,
+            item: top_gifted_items[key]
+          });
+          i++;
+        }
+        else {
+          final_results.push({
+            score: score,
+            item: top_gifted_items[key]
+          });
+        }
+      }
+
+      /*
       final_results = _.unique(final_results, false, function(result) {
+        // Filter out duplicate items
         return result.item.ASIN;
       });
+      */
+
       if (final_results.length > 0) {
         cb(null, final_results);
       }

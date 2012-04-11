@@ -20,7 +20,10 @@ $(function() {
         $('#loading').hide();
 
         var resultdiv = $('#results').empty();
-        _.each(data, function(result) {
+        var sorted_results = data.sort(function(a,b) {
+          return b.score - a.score;
+        });
+        _.each(sorted_results, function(result) {
           var row = _.template($('#template-result').html(), {
             title: result.item.Title,
             link: result.item.DetailPageURL,
