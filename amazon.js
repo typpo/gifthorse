@@ -207,33 +207,37 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
       console.log(max_score);
 
       var final_results = [];
-      keys.sort(function(keya,keyb) {
+      var browsenodes = _.keys(top_gifted_items);
+      browsenodes.sort(function(keya,keyb) {
         var a = top_gifted_items[keya];
         var b = top_gifted_items[keyb];
         return a.ASIN < b.ASIN ? -1 : a.ASIN > b.ASIN ? 1 : 0;
       });
-      for (var i=0; i < keys.length; i++) {
-        var key = keys[i];
+      for (var i=0; i < browsenodes.length; i++) {
+        var key = browsenodes[i];
 
         // this is a base score
-        var score = Math.floor((node_counts[key]) / max_score*100);
+        var score = (node_counts[key]) / max_score*100;
 
-        if (i < results.length - 1 && top_gifted_items[keys[i]].ASIN === top_gifted_items[keys[i+1]].ASIN) {
+        var result;
+        if (i < browsenodes.length - 1 && top_gifted_items[browsenodes[i]].ASIN === top_gifted_items[browsenodes[i+1]].ASIN) {
           // adjust score if the item showed up multiple times in our results
-          console.log('skippin ', results[i].score, scoring.DUPLICATE_WEIGHT);
           score *= scoring.DUPLICATE_WEIGHT;
-          final_results.push({
+          result = {
             score: score,
             item: top_gifted_items[key]
-          });
+          };
           i++;
         }
         else {
-          final_results.push({
+          result = {
             score: score,
             item: top_gifted_items[key]
-          });
+          };
         }
+
+        result.score = Math.min(100, Math.floor(result.score));
+        final_results.push(result);
       }
 
       /*
