@@ -199,7 +199,8 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
       var keys = _.keys(top_gifted_items).sort(function(a, b) {
         // TODO tiebreak by how deep the nodes are
         return node_counts[b] - node_counts[a];
-      }).each(keys, function(key) {
+      });
+      _.each(keys, function(key) {
         final_results.push(top_gifted_items[key]);
       });
 
