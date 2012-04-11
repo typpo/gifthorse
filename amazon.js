@@ -186,7 +186,7 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
     fn();
   });
 
-  // Collect responses
+  // Collect responses and create scores
   var completed = 0;
   function requestComplete() {
     completed++;
@@ -196,16 +196,35 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
       console.log('top category browse nodes breakdown: ', node_counts);
       console.log(top_gifted_items);
       var final_results = [];
+      var scores = {};
       var keys = _.keys(top_gifted_items).sort(function(a, b) {
         // TODO tiebreak by how deep the nodes are
         return node_counts[b] - node_counts[a];
       });
+
+      // not the most efficient way of doing this..
+      var scores_list =  _.values(node_counts);
+      var min_score = _.min(scores_list);
+      var max_score = _.max(scores_list);
+
+      console.log(scores_list);
+      console.log(min_score);
+      console.log(max_score);
+
       _.each(keys, function(key) {
-        final_results.push(top_gifted_items[key]);
+        // compute percentage score for this item
+        // by how deep the nodes are
+        var score = Math.floor((node_counts[key]) / max_score*100);
+
+        // save result
+        final_results.push({
+          score: score,
+          item: top_gifted_items[key]
+        });
       });
 
-      final_results = _.unique(final_results, false, function(item) {
-        return item.ASIN;
+      final_results = _.unique(final_results, false, function(result) {
+        return result.item.ASIN;
       });
       if (final_results.length > 0) {
         cb(null, final_results);
@@ -341,6 +360,7 @@ function reviews() {
 }
 
 function bnLookup(bn, responsegroup, cb) {
+  // TODO cache this
   opHelper.execute('BrowseNodeLookup', {
     'ResponseGroup': responsegroup,
     'BrowseNodeId': bn.BrowseNodeId,

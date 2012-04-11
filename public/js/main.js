@@ -20,10 +20,11 @@ $(function() {
         $('#loading').hide();
 
         var resultdiv = $('#results').empty();
-        _.each(data, function(show_item) {
+        _.each(data, function(result) {
           var row = _.template($('#template-result').html(), {
-            title: show_item.Title,
-            link: show_item.DetailPageURL
+            title: result.item.Title,
+            link: result.item.DetailPageURL,
+            score: result.score
           });
           resultdiv.append(row);
         });
