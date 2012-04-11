@@ -99,7 +99,7 @@ function runSearch(keyword, cb) {
       var binding = item.ItemAttributes.Binding;
       binding = MAP_BINDINGS[binding] || binding;
       if (!binding || EXCLUDE_BINDINGS.indexOf(binding) > -1) {
-        continue;
+        return;
       }
       if (!bindings_count[binding]) {
         bindings_count[binding] = 0;
@@ -195,13 +195,11 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
       // in the top categories
       console.log('top category browse nodes breakdown: ', node_counts);
       console.log(top_gifted_items);
-      var keys = _.keys(top_gifted_items);
       var final_results = [];
-      keys.sort(function(a, b) {
+      var keys = _.keys(top_gifted_items).sort(function(a, b) {
         // TODO tiebreak by how deep the nodes are
         return node_counts[b] - node_counts[a];
-      });
-      _.each(keys, function(key) {
+      }).each(keys, function(key) {
         final_results.push(top_gifted_items[key]);
       });
 
