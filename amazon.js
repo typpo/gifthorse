@@ -196,11 +196,6 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
       // in the top categories
       console.log('top category browse nodes breakdown: ', node_counts);
       console.log(top_gifted_items);
-      var keys = _.keys(top_gifted_items).sort(function(a, b) {
-        // TODO tiebreak by how deep the nodes are
-        // TODO this sort doesn't matter nwo that we have our own scoring function.
-        return node_counts[b] - node_counts[a];
-      });
 
       // not the most efficient way of doing this..
       var scores_list =  _.values(node_counts);
@@ -211,24 +206,7 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
       console.log(min_score);
       console.log(max_score);
 
-      var results = [];
-      _.each(keys, function(key) {
-        // compute percentage score for this item
-        // by how deep the nodes are
-        var score = Math.floor((node_counts[key]) / max_score*100);
-
-        // save result
-        results.push({
-          score: score,
-          item: top_gifted_items[key]
-        });
-      });
-
       var final_results = [];
-      results.sort(function(a, b) {
-        return a.item.ASIN < b.item.ASIN ? -1 : a.item.ASIN > b.item.ASIN ? 1 : 0;
-      });
-
       keys.sort(function(keya,keyb) {
         var a = top_gifted_items[keya];
         var b = top_gifted_items[keyb];
