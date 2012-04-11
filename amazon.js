@@ -192,8 +192,6 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
   function requestComplete() {
     completed++;
     if (completed == request_queue.length) {
-      // Nodes contains the browse nodes for all the items that were
-      // in the top categories
       console.log('top category browse nodes breakdown: ', node_counts);
       console.log(top_gifted_items);
 
@@ -216,7 +214,8 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
         var score = ((node_counts[key]) / (max_score))*100;
 
         var result;
-        if (i < browsenodes.length - 1 && top_gifted_items[browsenodes[i]].ASIN === top_gifted_items[browsenodes[i+1]].ASIN) {
+        if (i < browsenodes.length - 1
+            && top_gifted_items[browsenodes[i]].ASIN === top_gifted_items[browsenodes[i+1]].ASIN) {
           // adjust score if the item showed up multiple times in our results
           score *= scoring.DUPLICATE_WEIGHT;
           result = {
@@ -280,9 +279,6 @@ function getTopGiftedForNode(bn, cb) {
 // callback(err, ancestorCount)
 function walkTree(bid, cb) {
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/FindingBrowseNodes.html
-
-  //winston.info('Retrieving parent browse node for ' + bid + '...');
-
   opHelper.execute('BrowseNodeLookup', {
     'BrowseNodeId': bid,
   }, function(error, results) {
@@ -350,13 +346,11 @@ function top(bn, cb) {
 function wishedfor(bn, cb) {
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/BrowseNodeLookup.html
   // BrowseNodeLookup ResponseGroup can be MostGifted | NewReleases | MostWishedFor | TopSellers
-
   bnLookup(bn, "MostWishedFor", cb);
-
 }
 
 function gifted(bn, cb) {
-  // TODO incorporate other responsegroups, such as MostWishedFor
+  // TODO handle multiple responsegroups, such as MostWishedFor,MostGifted,TopSellers
   bnLookup(bn, "MostGifted", function(err, results) {
     if (err) {
       cb(err, null);
