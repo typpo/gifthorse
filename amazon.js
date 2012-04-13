@@ -16,7 +16,7 @@ var opHelper = new OperationHelper({
 var EXCLUDE_BINDINGS = ['Amazon Instant Video', 'Kindle Edition',
     'MP3 Download', 'Personal Computers', ];
 
-var EXCLUDE_NODES = ['Just Arrived', 'Just arrived', 'All product'];
+var EXCLUDE_NODES = ['Just Arrived', 'Just arrived', 'All product', 'Deep discounts'];
 
 var MAP_BINDINGS = {
   'Blu-ray': 'Video',
@@ -154,6 +154,7 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
       }
 
       request_queue.push(function() {
+        console.log('getting the top gifted for', bn.Name);
         getTopGiftedForNode(bn, function(err, result) {
           if (!err && result) {
             top_gifted_items[bn.Name] = (result);
@@ -259,7 +260,8 @@ function getTopGiftedForNode(bn, cb) {
     }
 
     // We omit overly general browse nodes...must be at least 4 deep in hierarchy
-    if (ancestorCount > 3) {
+    // TODO make this variable, based on average ancestor depth
+    if (ancestorCount > 3 && ancestorCount < 5) {
       gifted(bn, function(err, item) {
         if (err) {
           cb(err, null);
