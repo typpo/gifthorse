@@ -1,4 +1,5 @@
-var  _ = require('underscore') , freebase = require('freebase')
+var  _ = require('underscore')
+  , freebase = require('freebase')
   , winston = require('winston')
   , stemmer = require('porter-stemmer').stemmer
   , record = require('./record.js')
@@ -133,6 +134,7 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
   // Grab the amazon browse nodes for these categories (bindings)
   var node_counts = {};
   var top_gifted_items = {};  // map from browse node name to items
+  var top_gifted_item_depths = {};  // map from browse node name to their depth in amazon browse node hierarchy
   var request_queue = [];
 
   // Loop through all of the top categories for this search result
@@ -155,9 +157,10 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
 
       request_queue.push(function() {
         console.log('getting the top gifted for', bn.Name);
-        getTopGiftedForNode(bn, function(err, result) {
+        getTopGiftedForNode(bn, function(err, result, depth) {
           if (!err && result) {
-            top_gifted_items[bn.Name] = (result);
+            top_gifted_items[bn.Name] = result;
+            top_gifted_item_depths[bn.Name] = depth;
           }
           requestComplete();
         });
@@ -252,10 +255,11 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
   }
 }
 
+// callback(err, item, depth)
 function getTopGiftedForNode(bn, cb) {
   walkTree(bn.BrowseNodeId, function(err, ancestorCount) {
     if (err) {
-      cb(err, null);
+      cb(err, null, null);
       return;
     }
 
@@ -264,15 +268,15 @@ function getTopGiftedForNode(bn, cb) {
     if (ancestorCount > 3 && ancestorCount < 5) {
       gifted(bn, function(err, item) {
         if (err) {
-          cb(err, null);
+          cb(err, null, ancestorCount);
           return;
         }
-        cb(null, item);
+        cb(null, item, ancestorCount);
       });
     }
     else {
       //console.log('omitting', bn.Name);
-      cb(null, null);
+      cb(null, null, null);
     }
   });
 } // end addNode
