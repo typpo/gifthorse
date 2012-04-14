@@ -33,37 +33,10 @@ function search(keyword, /*opts, */cb) {
   //sorting http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/SortingbyPopularityPriceorCondition.html
   //search http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/CommonItemSearchParameters.html
 
+
+  // TODO map common queries with extraneous words
+
   runSearch(keyword, cb);
-
-  // stem and disambiguate
-  /*
-  winston.info('Stemming ' + keyword);
-  keyword = stemmer(keyword);
-
-  winston.info('Freebase search for ' + keyword);
-  freebase.search(keyword, function(freebase_results) {
-    winston.info('freebase results', freebase_results);
-
-    if (freebase_results.length > 0) {
-      if (freebase_results.length > 1
-        && freebase_results[0].search.score
-          - freebase_results[1].search.score < 2.0) {
-        // don't coerce; too close
-        // remember this so we can improve later
-        record.ambiguous_query(keyword);
-      }
-      else {
-        winston.info('Coercing ' + keyword + ' to ' + freebase_results[0].name);
-        // put in list for classifer training later
-        record.coercion(keyword, freebase_results[0].name);
-        keyword = freebase_results[0].name;
-      }
-    }
-
-    runSearch(keyword);
-
-  });
-  */
 }
 
 // cb(err, result)
@@ -252,13 +225,6 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
         result.score = Math.min(100, Math.floor(result.score*2.85));
         final_results.push(result);
       }
-
-      /*
-      final_results = _.unique(final_results, false, function(result) {
-        // Filter out duplicate items
-        return result.item.ASIN;
-      });
-      */
 
       if (final_results.length > 0) {
         cb(null, final_results);
