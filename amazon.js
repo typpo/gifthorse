@@ -177,14 +177,30 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       var max_score = _.max(scores_list);
 
       var final_results = [];
-      var browsenodes = _.keys(top_gifted_items).sort(function(keya,keyb) {
+      var browsenodes = _.keys(top_gifted_items);
+      /*
+      _.each(browsenodes, function(node_name) {
+        // Everything is put into buckets by browsenode
+        top_gifted_items[node_name].sort(function(a, b) {
+          return a.ASIN < b.ASIN ? -1 : a.ASIN > b.ASIN ? 1 : 0;
+        });
+        console.log(top_gifted_items[node_name]);
+        top_gifted_items[node_name] = _.unique(
+          // TODO add more weight if there were duplicates. MostGifted and MostWishedFor should be merged.
+          top_gifted_items[node_name], true, function(a) {
+            return a.ASIN;
+        });
+
+      });
+      */
+      browsenodes.sort(function(keya,keyb) {
         var a = top_gifted_items[keya][0];
         var b = top_gifted_items[keyb][0];
         return a.ASIN < b.ASIN ? -1 : a.ASIN > b.ASIN ? 1 : 0;
       });
       for (var i=0; i < browsenodes.length; i++) {
         var key = browsenodes[i];
-        var base_score = scoring.DEPTH_WEIGHT * node_counts[key];
+        var base_score = 1//scoring.DEPTH_WEIGHT * node_counts[key];
 
         var browsenode_results = [];  // items that are results in this browse node
 
@@ -243,6 +259,10 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
         });
         final_results.push.apply(final_results, browsenode_results_final);
       }
+
+
+      // TODO still need to get rid of duplicates *between* browse nodes
+      // and probably give them a boost with scoring.CROSS_BROWSENODE_WEIGHT
 
       if (final_results.length > 0) {
         cb(null, final_results);

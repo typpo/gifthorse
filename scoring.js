@@ -10,14 +10,15 @@ module.exports = {
   DEPTH_WEIGHT: 0.1,    // multiplier applied for each level in the amazon hierarchy
 
   DUPLICATE_WEIGHT: 1.1,    // boost applied each successive time an item appears in results
+  CROSS_BROWSENODE_WEIGHT: 1.4, // duplicates across browse nodes- this means item was best in two categories
 
   LENGTH_WEIGHT: 0.7,
   LENGTH_WEIGHT_THRESHOLD: 100,  // apply length weight to anything with this long of a title
 
   BOOK_WEIGHT: 0.8, // applied to ProductGroup Book
 
-  WISHEDFOR_WEIGHT: 1.7,  // boost if it was wished for
-  GIFTED_WEIGHT: 1.4, // boost if it was in a most gifted list
-  TOPSELLERS_WEIGHT: 1.6,
+  WISHEDFOR_WEIGHT: 1.9,  // boost if it was wished for
+  GIFTED_WEIGHT: 1.7, // boost if it was in a most gifted list
+  TOPSELLERS_WEIGHT: 1.55,
 
 }

@@ -27,7 +27,7 @@ $(function() {
           var row = _.template($('#template-result').html(), {
             title: result.item.Title,
             link: result.item.DetailPageURL,
-            type: '',//result.item.type,
+            type: result.item.type,
             score: Math.floor(result.score * 100)
           });
           resultdiv.append(row);
