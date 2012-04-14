@@ -34,7 +34,9 @@ $(function() {
         resultdiv.show();
       },
       error: function() {
-        alert('ajax error');
+        //alert('ajax error');
+        $('#loading').hide();
+        $('#results').empty().text('ajax error').show();
       },
       dataType: 'json'
     });

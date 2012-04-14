@@ -129,9 +129,9 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       }
 
       request_queue.push(function() {
-        getTopGiftedForNode(bn, query, function(err, result, depth) {
-          if (!err && result) {
-            top_gifted_items[bn.Name] = result;
+        getTopSuggestionsForNode(bn, query, function(err, results, depth) {
+          if (!err && results && results.length > 0) {
+            top_gifted_items[bn.Name] = results;
             top_gifted_item_depths[bn.Name] = depth;
           }
           requestComplete();
@@ -177,9 +177,23 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       var max_score = _.max(scores_list);
 
       var final_results = [];
-      var browsenodes = _.keys(top_gifted_items).sort(function(keya,keyb) {
-        var a = top_gifted_items[keya];
-        var b = top_gifted_items[keyb];
+      var browsenodes = _.keys(top_gifted_items);
+      _.each(browsenodes, function(node_name) {
+        // Everything is put into buckets by browsenode
+        top_gifted_items[node_name].sort(function(a, b) {
+          return a.ASIN < b.ASIN ? -1 : a.ASIN > b.ASIN ? 1 : 0;
+        });
+        console.log(top_gifted_items[node_name]);
+        top_gifted_items[node_name] = _.unique(
+          // TODO add more weight if there were duplicates
+          top_gifted_items[node_name], true, function(a) {
+            return a.ASIN;
+        });
+
+      });
+      browsenodes.sort(function(keya,keyb) {
+        var a = top_gifted_items[keya][0];
+        var b = top_gifted_items[keyb][0];
         return a.ASIN < b.ASIN ? -1 : a.ASIN > b.ASIN ? 1 : 0;
       });
       for (var i=0; i < browsenodes.length; i++) {
@@ -189,41 +203,50 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
         // initially, scores are out of 50
         var score = ((node_counts[key]) / (max_score))*100;
 
-        var result;
+        var browsenode_results = [];  // results for this browse node
 
         // Detect duplicate
         if (i < browsenodes.length - 1
-            && top_gifted_items[browsenodes[i]].ASIN === top_gifted_items[browsenodes[i+1]].ASIN) {
+            && top_gifted_items[browsenodes[i]][0].ASIN === top_gifted_items[browsenodes[i+1]][0].ASIN) {
           // adjust score if the item showed up multiple times in our results
           // TODO we assume that duplicates have the same depth in amazon hierarchy.. This is not always
           // the case because browse nodes can appear in multiple places in the hierarchy
           score *= scoring.DUPLICATE_WEIGHT;
-          result = {
-            score: score,
-            item: top_gifted_items[key]
-          };
+          _.each(top_gifted_items[key], function(item) {
+            browsenode_results.push({
+              score: score,
+              item: item,
+            });
+          });
           i++;
         }
         else {
-          result = {
-            score: score,
-            item: top_gifted_items[key]
-          };
+          _.each(top_gifted_items[key], function(item) {
+            browsenode_results.push({
+              score: score,
+              item: item,
+            });
+          });
         }
 
-        // Penalize long boring items
-        if (result.item.Title.length > scoring.LENGTH_WEIGHT_THRESHOLD) {
-          result.score *= scoring.LENGTH_WEIGHT;
-        }
+        // Final adjustments for each item in this browsenode category
+        _.each(browsenode_results, function(result) {
+          // TODO add more weight for wishedfor
 
-        // Penalize books :(
-        if (result.item.ProductGroup == 'Book') {
-          result.score *= scoring.BOOK_WEIGHT;
+          // Penalize long boring items
+          if (result.item.Title.length > scoring.LENGTH_WEIGHT_THRESHOLD) {
+            result.score *= scoring.LENGTH_WEIGHT;
+          }
 
-        }
+          // Penalize books :(
+          if (result.item.ProductGroup == 'Book') {
+            result.score *= scoring.BOOK_WEIGHT;
 
-        result.score = Math.min(100, Math.floor(result.score*2.85));
-        final_results.push(result);
+          }
+
+          result.score = Math.min(100, Math.floor(result.score*2.85));
+        });
+        final_results.push.apply(final_results, browsenode_results);
       }
 
       if (final_results.length > 0) {
@@ -236,8 +259,8 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
 }
 
 // callback(err, item, depth)
-function getTopGiftedForNode(bn, query, cb) {
-  console.log('getting the top gifted for', bn.Name);
+function getTopSuggestionsForNode(bn, query, cb) {
+  console.log('getting the top suggestions for', bn.Name);
   walkTree(bn.BrowseNodeId, function(err, ancestorCount) {
     if (err) {
       cb(err, null, null);
@@ -248,12 +271,12 @@ function getTopGiftedForNode(bn, query, cb) {
     // TODO make this variable, based on average ancestor depth
     // always allow when browse node name matches query name, eg. for 'Shopping'
     if (ancestorCount > 3/* && ancestorCount < 5*/ || query.toLowerCase() == bn.Name.toLowerCase()) {
-      gifted(bn, function(err, item) {
+      giftSuggestions(bn, function(err, items) {
         if (err) {
           cb(err, null, ancestorCount);
           return;
         }
-        cb(null, item, ancestorCount);
+        cb(null, items, ancestorCount);
       });
     }
     else {
@@ -332,23 +355,34 @@ function top(bn, cb) {
 }
 
 function wishedfor(bn, cb) {
-  // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/BrowseNodeLookup.html
   // BrowseNodeLookup ResponseGroup can be MostGifted | NewReleases | MostWishedFor | TopSellers
   bnLookup(bn, "MostWishedFor", cb);
 }
 
-function gifted(bn, cb) {
+function giftSuggestions(bn, cb) {
   // TODO handle multiple responsegroups, such as MostWishedFor,MostGifted,TopSellers
-  bnLookup(bn, "MostGifted", function(err, results) {
+  bnLookup(bn, "MostGifted,MostWishedFor", function(err, results) {
     if (err) {
       cb(err, null);
       return;
     }
-    if (!results.BrowseNodes.BrowseNode.TopItemSet.TopItem) {
-      cb("Empty TopItem result for " + bn.Name, null);
+    if (results.BrowseNodes.BrowseNode.TopItemSet.length < 1) {
+      cb("Empty TopItemSet result for " + bn.Name, null);
       return;
     }
-    cb(null, results.BrowseNodes.BrowseNode.TopItemSet.TopItem[0]);
+
+    topitems = [];
+    _.each(results.BrowseNodes.BrowseNode.TopItemSet, function(item_set) {
+      if (!item_set || !item_set.TopItem || !item_set.TopItem.length > 0) {
+        //cb("Empty TopItem result for " + bn.Name, null);
+        return false;
+      }
+      // Top item of this list type
+      var best_item = item_set.TopItem[0];
+      best_item.type = item_set.Type;
+      topitems.push(best_item);
+    });
+    cb(null, topitems);
   });
 }
 
@@ -363,6 +397,7 @@ function reviews() {
 }
 
 function bnLookup(bn, responsegroup, cb) {
+  // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/BrowseNodeLookup.html
   // TODO cache this
   opHelper.execute('BrowseNodeLookup', {
     'ResponseGroup': responsegroup,
