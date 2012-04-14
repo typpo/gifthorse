@@ -184,12 +184,9 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       });
       for (var i=0; i < browsenodes.length; i++) {
         var key = browsenodes[i];
+        var base_score = scoring.DEPTH_WEIGHT * node_counts[key];
 
-        // this is a base score
-        // initially, scores are out of 50
-        var score = ((node_counts[key]) / (max_score))*100;
-
-        var browsenode_results = [];  // results for this browse node
+        var browsenode_results = [];  // items that are results in this browse node
 
         // Detect duplicate
         if (i < browsenodes.length - 1
@@ -197,10 +194,10 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
           // adjust score if the item showed up multiple times in our results
           // TODO we assume that duplicates have the same depth in amazon hierarchy.. This is not always
           // the case because browse nodes can appear in multiple places in the hierarchy
-          score *= scoring.DUPLICATE_WEIGHT;
+          base_score *= scoring.DUPLICATE_WEIGHT;
           _.each(top_gifted_items[key], function(item) {
             browsenode_results.push({
-              score: score,
+              score: base_score,
               item: item,
             });
           });
@@ -209,7 +206,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
         else {
           _.each(top_gifted_items[key], function(item) {
             browsenode_results.push({
-              score: score,
+              score: base_score,
               item: item,
             });
           });
@@ -220,11 +217,12 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
         _.each(browsenode_results, function(result) {
           // Penalize long boring items
           if (result.item.Title.length > scoring.LENGTH_WEIGHT_THRESHOLD) {
-            result.score *= scoring.LENGTH_WEIGHT;
+            //result.score *= scoring.LENGTH_WEIGHT;
           }
 
           // Penalize books :(
-          if (result.item.ProductGroup == 'Book') {
+          if (result.item.ProductGroup == 'Book' || result.item.ProductGroup == 'eBooks') {
+            // TODO penalize ebooks too
             result.score *= scoring.BOOK_WEIGHT;
           }
 
@@ -241,7 +239,6 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
               return true;
             }
           }
-          result.score = Math.min(100, Math.floor(result.score*2.85));
           browsenode_results_final.push(result);
         });
         final_results.push.apply(final_results, browsenode_results_final);

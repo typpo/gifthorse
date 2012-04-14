@@ -28,7 +28,7 @@ $(function() {
             title: result.item.Title,
             link: result.item.DetailPageURL,
             type: result.item.type,
-            score: result.score
+            score: Math.floor(result.score * 100)
           });
           resultdiv.append(row);
         });

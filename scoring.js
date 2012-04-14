@@ -7,15 +7,17 @@
 // negative boost for books?
 
 module.exports = {
+  DEPTH_WEIGHT: 0.1,    // multiplier applied for each level in the amazon hierarchy
+
   DUPLICATE_WEIGHT: 1.1,    // boost applied each successive time an item appears in results
 
   LENGTH_WEIGHT: 0.7,
-  LENGTH_WEIGHT_THRESHOLD: 30,  // apply length weight to anything with this long of a title
+  LENGTH_WEIGHT_THRESHOLD: 100,  // apply length weight to anything with this long of a title
 
   BOOK_WEIGHT: 0.8, // applied to ProductGroup Book
 
-  WISHEDFOR_WEIGHT: 1.8,  // boost if it was wished for
+  WISHEDFOR_WEIGHT: 1.7,  // boost if it was wished for
   GIFTED_WEIGHT: 1.4, // boost if it was in a most gifted list
-  TOPSELLERS_WEIGHT: 1.5,
+  TOPSELLERS_WEIGHT: 1.6,
 
 }
