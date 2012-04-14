@@ -177,21 +177,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       var max_score = _.max(scores_list);
 
       var final_results = [];
-      var browsenodes = _.keys(top_gifted_items);
-      _.each(browsenodes, function(node_name) {
-        // Everything is put into buckets by browsenode
-        top_gifted_items[node_name].sort(function(a, b) {
-          return a.ASIN < b.ASIN ? -1 : a.ASIN > b.ASIN ? 1 : 0;
-        });
-        console.log(top_gifted_items[node_name]);
-        top_gifted_items[node_name] = _.unique(
-          // TODO add more weight if there were duplicates. MostGifted and MostWishedFor should be merged.
-          top_gifted_items[node_name], true, function(a) {
-            return a.ASIN;
-        });
-
-      });
-      browsenodes.sort(function(keya,keyb) {
+      var browsenodes = _.keys(top_gifted_items).sort(function(keya,keyb) {
         var a = top_gifted_items[keya][0];
         var b = top_gifted_items[keyb][0];
         return a.ASIN < b.ASIN ? -1 : a.ASIN > b.ASIN ? 1 : 0;
@@ -241,10 +227,10 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
             result.score *= scoring.BOOK_WEIGHT;
           }
 
-          if (result.item.type == 'MostWishedFor') {
+          if (result.item.type.indexOf('MostWishedFor') > -1) {
             result.score *= scoring.WISHEDFOR_WEIGHT;
           }
-          else if (result.item.type == 'MostGifted') {
+          if (result.item.type.indexOf('MostGifted') > -1) {
             result.score *= scoring.GIFTED_WEIGHT;
           }
 
@@ -321,46 +307,9 @@ function walkTree(bid, cb) {
       ancestor = ancestor.Ancestors && ancestor.Ancestors.BrowseNode;
     }
 
-    //console.log('***', bn.Name);
-
     cb(null, ancestorCount);
-
-    // TODO children don't quite work the same - can have multiple children
-    /*
-    var child = bn.Children && bn.Children.BrowseNode;
-    while (child) {
-      if (!child.Name) {
-        break;
-      }
-      console.log(child.Name, '->');
-      child = child.Children && child.Children.BrowseNode;
-    }
-    */
-
-    /*
-
-    var children = bn.Children;
-
-    console.log(bn.Name, '-->');
-    console.log(ancestor.BrowseNode);
-    console.log(ancestor.BrowseNode.Ancestors.BrowseNode.Ancestors);
-    //console.log(children);
-
-    */
   });
 
-}
-
-function top(bn, cb) {
-  // Gets top items for a browse node
-  // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/TopSellers.html
-  winston.log('Top items...');
-  bnLookup(bn, "TopSellers", cb);
-}
-
-function wishedfor(bn, cb) {
-  // BrowseNodeLookup ResponseGroup can be MostGifted | NewReleases | MostWishedFor | TopSellers
-  bnLookup(bn, "MostWishedFor", cb);
 }
 
 function giftSuggestions(bn, cb) {
@@ -375,18 +324,23 @@ function giftSuggestions(bn, cb) {
       return;
     }
 
-    topitems = [];
+    topitem_map = {};
     _.each(results.BrowseNodes.BrowseNode.TopItemSet, function(item_set) {
       if (!item_set || !item_set.TopItem || !item_set.TopItem.length > 0) {
         //cb("Empty TopItem result for " + bn.Name, null);
-        return false;
+        return true;
       }
       // Top item of this list type
       var best_item = item_set.TopItem[0];
-      best_item.type = item_set.Type;
-      topitems.push(best_item);
+      if (topitem_map[best_item.ASIN]) {
+        topitem_map[best_item.ASIN].type.push(item_set.Type);
+      }
+      else {
+        best_item.type = [item_set.Type];
+        topitem_map[best_item.ASIN] = best_item;
+      }
     });
-    cb(null, topitems);
+    cb(null, _.values(topitem_map));
   });
 }
 

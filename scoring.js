@@ -14,7 +14,7 @@ module.exports = {
 
   BOOK_WEIGHT: 0.8, // applied to ProductGroup Book
 
-  WISHEDFOR_WEIGHT: 1.4,  // boost if it was wished for
-  GIFTED_WEIGHT: 1, // boost if it was in a most gifted list
+  WISHEDFOR_WEIGHT: 1.8,  // boost if it was wished for
+  GIFTED_WEIGHT: 1.4, // boost if it was in a most gifted list
 
 }
