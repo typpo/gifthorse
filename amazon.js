@@ -216,6 +216,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
         }
 
         // Final adjustments for each item in this browsenode category
+        var browsenode_results_final = [];
         _.each(browsenode_results, function(result) {
           // Penalize long boring items
           if (result.item.Title.length > scoring.LENGTH_WEIGHT_THRESHOLD) {
@@ -233,10 +234,17 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
           if (result.item.type.indexOf('MostGifted') > -1) {
             result.score *= scoring.GIFTED_WEIGHT;
           }
-
+          if (result.item.type.indexOf('TopSellers') > -1) {
+            result.score *= scoring.TOPSELLERS_WEIGHT;
+            if (result.item.type.length == 1) {
+              // Don't show something that is *only* a top seller
+              return true;
+            }
+          }
           result.score = Math.min(100, Math.floor(result.score*2.85));
+          browsenode_results_final.push(result);
         });
-        final_results.push.apply(final_results, browsenode_results);
+        final_results.push.apply(final_results, browsenode_results_final);
       }
 
       if (final_results.length > 0) {
@@ -314,7 +322,7 @@ function walkTree(bid, cb) {
 
 function giftSuggestions(bn, cb) {
   // TODO handle multiple responsegroups, such as MostWishedFor,MostGifted,TopSellers
-  bnLookup(bn, "MostGifted,MostWishedFor", function(err, results) {
+  bnLookup(bn, "MostGifted,MostWishedFor,TopSellers", function(err, results) {
     if (err) {
       cb(err, null);
       return;
