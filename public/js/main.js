@@ -27,6 +27,7 @@ $(function() {
           var row = _.template($('#template-result').html(), {
             title: result.item.Title,
             link: result.item.DetailPageURL,
+            type: result.item.type,
             score: result.score
           });
           resultdiv.append(row);

@@ -185,7 +185,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
         });
         console.log(top_gifted_items[node_name]);
         top_gifted_items[node_name] = _.unique(
-          // TODO add more weight if there were duplicates
+          // TODO add more weight if there were duplicates. MostGifted and MostWishedFor should be merged.
           top_gifted_items[node_name], true, function(a) {
             return a.ASIN;
         });
@@ -231,8 +231,6 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
 
         // Final adjustments for each item in this browsenode category
         _.each(browsenode_results, function(result) {
-          // TODO add more weight for wishedfor
-
           // Penalize long boring items
           if (result.item.Title.length > scoring.LENGTH_WEIGHT_THRESHOLD) {
             result.score *= scoring.LENGTH_WEIGHT;
@@ -241,7 +239,13 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
           // Penalize books :(
           if (result.item.ProductGroup == 'Book') {
             result.score *= scoring.BOOK_WEIGHT;
+          }
 
+          if (result.item.type == 'MostWishedFor') {
+            result.score *= scoring.WISHEDFOR_WEIGHT;
+          }
+          else if (result.item.type == 'MostGifted') {
+            result.score *= scoring.GIFTED_WEIGHT;
           }
 
           result.score = Math.min(100, Math.floor(result.score*2.85));
