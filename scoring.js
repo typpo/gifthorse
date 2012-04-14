@@ -9,4 +9,9 @@
 module.exports = {
   DUPLICATE_WEIGHT: 1.1,    // boost applied each successive time an item appears in results
 
+  LENGTH_WEIGHT: 0.7,
+  LENGTH_WEIGHT_THRESHOLD: 30,  // apply length weight to anything with this long of a title
+
+  BOOK_WEIGHT: 0.8, // applied to ProductGroup Book
+
 }

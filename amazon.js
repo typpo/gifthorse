@@ -68,12 +68,12 @@ function search(keyword, /*opts, */cb) {
 
 // cb(err, result)
 // This callback will be called multiple times
-function runSearch(keyword, cb) {
-  winston.info('Searching...', keyword);
+function runSearch(query, cb) {
+  winston.info('Searching...', query);
 
   opHelper.execute('ItemSearch', {
     'SearchIndex': 'All',
-    'Keywords': keyword,
+    'Keywords': query,
     'ResponseGroup': 'ItemAttributes,Offers,BrowseNodes',
     'Availability': 'Available',
     //'MinimumPrice': 333.50,
@@ -126,11 +126,11 @@ function runSearch(keyword, cb) {
     winston.info('categories count: ', bindings_count);
     winston.info('qualifying top categories: ', categories)
 
-    getTopGiftsForCategories(categories, bindings_map, cb);
+    getTopGiftsForCategories(categories, bindings_map, query, cb);
   });
 }
 
-function getTopGiftsForCategories(categories, bindings_map, cb) {
+function getTopGiftsForCategories(categories, bindings_map, query, cb) {
   // Grab the amazon browse nodes for these categories (bindings)
   var node_counts = {};
   var top_gifted_items = {};  // map from browse node name to items
@@ -156,8 +156,7 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
       }
 
       request_queue.push(function() {
-        console.log('getting the top gifted for', bn.Name);
-        getTopGiftedForNode(bn, function(err, result, depth) {
+        getTopGiftedForNode(bn, query, function(err, result, depth) {
           if (!err && result) {
             top_gifted_items[bn.Name] = result;
             top_gifted_item_depths[bn.Name] = depth;
@@ -218,9 +217,13 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
         var score = ((node_counts[key]) / (max_score))*100;
 
         var result;
+
+        // Detect duplicate
         if (i < browsenodes.length - 1
             && top_gifted_items[browsenodes[i]].ASIN === top_gifted_items[browsenodes[i+1]].ASIN) {
           // adjust score if the item showed up multiple times in our results
+          // TODO we assume that duplicates have the same depth in amazon hierarchy.. This is not always
+          // the case because browse nodes can appear in multiple places in the hierarchy
           score *= scoring.DUPLICATE_WEIGHT;
           result = {
             score: score,
@@ -233,6 +236,17 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
             score: score,
             item: top_gifted_items[key]
           };
+        }
+
+        // Penalize long boring items
+        if (result.item.Title.length > scoring.LENGTH_WEIGHT_THRESHOLD) {
+          result.score *= scoring.LENGTH_WEIGHT;
+        }
+
+        // Penalize books :(
+        if (result.item.ProductGroup == 'Book') {
+          result.score *= scoring.BOOK_WEIGHT;
+
         }
 
         result.score = Math.min(100, Math.floor(result.score*2.85));
@@ -256,7 +270,8 @@ function getTopGiftsForCategories(categories, bindings_map, cb) {
 }
 
 // callback(err, item, depth)
-function getTopGiftedForNode(bn, cb) {
+function getTopGiftedForNode(bn, query, cb) {
+  console.log('getting the top gifted for', bn.Name);
   walkTree(bn.BrowseNodeId, function(err, ancestorCount) {
     if (err) {
       cb(err, null, null);
@@ -265,7 +280,8 @@ function getTopGiftedForNode(bn, cb) {
 
     // We omit overly general browse nodes...must be at least 4 deep in hierarchy
     // TODO make this variable, based on average ancestor depth
-    if (ancestorCount > 3 && ancestorCount < 5) {
+    // always allow when browse node name matches query name, eg. for 'Shopping'
+    if (ancestorCount > 3/* && ancestorCount < 5*/ || query.toLowerCase() == bn.Name.toLowerCase()) {
       gifted(bn, function(err, item) {
         if (err) {
           cb(err, null, ancestorCount);
@@ -275,7 +291,7 @@ function getTopGiftedForNode(bn, cb) {
       });
     }
     else {
-      //console.log('omitting', bn.Name);
+      console.log('omitting', bn.Name);
       cb(null, null, null);
     }
   });
@@ -360,6 +376,10 @@ function gifted(bn, cb) {
   bnLookup(bn, "MostGifted", function(err, results) {
     if (err) {
       cb(err, null);
+      return;
+    }
+    if (!results.BrowseNodes.BrowseNode.TopItemSet.TopItem) {
+      cb("Empty TopItem result for " + bn.Name, null);
       return;
     }
     cb(null, results.BrowseNodes.BrowseNode.TopItemSet.TopItem[0]);
