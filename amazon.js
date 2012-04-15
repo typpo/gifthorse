@@ -4,6 +4,7 @@ var  _ = require('underscore')
   , stemmer = require('porter-stemmer').stemmer
   , record = require('./record.js')
   , config = require('./config.js')
+  , redis = require('./redis.js')
   , amazon_static = require('./static.js')
   , scoring= require('./scoring.js')
 
@@ -18,6 +19,8 @@ var EXCLUDE_BINDINGS = ['Amazon Instant Video', 'Kindle Edition',
     'MP3 Download', 'Personal Computers', ];
 
 var EXCLUDE_NODES = ['Just Arrived', 'Just arrived', 'All product', 'Deep discounts'];
+
+var EXCLUDE_PRODUCT_GROUPS = ['Mobile Application', 'eBooks'];
 
 var MAP_BINDINGS = {
   'Blu-ray': 'Video',
@@ -306,8 +309,8 @@ function getTopSuggestionsForNode(bn, query, cb) {
 
 // Walks the ancestor/child tree of a BrowseNode
 // callback(err, ancestorCount)
+// http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/FindingBrowseNodes.html
 function walkTree(bid, cb) {
-  // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/FindingBrowseNodes.html
   opHelper.execute('BrowseNodeLookup', {
     'BrowseNodeId': bid,
   }, function(error, results) {
@@ -341,7 +344,6 @@ function walkTree(bid, cb) {
 }
 
 function giftSuggestions(bn, cb) {
-  // TODO handle multiple responsegroups, such as MostWishedFor,MostGifted,TopSellers
   bnLookup(bn, "MostGifted,MostWishedFor,TopSellers", function(err, results) {
     if (err) {
       cb(err, null);
@@ -358,8 +360,12 @@ function giftSuggestions(bn, cb) {
         //cb("Empty TopItem result for " + bn.Name, null);
         return true;
       }
+
       // Top item of this list type
       var best_item = item_set.TopItem[0];
+      if (EXCLUDE_PRODUCT_GROUPS.indexOf(best_item.ProductGroup) > -1) {
+        return true;
+      }
       if (topitem_map[best_item.ASIN]) {
         topitem_map[best_item.ASIN].type.push(item_set.Type);
       }

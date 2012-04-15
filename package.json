@@ -9,6 +9,7 @@
       , "winston": "0.5.10"
       , "freebase": "latest"
       , "porter-stemmer": "latest"
+      , "redis-url": "latest"
     }
   , "devDependencies": {
     }
