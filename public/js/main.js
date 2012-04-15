@@ -1,9 +1,14 @@
 $(function() {
 
   var last_result = null;
+  var search_running = false;
   $('#search1').focus();
 
   $('#search').on('click', function() {
+    if (search_running) return false;
+    search_running = true;
+    $(this).addClass('disabled');
+
     $('#loading').show();
     $('#results').hide();
     $('#bottom').show();
@@ -33,11 +38,15 @@ $(function() {
           resultdiv.append(row);
         });
         resultdiv.show();
+        $('#search').removeClass('disabled');
+        search_running = false;
       },
       error: function() {
         //alert('ajax error');
         $('#loading').hide();
         $('#results').empty().text('ajax error').show();
+        $('#search').removeClass('disabled');
+        search_running = false;
       },
       dataType: 'json'
     });
