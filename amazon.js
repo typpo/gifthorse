@@ -99,6 +99,9 @@ function runSearch(query, cb) {
     winston.info('categories count: ', bindings_count);
     winston.info('qualifying top categories: ', categories)
 
+      // TODO handle when categories is empty :(
+      // eg. for "romance"
+
     getTopGiftsForCategories(categories, bindings_map, query, cb);
   });
 }
@@ -285,7 +288,7 @@ function getTopSuggestionsForNode(bn, query, cb) {
     // We omit overly general browse nodes...must be at least 4 deep in hierarchy
     // TODO make this variable, based on average ancestor depth
     // always allow when browse node name matches query name, eg. for 'Shopping'
-    if (ancestorCount > 3/* && ancestorCount < 5*/ || query.toLowerCase() == bn.Name.toLowerCase()) {
+    if (ancestorCount > 2/* && ancestorCount < 5*/ || query.toLowerCase() == bn.Name.toLowerCase()) {
       giftSuggestions(bn, function(err, items) {
         if (err) {
           cb(err, null, ancestorCount);
