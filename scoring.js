@@ -23,4 +23,33 @@ module.exports = {
   GIFTED_WEIGHT: 1.7, // boost if it was in a most gifted list
   TOPSELLERS_WEIGHT: 1.55,
 
+  adjustResultScore: function(result) {
+    // Returns True if result should be shown
+    // Final adjustments for the candidate in this browsenode category
+    // Penalize long boring items
+    if (result.item.Title.length > this.LENGTH_WEIGHT_THRESHOLD) {
+      //result.score *= this.LENGTH_WEIGHT;
+    }
+
+    // Penalize books :(
+    if (result.item.ProductGroup == 'Book' || result.item.ProductGroup == 'eBooks') {
+      result.score *= this.BOOK_WEIGHT;
+    }
+
+    if (result.item.type.indexOf('MostWishedFor') > -1) {
+      result.score *= this.WISHEDFOR_WEIGHT;
+    }
+    if (result.item.type.indexOf('MostGifted') > -1) {
+      result.score *= this.GIFTED_WEIGHT;
+    }
+    if (result.item.type.indexOf('TopSellers') > -1) {
+      result.score *= this.TOPSELLERS_WEIGHT;
+      if (result.item.type.length == 1) {
+        // Don't show something that is *only* a top seller
+        return false;
+      }
+    }
+    return true;
+  },
+
 }

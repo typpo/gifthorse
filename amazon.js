@@ -186,92 +186,25 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
 
       var final_results = [];
       var browsenodes = _.keys(top_gifted_items);
-      /*
-      _.each(browsenodes, function(node_name) {
-        // Everything is put into buckets by browsenode
-        top_gifted_items[node_name].sort(function(a, b) {
-          return a.ASIN < b.ASIN ? -1 : a.ASIN > b.ASIN ? 1 : 0;
+
+      var final_item_list = [];
+      _.each(browsenodes, function(browsenode) {
+        var bn_items = top_gifted_items[browsenode];  // items in this browse node
+        _.each(bn_items, function(bn_item) {
+          var result = {
+            score: 1.0,
+            item: bn_item,
+          };
+          scoring.adjustResultScore(result);
+          final_item_list.push(result);
         });
-        console.log(top_gifted_items[node_name]);
-        top_gifted_items[node_name] = _.unique(
-          // TODO add more weight if there were duplicates. MostGifted and MostWishedFor should be merged.
-          top_gifted_items[node_name], true, function(a) {
-            return a.ASIN;
-        });
-
       });
-      */
-      browsenodes.sort(function(keya,keyb) {
-        var a = top_gifted_items[keya][0];
-        var b = top_gifted_items[keyb][0];
-        return a.ASIN < b.ASIN ? -1 : a.ASIN > b.ASIN ? 1 : 0;
-      });
-      for (var i=0; i < browsenodes.length; i++) {
-        var key = browsenodes[i];
-        var nextkey = browsenodes[i+1];
-        var base_score = 1//scoring.DEPTH_WEIGHT * node_counts[key];
 
-        var browsenode_results = [];  // items that are results in this browse node
-
-        // Detect duplicate and add initial item
-        var result;
-        if (i < browsenodes.length - 1
-            && top_gifted_items[key][0].ASIN === top_gifted_items[nextkey][0].ASIN) {
-          // adjust score if the item showed up multiple times in our results
-          // TODO we assume that duplicates have the same depth in amazon hierarchy.. This is not always
-          // the case because browse nodes can appear in multiple places in the hierarchy
-          base_score *= scoring.DUPLICATE_WEIGHT;
-          _.each(top_gifted_items[key], function(item) {
-            result = {
-              score: base_score,
-              item: item,
-            };
-          });
-          i++;
-        }
-        else {
-          _.each(top_gifted_items[key], function(item) {
-            result = {
-              score: base_score,
-              item: item,
-            };
-          });
-        }
-
-        // Final adjustments for the candidate in this browsenode category
-        // Penalize long boring items
-        if (result.item.Title.length > scoring.LENGTH_WEIGHT_THRESHOLD) {
-          //result.score *= scoring.LENGTH_WEIGHT;
-        }
-
-        // Penalize books :(
-        if (result.item.ProductGroup == 'Book' || result.item.ProductGroup == 'eBooks') {
-          // TODO penalize ebooks too
-          result.score *= scoring.BOOK_WEIGHT;
-        }
-
-        if (result.item.type.indexOf('MostWishedFor') > -1) {
-          result.score *= scoring.WISHEDFOR_WEIGHT;
-        }
-        if (result.item.type.indexOf('MostGifted') > -1) {
-          result.score *= scoring.GIFTED_WEIGHT;
-        }
-        if (result.item.type.indexOf('TopSellers') > -1) {
-          result.score *= scoring.TOPSELLERS_WEIGHT;
-          if (result.item.type.length == 1) {
-            // Don't show something that is *only* a top seller
-            continue;
-          }
-        }
-        final_results.push(result);
-      }
-
-
-      // TODO still need to get rid of duplicates *between* browse nodes
+      // TODO still need to get rid of duplicates
       // and probably give them a boost with scoring.CROSS_BROWSENODE_WEIGHT
 
-      if (final_results.length > 0) {
-        cb(null, final_results);
+      if (final_item_list.length > 0) {
+        cb(null, final_item_list);
       }
       else
         cb(null, null);
