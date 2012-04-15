@@ -15,7 +15,7 @@ var opHelper = new OperationHelper({
   assocId:   config.amazon.associate,
 });
 
-var EXCLUDE_BINDINGS = ['Amazon Instant Video', 'Kindle Edition',
+var EXCLUDE_BINDINGS = ['Amazon Instant Video', /*'Kindle Edition',*/
     'MP3 Download', 'Personal Computers', ];
 
 var EXCLUDE_NODES = ['Just Arrived', 'Just arrived', 'All product', 'Deep discounts'];
@@ -69,6 +69,8 @@ function runSearch(query, cb) {
 
     var bindings_count = {};
     var bindings_map = {};
+
+    console.log(results.Items);
 
     // Grab item bindings (categories) from general search results
     _.map(results.Items.Item, function(item) {
@@ -206,64 +208,62 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       });
       for (var i=0; i < browsenodes.length; i++) {
         var key = browsenodes[i];
+        var nextkey = browsenodes[i+1];
         var base_score = 1//scoring.DEPTH_WEIGHT * node_counts[key];
 
         var browsenode_results = [];  // items that are results in this browse node
 
-        // Detect duplicate
+        // Detect duplicate and add initial item
+        var result;
         if (i < browsenodes.length - 1
-            && top_gifted_items[browsenodes[i]][0].ASIN === top_gifted_items[browsenodes[i+1]][0].ASIN) {
+            && top_gifted_items[key][0].ASIN === top_gifted_items[nextkey][0].ASIN) {
           // adjust score if the item showed up multiple times in our results
           // TODO we assume that duplicates have the same depth in amazon hierarchy.. This is not always
           // the case because browse nodes can appear in multiple places in the hierarchy
           base_score *= scoring.DUPLICATE_WEIGHT;
           _.each(top_gifted_items[key], function(item) {
-            browsenode_results.push({
+            result = {
               score: base_score,
               item: item,
-            });
+            };
           });
           i++;
         }
         else {
           _.each(top_gifted_items[key], function(item) {
-            browsenode_results.push({
+            result = {
               score: base_score,
               item: item,
-            });
+            };
           });
         }
 
-        // Final adjustments for each item in this browsenode category
-        var browsenode_results_final = [];
-        _.each(browsenode_results, function(result) {
-          // Penalize long boring items
-          if (result.item.Title.length > scoring.LENGTH_WEIGHT_THRESHOLD) {
-            //result.score *= scoring.LENGTH_WEIGHT;
-          }
+        // Final adjustments for the candidate in this browsenode category
+        // Penalize long boring items
+        if (result.item.Title.length > scoring.LENGTH_WEIGHT_THRESHOLD) {
+          //result.score *= scoring.LENGTH_WEIGHT;
+        }
 
-          // Penalize books :(
-          if (result.item.ProductGroup == 'Book' || result.item.ProductGroup == 'eBooks') {
-            // TODO penalize ebooks too
-            result.score *= scoring.BOOK_WEIGHT;
-          }
+        // Penalize books :(
+        if (result.item.ProductGroup == 'Book' || result.item.ProductGroup == 'eBooks') {
+          // TODO penalize ebooks too
+          result.score *= scoring.BOOK_WEIGHT;
+        }
 
-          if (result.item.type.indexOf('MostWishedFor') > -1) {
-            result.score *= scoring.WISHEDFOR_WEIGHT;
+        if (result.item.type.indexOf('MostWishedFor') > -1) {
+          result.score *= scoring.WISHEDFOR_WEIGHT;
+        }
+        if (result.item.type.indexOf('MostGifted') > -1) {
+          result.score *= scoring.GIFTED_WEIGHT;
+        }
+        if (result.item.type.indexOf('TopSellers') > -1) {
+          result.score *= scoring.TOPSELLERS_WEIGHT;
+          if (result.item.type.length == 1) {
+            // Don't show something that is *only* a top seller
+            continue;
           }
-          if (result.item.type.indexOf('MostGifted') > -1) {
-            result.score *= scoring.GIFTED_WEIGHT;
-          }
-          if (result.item.type.indexOf('TopSellers') > -1) {
-            result.score *= scoring.TOPSELLERS_WEIGHT;
-            if (result.item.type.length == 1) {
-              // Don't show something that is *only* a top seller
-              return true;
-            }
-          }
-          browsenode_results_final.push(result);
-        });
-        final_results.push.apply(final_results, browsenode_results_final);
+        }
+        final_results.push(result);
       }
 
 
