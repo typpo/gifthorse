@@ -17,7 +17,7 @@ module.exports = {
   LENGTH_WEIGHT: 0.7,
   LENGTH_WEIGHT_THRESHOLD: 100,  // apply length weight to anything with this long of a title
 
-  BOOK_WEIGHT: 0.8, // applied to ProductGroup Book
+  BOOK_WEIGHT: 0.5, // applied to ProductGroup Book
 
   WISHEDFOR_WEIGHT: 1.9,  // boost if it was wished for
   GIFTED_WEIGHT: 1.7, // boost if it was in a most gifted list
