@@ -1,13 +1,13 @@
 // TODO scores for:
 // item popularity
+// items that users click on
+// items that are purchased
 // similarity to search
 // reviews
-// most gifted vs most wanted (if it shows up in both)
-// boost if the item showed up in most popular or most bought
-// negative boost for books?
 
 module.exports = {
-  DEPTH_WEIGHT: 0.1,    // multiplier applied for each level in the amazon hierarchy
+  DEPTH_WEIGHT: 1,    // multiplier applied for each level in the amazon hierarchy
+  NODE_COUNT_WEIGHT: 1.2,
 
   DUPLICATE_WEIGHT: 1.1,    // boost applied each successive time an item appears in results
   CROSS_BROWSENODE_WEIGHT: 1.4, // duplicates across browse nodes- this means item was best in two categories
@@ -24,8 +24,9 @@ module.exports = {
   TOPSELLERS_WEIGHT: 1.55,
 
   adjustResultScore: function(result) {
-    // Returns True if result should be shown
     // Final adjustments for the candidate in this browsenode category
+    // Returns True if result should be shown
+
     // Penalize long boring items
     if (result.item.Title.length > this.LENGTH_WEIGHT_THRESHOLD) {
       //result.score *= this.LENGTH_WEIGHT;

@@ -192,7 +192,8 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
         var bn_items = top_gifted_items[browsenode];  // items in this browse node
         _.each(bn_items, function(bn_item) {
           var result = {
-            score: 1.0,
+            score: 1.0 * top_gifted_item_depths[browsenode] * scoring.DEPTH_WEIGHT
+              * node_counts[browsenode] * scoring.NODE_COUNT_WEIGHT,
             item: bn_item,
           };
           scoring.adjustResultScore(result);
