@@ -138,12 +138,13 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       }
 
       pending_request_fns.push(function() {
-        getTopSuggestionsForNode(bn, query, function(err, results, depth) {
+        topSuggestionsForNode(bn, query, function(err, results, depth) {
           if (!err && results && results.length > 0) {
             top_gifted_items[bn.Name] = results;
             top_gifted_item_depths[bn.Name] = depth;
           }
           requestComplete();
+          console.log(bn.Name, 'complete');
         });
       });
       seen[name] = true;
@@ -165,6 +166,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
     }); // end items loop
   }); // end categories loop
 
+  var completed = 0;
 
   // Fire request queue
   _.map(pending_request_fns, function(fn) {
@@ -172,9 +174,9 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
   });
 
   // Collect responses and create scores
-  var completed = 0;
   function requestComplete() {
     completed++;
+    console.log(completed, '/', pending_request_fns.length);
     if (completed == pending_request_fns.length) {
       console.log('top category browse nodes breakdown: ', node_counts);
       console.log(top_gifted_items);
@@ -206,7 +208,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
 }
 
 // callback(err, item, depth)
-function getTopSuggestionsForNode(bn, query, cb) {
+function topSuggestionsForNode(bn, query, cb) {
   console.log('getting the top suggestions for', bn.Name);
   var node = hierarchy.getTreeNodeById(bn.BrowseNodeId);
   if (!node) {
@@ -214,11 +216,11 @@ function getTopSuggestionsForNode(bn, query, cb) {
     return;
   }
 
-  // We omit overly general browse nodes...must be at least 4 deep in hierarchy
+  // We omit overly general browse nodes...must be at least N deep in hierarchy
+  // but not when browse node name matches query name, eg. for 'Shopping'
   // TODO make this variable, based on average ancestor depth
-  // always allow when browse node name matches query name, eg. for 'Shopping'
   if (node.depth > 2 || query.toLowerCase() == bn.Name.toLowerCase()) {
-    giftSuggestions(bn, function(err, items) {
+    giftSuggestionsForNode(bn, function(err, items) {
       if (err) {
         cb(err, null, node.depth);
         return;
@@ -232,7 +234,7 @@ function getTopSuggestionsForNode(bn, query, cb) {
   }
 } // end addNode
 
-function giftSuggestions(bn, cb) {
+function giftSuggestionsForNode(bn, cb) {
   bnLookup(bn, "MostGifted,MostWishedFor,TopSellers", function(err, results) {
     if (err) {
       cb(err, null);
@@ -287,9 +289,8 @@ function bnLookup(bn, responsegroup, cb) {
         cb(error, null);
         return;
       }
-      console.log('bnLookup', responsegroup, bn.Name, '-->');
+      //console.log('bnLookup', responsegroup, bn.Name, '-->');
       cb(null, results);
-
   });
 }
 
