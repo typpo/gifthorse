@@ -1,8 +1,12 @@
 #!/usr/bin/env python
 
-import HTMLParser, sys
-h = HTMLParser.HTMLParser()
+import sys, HTMLParser
 
+if len(sys.argv) != 2:
+  print 'usage: htmldecode /path/to/file'
+  sys.exit(1)
+
+h = HTMLParser.HTMLParser()
 
 f = open(sys.argv[1], 'r')
 stuff = f.read().splitlines()
