@@ -1,3 +1,5 @@
+var stemmer = require('porter-stemmer').stemmer
+
 // TODO scores for:
 // item popularity
 // items that users click on
@@ -6,6 +8,7 @@
 // reviews
 
 // TODO boost for exact match on browse node name, and boost any nearby nodes
+//  prefer exact match nodes and their children
 // TODO classifer for search queries to browse nodes
 
 module.exports = {
@@ -19,22 +22,28 @@ module.exports = {
   BROWSENODE_FUZZY_MATCH_WEIGHT: 2.5,
   BROWSENODE_DISTANCE_INVERSE_WEIGHT: 1.6,
 
+  NAME_FUZZY_MATCH_WEIGHT: 3,
+
   LENGTH_WEIGHT: 0.7,
   LENGTH_WEIGHT_THRESHOLD: 100,  // apply length weight to anything with this long of a title
 
-  BOOK_WEIGHT: 0.5, // applied to ProductGroup Book
+  BOOK_WEIGHT: 0.6, // applied to books and ebooks
 
   WISHEDFOR_WEIGHT: 1.9,  // boost if it was wished for
   GIFTED_WEIGHT: 1.7, // boost if it was in a most gifted list
   TOPSELLERS_WEIGHT: 1.55,
 
-  adjustResultScore: function(result) {
+  adjustResultScore: function(result, query) {
     // Final adjustments for the candidate in this browsenode category
     // Returns True if result should be shown
 
     // Penalize long boring items
     if (result.item.Title.length > this.LENGTH_WEIGHT_THRESHOLD) {
       //result.score *= this.LENGTH_WEIGHT;
+    }
+
+    if (new RegExp(stemmer(query), 'i').test(result.item.Title)) {
+      result.score *= this.NAME_FUZZY_MATCH_WEIGHT;
     }
 
     // Penalize books :(

@@ -184,8 +184,9 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
             score: 1.0 * top_gifted_item_depths[bn_key] * scoring.DEPTH_WEIGHT
               * node_counts[bn_key] * scoring.NODE_COUNT_WEIGHT,
             item: bn_item,
+            bName: bn_key,
           };
-          scoring.adjustResultScore(result);
+          scoring.adjustResultScore(result, query);
           final_item_list.push(result);
         });
       });
