@@ -7,6 +7,7 @@ var  _ = require('underscore')
   , redis = require('./redis.js')
   , amazon_static = require('./static.js')
   , scoring= require('./scoring.js')
+  , hierarchy = require('./hierarchy.js')
 
 var OperationHelper = require('apac').OperationHelper;
 var opHelper = new OperationHelper({
