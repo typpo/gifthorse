@@ -15,7 +15,9 @@ module.exports = {
   DUPLICATE_WEIGHT: 1.1,    // boost applied each successive time an item appears in results
   CROSS_BROWSENODE_WEIGHT: 1.4, // duplicates across browse nodes- this means item was best in two categories
 
-  BROWSENODE_MATCH_WEIGHT: 3,
+  BROWSENODE_EXACT_MATCH_WEIGHT: 3,
+  BROWSENODE_FUZZY_MATCH_WEIGHT: 2.5,
+  BROWSENODE_DISTANCE_INVERSE_WEIGHT: 1.6,
 
   LENGTH_WEIGHT: 0.7,
   LENGTH_WEIGHT_THRESHOLD: 100,  // apply length weight to anything with this long of a title

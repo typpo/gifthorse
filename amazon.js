@@ -117,7 +117,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
   var node_counts = {};
   var top_gifted_items = {};  // map from browse node name to items
   var top_gifted_item_depths = {};  // map from browse node name to their depth in amazon browse node hierarchy
-  var request_queue = [];
+  var pending_request_fns = [];
 
   // Loop through all of the top categories for this search result
   _.map(categories, function(cat) {
@@ -137,7 +137,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
         return false;
       }
 
-      request_queue.push(function() {
+      pending_request_fns.push(function() {
         getTopSuggestionsForNode(bn, query, function(err, results, depth) {
           if (!err && results && results.length > 0) {
             top_gifted_items[bn.Name] = results;
@@ -168,7 +168,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
 
 
   // Fire request queue
-  _.map(request_queue, function(fn) {
+  _.map(pending_request_fns, function(fn) {
     fn();
   });
 
@@ -176,7 +176,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
   var completed = 0;
   function requestComplete() {
     completed++;
-    if (completed == request_queue.length) {
+    if (completed == pending_request_fns.length) {
       console.log('top category browse nodes breakdown: ', node_counts);
       console.log(top_gifted_items);
 
@@ -185,16 +185,13 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       var min_score = _.min(scores_list);
       var max_score = _.max(scores_list);
 
-      var final_results = [];
-      var browsenodes = _.keys(top_gifted_items);
-
       var final_item_list = [];
-      _.each(browsenodes, function(browsenode) {
-        var bn_items = top_gifted_items[browsenode];  // items in this browse node
+      _.each(top_gifted_items, function(bn_items, bn_key) {
         _.each(bn_items, function(bn_item) {
           var result = {
-            score: 1.0 * top_gifted_item_depths[browsenode] * scoring.DEPTH_WEIGHT
-              * node_counts[browsenode] * scoring.NODE_COUNT_WEIGHT,
+            // compute a base score
+            score: 1.0 * top_gifted_item_depths[bn_key] * scoring.DEPTH_WEIGHT
+              * node_counts[bn_key] * scoring.NODE_COUNT_WEIGHT,
             item: bn_item,
           };
           scoring.adjustResultScore(result);
@@ -241,16 +238,6 @@ function getTopSuggestionsForNode(bn, query, cb) {
     }
   });
 } // end addNode
-
-function distanceToNodeName(bid, nodename) {
-  nodename = stemmer(nodename);
-  hierarchy.distanceToNodeName(bid, nodename);
-}
-
-function browseNodeExists(nodename) {
-  nodename = stemmer(nodename);
-  hierarchy.browseNodeExists(nodename);
-}
 
 // Walks the ancestor/child tree of a BrowseNode
 // callback(err, ancestorCount)
@@ -324,7 +311,6 @@ function giftSuggestions(bn, cb) {
 }
 
 function similar() {
-  // Motivating customers to buy
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/SuggestingSimilarItemstoBuy.html
 }
 
@@ -350,6 +336,19 @@ function bnLookup(bn, responsegroup, cb) {
 
   });
 }
+
+function distanceToNodeName(bid, nodename) {
+  return hierarchy.distanceToNodeName(bid, stemmer(nodename));
+}
+
+function browseNodeExists(nodename) {
+  return hierarchy.browseNodeExists(stemmer(nodename));
+}
+
+function fuzzyBrowseNodeMatch(nodename) {
+  return hierarchy.fuzzyBrowseNodeMatch(nodename);
+}
+
 
 module.exports = {
   search: search,
