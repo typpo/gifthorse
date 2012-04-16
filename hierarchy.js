@@ -13,7 +13,6 @@ var tree;
   tree = new Arboreal();
 
   var lines = fs.readFileSync('./data/browsenodes/all.txt', 'utf-8').split('\n');
-  var deferred_children = [];
 
   function process_line(line) {
     // Returns true if parent has already been added and the node was added,
@@ -49,7 +48,7 @@ var tree;
         });
       }
       else {
-        return false;
+        return false; // not done
       }
 
       bn_index[id] = node;
@@ -57,30 +56,17 @@ var tree;
         name_index[name] = [];
       name_index[name].push(node);
     }
-    return true;
+    return true;  // all done
   }
 
-  _.map(lines, function(line) {
-    if (!process_line(line))
-      deferred_children.push(line);
-  });
-
-  while (deferred_children.length > 0) {
-    var child_line = deferred_children.shift();
+  while (lines.length > 0) {
+    var child_line = lines.shift();
 
     if (!process_line(child_line)) {
-      deferred_children.push(child_line);
+      lines.push(child_line);
     }
   }
-  console.log('Done loading browse node hierarchy.');
-
-  function iterator(node) {
-    var depth = "", i;
-    for (i = 1; i <= node.depth; i++) depth += ">>";
-    console.log([depth, node.data].join(" "));
-  }
-
-  //tree.traverseDown(iterator);
+  console.log('Success: Loaded browse node hierarchy.');
 })()
 
 function closestDistanceFromNodeName(bn_id, name) {
