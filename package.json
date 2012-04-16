@@ -10,7 +10,6 @@
       , "freebase": "latest"
       , "porter-stemmer": "latest"
       , "redis-url": "latest"
-      , "arboreal": "latest"
     }
   , "devDependencies": {
     }
