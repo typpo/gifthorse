@@ -120,11 +120,16 @@ function fuzzyBrowseNodeMatch(search) {
   return false;
 }
 
+function getTreeNodeById(bid) {
+  return bn_index[bid];
+}
+
 module.exports = {
   browseNodeExists: browseNodeExists,
   distanceBetweenBrowseNodes: distanceBetweenBrowseNodes,
   distanceToNodeName: distanceToNodeName,
   fuzzyBrowseNodeMatch: fuzzyBrowseNodeMatch,
+  getTreeNodeById: getTreeNodeById,
 }
 
 assert.equal(distanceBetweenBrowseNodes('2210604011','2206260011'), 1)

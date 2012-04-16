@@ -214,66 +214,29 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
 // callback(err, item, depth)
 function getTopSuggestionsForNode(bn, query, cb) {
   console.log('getting the top suggestions for', bn.Name);
-  walkTree(bn.BrowseNodeId, function(err, ancestorCount) {
-    if (err) {
-      cb(err, null, null);
-      return;
-    }
+  var node = hierarchy.getTreeNodeById(bid);
+  if (!node) {
+    cb(new Error("Couldn't find browse node " + bid), null, null);
+    return;
+  }
 
-    // We omit overly general browse nodes...must be at least 4 deep in hierarchy
-    // TODO make this variable, based on average ancestor depth
-    // always allow when browse node name matches query name, eg. for 'Shopping'
-    if (ancestorCount > 2/* && ancestorCount < 5*/ || query.toLowerCase() == bn.Name.toLowerCase()) {
-      giftSuggestions(bn, function(err, items) {
-        if (err) {
-          cb(err, null, ancestorCount);
-          return;
-        }
-        cb(null, items, ancestorCount);
-      });
-    }
-    else {
-      console.log('omitting', bn.Name);
-      cb(null, null, null);
-    }
-  });
-} // end addNode
-
-// Walks the ancestor/child tree of a BrowseNode
-// callback(err, ancestorCount)
-// http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/FindingBrowseNodes.html
-function walkTree(bid, cb) {
-  opHelper.execute('BrowseNodeLookup', {
-    'BrowseNodeId': bid,
-  }, function(error, results) {
-
-    if (error) {
-      winston.error('Error: ' + error + "\n");
-      cb(true, null);
-      return;
-    }
-
-    var bn = results.BrowseNodes.BrowseNode;
-    if (!bn) {
-      cb(new Error('no browse node'), null);
-      return;
-    }
-
-    var ancestor = bn.Ancestors && bn.Ancestors.BrowseNode;
-    var ancestorCount = 0;
-    while (ancestor) {
-      if (!ancestor.Name) {
-        // end of the line
-        break;
+  // We omit overly general browse nodes...must be at least 4 deep in hierarchy
+  // TODO make this variable, based on average ancestor depth
+  // always allow when browse node name matches query name, eg. for 'Shopping'
+  if (node.depth > 2 || query.toLowerCase() == bn.Name.toLowerCase()) {
+    giftSuggestions(bn, function(err, items) {
+      if (err) {
+        cb(err, null, node.depth);
+        return;
       }
-      ancestorCount++;
-      ancestor = ancestor.Ancestors && ancestor.Ancestors.BrowseNode;
-    }
-
-    cb(null, ancestorCount);
-  });
-
-}
+      cb(null, items, node.depth);
+    });
+  }
+  else {
+    console.log('omitting', bn.Name);
+    cb(null, null, null);
+  }
+} // end addNode
 
 function giftSuggestions(bn, cb) {
   bnLookup(bn, "MostGifted,MostWishedFor,TopSellers", function(err, results) {
@@ -289,7 +252,6 @@ function giftSuggestions(bn, cb) {
     topitem_map = {};
     _.each(results.BrowseNodes.BrowseNode.TopItemSet, function(item_set) {
       if (!item_set || !item_set.TopItem || !item_set.TopItem.length > 0) {
-        //cb("Empty TopItem result for " + bn.Name, null);
         return true;
       }
 
