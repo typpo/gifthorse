@@ -19,7 +19,7 @@ module.exports = {
   CROSS_BROWSENODE_WEIGHT: 1.4, // duplicates across browse nodes- this means item was best in two categories
 
   BROWSENODE_EXACT_MATCH_WEIGHT: 3,
-  BROWSENODE_FUZZY_MATCH_WEIGHT: 2.5,
+  BROWSENODE_FUZZY_MATCH_WEIGHT: 1.7,
   BROWSENODE_DISTANCE_INVERSE_WEIGHT: 1.6,
 
   NAME_FUZZY_MATCH_WEIGHT: 3,
@@ -42,8 +42,12 @@ module.exports = {
       //result.score *= this.LENGTH_WEIGHT;
     }
 
-    if (new RegExp(stemmer(query), 'i').test(result.item.Title)) {
+    query = stemmer(query);
+    if (new RegExp(query, 'i').test(result.item.Title)) {
       result.score *= this.NAME_FUZZY_MATCH_WEIGHT;
+    }
+    if (new RegExp(query, 'i').test(result.bName)) {
+      result.score *= this.BROWSENODE_FUZZY_MATCH_WEIGHT;
     }
 
     // Penalize books :(
