@@ -179,11 +179,6 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       console.log('top category browse nodes breakdown: ', node_counts);
       console.log(top_gifted_items);
 
-      // not the most efficient way of doing this..
-      var scores_list =  _.values(node_counts);
-      var min_score = _.min(scores_list);
-      var max_score = _.max(scores_list);
-
       var final_item_list = [];
       _.each(top_gifted_items, function(bn_items, bn_key) {
         _.each(bn_items, function(bn_item) {
