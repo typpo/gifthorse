@@ -144,7 +144,6 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
             top_gifted_item_depths[bn.Name] = depth;
           }
           requestComplete();
-          console.log(bn.Name, 'complete');
         });
       });
       seen[name] = true;
@@ -166,17 +165,13 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
     }); // end items loop
   }); // end categories loop
 
+  // Fire request queue, collect responses and create scores
   var completed = 0;
-
-  // Fire request queue
   _.map(pending_request_fns, function(fn) {
     fn();
   });
-
-  // Collect responses and create scores
   function requestComplete() {
     completed++;
-    console.log(completed, '/', pending_request_fns.length);
     if (completed == pending_request_fns.length) {
       console.log('top category browse nodes breakdown: ', node_counts);
       console.log(top_gifted_items);
@@ -235,7 +230,7 @@ function topSuggestionsForNode(bn, query, cb) {
 } // end addNode
 
 function giftSuggestionsForNode(bn, cb) {
-  bnLookup(bn, "MostGifted,MostWishedFor,TopSellers", function(err, results) {
+  bnLookup(bn, "MostGifted,MostWishedFor", function(err, results) {
     if (err) {
       cb(err, null);
       return;
