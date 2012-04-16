@@ -5,6 +5,9 @@
 // similarity to search
 // reviews
 
+// TODO boost for exact match on browse node name, and boost any nearby nodes
+// *** this is the key!
+
 module.exports = {
   DEPTH_WEIGHT: 1,    // multiplier applied for each level in the amazon hierarchy
   NODE_COUNT_WEIGHT: 1.2,

@@ -1,0 +1,34 @@
+Apparel & Accessories|null|1036592|Apparel|-unknown-
+Appstore for Android|null|2350149011|Software|-unknown-
+Arts, Crafts & Sewing|null|2617941011|HomeGarden|-unknown-
+Automotive|null|15684181|Automotive|-unknown-
+Baby|null|165796011|Baby|-unknown-
+Beauty|null|3760911|Beauty|-unknown-
+Books|null|283155|Books|-unknown-
+Car Toys|null|10963061|Electronics|-unknown-
+Cell Phones & Accessories|null|2335753011|Wireless|-unknown-
+Computer & Video Games|null|468642|VideoGames|-unknown-
+Electronics|null|172282|Electronics|-unknown-
+Gifts & Wish Lists|null|229220|Watches|-unknown-
+Grocery & Gourmet Food|null|16310211|Grocery|-unknown-
+Health & Personal Care|null|3760901|HealthPersonalCare|-unknown-
+Home & Kitchen|null|1055398|Kitchen|-unknown-
+Home Improvement|null|251266011|Tools|-unknown-
+Industrial & Scientific|null|16310161|Industrial|-unknown-
+Jewelry|null|3367581|Jewelry|-unknown-
+Kindle Store|null|133140011|Books|-unknown-
+Kitchen & Housewares|null|284507|Kitchen|-unknown-
+Magazine Subscriptions|null|599858|Magazines|-unknown-
+Movies &amp; TV|null|2625373011|DVD|-unknown-
+Music|null|5174|Music|-unknown-
+Musical Instruments|null|11091801|MusicalInstruments|-unknown-
+Office Products|null|1064954|OfficeProducts|-unknown-
+Outlet|null|517808|HomeGarden|-unknown-
+Pet Supplies|null|2619533011|PetSupplies|-unknown-
+Shoes|null|672123011|Shoes|-unknown-
+Software|null|229534|Software|-unknown-
+Sports & Outdoors|null|3375251|SportingGoods|-unknown-
+Tools & Hardware|null|228013|Tools|-unknown-
+Toys and Games|null|165793011|Toys|-unknown-
+Travel|null|605012|Books|-unknown-
+Warehouse Deals|null|1267877011|-unknown-|-unknown-

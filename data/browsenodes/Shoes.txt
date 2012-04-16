@@ -1,0 +1,242 @@
+Departments|672123011|672124011|Shoes|-unknown-
+Boys' Shoes|672124011|679182011|Shoes|-unknown-
+Boys' Athletic & Outdoor Shoes|679182011|679193011|Shoes|-unknown-
+Boys' Athletic Shoes|679193011|679194011|Shoes|-unknown-
+Boys' Ballet &amp; Dance Shoes|679194011|679195011|Shoes|-unknown-
+Boys' Baseball Shoes|679194011|679196011|Shoes|-unknown-
+Boys' Basketball Shoes|679194011|679197011|Shoes|-unknown-
+Boys' Football Shoes|679194011|679199011|Shoes|-unknown-
+Boys' Running Shoes|679194011|679203011|Shoes|-unknown-
+Boys' Skateboarding Shoes|679194011|679205011|Shoes|-unknown-
+Boys' Soccer Shoes|679194011|679207011|Shoes|-unknown-
+Boys' Tennis Shoes|679194011|679208011|Shoes|-unknown-
+Boys' Trail Runners|679194011|2204775011|Shoes|-unknown-
+Boys' Wheeled Heel Shoes|679194011|1272055011|Shoes|-unknown-
+Boys' Boots|679193011|679210011|Shoes|-unknown-
+Boys' Lace Up Boots|679210011|1264535011|Shoes|-unknown-
+Boys' Pull On Boots|679210011|1264536011|Shoes|-unknown-
+Boys' Shearling Boots|679210011|1264538011|Shoes|-unknown-
+Boys' Western Boots|679210011|1264539011|Shoes|-unknown-
+Boys' Fashion Sneakers|679193011|679212011|Shoes|-unknown-
+Boys' Lace-Ups|679193011|684407011|Shoes|-unknown-
+Boys' Lighted Shoes|679193011|679214011|Shoes|-unknown-
+Boys' Outdoor Shoes|679193011|2527845011|Shoes|-unknown-
+Boys' Hiking Shoes|2527845011|679201011|Shoes|-unknown-
+Boys' Rain Boots|2527845011|1264537011|Shoes|-unknown-
+Boys' Snow Boots|2527845011|1264534011|Shoes|-unknown-
+Boys' Water Shoes|2527845011|679209011|Shoes|-unknown-
+Boys' Sandals|679193011|679215011|Shoes|-unknown-
+Boys' School Uniform Footwear|679193011|1264546011|Shoes|-unknown-
+Boys' Slip-Ons|679193011|684409011|Shoes|-unknown-
+Boys' Slippers|679193011|679216011|Shoes|-unknown-
+Boys' Velcro Shoes|679193011|679213011|Shoes|-unknown-
+Infant & Toddler|679182011|679183011|Shoes|-unknown-
+Athletic|679183011|2514538011|Shoes|-unknown-
+Boots|679183011|679185011|Shoes|-unknown-
+Crib Shoes for Baby &amp; Toddler Boys|679183011|679186011|Shoes|-unknown-
+Fashion Sneakers for Baby &amp; Toddler Boys|679183011|684403011|Shoes|-unknown-
+First Shoes for Baby &amp; Toddler Boys|679183011|679188011|Shoes|-unknown-
+Lace-Ups for Baby &amp; Toddler Boys|679183011|684404011|Shoes|-unknown-
+Lighted Shoes for Baby &amp; Toddler Boys|679183011|679190011|Shoes|-unknown-
+Outdoor|679183011|2514539011|Shoes|-unknown-
+Baby Boys' Hiking Boots|2514539011|2514567011|Shoes|-unknown-
+Baby Boys' Water Shoes|2514539011|2514566011|Apparel|-unknown-
+Sandals|679183011|679191011|Shoes|-unknown-
+Slip-Ons for Baby &amp; Toddler Boys|679183011|684406011|Shoes|-unknown-
+Slippers for Baby &amp; Toddler Boys|679183011|679192011|Shoes|-unknown-
+Velcro Shoes for Baby &amp; Toddler Boys|679183011|679189011|Shoes|-unknown-
+Girls' Shoes|672124011|679217011|Shoes|-unknown-
+Girls' Athletic & Outdoor Shoes|679217011|679228011|Shoes|-unknown-
+Girls' Athletic Shoes|679228011|679229011|Shoes|-unknown-
+Girls' Ballet Slippers &amp; Dance Shoes|679229011|679230011|Shoes|-unknown-
+Girls' Baseball &amp; Softball Shoes|679229011|679231011|Shoes|-unknown-
+Girls' Basketball Shoes|679229011|679232011|Shoes|-unknown-
+Girls' Running Shoes|679229011|679238011|Shoes|-unknown-
+Girls' Skateboarding Shoes|679229011|679240011|Shoes|-unknown-
+Girls' Tennis Shoes|679229011|679243011|Shoes|-unknown-
+Girls' Trail Runners|679229011|2204776011|Shoes|-unknown-
+Girls' Wheeled Heel Shoes|679229011|1272054011|Shoes|-unknown-
+Girls' Boots|679228011|679245011|Shoes|-unknown-
+Girls' Lace Up Boots|679245011|1264561011|Shoes|-unknown-
+Girls' Pull On Boots|679245011|1264562011|Shoes|-unknown-
+Girls' Shearling Boots|679245011|1264564011|Shoes|-unknown-
+Girls' Western Boots|679245011|1264565011|Apparel|-unknown-
+Girls' Fashion Sneakers|679228011|679248011|Shoes|-unknown-
+Girls' Flats|679228011|679249011|Shoes|-unknown-
+Girls' Lace-Ups|679228011|684415011|Apparel|-unknown-
+Girls' School Uniform Footwear|679228011|1264574011|Shoes|-unknown-
+Girls' Slip-Ons|679228011|684416011|Shoes|-unknown-
+Girls' Velcro Shoes|679228011|679250011|Shoes|-unknown-
+Infant & Toddler|679217011|679218011|Shoes|-unknown-
+Athletic|679218011|2514540011|Shoes|-unknown-
+Boots|679218011|679220011|Shoes|-unknown-
+Crib Shoes for Baby &amp; Toddler Girls|679218011|679221011|Apparel|-unknown-
+Fashion Sneakers for Baby &amp; Toddler Girls|679218011|684410011|Apparel|-unknown-
+First Shoes for Baby &amp; Toddler Girls|679218011|679223011|Shoes|-unknown-
+Flats|679218011|684411011|Apparel|-unknown-
+Lace-Ups for Baby &amp; Toddler Girls|679218011|684412011|Shoes|-unknown-
+Lighted Shoes for Baby &amp; Toddler Girls|679218011|679225011|Shoes|-unknown-
+Outdoor|679218011|2514541011|Shoes|-unknown-
+Sandals|679218011|679226011|Shoes|-unknown-
+Slippers for Baby &amp; Toddler Girls|679218011|679227011|Shoes|-unknown-
+Velcro Shoes for Baby &amp; Toddler Girls|679218011|679224011|Shoes|-unknown-
+Handbags|672124011|15743631|Shoes|-unknown-
+Baguettes, Purses, Handbags, Accessories|15743631|15743641|Apparel|-unknown-
+Clutches, Purses, Handbags, Accessories|15743631|15743661|Shoes|-unknown-
+Hobos, Purses, Handbags, Accessories|15743631|15743701|Shoes|-unknown-
+Oversized bags, Bags, Accessories|15743631|673128011|Shoes|-unknown-
+Special occasion handbags, Purses, Handbags, Accessories|15743631|15743671|Shoes|-unknown-
+Totes, Purses, Handbags, Accessories|15743631|15743741|Shoes|-unknown-
+Wristlets, Bags, Accessories|15743631|673131011|Shoes|-unknown-
+Juniors'|672124011|679486011|Shoes|-unknown-
+Boots|679486011|683367011|Shoes|-unknown-
+Juniors' Flat Boots|683367011|683368011|Shoes|-unknown-
+Juniors' Lace-Up Boots|683367011|683369011|Shoes|-unknown-
+Juniors' Motorcycle Boots|683367011|683370011|Shoes|-unknown-
+Juniors' Platform Boots|683367011|683371011|Shoes|-unknown-
+Juniors' Shearling &amp; Fur-Trimmed Boots|683367011|683374011|Shoes|-unknown-
+Juniors' Waterproof Boots|683367011|683375011|Shoes|-unknown-
+Juniors' Wedge Boots|683367011|683376011|Shoes|-unknown-
+Riding|683367011|683373011|Shoes|-unknown-
+Western|683367011|683377011|Shoes|-unknown-
+Espadrilles|679486011|683387011|Apparel|-unknown-
+Juniors' Ankle Wrap Espadrilles|683387011|683388011|Shoes|-unknown-
+Juniors' Slingback Espadrilles|683387011|683389011|Shoes|-unknown-
+Fashion Sneakers|679486011|683378011|Shoes|-unknown-
+Juniors' Classic Sneakers|683378011|683379011|Shoes|-unknown-
+Juniors' Lace-Up Sneakers|683378011|683381011|Shoes|-unknown-
+Juniors' Mary-Jane Sneakers|683378011|683382011|Shoes|-unknown-
+Juniors' Mule Sneakers|683378011|683383011|Shoes|-unknown-
+Juniors' Slip-On Sneakers|683378011|683385011|Shoes|-unknown-
+Juniors' Velcro Sneakers|683378011|683380011|Shoes|-unknown-
+Slingback|683378011|683384011|Shoes|-unknown-
+Wedge|683378011|683386011|Shoes|-unknown-
+Flats|679486011|683390011|Shoes|-unknown-
+Juniors' Oxfords &amp; Lace-Ups|679486011|683408011|Shoes|-unknown-
+Loafers & Slip-Ons|679486011|683396011|Shoes|-unknown-
+Mules & Clogs|679486011|683403011|Shoes|-unknown-
+Juniors' Mules|683403011|683406011|Shoes|-unknown-
+Pumps|679486011|683409011|Shoes|-unknown-
+Juniors' Ankle Strap Pumps|683409011|683410011|Shoes|-unknown-
+Juniors' D'Orsay &amp; Two Piece Pumps|683409011|683411011|Shoes|-unknown-
+Juniors' Mary-Jane Pumps|683409011|683412011|Shoes|-unknown-
+Juniors' Mule Pumps|683409011|683413011|Shoes|-unknown-
+Juniors' Ornamented Pumps|683409011|683414011|Shoes|-unknown-
+Juniors' Platform Pumps|683409011|683415011|Shoes|-unknown-
+Juniors' Spectator &amp; Two-Toned Pumps|683409011|683417011|Shoes|-unknown-
+Juniors' T-Strap Pumps|683409011|683418011|Shoes|-unknown-
+Juniors' Wedge Pumps|683409011|683419011|Shoes|-unknown-
+Sandals|679486011|683420011|Shoes|-unknown-
+Slippers|679486011|683429011|Shoes|-unknown-
+Related Accessories|672124011|684538011|Shoes|-unknown-
+Purse Hangers|684538011|2686845011|Shoes|-unknown-
+Socks|684538011|690594011|Shoes|-unknown-
+Boys' Socks|690594011|690599011|Shoes|-unknown-
+Girls' Socks|690594011|690597011|Shoes|-unknown-
+Women's Socks|690594011|2528214011|Shoes|-unknown-
+Wallets, Money organizers, Key organizers, Accessories|684538011|15743761|Shoes|-unknown-
+Checkbook covers, Accessories|15743761|15743881|Shoes|-unknown-
+Coin purses, Wallets, Accessories|15743761|15743831|Shoes|-unknown-
+Credit card holders, Wallets, Accessories|15743761|15743841|Shoes|-unknown-
+ID cases, Wallets, Accessories|15743761|673132011|Shoes|-unknown-
+Key rings, Fobs, Accessories|15743761|15743891|Shoes|-unknown-
+Money clips, Wallets, Accessories|15743761|15743901|Shoes|-unknown-
+Wallets, Billfolds, Bifolds, Trifolds, Accessories|15743761|15743771|Shoes|-unknown-
+Bifold wallets, Wallets, Accessories|15743771|15743781|Shoes|-unknown-
+Money Clips|15743771|699890011|Shoes|-unknown-
+Trifold wallets, Wallets, Accessories|15743771|15743811|Shoes|-unknown-
+Wallet Card Cases|15743771|699891011|Shoes|-unknown-
+Shoe Care & Cleaning|672124011|637400|Shoes|-unknown-
+Women's|672124011|679337011|Shoes|-unknown-
+Athletic|679337011|679338011|Shoes|-unknown-
+Basketball|679338011|679341011|Shoes|-unknown-
+Cycling|679338011|679352011|Apparel|-unknown-
+Women's Athletic &amp; Outdoor Boating Shoes|679338011|679344011|Shoes|-unknown-
+Women's Ballet &amp; Dance Shoes|679338011|679339011|Shoes|-unknown-
+Women's Golf Shoes|679338011|679353011|Shoes|-unknown-
+Women's Racquetball Shoes|679338011|679359011|Shoes|-unknown-
+Women's Running Shoes: Trail, Cross-Country, Track &amp; Field, Spikes|679338011|679360011|-unknown-|-unknown-
+Women's Skateboard Shoes|679338011|679369011|Shoes|-unknown-
+Women's Soccer Shoes|679338011|679370011|Shoes|-unknown-
+Women's Tennis Shoes|679338011|679374011|Shoes|-unknown-
+Women's Volleyball Shoes|679338011|679376011|Shoes|-unknown-
+Women's Walking Shoes|679338011|679377011|Shoes|-unknown-
+Women's Wheeled Heel Shoes|679338011|1272052011|Shoes|-unknown-
+Boots|679337011|679380011|Shoes|-unknown-
+Women's Flat Boots|679380011|679381011|Shoes|-unknown-
+Women's Lace-Up Boots|679380011|683182011|Shoes|-unknown-
+Women's Motorcycle Boots|679380011|679382011|Shoes|-unknown-
+Women's Platform Boots|679380011|679383011|Shoes|-unknown-
+Women's Pull-On Boots|679380011|683183011|Shoes|-unknown-
+Women's Riding Boots|679380011|683180011|Shoes|-unknown-
+Women's Shearling &amp; Fur-Trimmed Boots|679380011|683181011|Shoes|-unknown-
+Women's Waterproof Boots|679380011|683184011|Shoes|-unknown-
+Women's Wedge Boots|679380011|679384011|Shoes|-unknown-
+Women's Western Boots|679380011|679385011|Shoes|-unknown-
+Women's Zip Boots|679380011|1264584011|Shoes|-unknown-
+Bridal|679337011|679386011|Shoes|-unknown-
+Women's Bridal Flats|679386011|679388011|Shoes|-unknown-
+Women's Bridal Pumps|679386011|679389011|Shoes|-unknown-
+Women's Bridal Sandals|679386011|679390011|Shoes|-unknown-
+Espadrilles|679337011|679391011|Shoes|-unknown-
+Fashion Sneakers|679337011|679394011|Shoes|-unknown-
+Women's Classic Sneakers|679394011|682637011|Shoes|-unknown-
+Women's Lace-Up Sneakers|679394011|683098011|Shoes|-unknown-
+Women's Mary-Jane Sneakers|679394011|679395011|Shoes|-unknown-
+Women's Mule Sneakers|679394011|679396011|Shoes|-unknown-
+Women's Slingback Sneakers|679394011|679397011|Shoes|-unknown-
+Women's Velcro and Strap Sneakers|679394011|683097011|Shoes|-unknown-
+Women's Wedge Sneakers|679394011|679398011|Shoes|-unknown-
+Flats|679337011|679399011|Shoes|-unknown-
+Mule|679399011|679402011|Shoes|-unknown-
+Women's Ballet Flats|679399011|679400011|Shoes|-unknown-
+Women's Dress &amp; Evening Flats|679399011|684423011|Shoes|-unknown-
+Women's Mary-Jane Flats|679399011|679401011|Shoes|-unknown-
+Women's Slingback Flats|679399011|679403011|Shoes|-unknown-
+Women's T-Strap Flats|679399011|683100011|Shoes|-unknown-
+Lace-Ups|679337011|679415011|Shoes|-unknown-
+Women's Casual Oxfords|679415011|684427011|Shoes|-unknown-
+Loafers & Slip-Ons|679337011|679404011|Shoes|-unknown-
+Mules & Clogs|679337011|679410011|Shoes|-unknown-
+Clogs|679410011|679411011|Shoes|-unknown-
+Women's Mules|679410011|679413011|Shoes|-unknown-
+Women's Wedges Clogs Shoes|679410011|1264585011|Shoes|-unknown-
+Outdoor|679337011|2368252011|Shoes|-unknown-
+Boots|2368252011|679345011|Shoes|-unknown-
+Women's Rain Boots|679345011|679346011|Shoes|-unknown-
+Women's Snow Boots|679345011|679347011|Shoes|-unknown-
+Hiking|2368252011|679354011|Shoes|-unknown-
+Women's Hiking Boots|679354011|679355011|Shoes|-unknown-
+Women's Hiking Shoes|679354011|679357011|Shoes|-unknown-
+Women's Trail Runners|679354011|1264582011|Shoes|-unknown-
+Women's Waterproof Hiking Footwear|679354011|1264583011|Apparel|-unknown-
+Sandals|2368252011|679365011|Shoes|-unknown-
+Women's Climbing Shoes|2368252011|679350011|Shoes|-unknown-
+Women's Hunting Boots &amp; Shoes|2368252011|679358011|Shoes|-unknown-
+Women's Water Shoes|2368252011|679378011|Shoes|-unknown-
+Pumps|679337011|679416011|Shoes|-unknown-
+Women's Ankle Strap Pumps|679416011|679417011|Shoes|-unknown-
+Women's Dress &amp; Evening Pumps|679416011|684429011|Shoes|-unknown-
+Women's Mary-Jane Pumps|679416011|679419011|Shoes|-unknown-
+Women's Ornamented Pumps|679416011|683185011|Shoes|-unknown-
+Women's Platform Pumps|679416011|679421011|Shoes|-unknown-
+Women's Slingback Pumps|679416011|679422011|Shoes|-unknown-
+Women's T-Strap Pumps|679416011|683186011|Shoes|-unknown-
+Women's Wedge Pumps|679416011|679424011|Shoes|-unknown-
+Sandals|679337011|679425011|Shoes|-unknown-
+Slides|679425011|679429011|Shoes|-unknown-
+Women's Ankle Strap Sandals|679425011|679426011|Shoes|-unknown-
+Women's Ankle Wrap Sandals|679425011|1264587011|Shoes|-unknown-
+Women's Dress &amp; Evening Sandals|679425011|684430011|Shoes|-unknown-
+Women's Fisherman Sandals|679425011|679427011|Shoes|-unknown-
+Women's Platform Sandals|679425011|679428011|Shoes|-unknown-
+Women's Slingback Sandals|679425011|679430011|Shoes|-unknown-
+Women's T-Strap Sandals|679425011|683187011|Shoes|-unknown-
+Women's Wedge Sandals|679425011|679432011|Shoes|-unknown-
+Slippers|679337011|679433011|Shoes|-unknown-
+Women's Boat Shoes|679337011|679379011|Shoes|-unknown-
+Women's Costume Shoes|679337011|684422011|Shoes|-unknown-
+Work & Safety|679337011|679442011|Shoes|-unknown-
+Women's Work &amp; Safety Boots|679442011|679443011|Shoes|-unknown-
+Women's Work &amp; Safety Shoes|679442011|679444011|Shoes|-unknown-
+Featured Categories|672123011|690057011|Shoes|-unknown-

@@ -1,0 +1,285 @@
+Categories|229534|491286|Software|-unknown-
+Business &amp; Office|491286|229535|Software|-unknown-
+Business &amp; Office Management Software|229535|283891|Software|-unknown-
+Business Accounting|229535|229536|Software|-unknown-
+Accounting Software|229536|283001|Software|-unknown-
+Business Transaction Processing Software|229536|11024791|Software|-unknown-
+Check Printing Software|229536|283002|Software|-unknown-
+Inventory Management Software|229536|15699241|Software|-unknown-
+Payroll Software|229536|283000|Software|-unknown-
+Business Database Management Software|229535|229537|Software|-unknown-
+Business Plan Software|229535|15699371|Software|-unknown-
+Business Training Software &amp; Tutorials|229535|229546|Software|-unknown-
+Communication|229535|229636|Software|-unknown-
+Business &amp; Office Fax Software|229636|289967|Software|-unknown-
+E-mail|229636|229639|Kitchen|-unknown-
+Business E-mail Clients|229639|491978|-unknown-|-unknown-
+Business E-mail Security &amp; Filtering Software|229639|491982|Software|-unknown-
+Business E-mail Servers|229639|491980|Software|-unknown-
+Synchronization|229636|3105098011|Software|-unknown-
+Terminal Emulation Software|229636|289969|Software|-unknown-
+Document Management|229535|229538|Software|-unknown-
+Document Creation Software|229538|15699251|Software|-unknown-
+Document Scanning &amp; OCR Software|229538|283008|Software|-unknown-
+Document Tracking &amp; Inventory Software|229538|283009|Software|-unknown-
+Printing &amp; Desktop Publishing Software|229538|15699321|Software|-unknown-
+Presentation|229535|229541|Software|-unknown-
+Marketing Software|229541|283011|Software|-unknown-
+Project Management Software|229535|229542|Software|-unknown-
+Reports &amp; Forms Software|229535|283013|Software|-unknown-
+Schedule & Contact Management|229535|229543|Software|-unknown-
+Organizer &amp; Address Book Software|229543|283005|Software|-unknown-
+Phone Books on Disc|229543|283004|Software|-unknown-
+Spreadsheet Software|229535|229544|Software|-unknown-
+Voice Recognition Software|229535|229678|Software|-unknown-
+Word Processing Software|229535|229547|Software|-unknown-
+Children&#39;s Software|491286|229548|Software|-unknown-
+Children's Art &amp; Creativity Software|229548|229549|Software|-unknown-
+Children's Interactive Books Software|229548|229556|Software|-unknown-
+Children's Math Software|229548|229558|Software|-unknown-
+Children's Reading &amp; Language Learning Software|229548|229559|Software|-unknown-
+Children's Reference Software|229548|229560|Software|-unknown-
+Children's Software Games|229548|229552|Software|-unknown-
+Children's Thinking &amp; Problem Solving Software|229548|229557|Software|-unknown-
+Children's Virtual Pet Software|229548|229592|Software|-unknown-
+Computer Security|491286|229677|Software|-unknown-
+Anti-Spyware|229677|2251985011|Software|-unknown-
+Antivirus|229677|2251986011|Software|-unknown-
+Internet Security|229677|2251987011|Software|-unknown-
+Parental Control|229677|2251988011|Software|-unknown-
+Security Suites|229677|2251989011|Software|-unknown-
+Education &amp; Reference|491286|229563|Software|-unknown-
+Encyclopedia &amp; Dictionary Software|229563|229565|Software|-unknown-
+Foreign Languages|229563|229567|Software|-unknown-
+African Language Learning Software|229567|11024801|Software|-unknown-
+American Sign Language Learning Software|229567|11024811|Software|-unknown-
+Arabic Language Learning Software|229567|11024821|Software|-unknown-
+Asian Language Learning Software|229567|283038|Software|-unknown-
+English Language Learning Software|229567|283037|Software|-unknown-
+Greek Language Learning Software|229567|11024831|Software|-unknown-
+Hebrew Language Learning Software|229567|11024841|Software|-unknown-
+Universal Translator Software|229567|283031|Software|-unknown-
+Geography Software|229563|229566|Software|-unknown-
+History Software|229563|229568|Software|-unknown-
+Mapping Software|229563|229569|Software|-unknown-
+Religious Software|229563|229634|Software|-unknown-
+Science Learning Software|229563|229570|Software|-unknown-
+Script &amp; Screenwriting Software|229563|497644|Software|-unknown-
+Secondary Education|229563|229571|Software|-unknown-
+Secondary Education English &amp; Grammar Software|229571|283029|Software|-unknown-
+Secondary Education Math Software|229571|283027|Software|-unknown-
+Secondary Education Science Software|229571|283028|Software|-unknown-
+Software About Arts &amp; Culture|229563|229564|Software|-unknown-
+Test Preparation Software|229563|229572|Software|-unknown-
+Typing Software|229563|229573|Software|-unknown-
+Writing &amp; Literature Software|229563|229574|Software|-unknown-
+Games|491286|1294826011|Software|-unknown-
+Mac Games|1294826011|1294478011|Software|-unknown-
+PC Games|1294826011|1294221011|Software|-unknown-
+Home &amp; Hobbies|491286|229624|Software|-unknown-
+Cooking &amp; Health-Related Software|229624|229625|Software|-unknown-
+Fashion &amp; Style Software|229624|229628|Software|-unknown-
+Gardening &amp; Landscaping Software|229624|229626|Software|-unknown-
+Genealogy Software|229624|229627|Software|-unknown-
+Hobby Software|229624|229629|Software|-unknown-
+Movies &amp; TV Shows Software|229624|283896|Software|-unknown-
+Scrapbooking Software|229624|108156011|Software|-unknown-
+Language &amp; Travel|491286|497026|Software|-unknown-
+GPS Mapping Software|497026|16415711|Software|-unknown-
+Networking|491286|229637|Software|-unknown-
+Directory Server Software|229637|491974|Software|-unknown-
+File Server &amp; Print Server Software|229637|491972|Software|-unknown-
+LAN Software|229637|289976|Software|-unknown-
+Linux Network Server Software|229637|15699271|Software|-unknown-
+Netware Networking Software|229637|491968|Software|-unknown-
+Network &amp; Enterprise Management Software|229637|491966|Software|-unknown-
+Networking Security Software|229637|289979|Software|-unknown-
+SAA Networking Software|229637|491970|Software|-unknown-
+Software Client Access Licenses|229637|15699261|Software|-unknown-
+TCP-IP|229637|289980|Software|-unknown-
+VPN Software|229637|289977|Software|-unknown-
+Operating Systems|491286|229653|Software|-unknown-
+BeOS Computer Operating Systems|229653|300249|Software|-unknown-
+DOS Computer Operating Systems|229653|229661|Software|-unknown-
+Macintosh|229653|229660|Software|-unknown-
+Mac OS 9.X Computer Operating Systems|229660|706054011|Software|-unknown-
+Mac OS X 10.2 Jaguar Computer Operating Systems|229660|706055011|Software|-unknown-
+Mac OS X Computer Operating Systems|229660|706053011|Software|-unknown-
+Mac OSX 10.3 Panther Computer Operating Systems|229660|706056011|Software|-unknown-
+Microsoft Windows|229653|229655|Software|-unknown-
+Microsoft Windows 2000 Computer Operating Systems|229655|281440|Software|-unknown-
+Microsoft Windows 95 Computer Operating Systems|229655|229657|Software|-unknown-
+Microsoft Windows CE Operating Systems|229655|229659|Software|-unknown-
+Microsoft Windows NT Computer Operating Systems|229655|229656|Software|-unknown-
+Microsoft Windows Vista Computer Operating Systems|229655|277268011|Software|-unknown-
+Windows 7 Operating System|229655|2234513011|Software|-unknown-
+Windows XP|229655|694886|Software|-unknown-
+Microsoft Windows XP Professional Edition Computer Operating Systems|694886|706063011|Software|-unknown-
+Microsoft Windows XP Professional Tablet PC Edition Computer Operating Systems|694886|706064011|Software|-unknown-
+OS2 Computer Operating Systems|229653|229662|Software|-unknown-
+Personal Finance|491286|229540|Software|-unknown-
+Personal Investment Tools Software|229540|283016|Software|-unknown-
+Personal Money Management Software|229540|283015|Software|-unknown-
+Photo, Video &amp; Design|491286|229614|Software|-unknown-
+3-D Graphics Software|229614|229615|-unknown-|-unknown-
+Animation Software|229614|229616|Software|-unknown-
+CAD Software|229614|229617|Software|-unknown-
+Graphics Software Training &amp; Tutorials|229614|15699351|Software|-unknown-
+Home Publishing|229614|229619|Software|-unknown-
+Home Publishing Calendar Software|229619|565090|Software|-unknown-
+Home Publishing Clip Art Software|229619|229618|Software|-unknown-
+Home Publishing Font Software|229619|565086|Software|-unknown-
+Illustration Software|229614|229620|Software|-unknown-
+Photo Editing|229614|229621|Software|-unknown-
+Professional Design Software|229614|229623|Software|-unknown-
+Programming|491286|229667|Software|-unknown-
+Database|229667|229668|Software|-unknown-
+DB2|229668|290547|Software|-unknown-
+DB2 Borland Delphi Database Software|290547|290548|Software|-unknown-
+Microsoft SMS Software|290547|290549|Software|-unknown-
+Seagate DB2 Database Software|290547|290550|Software|-unknown-
+Filemaker Database Management Software|229668|290546|Software|-unknown-
+SQL Database Management Software|229668|290545|Software|-unknown-
+Development Utilities|229667|229669|Software|-unknown-
+Code Testing Software Development Utilities|229669|290559|Software|-unknown-
+Software Installers|229669|290560|Software|-unknown-
+Software Programming Languages &amp; IDEs|229667|229670|Software|-unknown-
+Training & Tutorials|229667|229671|Software|-unknown-
+Tax Preparation|491286|229545|Software|-unknown-
+Utilities|491286|229672|Software|-unknown-
+Backup Software|229672|229673|Software|-unknown-
+Computer Disk Partitioning Software|229672|283898|Software|-unknown-
+Computer Screen Savers|229672|229675|Software|-unknown-
+Cross Platform Utility Software|229672|283904|Software|-unknown-
+File Compression &amp; Decompression Software|229672|283901|Software|-unknown-
+File Conversion Software|229672|283900|Software|-unknown-
+Handheld Utility Software|229672|600526|Software|-unknown-
+PC Maintenance Utility Software|229672|229674|Software|-unknown-
+Video &amp; Music|491286|497022|Software|-unknown-
+CD Burning & Labeling|497022|283903|Software|-unknown-
+CD Labeling Software|283903|567558|Software|-unknown-
+Digital Video|497022|290542|Software|-unknown-
+Video Compositing &amp; Special Effects Software|290542|567570|Software|-unknown-
+Video Editing Software|290542|567572|Software|-unknown-
+Instrument Instruction Software|497022|567574|Software|-unknown-
+MP3 Music Software|497022|567576|Software|-unknown-
+Music Notation Software|497022|567580|Software|-unknown-
+Software Sound Libraries|497022|567566|Software|-unknown-
+Web Development|491286|497024|Software|-unknown-
+e-Commerce Software|497024|229638|Software|-unknown-
+Internet Utilities|497024|229640|Software|-unknown-
+Electronic Publishing Software|229640|491992|Software|-unknown-
+Instant Messaging &amp; Video Conferencing Software|229640|496912|Software|-unknown-
+Internet Connection Sharing Software|229640|491998|Software|-unknown-
+Internet Phone Software|229640|492000|Software|-unknown-
+Video Streaming Software|229640|491994|Software|-unknown-
+Professional Web Development Software|497024|289972|Software|-unknown-
+Web Browsers|497024|229641|Software|-unknown-
+Web Effects|497024|289974|Software|-unknown-
+Web Animation Software|289974|492010|Software|-unknown-
+Web Objects Software|289974|492012|Software|-unknown-
+Web Page Editors|497024|289973|Software|-unknown-
+Web Page Editor Tutorials|289973|492020|Software|-unknown-
+Web Site Hosting|497024|289975|-unknown-|-unknown-
+Application Servers|289975|492004|Software|-unknown-
+Web Site Hosting Server Software|289975|492002|GourmetFood|-unknown-
+Web-Site Analysis|289975|492006|Software|-unknown-
+Specialty Nodes|229534|2334109011|Software|-unknown-
+Custom Stores|2334109011|2334140011|Software|-unknown-
+Brands|2334140011|409488|Software|-unknown-
+Blizzard Entertainment Software|409488|506912|Software|-unknown-
+Dragon &amp; ScanSoft by Nuance|409488|382722011|Software|-unknown-
+Encore Software|409488|667948011|Software|-unknown-
+H&amp;R Block|409488|516462|Software|-unknown-
+All H&amp;R Block Software Titles|516462|10789501|Software|-unknown-
+Kaspersky|409488|2921612011|Software|-unknown-
+Knowledge Adventure Software|409488|409494|Software|-unknown-
+Macromedia|409488|3781181|Software|-unknown-
+All Macromedia Software|3781181|3781191|Software|-unknown-
+Macromedia Graphics Software|3781181|3781201|Software|-unknown-
+Macromedia Macintosh Software|3781181|3781211|Software|-unknown-
+Web Development|3781181|3781221|Software|-unknown-
+McAfee|409488|3116911|Software|-unknown-
+McAfee Anti-Spam Software|3116911|3116941|Software|-unknown-
+McAfee Antivirus Software|3116911|3116921|Software|-unknown-
+McAfee Firewalls &amp; Internet Security Software|3116911|3116931|Software|-unknown-
+McAfee PC Performance Software|3116911|3116951|Software|-unknown-
+Rosetta Stone|409488|354789011|Software|-unknown-
+Rosetta Stone Software|409488|698885011|-unknown-|-unknown-
+Roxio's Burn Central Software|409488|655850|Software|-unknown-
+Sage|409488|16057741|Software|-unknown-
+Sierra Home Software|409488|409508|Software|-unknown-
+Sony Creative|409488|379068011|Software|-unknown-
+Topics Entertainment|409488|169422011|Software|-unknown-
+By Skill|169422011|169437011|Software|-unknown-
+Topics Entertainment Advanced Language Learning Software|169437011|169440011|Software|-unknown-
+Topics Entertainment Beginner Language Learning Software|169437011|169438011|Software|-unknown-
+Topics Entertainment Intermediate Language Learning Software|169437011|169439011|Software|-unknown-
+Windows Millennium|409488|497498|Software|-unknown-
+Windows Me Software|497498|490890|Software|-unknown-
+Computer Security Knowledge Center|2334140011|1264140011|-unknown-|-unknown-
+Computer Security Threat Center|2334140011|1264139011|-unknown-|-unknown-
+List Price Warning Eligible|2334140011|2235998011|Software|-unknown-
+Mac Software Store|2334140011|2445830011|Software|-unknown-
+Merchandising Features|2334140011|16284501|Software|-unknown-
+Discover Holiday - Software|16284501|2237875011|Software|-unknown-
+Microsoft Windows Vista Comparisons|2334140011|203101011|Software|-unknown-
+Certified for Windows Vista|203101011|354790011|-unknown-|-unknown-
+Microsoft Office|203101011|203104011|Software|-unknown-
+Microsoft Office 2007 at Home|203101011|203103011|-unknown-|-unknown-
+Microsoft Office 2007 at Work|203103011|203112011|-unknown-|-unknown-
+Microsoft Windows Vista Financial Management|203112011|203116011|-unknown-|-unknown-
+Microsoft Windows Vista Mobile Computing|203112011|203114011|-unknown-|-unknown-
+Microsoft Windows Vista Sales and Marketing|203112011|203115011|-unknown-|-unknown-
+Microsoft Windows Vista Security and Backup|203112011|203113011|-unknown-|-unknown-
+Microsoft Windows Vista E-mail, Network, and Internet Options|203103011|203111011|-unknown-|-unknown-
+Microsoft Windows Vista Education Tools|203103011|203109011|-unknown-|-unknown-
+Microsoft Windows Vista Games|203103011|203108011|-unknown-|-unknown-
+Microsoft Windows Vista Photos and Videos|203103011|203106011|-unknown-|-unknown-
+Microsoft Windows Vista Small Business Productivity|203103011|203110011|-unknown-|-unknown-
+Microsoft Windows Vista TV and Movies|203103011|203107011|-unknown-|-unknown-
+Microsoft Windows Anytime Upgrades|203101011|303119011|-unknown-|-unknown-
+Microsoft Windows Vista and Microsoft Office 2007|203101011|203102011|-unknown-|-unknown-
+Small Business|2334140011|15698581|Software|-unknown-
+Accounting|15698581|15698591|Software|-unknown-
+Applications|15698581|15698611|Software|-unknown-
+Communications|15698581|15698621|Software|-unknown-
+Graphics|15698581|15698681|Software|-unknown-
+Mapping & GPS|15698581|15698691|Software|-unknown-
+Networks|15698581|15698701|Software|-unknown-
+Operating Systems|15698581|15698781|Software|-unknown-
+Print Publishing|15698581|15698801|Software|-unknown-
+Software by Profession|15698581|15699041|Software|-unknown-
+Accountants|15699041|15699051|Software|-unknown-
+Consultants|15699041|15699061|Software|-unknown-
+Graphic Artists|15699041|15699081|-unknown-|-unknown-
+Insurance Agents &amp; Underwriters|15699041|15699091|Software|-unknown-
+Landlords|15699041|15699101|Software|-unknown-
+Landscapers|15699041|15699111|-unknown-|-unknown-
+Lawyers &amp; Paralegals|15699041|15699121|Software|-unknown-
+Medical &amp; Dental Professionals|15699041|15699131|Software|-unknown-
+Musicians|15699041|15699141|-unknown-|-unknown-
+Non-profit Professionals|15699041|15699151|Software|-unknown-
+Photographers|15699041|15699161|Software|-unknown-
+Programmers|15699041|15699181|-unknown-|-unknown-
+Realtors|15699041|15699191|Software|-unknown-
+Reseller|15699041|15699201|-unknown-|-unknown-
+Sales Professionals|15699041|15699211|Software|-unknown-
+Teachers|15699041|15699221|-unknown-|-unknown-
+Writers|15699041|15699231|-unknown-|-unknown-
+Software Training|15698581|15698891|Software|-unknown-
+Starting a Small Business|15698581|15698861|Software|-unknown-
+Web Publishing|15698581|15699011|Software|-unknown-
+Software Bargains|2334140011|724477011|Software|-unknown-
+Spanish Software|2334140011|671845011|Software|-unknown-
+Windows Vista Scenarios|2334140011|516460|Software|-unknown-
+Special Features Stores|2334109011|2334171011|Software|-unknown-
+Back to School|2334171011|604230|Software|-unknown-
+Disney Software|2334171011|779550|Software|-unknown-
+DIY System Builders|2334171011|575628011|Software|-unknown-
+Father&#39;s Day Software Gift Ideas|2334171011|2814080011|-unknown-|-unknown-
+Microsoft Office 2010|2334171011|2256135011|Software|-unknown-
+Microsoft Windows 7|2334171011|1286119011|Software|-unknown-
+PC Tune-Up: Software|2334171011|2497865011|Software|-unknown-
+The Best Holiday Deals in Software|2334171011|2476586011|Software|-unknown-
+TurboTax Center|2334171011|3003491|Software|-unknown-

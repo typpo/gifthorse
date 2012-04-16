@@ -1,0 +1,33 @@
+Products|10963061|10963071|Electronics|-unknown-
+Brands|10963071|12952031|Electronics|-unknown-
+Dynamat|12952031|12951881|Electronics|-unknown-
+Infinity|12952031|12952041|Electronics|-unknown-
+Magellan|12952031|12952061|-unknown-|-unknown-
+Car Audio|10963071|12912861|Electronics|-unknown-
+Installation Parts|12912861|12912921|Electronics|-unknown-
+Fit Kit|12912921|12913081|Electronics|-unknown-
+Interconnects|12912921|12913281|Electronics|-unknown-
+Miscellaneous Parts|12912921|12913241|Electronics|-unknown-
+Power Inverters|12912921|12913271|Electronics|-unknown-
+Sound Dampening|12912921|12913091|Electronics|-unknown-
+Satellite Radio|12912861|12913021|Electronics|-unknown-
+Sirius Tuners|12913021|12912941|Electronics|-unknown-
+XM Tuners|12913021|12912951|Electronics|-unknown-
+Speakers|12912861|12912881|Electronics|-unknown-
+Component Systems|12912881|12912981|Electronics|-unknown-
+Subwoofers|12912881|12913051|Electronics|-unknown-
+Car Security|10963071|12913321|Electronics|-unknown-
+Alarm Accessories|12913321|12913331|Electronics|-unknown-
+Radar Detectors|10963071|12912751|Electronics|-unknown-
+Speakers by Size|10963071|12913141|Electronics|-unknown-
+10 inch|12913141|12913571|Electronics|-unknown-
+4 inch|12913141|12913611|Electronics|-unknown-
+4x6 inch|12913141|12913151|Electronics|-unknown-
+5x7 inch|12913141|12913641|Electronics|-unknown-
+6.5 inch|12913141|12913161|Electronics|-unknown-
+6x9 inch|12913141|12913671|Electronics|-unknown-
+8 inch|12913141|12913171|Electronics|-unknown-
+Wireless Accessories|10963071|12913431|Electronics|-unknown-
+Cigarette Lighter Adaptors|12913431|12913461|Electronics|-unknown-
+Hands free kits|12913431|12913471|Electronics|-unknown-
+Travel Chargers|12913431|12913541|Electronics|-unknown-

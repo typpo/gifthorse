@@ -1,0 +1,44 @@
+Categories|2350149011|2350150011|Software|-unknown-
+City Info Apps|2350150011|2478840011|Software|-unknown-
+Communication Apps|2350150011|2478839011|Software|-unknown-
+Education Apps|2350150011|2478842011|Software|-unknown-
+Entertainment|2350150011|2478843011|Software|-unknown-
+Finance Apps|2350150011|2478832011|Software|-unknown-
+Games|2350150011|2478844011|Software|-unknown-
+Health &amp; Fitness Apps|2350150011|2478845011|Software|-unknown-
+Kids|2350150011|2478846011|Software|-unknown-
+Magazine Apps|2350150011|2478848011|Software|-unknown-
+Music|2350150011|2478849011|Software|-unknown-
+Music Artist Apps|2478849011|2478850011|Software|-unknown-
+Musical Instrument Apps|2478849011|2478851011|Software|-unknown-
+Radio Apps|2478849011|2478852011|Software|-unknown-
+Songbook Apps|2478849011|2478853011|Software|-unknown-
+Novelty Apps|2350150011|2478858011|Software|-unknown-
+Photography Apps|2350150011|2478860011|Software|-unknown-
+Productivity|2350150011|2478859011|Software|-unknown-
+Reference Apps|2350150011|2478862011|Software|-unknown-
+Ringtone Apps|2350150011|2478863011|Software|-unknown-
+Shopping Apps|2350150011|2478864011|Software|-unknown-
+Social Networking|2350150011|2478865011|Software|-unknown-
+Sports|2350150011|2478866011|Software|-unknown-
+Theme Apps|2350150011|2478867011|Software|-unknown-
+Travel Apps|2350150011|2478868011|Software|-unknown-
+Utilities|2350150011|2478869011|Software|-unknown-
+Alarm &amp; Clock Apps|2478869011|2478871011|Software|-unknown-
+Battery Saver Apps|2478869011|2478870011|Software|-unknown-
+Calculator Apps|2478869011|2478872011|Software|-unknown-
+Calendar Apps|2478869011|2478873011|Software|-unknown-
+Note Apps|2478869011|2478874011|Software|-unknown-
+Featured Categories|2350149011|2445991011|Software|-unknown-
+Books & Comics|2445991011|2478833011|Software|-unknown-
+Book &amp; Book Reader Apps|2478833011|2478834011|Software|-unknown-
+Children's Book Apps|2478833011|2478836011|Software|-unknown-
+Comic Strip Apps|2478833011|2478837011|Software|-unknown-
+Graphic Novel Apps|2478833011|2478835011|Software|-unknown-
+Manga Apps|2478833011|2478838011|Software|-unknown-
+Cooking Apps|2445991011|2478841011|Software|-unknown-
+Lifestyle Apps|2445991011|2478847011|Software|-unknown-
+Navigation Apps|2445991011|2478855011|Software|-unknown-
+News &amp; Weather Apps|2445991011|2478856011|Software|-unknown-
+Podcast Apps|2445991011|2577638011|Software|-unknown-
+Web Browser Apps|2445991011|2478875011|Software|-unknown-

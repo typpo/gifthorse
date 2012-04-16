@@ -1,0 +1,534 @@
+Baby Food|16310211|16323111|Apparel|-unknown-
+Baby Cereal|16323111|16323151|-unknown-|-unknown-
+Baby Crackers and Biscuits|16323111|16323161|-unknown-|-unknown-
+Baby Food - Dinners|16323111|16323181|PCHardware|-unknown-
+Baby Food Fruit|16323111|16323191|Industrial|-unknown-
+Baby Food Juice|16323111|16323201|-unknown-|-unknown-
+Baby Food Meat|16323111|16323211|-unknown-|-unknown-
+Baby Food Vegetables|16323111|16323221|Miscellaneous|-unknown-
+Baby Formula|16323111|16323121|DVD|-unknown-
+Beans & Grains|16310211|16321991|Apparel|-unknown-
+Beans: Kidney Beans, Black Beans, Pinto Beans|16321991|16322001|PCHardware|-unknown-
+Black Beans|16322001|16322011|HomeGarden|-unknown-
+Kidney Beans|16322001|16322031|Jewelry|-unknown-
+Pinto Beans|16322001|16322061|-unknown-|-unknown-
+Couscous|16321991|16322181|OutdoorLiving|-unknown-
+Grains|16321991|2255107011|-unknown-|-unknown-
+Lentils|16321991|16322081|-unknown-|-unknown-
+Rice|16321991|16322091|Apparel|-unknown-
+Arborio Rice|16322091|16322101|-unknown-|-unknown-
+Basmati Rice|16322091|16322111|-unknown-|-unknown-
+Spanish Rice|16322091|16322131|-unknown-|-unknown-
+White Rice|16322091|16322151|Apparel|-unknown-
+Beverages|16310211|16310231|GourmetFood|-unknown-
+Coffee, Tea and Cocoa|16310231|491297011|GourmetFood|-unknown-
+Coffee|491297011|16318031|GourmetFood|-unknown-
+Coffee Capsules|16318031|2251598011|GourmetFood|-unknown-
+Coffee K-Cups|16318031|2251596011|Grocery|-unknown-
+Coffee Pods|16318031|2251595011|GourmetFood|-unknown-
+Coffee T-Discs|16318031|2251597011|GourmetFood|-unknown-
+Ground Coffee|16318031|2251593011|GourmetFood|-unknown-
+Instant Coffee|16318031|2251594011|GourmetFood|-unknown-
+Unroasted Coffee Beans|16318031|979887011|GourmetFood|-unknown-
+Whole Coffee Beans|16318031|2251592011|GourmetFood|-unknown-
+Coffee Substitutes|491297011|119341011|GourmetFood|-unknown-
+Hot Cocoa|491297011|16318161|GourmetFood|-unknown-
+Tea|491297011|16318401|GourmetFood|-unknown-
+Black Teas|16318401|16318411|GourmetFood|-unknown-
+Chai Tea|16318401|348022011|GourmetFood|-unknown-
+Green Teas|16318401|16318471|GourmetFood|-unknown-
+Herbal Teas|16318401|16318511|GourmetFood|-unknown-
+Energy Drinks|16310231|16318341|GourmetFood|-unknown-
+Juices|16310231|16318171|GourmetFood|-unknown-
+Fruit Juice Beverages|16318171|2255111011|GourmetFood|-unknown-
+Lemonade|16318171|724689011|GourmetFood|-unknown-
+Vegetable Juice Beverages|16318171|2255110011|GourmetFood|-unknown-
+Powdered Drink Mixes|16310231|119346011|GourmetFood|-unknown-
+Instant Breakfast Drinks|119346011|347684011|GourmetFood|-unknown-
+Powdered Chocolate Drink Mixes|119346011|2255565011|GourmetFood|-unknown-
+Powdered Soft Drink Mixes|119346011|2255564011|GourmetFood|-unknown-
+Soda|16310231|16318231|GourmetFood|-unknown-
+Sports Drinks|16310231|16318371|GourmetFood|-unknown-
+Water|16310231|16318651|GourmetFood|-unknown-
+Breads & Bakery|16310211|16318751|-unknown-|-unknown-
+Bread Loaves|16318751|291436011|OutdoorLiving|-unknown-
+Breadcrumbs|16318751|16317401|-unknown-|-unknown-
+Breadsticks|16318751|347682011|Software|-unknown-
+Cakes|16318751|347681011|HealthPersonalCare|-unknown-
+Cheesecakes|347681011|725553011|-unknown-|-unknown-
+Coffeecakes|347681011|2255376011|-unknown-|-unknown-
+Fruitcakes|347681011|725554011|Apparel|-unknown-
+Layer Cakes|347681011|2255377011|-unknown-|-unknown-
+Panettones|347681011|725556011|HomeGarden|-unknown-
+Pound Cakes|347681011|725555011|Books|-unknown-
+Cookies|16318751|16322591|Jewelry|-unknown-
+Biscuits|16322591|724727011|Books|-unknown-
+Butter Cookies|16322591|16322611|-unknown-|-unknown-
+Chocolate Cookies|16322591|16322621|-unknown-|-unknown-
+Chocolate-Chip Cookies|16322591|16322631|-unknown-|-unknown-
+Fortune Cookies|16322591|2255484011|-unknown-|-unknown-
+Ginger Snaps|16322591|724728011|-unknown-|-unknown-
+Ladyfingers|16322591|348029011|OutdoorLiving|-unknown-
+Meringue Cookies|16322591|2255485011|-unknown-|-unknown-
+Nut Cookies|16322591|16322661|Tools|-unknown-
+Peanut-Butter Cookies|16322591|16322681|-unknown-|-unknown-
+Pizzelles|16322591|348028011|VHS|-unknown-
+Sandwich Cookies|16322591|173351011|-unknown-|-unknown-
+Shortbread Cookies|16322591|16322691|-unknown-|-unknown-
+Snickerdoodle Cookies|16322591|2255486011|Automotive|-unknown-
+Sugar Cookies|16322591|16322701|-unknown-|-unknown-
+Pastries|16318751|491293011|-unknown-|-unknown-
+Baklava|491293011|724692011|Music|-unknown-
+Brownies|491293011|2257291011|-unknown-|-unknown-
+Danishes|491293011|2257292011|Shoes|-unknown-
+Doughnuts|491293011|2257293011|-unknown-|-unknown-
+Pies|491293011|2257294011|Software|-unknown-
+Tarts|491293011|724693011|OutdoorLiving|-unknown-
+Toaster Pastries|491293011|295346011|SportingGoods|-unknown-
+Pizza Crusts|16318751|291442011|-unknown-|-unknown-
+Stuffing|16318751|16318741|-unknown-|-unknown-
+Breakfast Foods|16310211|16310251|Apparel|-unknown-
+Breakfast and Cereal Bars|16310251|387559011|-unknown-|-unknown-
+Cereal|16310251|16318891|Apparel|-unknown-
+Granola and Granola Bars|16318891|16318901|Apparel|-unknown-
+Grits|16318891|16318911|-unknown-|-unknown-
+Kids' Cereal|16318891|16318931|-unknown-|-unknown-
+Candy|16310211|16322431|Apparel|-unknown-
+Fudge|16322431|2255567011|-unknown-|-unknown-
+Gum|16322431|16322471|-unknown-|-unknown-
+Gummy Candies|16322431|16322481|MP3Downloads|-unknown-
+Hard Candies|16322431|16322491|Apparel|-unknown-
+Jelly Beans|16322431|16322511|Tools|-unknown-
+Licorice|16322431|16322521|Photo|-unknown-
+Marshmallows|16322431|724726011|Apparel|-unknown-
+Suckers and Lollipops|16322431|16322551|-unknown-|-unknown-
+Taffy|16322431|16322571|Apparel|-unknown-
+Toffee|16322431|16322581|-unknown-|-unknown-
+Chocolate|16310211|16322461|-unknown-|-unknown-
+Chocolate Assortments|16322461|2257224011|-unknown-|-unknown-
+Chocolate Bars|16322461|2257225011|-unknown-|-unknown-
+Chocolate Covered Fruit|16322461|2257226011|-unknown-|-unknown-
+Chocolate Covered Nuts|16322461|2257227011|-unknown-|-unknown-
+Condiments|16310211|16319771|-unknown-|-unknown-
+Capers|16319771|16319781|-unknown-|-unknown-
+Chutneys|16319771|2255615011|-unknown-|-unknown-
+Horseradish|16319771|16319841|-unknown-|-unknown-
+Mayonnaise|16319771|16319881|-unknown-|-unknown-
+Mustard|16319771|16319891|-unknown-|-unknown-
+Brown Mustard|16319891|16319901|-unknown-|-unknown-
+Dijon Mustard|16319891|16319911|-unknown-|-unknown-
+Honey Mustard|16319891|16319921|-unknown-|-unknown-
+Yellow Mustard|16319891|16319931|-unknown-|-unknown-
+Pickles|16319771|16320731|Kitchen|-unknown-
+Dill Pickles|16320731|2257582011|-unknown-|-unknown-
+Sweet Pickles|16320731|2257583011|-unknown-|-unknown-
+Relishes|16319771|16320851|-unknown-|-unknown-
+Fruit Relishes|16320851|16320861|-unknown-|-unknown-
+Pickle Relishes|16320851|2255616011|-unknown-|-unknown-
+Vegetable Relishes|16320851|16320881|-unknown-|-unknown-
+Salad Toppings|16319771|16321001|-unknown-|-unknown-
+Bacon Bits|16321001|16321011|-unknown-|-unknown-
+Croutons|16321001|16321021|-unknown-|-unknown-
+Wasabi|16319771|16319971|-unknown-|-unknown-
+Cooking & Baking Supplies|16310211|16310221|Automotive|-unknown-
+Baking Mixes|16310221|16317231|-unknown-|-unknown-
+Biscuit Mixes|16317231|16317241|Apparel|-unknown-
+Bread Mixes|16317231|16317251|-unknown-|-unknown-
+Brownie Mixes|16317231|16317261|Kitchen|-unknown-
+Cake Mixes|16317231|16317271|Baby|-unknown-
+Muffin Mixes|16317231|16317301|-unknown-|-unknown-
+Pancake and Waffle Mixes|16317231|16317311|-unknown-|-unknown-
+Pudding Mixes|16317231|16317321|KindleStore|-unknown-
+Baking Powder|16310221|16317381|-unknown-|-unknown-
+Chocolate|16310221|16317461|-unknown-|-unknown-
+Baking Cocoa|16317461|16317471|-unknown-|-unknown-
+Chocolate Chips|16317461|16317481|-unknown-|-unknown-
+Chocolate Syrup|16317461|16317491|-unknown-|-unknown-
+Coatings and Batters|16310221|16317521|Miscellaneous|-unknown-
+Coconut Flakes|16310221|16317531|-unknown-|-unknown-
+Dessert Toppings|16310221|16317551|-unknown-|-unknown-
+Doughs & Crusts|16310221|16317591|-unknown-|-unknown-
+Pastry Shells|16317591|298660011|-unknown-|-unknown-
+Pie Crusts|16317591|16317611|-unknown-|-unknown-
+Extracts and Flavoring|16310221|16318021|Apparel|-unknown-
+Flours & Meals|16310221|16317621|GourmetFood|-unknown-
+Barley Flour|16317621|16317631|-unknown-|-unknown-
+Oat Bran|16317621|16317671|-unknown-|-unknown-
+Oat Flour|16317621|16317681|Industrial|-unknown-
+Polenta Meal|16317621|16317691|OutdoorLiving|-unknown-
+Rice Flour|16317621|16317711|-unknown-|-unknown-
+Wheat Flours and Meals|16317621|16317731|-unknown-|-unknown-
+Gourmet and Grocery Food|16310221|16310101|GourmetFood|-unknown-
+Icing|16310221|16317811|-unknown-|-unknown-
+Leaveners and Yeasts|16310221|16317831|VHS|-unknown-
+Marzipan|16310221|724685011|-unknown-|-unknown-
+Nuts & Seeds|16310221|16322881|-unknown-|-unknown-
+Almonds|16322881|16322891|-unknown-|-unknown-
+Cashews|16322881|16322901|Kitchen|-unknown-
+Macadamia Nuts|16322881|16322921|-unknown-|-unknown-
+Mixed Nuts|16322881|16322931|PCHardware|-unknown-
+Peanuts|16322881|16322941|-unknown-|-unknown-
+Pecans|16322881|370408011|Apparel|-unknown-
+Pistachios|16322881|16322951|-unknown-|-unknown-
+Pumpkin Seeds|16322881|16322961|-unknown-|-unknown-
+Sunflower Seeds|16322881|16322971|Apparel|-unknown-
+Walnuts|16322881|16322981|-unknown-|-unknown-
+Pastry Decorations|16310221|16317821|Music|-unknown-
+Shortening, Oils and Sprays|16310221|16317851|-unknown-|-unknown-
+Sugars & Sweeteners|16310221|16317911|-unknown-|-unknown-
+Raw Sugar|16317911|16317951|Apparel|-unknown-
+White Sugar|16317911|16317971|Magazines|-unknown-
+Syrups|16310221|16317981|-unknown-|-unknown-
+Maple Syrup|16317981|16318001|-unknown-|-unknown-
+Molasses|16317981|16318011|-unknown-|-unknown-
+Dairy & Eggs|16310211|371460011|-unknown-|-unknown-
+Cheese|371460011|371461011|Automotive|-unknown-
+Blue Cheese|371461011|2256176011|-unknown-|-unknown-
+Brie|371461011|2256177011|-unknown-|-unknown-
+Chèvres|371461011|2256179011|-unknown-|-unknown-
+Cheddar|371461011|2256178011|MusicalInstruments|-unknown-
+Cheese Samplers|371461011|2256190011|-unknown-|-unknown-
+Cottage Cheese|371461011|2256175011|Electronics|-unknown-
+Cream Cheese|371461011|2256174011|-unknown-|-unknown-
+Feta|371461011|2256180011|-unknown-|-unknown-
+Gouda|371461011|2256181011|-unknown-|-unknown-
+Havarti|371461011|2256182011|-unknown-|-unknown-
+Monterey Jack|371461011|2256183011|Electronics|-unknown-
+Mozzarella|371461011|2256184011|-unknown-|-unknown-
+Munster|371461011|2256185011|-unknown-|-unknown-
+Parmigiano-Reggiano|371461011|2256186011|-unknown-|-unknown-
+Pecorino|371461011|2256188011|-unknown-|-unknown-
+Provolone|371461011|2256189011|Apparel|-unknown-
+Ricotta|371461011|2256187011|-unknown-|-unknown-
+Swiss|371461011|2256191011|-unknown-|-unknown-
+Ice Cream & Frozen Desserts|371460011|707437011|-unknown-|-unknown-
+Frozen Yogurt|707437011|707444011|-unknown-|-unknown-
+Ice Cream|707437011|707441011|-unknown-|-unknown-
+Sherbets|707437011|707448011|-unknown-|-unknown-
+Milk|371460011|371465011|-unknown-|-unknown-
+Milk Substitutes|371460011|119343011|-unknown-|-unknown-
+Coffee Creamers|119343011|16318041|-unknown-|-unknown-
+Rice Milk|119343011|119345011|-unknown-|-unknown-
+Soy Milk|119343011|119344011|-unknown-|-unknown-
+Fresh Flowers &amp; Indoor Plants|16310211|3745171|-unknown-|-unknown-
+Centerpieces|3745171|3745381|Automotive|-unknown-
+Fresh Cut Flowers|3745171|12902901|-unknown-|-unknown-
+Fresh Cut Carnation Flowers|12902901|3745191|Apparel|-unknown-
+Fresh Cut Daisy Flowers|12902901|3745221|-unknown-|-unknown-
+Fresh Cut Mixed Bouquets|12902901|3745291|-unknown-|-unknown-
+Fresh Cut Orchid Flowers|12902901|3745251|Apparel|-unknown-
+Fresh Cut Sunflower Flowers|12902901|3745271|-unknown-|-unknown-
+Fresh Cut Tulip Flowers|12902901|3745281|Apparel|-unknown-
+Indoor Plants|3745171|3744981|Apparel|-unknown-
+Indoor Bonsai|3744981|10825941|-unknown-|-unknown-
+Indoor Plants|3744981|13424431|-unknown-|-unknown-
+Orchids|3744981|3745091|Apparel|-unknown-
+Indoor Cymbidium|3745091|13350101|Photo|-unknown-
+Indoor Dendrobium|3745091|13350081|-unknown-|-unknown-
+Indoor Oncidium|3745091|13350091|-unknown-|-unknown-
+Indoor Phalaenopsis|3745091|13350071|-unknown-|-unknown-
+Fruits|16310211|16318981|-unknown-|-unknown-
+Apples|16318981|724694011|-unknown-|-unknown-
+Apricots|16318981|16319001|-unknown-|-unknown-
+Blueberries|16318981|2255593011|-unknown-|-unknown-
+Cherries|16318981|16319021|-unknown-|-unknown-
+Dates|16318981|724696011|-unknown-|-unknown-
+Figs|16318981|724697011|-unknown-|-unknown-
+Fruit Sauces|16318981|724698011|-unknown-|-unknown-
+Grapefruit|16318981|2255594011|-unknown-|-unknown-
+Grapes|16318981|2255595011|-unknown-|-unknown-
+Lemons|16318981|2255596011|-unknown-|-unknown-
+Nectarines|16318981|2255598011|Shoes|-unknown-
+Oranges|16318981|16319051|-unknown-|-unknown-
+Papayas|16318981|2255599011|-unknown-|-unknown-
+Peaches|16318981|16319061|-unknown-|-unknown-
+Pears|16318981|16319071|-unknown-|-unknown-
+Pineapple|16318981|16319081|-unknown-|-unknown-
+Prunes|16318981|16319091|-unknown-|-unknown-
+Raisins|16318981|724701011|Electronics|-unknown-
+Raspberries|16318981|2255600011|-unknown-|-unknown-
+Strawberries|16318981|2255601011|-unknown-|-unknown-
+Tangerines|16318981|2255611011|Apparel|-unknown-
+Gourmet Gifts|16310211|2255571011|Grocery|-unknown-
+Gourmet Candy Gifts|2255571011|2255572011|Toys|-unknown-
+Gourmet Chocolate Gifts|2255571011|2255574011|-unknown-|-unknown-
+Gourmet Coffee Gifts|2255571011|2255575011|Wireless|-unknown-
+Gourmet Dessert Gifts|2255571011|2255576011|HealthPersonalCare|-unknown-
+Gourmet Fruit Gifts|2255571011|2255577011|-unknown-|-unknown-
+Gourmet Jams &amp; Preserves Gifts|2255571011|2255578011|Miscellaneous|-unknown-
+Gourmet Meat Gifts|2255571011|2255579011|-unknown-|-unknown-
+Gourmet Seafood Gifts|2255571011|2255581011|-unknown-|-unknown-
+Gourmet Tea Gifts|2255571011|2255583011|-unknown-|-unknown-
+Herbs, Spices & Seasonings|16310211|16310281|HomeGarden|-unknown-
+Pepper & Peppercorns|16310281|16321781|KindleStore|-unknown-
+Salt & Salt Substitutes|16310281|16321861|Automotive|-unknown-
+Coarse Salt|16321861|2256150011|-unknown-|-unknown-
+Flavored Salt|16321861|16321881|KindleStore|-unknown-
+Kosher Salt|16321861|2256151011|-unknown-|-unknown-
+Rock Salt|16321861|2256152011|Apparel|-unknown-
+Salt Substitutes|16321861|16321871|-unknown-|-unknown-
+Sea Salt|16321861|16321901|-unknown-|-unknown-
+Single Herbs & Spices|16310281|724803011|-unknown-|-unknown-
+Ajowan|724803011|724706011|-unknown-|-unknown-
+Asafetida|724803011|724709011|-unknown-|-unknown-
+Caraway Seed|724803011|16321501|-unknown-|-unknown-
+Cardamom Seed|724803011|16321511|-unknown-|-unknown-
+Celery Seed|724803011|16321521|-unknown-|-unknown-
+Chinese Star Anise|724803011|724711011|Apparel|-unknown-
+Chives|724803011|724712011|-unknown-|-unknown-
+Cinnamon|724803011|16321551|-unknown-|-unknown-
+Cloves|724803011|16321561|Apparel|-unknown-
+Dill|724803011|16321611|-unknown-|-unknown-
+Flax Seed|724803011|16321631|-unknown-|-unknown-
+Garlic Powder and Seasonings|724803011|16321641|Grocery|-unknown-
+Ginger|724803011|16321651|-unknown-|-unknown-
+Mace|724803011|724715011|-unknown-|-unknown-
+Nutmeg|724803011|16321731|Apparel|-unknown-
+Onion Powder and Flakes|724803011|16321741|-unknown-|-unknown-
+Oregano|724803011|16321751|-unknown-|-unknown-
+Parsley|724803011|16321771|-unknown-|-unknown-
+Saffron|724803011|16321841|Beauty|-unknown-
+Savory|724803011|16321921|-unknown-|-unknown-
+Sesame Seed|724803011|16321931|-unknown-|-unknown-
+Sumac|724803011|724724011|Apparel|-unknown-
+Tarragon|724803011|16321951|-unknown-|-unknown-
+Spices and Seasonings: Meat Seasoning, Gourmet Rubs, Curry Powder, Chili Powder, Cajun Seasoning|16310281|724716011|Apparel|-unknown-
+Barbecue Seasoning|724716011|724717011|-unknown-|-unknown-
+Cajun Seasoning|724716011|16321491|-unknown-|-unknown-
+Chili Mix|724716011|16321531|-unknown-|-unknown-
+Curry Powder|724716011|16321601|-unknown-|-unknown-
+Gourmet Rubs|724716011|16321661|-unknown-|-unknown-
+Greek Seasoning|724716011|724720011|-unknown-|-unknown-
+Indian Seasoning|724716011|724721011|MP3Downloads|-unknown-
+Italian Seasoning|724716011|16321681|-unknown-|-unknown-
+Meat Seasoning|724716011|16321711|DVD|-unknown-
+Home Brewing & Wine Making|16310211|979861011|-unknown-|-unknown-
+Beer Brewing Ingredients|979861011|979862011|-unknown-|-unknown-
+Additives & Adjuncts|979862011|979863011|-unknown-|-unknown-
+Grains|979862011|979864011|-unknown-|-unknown-
+Home Brewing Soda Extracts|979862011|979867011|-unknown-|-unknown-
+Home Brewing Spices and Flavorings|979862011|979868011|-unknown-|-unknown-
+Hops|979862011|979865011|-unknown-|-unknown-
+Malt Extracts|979862011|979866011|-unknown-|-unknown-
+Yeasts & Yeast Starters|979862011|979869011|-unknown-|-unknown-
+Beer Brewing Recipe Kits|979861011|979870011|-unknown-|-unknown-
+Ale Home Brewing Kits|979870011|979871011|VideoGames|-unknown-
+Specialty Beer Home Brewing Kits|979870011|979876011|-unknown-|-unknown-
+Wheat Beer Home Brewing Kits|979870011|979877011|-unknown-|-unknown-
+Wine Making Ingredients|979861011|979878011|-unknown-|-unknown-
+Additives|979878011|979879011|-unknown-|-unknown-
+Wine Ingredient Kits|979878011|979881011|-unknown-|-unknown-
+Wine Spices and Flavorings|979878011|979882011|-unknown-|-unknown-
+Wine Yeasts and Cultures|979878011|979883011|-unknown-|-unknown-
+Jams, Jellies & Spreads|16310211|16320071|-unknown-|-unknown-
+Fruit Butters|16320071|2256223011|-unknown-|-unknown-
+Honey|16320071|16317891|Jewelry|-unknown-
+Jams and Jellies|16320071|16320091|-unknown-|-unknown-
+Nut Butters|16320071|345830011|Apparel|-unknown-
+Almond Butter|345830011|345831011|Apparel|-unknown-
+Cashew Butter|345830011|345832011|-unknown-|-unknown-
+Peanut Butter|345830011|16320591|Magazines|-unknown-
+Meat &amp; Poultry|16310211|371469011|-unknown-|-unknown-
+Beef|371469011|371470011|-unknown-|-unknown-
+Beef Ribs|371470011|2256160011|-unknown-|-unknown-
+Beef Roasts|371470011|2256161011|Apparel|-unknown-
+Veal|371470011|2256162011|-unknown-|-unknown-
+Exotic Meats|371469011|371474011|Apparel|-unknown-
+Foie Gras|371469011|2256170011|-unknown-|-unknown-
+Jerky|371469011|371475011|Grocery|-unknown-
+Lamb|371469011|371473011|-unknown-|-unknown-
+Meat Cold Cuts|371469011|2256168011|Grocery|-unknown-
+Pork: Ham, Bacon|371469011|371471011|Automotive|-unknown-
+Bacon|371471011|2256164011|Baby|-unknown-
+Ham|371471011|2256165011|-unknown-|-unknown-
+Poultry|371469011|371472011|-unknown-|-unknown-
+Chicken|371472011|2256156011|Apparel|-unknown-
+Duck|371472011|2256157011|-unknown-|-unknown-
+Turkey|371472011|2256158011|-unknown-|-unknown-
+Sausages|371469011|371476011|Apparel|-unknown-
+Chorizo Sausage|371476011|2256153011|-unknown-|-unknown-
+Pepperoni|371476011|2256154011|Grocery|-unknown-
+Salami|371476011|2256155011|Apparel|-unknown-
+Noodles|16310211|16322191|-unknown-|-unknown-
+Ramen Noodles|16322191|2620099011|-unknown-|-unknown-
+Soba Noodles|16322191|2620100011|-unknown-|-unknown-
+Udon Noodles|16322191|2620101011|-unknown-|-unknown-
+Oils, Vinegars & Salad Dressings|16310211|16320321|-unknown-|-unknown-
+Oils|16320321|16320331|-unknown-|-unknown-
+Canola Oils|16320331|16320341|-unknown-|-unknown-
+Olive Oils|16320331|16320381|-unknown-|-unknown-
+Peanut Oils|16320331|16320461|-unknown-|-unknown-
+Truffle Oils|16320331|347103011|Music|-unknown-
+Salad Dressings|16320321|16320901|-unknown-|-unknown-
+Caesar Dressings|16320901|16320921|-unknown-|-unknown-
+French|16320901|16320931|-unknown-|-unknown-
+Italian|16320901|16320941|-unknown-|-unknown-
+Ranch|16320901|16320961|-unknown-|-unknown-
+Vinaigrette|16320901|16320991|PCHardware|-unknown-
+Vinegars|16320321|16320491|-unknown-|-unknown-
+Fruit Vinegars|16320491|2255620011|-unknown-|-unknown-
+Red Wine Vinegars|16320491|16320541|-unknown-|-unknown-
+White Wine Vinegars|16320491|2255621011|-unknown-|-unknown-
+Pasta|16310211|16322171|Apparel|-unknown-
+Bow-Tie Pasta|16322171|16322231|DVD|-unknown-
+Capellini|16322171|16322251|Electronics|-unknown-
+Egg Noodles|16322171|16322261|Beauty|-unknown-
+Fettuccine|16322171|16322271|-unknown-|-unknown-
+Fusilli|16322171|16322281|-unknown-|-unknown-
+Gnocchi|16322171|16322291|HealthPersonalCare|-unknown-
+Lasagna|16322171|16322301|-unknown-|-unknown-
+Linguine|16322171|16322311|Magazines|-unknown-
+Orzo|16322171|16322331|-unknown-|-unknown-
+Penne|16322171|16322341|-unknown-|-unknown-
+Rigatoni|16322171|16322361|-unknown-|-unknown-
+Rotini|16322171|16322371|-unknown-|-unknown-
+Spaghetti|16322171|16322381|Beauty|-unknown-
+Tagliatelle|16322171|16322391|Baby|-unknown-
+Tortellini|16322171|16322401|-unknown-|-unknown-
+Ziti|16322171|16322421|Photo|-unknown-
+Prepared Food|16310211|16310241|Tools|-unknown-
+Indian Meals|16310241|616656011|Music|-unknown-
+Meat Dishes|16310241|220060011|-unknown-|-unknown-
+Barbecue Dishes|220060011|616603011|-unknown-|-unknown-
+Chicken Cacciatore|220060011|616604011|Books|-unknown-
+Chicken Cordon Bleu|220060011|616605011|-unknown-|-unknown-
+Chicken Strips and Nuggets|220060011|616606011|Apparel|-unknown-
+Chicken Wings|220060011|616673011|-unknown-|-unknown-
+Corn Dogs|220060011|616607011|-unknown-|-unknown-
+Corned Beef Hash|220060011|616608011|-unknown-|-unknown-
+Fried Chicken|220060011|616609011|Photo|-unknown-
+Hamburgers|220060011|616610011|SportingGoods|-unknown-
+Meatloaf|220060011|616611011|-unknown-|-unknown-
+Roasted Chicken|220060011|616612011|-unknown-|-unknown-
+Sloppy Joes|220060011|616613011|-unknown-|-unknown-
+Meat Substitutes|16310241|173356011|Tools|-unknown-
+Mexican Dishes|16310241|616615011|-unknown-|-unknown-
+Burritos|616615011|616616011|-unknown-|-unknown-
+Enchiladas|616615011|616617011|-unknown-|-unknown-
+Fajitas|616615011|616618011|HealthPersonalCare|-unknown-
+Taco Shells and Kits|616615011|293505011|-unknown-|-unknown-
+Tacos|616615011|616621011|-unknown-|-unknown-
+Tamales|616615011|616622011|Apparel|-unknown-
+Pasta & Noodle Dishes|16310241|16318711|Apparel|-unknown-
+Chow Mein|16318711|616623011|-unknown-|-unknown-
+Lasagna|16318711|616625011|Apparel|-unknown-
+Macaroni and Cheese|16318711|163866011|-unknown-|-unknown-
+Noodle Bowls|16318711|616626011|-unknown-|-unknown-
+Noodle Casseroles|16318711|616627011|-unknown-|-unknown-
+Pad Thai|16318711|616628011|-unknown-|-unknown-
+Pasta Alfredo|16318711|616629011|-unknown-|-unknown-
+Pasta Marinara|16318711|616630011|-unknown-|-unknown-
+Pasta Salad|16318711|616631011|-unknown-|-unknown-
+Ravioli|16318711|616632011|Magazines|-unknown-
+Spaghetti Dishes|16318711|616633011|-unknown-|-unknown-
+Stroganoff|16318711|616634011|Apparel|-unknown-
+Tetrazzini|16318711|616635011|-unknown-|-unknown-
+Toertellini Dishes|16318711|616636011|-unknown-|-unknown-
+Pizza|16310241|3244902011|-unknown-|-unknown-
+Rice Dishes|16310241|16318731|-unknown-|-unknown-
+Curried Rice|16318731|616692011|-unknown-|-unknown-
+Dirty Rice|16318731|616637011|-unknown-|-unknown-
+Jambalaya|16318731|616638011|-unknown-|-unknown-
+Pilaf|16318731|616640011|Baby|-unknown-
+Rice Bowls|16318731|616641011|-unknown-|-unknown-
+Risotto|16318731|616642011|-unknown-|-unknown-
+Seafood Dishes|16310241|616658011|MusicalInstruments|-unknown-
+Crab Cakes|616658011|616659011|OutdoorLiving|-unknown-
+Fish Cakes|616658011|616661011|-unknown-|-unknown-
+Fish Sticks|616658011|616660011|-unknown-|-unknown-
+Soups, Stews & Stocks|16310241|16319621|-unknown-|-unknown-
+Beef Soups|16319621|16319631|-unknown-|-unknown-
+Broths|16319621|724737011|Watches|-unknown-
+Chili|16319621|16319701|-unknown-|-unknown-
+Chowders|16319621|16319711|DVD|-unknown-
+Split Pea Soups|16319621|16319731|-unknown-|-unknown-
+Stews|16319621|16319741|Apparel|-unknown-
+Vegetable Dishes|16310241|220059011|VideoGames|-unknown-
+Baked Beans|220059011|616643011|Beauty|-unknown-
+Mashed Potatoes and Potato Dishes|220059011|16318721|-unknown-|-unknown-
+Onion Rings|220059011|616645011|-unknown-|-unknown-
+Tabouli|220059011|616646011|Shoes|-unknown-
+Sauces & Dips|16310211|16310271|-unknown-|-unknown-
+Dips|16310271|16319981|Beauty|-unknown-
+Guacamole|16319981|2255612011|-unknown-|-unknown-
+Hummus|16319981|16320031|-unknown-|-unknown-
+Olive Spreads &amp; Tapenades|16319981|2255613011|-unknown-|-unknown-
+Onion Dips|16319981|16320041|-unknown-|-unknown-
+Processed Cheese Spreads|16319981|345833011|-unknown-|-unknown-
+Ranch Dips|16319981|16320051|-unknown-|-unknown-
+Vegetable Dips|16319981|2255614011|-unknown-|-unknown-
+Salsas|16310271|16321031|-unknown-|-unknown-
+Sauces|16310271|16321071|-unknown-|-unknown-
+Adobo Sauce|16321071|16321081|GourmetFood|-unknown-
+Asian Barbecue Sauce|16321071|16321091|Industrial|-unknown-
+Barbecue Sauce|16321071|16321101|Apparel|-unknown-
+Chile Paste|16321071|16319801|-unknown-|-unknown-
+Cocktail Sauce|16321071|16321121|OutdoorLiving|-unknown-
+Coconut Sauce|16321071|16321131|-unknown-|-unknown-
+Curry Sauces|16321071|16321141|-unknown-|-unknown-
+Hot Sauces|16321071|16321181|Books|-unknown-
+Pasta Sauce|16321071|16321271|-unknown-|-unknown-
+Peanut Sauce|16321071|16321351|Apparel|-unknown-
+Pesto Sauce|16321071|16321361|-unknown-|-unknown-
+Soy Sauce|16321071|16321391|Apparel|-unknown-
+Tartar Sauce|16321071|16321441|-unknown-|-unknown-
+Seafood|16310211|371477011|-unknown-|-unknown-
+Caviars and Roes|371477011|371480011|-unknown-|-unknown-
+Crab|371477011|16319211|-unknown-|-unknown-
+Fish|371477011|371479011|SportingGoods|-unknown-
+Sardines|371479011|16319251|-unknown-|-unknown-
+Tuna|371479011|16319271|-unknown-|-unknown-
+Lobster|371477011|491294011|MP3Downloads|-unknown-
+Shrimp and Prawns|371477011|16319261|MP3Downloads|-unknown-
+Snack Food|16310211|16322721|Toys|-unknown-
+Chips|16322721|16322741|-unknown-|-unknown-
+Potato Chips|16322741|16322761|-unknown-|-unknown-
+Crackers|16322721|16322781|GourmetFood|-unknown-
+Bagel Chips|16322781|16322791|-unknown-|-unknown-
+Cracker Assortments|16322781|16322801|-unknown-|-unknown-
+Flatbread Crackers|16322781|173352011|-unknown-|-unknown-
+Graham Crackers|16322781|16322821|-unknown-|-unknown-
+Matzo|16322781|16322831|-unknown-|-unknown-
+Saltines|16322781|16322841|-unknown-|-unknown-
+Water Crackers|16322781|16322851|-unknown-|-unknown-
+Wheat Crackers|16322781|16322861|-unknown-|-unknown-
+Dried Fruit|16322721|388463011|-unknown-|-unknown-
+Popcorn|16322721|16322991|HomeGarden|-unknown-
+Microwave Popcorn|16322991|16323051|Magazines|-unknown-
+Popped Popcorn|16322991|16323001|-unknown-|-unknown-
+Unpopped Popcorn|16322991|16323041|Magazines|-unknown-
+Pork Rinds|16322721|16323071|Apparel|-unknown-
+Pretzels|16322721|16323081|-unknown-|-unknown-
+Pudding|16322721|257971011|OfficeProducts|-unknown-
+Puffed Snacks|16322721|173354011|-unknown-|-unknown-
+Rice Cakes|16322721|16323091|Watches|-unknown-
+Trail Mix|16322721|16323101|VideoGames|-unknown-
+Vegetables|16310211|16319281|-unknown-|-unknown-
+Artichokes|16319281|16319291|OutdoorLiving|-unknown-
+Asparagus|16319281|16319301|-unknown-|-unknown-
+Beets|16319281|2255592011|-unknown-|-unknown-
+Corn|16319281|16319431|KindleStore|-unknown-
+Eggplants|16319281|724702011|-unknown-|-unknown-
+Garlic|16319281|724703011|-unknown-|-unknown-
+Green Beans|16319281|16319441|VideoGames|-unknown-
+Mushrooms & Truffles|16319281|16319461|-unknown-|-unknown-
+Chanterelle Mushrooms|16319461|2303652011|-unknown-|-unknown-
+Morel Mushrooms|16319461|2303651011|-unknown-|-unknown-
+Mushrooms|16319461|347099011|-unknown-|-unknown-
+Portabello Mushrooms|16319461|2303649011|-unknown-|-unknown-
+Shiitake Mushrooms|16319461|2303653011|-unknown-|-unknown-
+Straw Mushrooms|16319461|2303650011|Beauty|-unknown-
+Truffles|16319461|347100011|-unknown-|-unknown-
+Olives|16319281|16319471|Toys|-unknown-
+Black Olives|16319471|16319481|-unknown-|-unknown-
+Green Olives|16319471|16319511|Electronics|-unknown-
+Onions|16319281|16319521|-unknown-|-unknown-
+Peppers|16319281|16319571|-unknown-|-unknown-
+Potatoes|16319281|724704011|OutdoorLiving|-unknown-
+Red Peppers|16319281|16320721|-unknown-|-unknown-
+Sea Vegetables|16319281|724705011|MusicalInstruments|-unknown-
+Tomatoes|16319281|16319611|Magazines|-unknown-
+Wine, Beer & Spirits|16310211|2983371011|-unknown-|-unknown-
+Beer|2983371011|2983385011|Apparel|-unknown-
+Spirits|2983371011|2983387011|-unknown-|-unknown-
+Wine|2983371011|2983386011|Jewelry|-unknown-

@@ -1,0 +1,369 @@
+Categories|2619533011|2619534011|PetSupplies|-unknown-
+Birds|2619534011|2975221011|PetSupplies|-unknown-
+Bird Carriers|2975221011|2975233011|Kitchen|-unknown-
+Bird Food|2975221011|2975238011|PetSupplies|-unknown-
+Bird Health Supplies|2975221011|2975239011|Grocery|-unknown-
+Bird Toys|2975221011|2975240011|PetSupplies|-unknown-
+Bird Treats|2975221011|3024125011|PetSupplies|-unknown-
+Cages & Accessories|2975221011|2975222011|PetSupplies|-unknown-
+Bedding & Litter|2975222011|2975228011|PetSupplies|-unknown-
+Bird Baths|2975222011|2975223011|PetSupplies|-unknown-
+Bird Nests|2975222011|2975229011|PetSupplies|-unknown-
+Bird Perches|2975222011|2975230011|PetSupplies|-unknown-
+Bird Swings|2975222011|2975232011|Grocery|-unknown-
+Birdcage Covers|2975222011|2975224011|PetSupplies|-unknown-
+Birdcage Seed Guards &amp; Catchers|2975222011|2975231011|PetSupplies|-unknown-
+Birdcage Stands|2975222011|2975225011|Books|-unknown-
+Birdcages|2975222011|2975226011|PetSupplies|-unknown-
+Feeding & Watering Supplies|2975221011|2975234011|Miscellaneous|-unknown-
+Bird Feeders|2975234011|2975235011|PetSupplies|-unknown-
+Bird Water Bottles|2975234011|2975237011|Kitchen|-unknown-
+Cats|2619534011|2975241011|PetSupplies|-unknown-
+Beds & Furniture|2975241011|2975243011|PetSupplies|-unknown-
+Beds & Sofas|2975243011|2975244011|PetSupplies|-unknown-
+Cat Bed Mats|2975243011|3024127011|PetSupplies|-unknown-
+Cat Scratching Pads|2975243011|3024130011|-unknown-|-unknown-
+Cat Scratching Posts|2975243011|2975247011|Electronics|-unknown-
+Cat Window Perches|2975243011|2975249011|PetSupplies|-unknown-
+Pet Bed Blankets|2975243011|2975245011|PetSupplies|-unknown-
+Carriers & Strollers|2975241011|2975250011|PetSupplies|-unknown-
+Cat Carriers: Soft-Sided Carriers, Hard-Sided Carriers|2975250011|3024131011|PetSupplies|-unknown-
+Cat Soft-Sided Carriers|3024131011|3024133011|HomeGarden|-unknown-
+Hard-Sided Carriers|3024131011|3024132011|PetSupplies|-unknown-
+Cat Strollers|2975250011|3024134011|Beauty|-unknown-
+Cat Apparel|2975241011|2975242011|PetSupplies|-unknown-
+Cat Cages|2975241011|2975257011|-unknown-|-unknown-
+Cat Flaps, Steps, Nets &amp; Pens: Stairs &amp; Steps, Cat Flaps, Outdoor Pens, Balcony Nets|2975241011|2975251011|PetSupplies|-unknown-
+Cat Flaps|2975251011|3024137011|GourmetFood|-unknown-
+Outdoor Pet Pens|2975251011|3024135011|PetSupplies|-unknown-
+Cat Food: Wet, Dry|2975241011|2975265011|PetSupplies|-unknown-
+Dry Cat Food|2975265011|2975266011|Automotive|-unknown-
+Cat Memorials|2975241011|2975302011|-unknown-|-unknown-
+Collars, Harnesses & Leashes|2975241011|2975252011|PetSupplies|-unknown-
+Cat Collar Charms|2975252011|3024141011|Industrial|-unknown-
+Cat Collars|2975252011|2975253011|PetSupplies|-unknown-
+Cat Harnesses|2975252011|2975254011|-unknown-|-unknown-
+Cat ID Tags|2975252011|2975255011|Beauty|-unknown-
+Cat Leashes|2975252011|2975256011|-unknown-|-unknown-
+Educational Repellents|2975241011|2975258011|PetSupplies|-unknown-
+Cat Repellents Sprays|2975258011|3024144011|PetSupplies|-unknown-
+Pet Repellent Mats|2975258011|3024142011|PetSupplies|-unknown-
+Feeding & Watering Supplies|2975241011|2975259011|PetSupplies|-unknown-
+Cat Bowls|2975259011|2975261011|PetSupplies|-unknown-
+Cat Food Storage|2975259011|2975262011|PetSupplies|-unknown-
+Cat Fountains|2975259011|2975263011|HomeGarden|-unknown-
+Cat Nursing Supplies|2975259011|2975264011|-unknown-|-unknown-
+Grooming|2975241011|2975268011|OutdoorLiving|-unknown-
+Cat Brushes|2975268011|2975270011|PetSupplies|-unknown-
+Cat Combs|2975268011|2975272011|PetSupplies|-unknown-
+Cat Dander Remover Sprays|2975268011|2975273011|PetSupplies|-unknown-
+Cat Hair Removal Products|2975268011|3024148011|PetSupplies|-unknown-
+Electric Clippers & Blades|2975268011|3024145011|Wireless|-unknown-
+Pet Grooming Scissors|2975268011|3024149011|PetSupplies|-unknown-
+Styptic Gels & Powders|2975268011|2975275011|-unknown-|-unknown-
+Health Supplies|2975241011|2975276011|PetSupplies|-unknown-
+Cat Dental Care|2975276011|2975277011|HomeGarden|-unknown-
+Cat Digestive Remedies|2975276011|2975278011|PetSupplies|-unknown-
+Cat Ear Care|2975276011|2975279011|PetSupplies|-unknown-
+Cat Eye Care Supplies|2975276011|3024155011|PetSupplies|-unknown-
+Cat Itch Remedies|2975276011|2975290011|-unknown-|-unknown-
+Cat Milk Replacers|2975276011|2975291011|HomeGarden|-unknown-
+Cat Relaxants|2975276011|2975293011|PetSupplies|-unknown-
+Cat Wormers|2975276011|2975295011|PetSupplies|-unknown-
+Flea, Lice & Tick Control|2975276011|2975280011|PetSupplies|-unknown-
+Carpet Flea Powders & Sprays|2975280011|3024156011|PetSupplies|-unknown-
+Cat Flea Collars|2975280011|2975281011|PetSupplies|-unknown-
+Cat Flea Combs|2975280011|2975282011|PetSupplies|-unknown-
+Cat Flea Control Shampoos|2975280011|2975283011|PetSupplies|-unknown-
+Flea Drops|2975280011|3024160011|PetSupplies|-unknown-
+Tick Remover Tools|2975280011|2975286011|PetSupplies|-unknown-
+Supplements & Vitamins|2975276011|2975294011|Kitchen|-unknown-
+Pet Supplements &amp; Vitamins|2975294011|3024165011|HomeGarden|-unknown-
+Pet Supplements &amp; Vitamins|2975294011|3024167011|PetSupplies|-unknown-
+Pet Supplements &amp; Vitamins|2975294011|3024163011|-unknown-|-unknown-
+Pet Supplements &amp; Vitamins|2975294011|3024166011|PetSupplies|-unknown-
+Pet Supplements &amp; Vitamins|2975294011|3024162011|PetSupplies|-unknown-
+Litter & Housebreaking|2975241011|2975296011|Automotive|-unknown-
+Cat Litter|2975296011|2975298011|PetSupplies|-unknown-
+Cat Litter Box Liners|2975296011|3024168011|HomeGarden|-unknown-
+Cat Litter Boxes|2975296011|2975299011|Tools|-unknown-
+Cat Litter Scoops|2975296011|2975300011|PetSupplies|-unknown-
+Cat Odor &amp; Stain Removers|2975296011|2975301011|Kitchen|-unknown-
+Toys|2975241011|2975303011|HomeGarden|-unknown-
+Cat Feather Toys|2975303011|2975306011|PetSupplies|-unknown-
+Cat Laser Toys|2975303011|2975307011|Tools|-unknown-
+Cat Mice &amp; Animals Toys|2975303011|2975308011|PetSupplies|-unknown-
+Cat Toy Balls|2975303011|2975304011|PetSupplies|-unknown-
+Catnip Toys|2975303011|2975305011|Baby|-unknown-
+Treats|2975241011|2975309011|-unknown-|-unknown-
+Cat Snacks|2975309011|2975311011|Electronics|-unknown-
+Dogs|2619534011|2975312011|PetSupplies|-unknown-
+Apparel & Accessories|2975312011|2975313011|PetSupplies|-unknown-
+Dog Backpacks|2975313011|2975314011|PetSupplies|-unknown-
+Dog Bandanas|2975313011|2975315011|PetSupplies|-unknown-
+Dog Cold Weather Coats|2975313011|3024171011|Electronics|-unknown-
+Dog Dresses|2975313011|2975319011|HomeGarden|-unknown-
+Dog Hats|2975313011|2975321011|-unknown-|-unknown-
+Dog Hoodies|2975313011|3024172011|PetSupplies|-unknown-
+Dog Lifejackets|2975313011|3024173011|PetSupplies|-unknown-
+Dog Necklaces|2975313011|2975322011|PetSupplies|-unknown-
+Dog Raincoats|2975313011|3024174011|PetSupplies|-unknown-
+Dog Sunglasses|2975313011|2975325011|PetSupplies|-unknown-
+Dog Sweaters|2975313011|3024176011|PetSupplies|-unknown-
+Beds & Furniture|2975312011|2975326011|-unknown-|-unknown-
+Bed Blankets|2975326011|3024177011|PetSupplies|-unknown-
+Bed Pillows|2975326011|2975329011|PetSupplies|-unknown-
+Dog Bed Covers|2975326011|2975327011|Electronics|-unknown-
+Dog Bed Liners|2975326011|2975328011|PetSupplies|-unknown-
+Dog Bed Mats|2975326011|3024178011|PetSupplies|-unknown-
+Dog Beds|2975326011|2975330011|PetSupplies|-unknown-
+Dog Sofas &amp; Chairs|2975326011|2975331011|PetSupplies|-unknown-
+Stairs & Steps|2975326011|2975332011|Books|-unknown-
+Carriers & Travel Products|2975312011|2975333011|-unknown-|-unknown-
+Car Travel Accessories|2975333011|2975336011|PetSupplies|-unknown-
+Dog Booster Seats|2975336011|3024183011|PetSupplies|-unknown-
+Dog Car Barriers|2975336011|3024182011|PetSupplies|-unknown-
+Dog Car Ramps|2975336011|3024186011|PetSupplies|-unknown-
+Dog Car Seat Covers|2975336011|3024184011|-unknown-|-unknown-
+Dog Bicycle Carriers|2975333011|2975335011|-unknown-|-unknown-
+Dog Bicycle Trailers|2975333011|3024181011|Industrial|-unknown-
+Dog Carrier Backpacks|2975333011|2975334011|-unknown-|-unknown-
+Dog Carrier Slings|2975333011|3024189011|-unknown-|-unknown-
+Dog Carriers: Soft-Sided Carriers, Hard-Sided Carriers|2975333011|2975337011|-unknown-|-unknown-
+Dog Hard-Sided Carriers|2975337011|3024187011|PetSupplies|-unknown-
+Dog Soft-Sided Carriers|2975337011|3024188011|OutdoorLiving|-unknown-
+Strollers|2975333011|2975338011|HomeGarden|-unknown-
+Collars, Harnesses & Leashes|2975312011|2975339011|PetSupplies|-unknown-
+Collar Charms|2975339011|2975317011|PetSupplies|-unknown-
+Collars|2975339011|3052410011|-unknown-|-unknown-
+Basic Dog Collars|3052410011|3052411011|Beauty|-unknown-
+Choke Collars|3052410011|2975430011|PetSupplies|-unknown-
+Headcollars|3052410011|2975431011|PetSupplies|-unknown-
+Pinch Collars|3052410011|3052412011|Kitchen|-unknown-
+Dog ID Tags|2975339011|2975342011|PetSupplies|-unknown-
+Dog Muzzles|2975339011|2975344011|PetSupplies|-unknown-
+Harnesses|2975339011|2975341011|PetSupplies|-unknown-
+Dog Car Harnesses|2975341011|3024191011|MP3Downloads|-unknown-
+Dog Harnesses|2975341011|3024190011|HomeGarden|-unknown-
+Dog Vest Harnesses|2975341011|3024192011|PetSupplies|-unknown-
+Leashes|2975339011|2975343011|-unknown-|-unknown-
+Dog Double Leashes|2975343011|3024194011|PetSupplies|-unknown-
+Dog Hands Free Leashes|2975343011|3024195011|PetSupplies|-unknown-
+Dog Leashes|2975343011|3024193011|Baby|-unknown-
+Dog Retractable Leashes|2975343011|3024196011|-unknown-|-unknown-
+Dog Food: Dry, Wet|2975312011|2975359011|HomeGarden|-unknown-
+Wet Dog Food|2975359011|2975361011|PetSupplies|-unknown-
+Dog Memorials|2975312011|2975412011|PetSupplies|-unknown-
+Feeding & Watering Supplies|2975312011|2975351011|HomeGarden|-unknown-
+Dog Automatic Feeders|2975351011|2975352011|PetSupplies|-unknown-
+Dog Bowls|2975351011|2975353011|PetSupplies|-unknown-
+Dog Fountains|2975351011|2975355011|PetSupplies|-unknown-
+Dog Travel Bowls|2975351011|3024201011|-unknown-|-unknown-
+Dog Water Bottles|2975351011|2975358011|-unknown-|-unknown-
+Food Storage|2975351011|2975354011|HomeGarden|-unknown-
+Raised Bowls &amp; Feeding Stations: Raised Bowls, Feeding Stations|2975351011|2975357011|PetSupplies|-unknown-
+Grooming|2975312011|2975362011|PetSupplies|-unknown-
+Dematting Tools|2975362011|2975367011|-unknown-|-unknown-
+Dog Brushes|2975362011|2975363011|PetSupplies|-unknown-
+Dog Claw Care|2975362011|2975364011|Kitchen|-unknown-
+Dog Combs|2975362011|2975366011|PetSupplies|-unknown-
+Dog Dander Remover Sprays|2975362011|2975370011|PetSupplies|-unknown-
+Dog Deodorizers|2975362011|2975368011|PetSupplies|-unknown-
+Dog Hair Removal Products|2975362011|3024207011|PetSupplies|-unknown-
+Dog Shedding Tools|2975362011|2975369011|-unknown-|-unknown-
+Dog Shower &amp; Bath Accessories|2975362011|2975375011|-unknown-|-unknown-
+Electric Clippers & Blades|2975362011|3024204011|GourmetFood|-unknown-
+Styptic Gels & Powders|2975362011|2975376011|PetSupplies|-unknown-
+Health Supplies|2975312011|2975377011|PetSupplies|-unknown-
+Dental Care|2975377011|2975378011|PetSupplies|-unknown-
+Dog Toothbrushes|2975378011|2975379011|PetSupplies|-unknown-
+Dog Digestive Remedies|2975377011|2975381011|PetSupplies|-unknown-
+Dog Ear Care|2975377011|2975382011|PetSupplies|-unknown-
+Dog Itch Remedies|2975377011|2975393011|-unknown-|-unknown-
+Dog Milk Replacers|2975377011|2975394011|PetSupplies|-unknown-
+Dog Supplements &amp; Vitamins: Bone &amp; Joint Health Supplements, Multivitamins, Fish Oil Supplements|2975377011|2975397011|PetSupplies|-unknown-
+Amino Acids|2975397011|3024216011|PetSupplies|-unknown-
+Pet Antioxidants Supplements|2975397011|3024217011|PetSupplies|-unknown-
+Pet Bone &amp; Joint Supplements|2975397011|3024218011|GourmetFood|-unknown-
+Pet Fish Oil Supplements|2975397011|3024219011|OfficeProducts|-unknown-
+Pet Herbal Supplements|2975397011|3024220011|PetSupplies|-unknown-
+Pet Multivitamins|2975397011|3024221011|PetSupplies|-unknown-
+Pet Probiotic Supplements|2975397011|3024222011|PetSupplies|-unknown-
+Dog Thermometers|2975377011|2975398011|PetSupplies|-unknown-
+Dog Wormers|2975377011|2975399011|PetSupplies|-unknown-
+Flea, Lice & Tick Control|2975377011|2975384011|-unknown-|-unknown-
+Carpet Flea Powders & Sprays|2975384011|3024212011|PetSupplies|-unknown-
+Dog Flea Collars|2975384011|2975386011|PetSupplies|-unknown-
+Dog Flea Combs|2975384011|2975387011|PetSupplies|-unknown-
+Dog Flea Drops|2975384011|2975389011|-unknown-|-unknown-
+Dog Flea Powders|2975384011|2975388011|PetSupplies|-unknown-
+Pet Flea Control Shampoos|2975384011|3024215011|PetSupplies|-unknown-
+Pet Tick Remover Tools|2975384011|2975390011|PetSupplies|-unknown-
+Pet Recovery Collars &amp; Cones|2975377011|2975395011|-unknown-|-unknown-
+Houses, Kennels & Pens|2975312011|2975400011|PetSupplies|-unknown-
+Crates & Kennels|2975400011|2975401011|PetSupplies|-unknown-
+Dog Houses|2975400011|2975402011|HomeGarden|-unknown-
+Kennel Covers|2975400011|2975403011|PetSupplies|-unknown-
+Litter & Housebreaking|2975312011|2975405011|PetSupplies|-unknown-
+Pet Odor &amp; Stain Removers|2975405011|2975409011|PetSupplies|-unknown-
+Training Pads & Trays|2975405011|3024225011|Kitchen|-unknown-
+Toys|2975312011|2975413011|Baby|-unknown-
+Dog Chew Toys|2975413011|2975415011|PetSupplies|-unknown-
+Dog Flying Discs|2975413011|2975416011|PetSupplies|-unknown-
+Dog Laser Toys|2975413011|2975417011|PetSupplies|-unknown-
+Dog Rope Toys|2975413011|2975418011|PetSupplies|-unknown-
+Dog Squeak Toys|2975413011|2975419011|Grocery|-unknown-
+Dog Toy Balls|2975413011|2975414011|PetSupplies|-unknown-
+Training & Behavior Aids|2975312011|2975420011|PetSupplies|-unknown-
+Dog Agility Equipment|2975420011|2975421011|Automotive|-unknown-
+Dog Training Clickers|2975420011|2975427011|PetSupplies|-unknown-
+Dog Training Collars|2975420011|2975428011|PetSupplies|-unknown-
+Dog Training Leashes|2975420011|2975433011|PetSupplies|-unknown-
+Dog Whistles|2975420011|2975423011|PetSupplies|-unknown-
+Repellents|2975420011|2975425011|PetSupplies|-unknown-
+Dog Repellent Mats|2975425011|3024228011|PetSupplies|-unknown-
+Dog Repellent Sprays|2975425011|3024230011|PetSupplies|-unknown-
+Sonic Dog Repellents|2975425011|3024229011|DVD|-unknown-
+Sonic Bark Deterrents|2975420011|3024231011|PetSupplies|-unknown-
+Tie-Outs & Stakes|2975420011|2975426011|PetSupplies|-unknown-
+Treats|2975312011|2975434011|-unknown-|-unknown-
+Animal Ears|2975434011|3024234011|Beauty|-unknown-
+Cookies, Biscuits & Snacks|2975434011|2975436011|PetSupplies|-unknown-
+Dog Bones|2975434011|2975435011|PetSupplies|-unknown-
+Dog Jerky Treats|2975434011|2975439011|PetSupplies|-unknown-
+Dog Treats Hooves|2975434011|2975438011|Kitchen|-unknown-
+Rawhide|2975434011|2975440011|Miscellaneous|-unknown-
+Dog Rawhide Chips|2975440011|3024242011|Magazines|-unknown-
+Dog Rawhide Rolls|2975440011|3024243011|Classical|-unknown-
+Dog Rawhide Sticks|2975440011|3024244011|PetSupplies|-unknown-
+Fish & Aquatic Pets|2619534011|2975446011|PetSupplies|-unknown-
+Aquarium DÃ©cor|2975446011|2975448011|Grocery|-unknown-
+Aquarium Décor Backgrounds|2975448011|2975449011|-unknown-|-unknown-
+Aquarium Décor Ornaments|2975448011|2975452011|PetSupplies|-unknown-
+Aquarium Décor Plastic Plants|2975448011|2975453011|PetSupplies|-unknown-
+Aquarium Décor Rocks|2975448011|2975451011|Baby|-unknown-
+Aquarium Décor Tank Dividers|2975448011|2975454011|Music|-unknown-
+Aquarium Marbles|2975448011|3052458011|-unknown-|-unknown-
+Coral Ornaments|2975448011|2975450011|-unknown-|-unknown-
+Wood|2975448011|2975455011|PetSupplies|-unknown-
+Aquarium Heaters|2975446011|2975456011|KindleStore|-unknown-
+Aquarium Hydrometers|2975446011|3048857011|PetSupplies|-unknown-
+Aquarium Lights|2975446011|2975458011|Music|-unknown-
+Aquarium Stands|2975446011|2975459011|OutdoorLiving|-unknown-
+Aquarium Starter Kits|2975446011|2975460011|Automotive|-unknown-
+Aquarium Substrate|2975446011|2975476011|PetSupplies|-unknown-
+Aquarium Gravel|2975476011|3048854011|PetSupplies|-unknown-
+Aquarium Test Kits|2975446011|3048858011|Electronics|-unknown-
+Aquarium Water Treatments|2975446011|2975478011|PetSupplies|-unknown-
+Aquariums|2975446011|2975461011|Jewelry|-unknown-
+Automatic Fish Feeders|2975446011|2975462011|PetSupplies|-unknown-
+Cleaners|2975446011|2975464011|WirelessAccessories|-unknown-
+Algae Scrapers|2975464011|3048855011|PetSupplies|-unknown-
+Aquarium Nets|2975464011|2975465011|PetSupplies|-unknown-
+Gravel Cleaners|2975464011|3048856011|PetSupplies|-unknown-
+Fish Bowls|2975446011|2975468011|Books|-unknown-
+Fish Breeding Tanks|2975446011|2975463011|PetSupplies|-unknown-
+Fish Food|2975446011|2975479011|PetSupplies|-unknown-
+Pumps & Filters|2975446011|2975469011|-unknown-|-unknown-
+Aquarium Air Pump Accessories|2975469011|2975470011|PetSupplies|-unknown-
+Aquarium Air Pumps|2975469011|2975471011|Books|-unknown-
+Aquarium Filters|2975469011|2975473011|PetSupplies|-unknown-
+Aquarium Water Pump Accessories|2975469011|2975474011|PetSupplies|-unknown-
+Aquarium Water Pumps|2975469011|2975475011|PetSupplies|-unknown-
+Filter Accessories|2975469011|2975472011|PetSupplies|-unknown-
+Horses|2619534011|2975481011|PetSupplies|-unknown-
+Reptiles & Amphibians|2619534011|2975504011|PetSupplies|-unknown-
+Habitat DÃ©cor|2975504011|2975510011|-unknown-|-unknown-
+Aquarium Waterfalls|2975510011|3052460011|-unknown-|-unknown-
+Aquarium Wood|2975510011|3052461011|PetSupplies|-unknown-
+Reptile &amp; Amphibian Habitat Plants|2975510011|2975512011|PetSupplies|-unknown-
+Reptile &amp; Amphibian Habitat Rocks|2975510011|2975513011|-unknown-|-unknown-
+Reptile &amp; Amphibian Food|2975504011|2975505011|PetSupplies|-unknown-
+Reptile &amp; Amphibian Habitat Lighting|2975504011|2975515011|PetSupplies|-unknown-
+Reptile &amp; Amphibian Health Supplies|2975504011|2975506011|PetSupplies|-unknown-
+Reptile Houses|2975504011|3048868011|PetSupplies|-unknown-
+Terrarium Bedding, Sand & Substrate|2975504011|2975508011|HomeGarden|-unknown-
+Terrarium Heat Lamps & Mats|2975504011|2975516011|PetSupplies|-unknown-
+Terrarium Thermometers|2975504011|2975519011|PetSupplies|-unknown-
+Terrariums|2975504011|2975518011|PetSupplies|-unknown-
+Small Animals|2619534011|2975520011|PetSupplies|-unknown-
+Collars, Harnesses & Leashes|2975520011|2975522011|PetSupplies|-unknown-
+Small Animal Collars|2975522011|3048870011|PetSupplies|-unknown-
+Small Animal Leashes|2975522011|3048872011|HomeGarden|-unknown-
+Feeding & Watering Supplies|2975520011|2975524011|PetSupplies|-unknown-
+Small Animal Automatic Feeders|2975524011|2975525011|PetSupplies|-unknown-
+Small Animal Bowls|2975524011|2975526011|PetSupplies|-unknown-
+Small Animal Water Bottles|2975524011|2975527011|PetSupplies|-unknown-
+Grooming|2975520011|2975529011|OutdoorLiving|-unknown-
+Small Animal Brushes|2975529011|2975530011|PetSupplies|-unknown-
+Houses & Habitats|2975520011|2975535011|PetSupplies|-unknown-
+Bedding & Litter|2975535011|2975536011|PetSupplies|-unknown-
+Small Animal Beds|2975535011|3048873011|PetSupplies|-unknown-
+Small Animal Cages|2975535011|2975537011|PetSupplies|-unknown-
+Small Animal Habitat Decor|2975535011|2975538011|PetSupplies|-unknown-
+Tubes & Tunnels|2975535011|3048876011|PetSupplies|-unknown-
+Small Animal Carriers|2975520011|2975521011|-unknown-|-unknown-
+Small Animal Exercise Wheels|2975520011|2975523011|PetSupplies|-unknown-
+Small Animal Food|2975520011|2975528011|-unknown-|-unknown-
+Small Animal Toys|2975520011|2975540011|PetSupplies|-unknown-
+Small Animal Treats|2975520011|3048877011|-unknown-|-unknown-
+Featured Categories|2619533011|3010869011|PetSupplies|-unknown-
+Self-Service|2619533011|3010871011|PetSupplies|-unknown-
+Custom Stores|3010871011|3010872011|PetSupplies|-unknown-
+FURminator|3010872011|1296335011|-unknown-|-unknown-
+Hagen: Pet Supplies|3010872011|3293330011|PetSupplies|-unknown-
+All Aquatic & Pond|3293330011|3341676011|PetSupplies|-unknown-
+All Reptile|3293330011|3341680011|PetSupplies|-unknown-
+AquaClear|3293330011|3295587011|Kitchen|-unknown-
+Bird Food|3293330011|3338632011|Kitchen|-unknown-
+Catit|3293330011|3295627011|PetSupplies|-unknown-
+Crabworx|3293330011|3304273011|PetSupplies|-unknown-
+Dog Treats|3293330011|3338646011|PetSupplies|-unknown-
+Dogit|3293330011|3295608011|-unknown-|-unknown-
+Elite|3293330011|3295593011|Baby|-unknown-
+Essentials|3293330011|3295623011|PetSupplies|-unknown-
+Essentials for Cats|3293330011|3295651011|-unknown-|-unknown-
+Exo Terra|3293330011|3295595011|PetSupplies|-unknown-
+Fluval|3293330011|3295585011|HomeGarden|-unknown-
+Glo|3293330011|3295592011|-unknown-|-unknown-
+Habitrail|3293330011|3295607011|PetSupplies|-unknown-
+Laguna|3293330011|3295653011|HomeGarden|-unknown-
+Living World|3293330011|3295598011|PetSupplies|-unknown-
+Marina|3293330011|3295590011|-unknown-|-unknown-
+Nutrafin|3293330011|3295589011|PetSupplies|-unknown-
+Pet Cargo|3293330011|3295625011|PetSupplies|-unknown-
+PetTags|3293330011|3304274011|PetSupplies|-unknown-
+Reptile Decor|3293330011|3338647011|PetSupplies|-unknown-
+Tropican|3293330011|3295599011|-unknown-|-unknown-
+TropiMix|3293330011|3295600011|Kitchen|-unknown-
+Vision|3293330011|3295596011|-unknown-|-unknown-
+Zoe|3293330011|3295610011|PetSupplies|-unknown-
+Hartz: Pet Supplies|3010872011|2741791011|-unknown-|-unknown-
+LitterMaid|3010872011|2408782011|-unknown-|-unknown-
+PetSafe|3010872011|603073011|-unknown-|-unknown-
+Agility|603073011|603078011|PetSupplies|-unknown-
+Bark Control|603073011|603076011|PetSupplies|-unknown-
+Batteries|603073011|603077011|-unknown-|-unknown-
+Bedding|603073011|603079011|-unknown-|-unknown-
+Feeding & Litter|603073011|603083011|Kitchen|-unknown-
+Innotek|603073011|603074011|Kitchen|-unknown-
+PetSafe Electronic Fencing|603073011|603082011|-unknown-|-unknown-
+SportDOG|603073011|603075011|-unknown-|-unknown-
+Training|603073011|603106011|PetSupplies|-unknown-
+Snoop Dogg Pets|3010872011|300235011|PetSupplies|-unknown-
+SportDog|3010872011|3115850011|PetSupplies|-unknown-
+All-Purpose Gear|3115850011|3295473011|HomeGarden|-unknown-
+Canine Athlete|3115850011|3295434011|-unknown-|-unknown-
+Collars & Leads|3115850011|3295484011|Shoes|-unknown-
+E-Collar Accessories|3115850011|3295475011|-unknown-|-unknown-
+FieldTrainer|3115850011|3295452011|PetSupplies|-unknown-
+Scents & Kits|3115850011|3295486011|-unknown-|-unknown-
+Specialty Collars|3115850011|3295459011|-unknown-|-unknown-
+TEK Series|3115850011|3293337011|Grocery|-unknown-
+WetlandHunter|3115850011|3295454011|-unknown-|-unknown-
+Whistles, Bells & Lanyards|3115850011|3295482011|PetSupplies|-unknown-
+Specialty Stores|2619533011|2619535011|HomeGarden|-unknown-
+Custom Stores|2619535011|3010870011|PetSupplies|-unknown-
+Gift Cards|3010870011|3150482011|PetSupplies|-unknown-
+Pet Supplies Products Available for International Shipping|3010870011|351534011|HomeGarden|-unknown-
+Green: Pet Supplies|2619535011|3091344011|-unknown-|-unknown-

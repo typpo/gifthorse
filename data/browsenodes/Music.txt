@@ -1,0 +1,239 @@
+Styles|5174|301668|Music|-unknown-
+Alternative Rock|301668|30|Music|-unknown-
+Alternative Rock Singer-Songwriters Music CDs|30|302125|Music|-unknown-
+American Alternative|30|602072|Music|-unknown-
+British Alternative|30|602074|Music|-unknown-
+Goth & Industrial|30|468304|Music|-unknown-
+Hardcore & Punk|30|5196|Music|-unknown-
+Indie & Lo-Fi|30|468300|Music|-unknown-
+New Wave & Post-Punk|30|602076|Music|-unknown-
+Ska|30|468308|Music|-unknown-
+Blues|301668|31|Music|-unknown-
+Acoustic Blues Music CDs|31|13463651|Music|-unknown-
+Chicago Blue Music CDs|31|5234|Music|-unknown-
+Delta Blues Music CDs|31|5238|Music|-unknown-
+Electric Blues Guitar Music CDs|31|470998|Music|-unknown-
+Female Vocal Blues Music CDs|31|5240|Music|-unknown-
+Harmonica Blues Music CDs|31|301405011|Music|-unknown-
+Jump Blues Music CDs|31|299603011|Music|-unknown-
+Modern Blues Music CDs|31|13463691|Music|-unknown-
+Regional Blues Music CDs|31|225371|Music|-unknown-
+Cajun & Zydeco Blues Music CDs|225371|637706|Music|-unknown-
+Detroit Blues Music CDs|225371|13463701|Music|-unknown-
+Memphis Blues Music CDs|225371|5245|Music|-unknown-
+New Orleans Blues Music CDs|225371|5250|Music|-unknown-
+New York Blues Music CDs|225371|13463721|Music|-unknown-
+St. Louis Blues Music CDs|225371|13463731|Music|-unknown-
+Texas Blues Music CDs|225371|5253|Music|-unknown-
+West Coast Blues Music CDs|225371|13463741|Music|-unknown-
+Slide Guitar Blues Music CDs|31|300067011|Music|-unknown-
+Traditional Blues Music CDs|31|5255|Music|-unknown-
+Broadway &amp; Vocalists|301668|265640|Music|-unknown-
+Cabaret Vocalists Music CDs|265640|510676|Music|-unknown-
+Classic Broadway Vocalists Music CDs|265640|67178|Music|-unknown-
+Musicals|265640|510678|Music|-unknown-
+Traditional Vocal Pop Music CDs|265640|513060|Music|-unknown-
+Children&#39;s Music|301668|173425|Music|-unknown-
+Children's Sing-A-Longs Music CDs|173425|162409011|Music|-unknown-
+Christian|301668|173429|Music|-unknown-
+Christian Accompaniment Music|173429|2231704011|Music|-unknown-
+Christian Children's Music|173429|2231702011|Music|-unknown-
+Christian Contemporary Music CDs|173429|468418|Music|-unknown-
+Christian Country &amp; Bluegrass|173429|2231701011|Music|-unknown-
+Christian Instrumental Music|173429|2231703011|Music|-unknown-
+Christian Music CDs|173429|63941|Music|-unknown-
+Christian Rap Music CDs|173429|63939|Music|-unknown-
+Christian Rock &amp; Alternative|173429|2232120011|Music|-unknown-
+Compilations|173429|465926|Music|-unknown-
+Country Gospel Music CDs|173429|63938|Music|-unknown-
+Classic Rock|301668|67204|Music|-unknown-
+Classic Psychedelic Rock Music CDs|67204|67220|Music|-unknown-
+Classic Southern Rock Music CDs|67204|67222|Music|-unknown-
+Classic Supergroups Music CDs|67204|408256|Music|-unknown-
+Classical|301668|85|Music|-unknown-
+Ballets & Dances|85|5260|Music|-unknown-
+Ballets Music CDs|5260|5261|Music|-unknown-
+Baroque Dance Suites|5260|5265|Music|-unknown-
+Bourrées Music CDs|5260|5277|Music|-unknown-
+Dances Music CDs|5260|5279|Music|-unknown-
+Gavottes Music CDs|5260|5288|Music|-unknown-
+Minuets Music CDs|5260|5294|Music|-unknown-
+Musettes Music CDs|5260|5296|Music|-unknown-
+Pavanes Music CDs|5260|5300|Music|-unknown-
+Polkas Music CDs|5260|5302|Music|-unknown-
+Polonaises Music CDs|5260|5305|Music|-unknown-
+Waltzes Music CDs|5260|5316|Music|-unknown-
+Chamber Music|85|5318|Music|-unknown-
+Classical Compilations|85|16269911|Music|-unknown-
+Forms & Genres|85|36632|Music|-unknown-
+Classical Ballads Music CDs|36632|36634|Music|-unknown-
+Classical Canons Music CDs|36632|36635|Music|-unknown-
+Classical Concertos Music CDs: Concerto Grossi, Concertinos|36632|36636|Music|-unknown-
+Classical Fantasies Music CDs|36632|36641|Music|-unknown-
+Classical Fugues Music CDs|36632|36643|Music|-unknown-
+Classical Improvisation Music CDs|36632|36644|Music|-unknown-
+Classical Inventions Music CDs|36632|36645|Music|-unknown-
+Classical Preludes Music CDs|36632|36648|Music|-unknown-
+Classical Scherzo Music CDs|36632|301414011|Music|-unknown-
+Classical Suites Music CDs|36632|36675|Music|-unknown-
+Classical Toccatas Music Genre CDs|36632|36703|Music|-unknown-
+Requiems, Elegies & Tombeau|36632|36649|Music|-unknown-
+Rondos|36632|36653|Music|-unknown-
+Serenades & Divertimentos|36632|36657|Music|-unknown-
+Short Forms|36632|36661|Music|-unknown-
+Sonatas|36632|36668|Music|-unknown-
+Symphonies|36632|36676|Music|-unknown-
+Theatrical, Incidental & Program Music|36632|36684|Music|-unknown-
+Historical Periods|85|36712|Music|-unknown-
+Baroque (c.1600-1750)|36712|36713|Music|-unknown-
+Classical Period Music CDs: Forms &amp; Genres, Vocal &amp; Song, Ballets &amp; Dances, Composers|36712|36972|Music|-unknown-
+Early Classical Music CDs: Forms &amp; Genres, Sacred &amp; Religious, Vocal &amp; Song|36712|37187|Music|-unknown-
+Renaissance Music CDs: Composers, Ballets &amp; Dances, Vocal &amp; Song, Sacred &amp; Religious|36712|37816|Music|-unknown-
+Romantic (c.1820-1910)|36712|37951|Music|-unknown-
+Instruments|85|38374|Music|-unknown-
+Brass|38374|38375|Music|-unknown-
+Keyboard|38374|38393|Music|-unknown-
+Percussion Music CDs|38374|38407|Music|-unknown-
+Reeds & Winds|38374|38414|Music|-unknown-
+Strings|38374|38439|Music|-unknown-
+Music CDs by Featured Performers, A to Z: ( L ), ( B ), ( V ), ( C ), ( M ), ( S )|85|38472|Music|-unknown-
+Opera &amp; Vocal|85|84|Music|-unknown-
+Sacred & Religious|85|63654|Music|-unknown-
+Sacred &amp; Religious Voluntaries Music CDs|63654|63680|Music|-unknown-
+Symphonies|85|63681|Music|-unknown-
+Country|301668|16|Music|-unknown-
+Bluegrass|16|63690|Music|-unknown-
+Classic Country|16|63700|Music|-unknown-
+Country Instrumentals Music CDs|16|618115011|Music|-unknown-
+Cowboy Music CDs|16|63694|Music|-unknown-
+Current Country Music CDs|16|598634|Music|-unknown-
+Outlaw Country Music CDs|16|63699|Music|-unknown-
+Roadhouse Country Music CDs|16|63696|Music|-unknown-
+Western Swing|16|63701|Music|-unknown-
+Dance &amp; Electronic|301668|7|Music|-unknown-
+Ambient Music CDs|7|63703|Music|-unknown-
+Disco Music CDs|7|63705|Music|-unknown-
+Rave Music CDs|7|301416011|Music|-unknown-
+Techno|7|642578|Music|-unknown-
+Turntablists Music CDs|7|225382|Music|-unknown-
+World Dance Music CDs|7|265168|Music|-unknown-
+Folk|301668|32|Music|-unknown-
+Gospel|301668|2231705011|Music|-unknown-
+Gospel Instrumental Music|2231705011|2231710011|Music|-unknown-
+Traditional Gospel|2231705011|2231707011|Music|-unknown-
+Urban &amp; Contemporary Gospel|2231705011|2231706011|Music|-unknown-
+Hard Rock &amp; Metal|301668|67207|Music|-unknown-
+Alternative Metal Music CDs|67207|67208|Music|-unknown-
+Death Metal Music CDs|67207|67210|Music|-unknown-
+Hard Rock Music CDs|67207|468414|Music|-unknown-
+Pop Metal Music CDs|67207|67215|Music|-unknown-
+Thrash &amp; Speed Metal Music CDs|67207|468416|Music|-unknown-
+Jazz|301668|34|Music|-unknown-
+Acid Jazz Music CDs|34|63893|Music|-unknown-
+Avant Garde &amp; Free Jazz Music CDs|34|63894|Music|-unknown-
+Brazilian Jazz Music CDs|34|63897|Music|-unknown-
+Cool Jazz Music CDs|34|63925|Music|-unknown-
+Dixieland Jazz Music CDs|34|299601011|Music|-unknown-
+Jazz Fusion Music CDs|34|63927|Music|-unknown-
+Jive Jazz Music CDs|34|303272011|Music|-unknown-
+Latin Jazz Music CDs|34|63928|Music|-unknown-
+Modern Postbebop Music CDs|34|63929|Music|-unknown-
+New Orleans Jazz Music CDs|34|63930|Music|-unknown-
+Orchestral Jazz Music CDs|34|301413011|Music|-unknown-
+Soul-Jazz &amp; Boogaloo Music CDs|34|500060|Kitchen|-unknown-
+Swing Jazz|34|598152|Music|-unknown-
+Traditional Jazz & Ragtime|34|598162|Music|-unknown-
+Vocal Jazz|34|598170|Music|-unknown-
+Latin Music|301668|289122|Music|-unknown-
+Children's Latin Music CDs|289122|554379011|Music|-unknown-
+Latin Christian Music CDs|289122|554380011|Music|-unknown-
+Latin Pop Music CDs|289122|63852|Music|-unknown-
+Latin Rock Music CDs|289122|301415011|Music|-unknown-
+Tropical|289122|554373011|Music|-unknown-
+Cumbia Music CDs|554373011|300063011|Music|-unknown-
+Vallenato Music CDs|554373011|554374011|Music|-unknown-
+Urban|289122|554375011|Music|-unknown-
+Latin Electronica Music CDs|554375011|554376011|Music|-unknown-
+Miscellaneous|301668|35|Music|-unknown-
+Comedy|35|63936|Music|-unknown-
+Experimental Music CDs|35|603174|Music|-unknown-
+Gay &amp; Lesbian Music CDs|35|603184|Music|-unknown-
+Instructional|35|63944|Music|-unknown-
+Marches Music CDs|35|284519|Music|-unknown-
+Poetry, Spoken Word & Interviews|35|603190|Music|-unknown-
+Radio Shows Music CDs|35|162595011|Music|-unknown-
+Sound Effects Music CDs|35|63950|Music|-unknown-
+Wedding Music CDs|35|63953|Music|-unknown-
+New Age|301668|36|Music|-unknown-
+Celtic New Age Music CDs|36|63955|Music|-unknown-
+New Age Healing Music CDs|36|598594|Music|-unknown-
+New Age Nature Music CDs|36|301410011|Music|-unknown-
+New Age Relaxation Music CDs|36|300066011|Music|-unknown-
+Pop|301668|37|Music|-unknown-
+Adult Alternative Music CDs|37|602104|Music|-unknown-
+Adult Contemporary Music CDs|37|67167|Music|-unknown-
+By Decade|37|465378|Music|-unknown-
+1950s Pop Music CDs|465378|465380|Music|-unknown-
+1970s Pop Music CDs|465378|465386|Music|-unknown-
+1980s|465378|465388|Music|-unknown-
+1990s Pop Music CDs|465378|465390|Music|-unknown-
+Easy Listening|37|67171|Music|-unknown-
+Pop Singer-Songwriters Music CDs|37|67176|Music|-unknown-
+Soft Rock Music CDs|37|67177|Music|-unknown-
+R&amp;B|301668|39|Music|-unknown-
+Classic R&amp;B Music CDs|39|67180|Music|-unknown-
+Contemporary R&amp;B Music CDs|39|67181|Music|-unknown-
+Funk|39|67183|Music|-unknown-
+Motown Music CDs|39|67185|Music|-unknown-
+New Jack Music CDs|39|470506|Music|-unknown-
+Quiet Storm Music CDs|39|470504|Music|-unknown-
+Rock|301668|40|Music|-unknown-
+Jam Bands|40|225374|Music|-unknown-
+Bluegrass Jam Bands Music CDs|225374|468104|Music|-unknown-
+Funk Jam Bands Music CDs|225374|468106|Music|-unknown-
+Jazz Jam Bands Music CDs|225374|468108|Music|-unknown-
+Rock Jam Bands Music CDs|225374|468110|Music|-unknown-
+Oldies & Retro|40|67224|Music|-unknown-
+Power Pop Music CDs|40|599862|Music|-unknown-
+Progressive|40|292809|Music|-unknown-
+Electronic Rock Music CDs|292809|299605011|Music|-unknown-
+Progressive Metal Music CDs|292809|408266|Music|-unknown-
+Rap Rock Music CDs|40|408262|Music|-unknown-
+Rock Guitarists|40|301543|Music|-unknown-
+Soundtracks|301668|42|Music|-unknown-
+World Music|301668|33|Music|-unknown-
+Africa|33|63720|Music|-unknown-
+Caribbean & Cuba|33|63748|Music|-unknown-
+Bahamas Music CDs|63748|63749|Music|-unknown-
+Calypso Music CDs|63748|63750|Music|-unknown-
+Cuba|63748|63751|Music|-unknown-
+Bolero Music CDs|63751|292813|Music|-unknown-
+Charanga Music CDs|63751|301419011|Music|-unknown-
+Cuban Salsa Music CDs|63751|301401011|Music|-unknown-
+Rhumba Music CDs|63751|303273011|Music|-unknown-
+Dominican Republic Music CDs|63748|63752|Music|-unknown-
+Jamaica Music CDs|63748|63755|Music|-unknown-
+Soca Music CDs|63748|301412011|Music|-unknown-
+Trinidad Music CDs|63748|63758|Music|-unknown-
+Celtic|33|63760|Music|-unknown-
+North America|33|63869|Music|-unknown-
+Eskimo &amp; Inuit Music CDs|63869|12076421|Music|-unknown-
+Native American Music CDs|63869|63873|Music|-unknown-
+Pacific Islands|33|63877|Music|-unknown-
+Hawaii|63877|63879|Music|-unknown-
+Hawaiian Christmas Music CDs|63879|618110011|Music|-unknown-
+Traditional Hawaiian Music CDs|63879|642807011|Music|-unknown-
+Ukelele Music CDs|63879|618114011|Music|-unknown-
+Polynesian Music CDs|63877|63882|Music|-unknown-
+Reggae|33|63885|Music|-unknown-
+South & Central America|33|63761|Music|-unknown-
+Argentina|63761|63763|Music|-unknown-
+Brazil|63761|63766|Music|-unknown-
+Chile Music CDs|63761|63767|Music|-unknown-
+Colombian Music CDs|63761|63768|Music|-unknown-
+Costa Rica Music CDs|63761|16307631|Music|-unknown-
+Ecuador Music CDs|63761|292814|Music|-unknown-
+El Salvador Music CDs|63761|292530|Music|-unknown-
+Nicaragua Music CDs|63761|63771|Music|-unknown-
+Panama Music CDs|63761|63772|Music|-unknown-
+Peru Music CDs|63761|63774|Music|-unknown-

@@ -1,0 +1,68 @@
+Products|1267877011|1267878011|Apparel|-unknown-
+All product|1267878011|1288264011|Apparel|-unknown-
+Blu-ray &amp; DVD|1267878011|1294451011|DVD|-unknown-
+Electronics & Computers|1267878011|1294447011|Electronics|-unknown-
+Cameras & Camcorders|1294447011|2412182011|Electronics|-unknown-
+Accessories|2412182011|2412185011|Electronics|-unknown-
+Camcorders|2412182011|2412320011|Electronics|-unknown-
+Pro Camcorders|2412320011|2418159011|Electronics|-unknown-
+Optics|2412182011|2412322011|Electronics|-unknown-
+Point and Shoots|2412182011|2418152011|Electronics|-unknown-
+SLRs - Cameras &amp; Camcorders|2412182011|2412188011|Electronics|-unknown-
+Laptops & Desktops|1294447011|2418165011|Electronics|-unknown-
+Desktop - Laptops &amp; Desktops|2418165011|2418198011|Electronics|-unknown-
+Laptops - Laptops &amp; Desktops|2418165011|2418194011|Electronics|-unknown-
+Televisions|1294447011|1294446011|Electronics|-unknown-
+LCD - Televisions|1294446011|1297000011|Electronics|-unknown-
+Plasma - Televisions|1294446011|1297001011|Electronics|-unknown-
+Grocery & Personal Care|1267878011|2243103011|GourmetFood|-unknown-
+Beverages|2243103011|2244498011|Grocery|-unknown-
+Breakfast Foods|2243103011|2244497011|Grocery|-unknown-
+Health &amp; Personal Care|2243103011|2358141011|Grocery|-unknown-
+Pantry Supplies|2243103011|2244499011|Grocery|-unknown-
+Snacks &amp; Cookies|2243103011|2244496011|Grocery|-unknown-
+Kitchen|1267878011|1294453011|Kitchen|-unknown-
+Last Chance|1267878011|1289538011|Apparel|-unknown-
+Electronics &amp; Computers|1289538011|1297480011|-unknown-|-unknown-
+Manager&#39;s Specials|1289538011|2281116011|-unknown-|-unknown-
+Personal Care|1289538011|1297494011|-unknown-|-unknown-
+Software - Last Chance|1289538011|2054670011|-unknown-|-unknown-
+Sports - Last Chance|1289538011|1297495011|-unknown-|-unknown-
+Video Games|1289538011|1297491011|-unknown-|-unknown-
+Music|1267878011|1294450011|Music|-unknown-
+Shoes|1267878011|2280707011|Shoes|-unknown-
+Athletic &amp; Outdoor|2280707011|2280717011|Shoes|-unknown-
+Men's|2280707011|2280709011|Shoes|-unknown-
+Women&#39;s - Shoes|2280707011|2280708011|Shoes|-unknown-
+Sports|1267878011|1294455011|SportingGoods|-unknown-
+Toys & Baby|1267878011|2478062011|Toys|-unknown-
+Baby|2478062011|2637445011|Baby|-unknown-
+Toys|2478062011|2637446011|Toys|-unknown-
+Action Figures|2637446011|2637455011|Toys|-unknown-
+Dolls - Toys|2637446011|2637457011|Toys|-unknown-
+Preschool Toys|2637446011|2637456011|Toys|-unknown-
+Video Games|1267878011|1294448011|VideoGames|-unknown-
+Special Features|1267877011|1267879011|Apparel|-unknown-
+Back to school sale|1267879011|2210971011|-unknown-|-unknown-
+Computers|1267879011|1293322011|Electronics|-unknown-
+Deep discounts|1267879011|1294322011|-unknown-|-unknown-
+Blu-ray &amp; DVD|1294322011|1297820011|Apparel|-unknown-
+Kitchen - Deep discounts|1294322011|1297817011|Industrial|-unknown-
+Music - Deep discounts|1294322011|1297819011|Apparel|-unknown-
+Personal Care Appliances|1294322011|1297821011|Books|-unknown-
+Software - Deep discounts|1294322011|2054672011|Miscellaneous|-unknown-
+Sports - Deep discounts|1294322011|1297823011|Apparel|-unknown-
+Televisions - Deep discounts|1294322011|1297814011|-unknown-|-unknown-
+Video Games|1294322011|1297816011|Apparel|-unknown-
+Just arrived|1267879011|1294321011|-unknown-|-unknown-
+Books - Just arrived|1294321011|1297808011|Music|-unknown-
+Home Improvement|1294321011|1297812011|-unknown-|-unknown-
+Kitchen|1294321011|1297807011|-unknown-|-unknown-
+Manager&#39;s Specials|1294321011|2281133011|Automotive|-unknown-
+Music - Just arrived|1294321011|1297809011|Apparel|-unknown-
+Personal Care Appliances|1294321011|1297811011|-unknown-|-unknown-
+Software - Just arrived|1294321011|2054671011|Apparel|-unknown-
+Televisions - Just arrived|1294321011|1297804011|Apparel|-unknown-
+Video Games|1294321011|1297806011|-unknown-|-unknown-
+Kindle|1267879011|1293320011|HomeGarden|-unknown-
+TVs|1267879011|1293318011|Apparel|-unknown-

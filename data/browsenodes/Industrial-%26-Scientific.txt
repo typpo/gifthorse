@@ -1,0 +1,1164 @@
+Abrasive & Finishing Products|16310161|256167011|Industrial|-unknown-
+Abrasive Accessories|256167011|401506011|Industrial|-unknown-
+Abrasive Brushes|256167011|256168011|Industrial|-unknown-
+Power Brushes|256168011|2665577011|Industrial|-unknown-
+Abrasive Cup Power Brushes|2665577011|2665578011|Industrial|-unknown-
+Abrasive Spiral Power Brushes|2665577011|2665580011|Industrial|-unknown-
+Wheel Power Brushes|2665577011|2665581011|Industrial|-unknown-
+Abrasive Mounted Points|256167011|401518011|Industrial|-unknown-
+Abrasive Bands|401518011|401505011|Industrial|-unknown-
+Abrasive Cartridge Rolls|401518011|256169011|Industrial|-unknown-
+Abrasive Grinding Mounted Points|401518011|2734045011|Industrial|-unknown-
+Abrasive Wheels & Discs|256167011|2665570011|Industrial|-unknown-
+Abrasive Cutoff Wheels|2665570011|256194011|Industrial|-unknown-
+Abrasive Fladder Blades|2665570011|401508011|Industrial|-unknown-
+Abrasive Flap Discs|2665570011|256175011|Industrial|-unknown-
+Abrasive Grinding Discs|2665570011|2665574011|Industrial|-unknown-
+Abrasive Snagging Wheels|2665570011|256201011|Industrial|-unknown-
+Abrasive Tool Room Wheels|2665570011|256202011|Industrial|-unknown-
+Angle & Die Grinder Wheels|2665570011|2665571011|Industrial|-unknown-
+Bench &amp; Pedestal Grinding Wheels|2665570011|256204011|Industrial|-unknown-
+Bristle Discs|2665570011|310357011|Industrial|-unknown-
+OD Grinding Wheels|2665570011|2665575011|Industrial|-unknown-
+Centerless Grinding Wheels|2665575011|256205011|Industrial|-unknown-
+Surface Grinding Wheels|2665570011|256207011|Industrial|-unknown-
+Finishing Products|256167011|2734049011|Industrial|-unknown-
+Abrasive Tumbling Media|2734049011|256192011|Industrial|-unknown-
+Buffing & Polishing Accessories|2734049011|256209011|Industrial|-unknown-
+Buffing &amp; Polishing Mounted Points|256209011|979146011|Industrial|-unknown-
+Buffing Kits|256209011|256211011|Industrial|-unknown-
+Buffing Wheels|256209011|256214011|Industrial|-unknown-
+Felt Bobs|256209011|256215011|Industrial|-unknown-
+Felt Sticks|256209011|256216011|Industrial|-unknown-
+Felt Wheels|256209011|256217011|Industrial|-unknown-
+Industrial Polishing Stones|256209011|256221011|Industrial|-unknown-
+Polishing Bonnets|256209011|256219011|Industrial|-unknown-
+Laps & Hones|2734049011|256182011|Industrial|-unknown-
+Flex Hones|256182011|256184011|Industrial|-unknown-
+Honing Stones|256182011|256185011|Industrial|-unknown-
+Hand Files|256167011|256181011|Industrial|-unknown-
+Manual Sanding Products|256167011|2734051011|Industrial|-unknown-
+Abrasive Rolls|2734051011|401511011|Industrial|-unknown-
+Abrasive Sheets|2734051011|256189011|Industrial|-unknown-
+Abrasive Tapes|2734051011|401512011|Industrial|-unknown-
+Sanding Pads|2734051011|2734054011|Industrial|-unknown-
+Sanding Sticks|2734051011|401516011|Industrial|-unknown-
+Cutting Tools|16310161|383598011|Industrial|-unknown-
+Boring Bars|383598011|256257011|Industrial|-unknown-
+Brazed Tools|383598011|340029011|Industrial|-unknown-
+Broaches|383598011|340030011|Industrial|-unknown-
+Chamfer Cutters|383598011|340031011|Industrial|-unknown-
+Convex Cutters|383598011|340033011|Industrial|-unknown-
+Countersinks|383598011|256259011|Industrial|-unknown-
+Combined Drill Countersinks|256259011|256260011|Industrial|-unknown-
+Single End Countersinks|256259011|256262011|Industrial|-unknown-
+Cutting Tool Coolants|383598011|401548011|Industrial|-unknown-
+Deburring Cutters|383598011|340035011|Industrial|-unknown-
+Dovetail Cutters|383598011|340036011|Industrial|-unknown-
+Drill Adapters|383598011|340037011|Industrial|-unknown-
+Drill Bits|383598011|256264011|Industrial|-unknown-
+Center Drill Inserts|256264011|340049011|Industrial|-unknown-
+Circuit Board Drill Bits|256264011|401551011|Industrial|-unknown-
+Die Drill Bits|256264011|401552011|Industrial|-unknown-
+Masonry Drill Bits|256264011|256276011|Industrial|-unknown-
+Core Drill Bits|256276011|256268011|Industrial|-unknown-
+Metalworking & Multipurpose Drill Bits|256264011|2941336011|Industrial|-unknown-
+Hole Enlarging Drill Bits|2941336011|256274011|Industrial|-unknown-
+Micro Drill Bits|2941336011|256277011|Industrial|-unknown-
+Reduced Shank Drill Bits|2941336011|340052011|Industrial|-unknown-
+Spotting Drill Bits|2941336011|256286011|Industrial|-unknown-
+Step Drill Bits|2941336011|256287011|Industrial|-unknown-
+Taper Shank Drill Bits|2941336011|340051011|Industrial|-unknown-
+Threaded Shank Drill Bits|2941336011|2941339011|Industrial|-unknown-
+Wood Drill Bits|256264011|256291011|Industrial|-unknown-
+Fixturing Clamps|383598011|401581011|Industrial|-unknown-
+Indexable Insert Holders|383598011|257513011|Industrial|-unknown-
+Drilling Holders|257513011|257515011|Industrial|-unknown-
+Milling Holders|257513011|401555011|Industrial|-unknown-
+End Mill Holders|401555011|262581011|Industrial|-unknown-
+Spade Drill Holders|257513011|342528011|Industrial|-unknown-
+Indexable Inserts|383598011|257519011|Industrial|-unknown-
+Boring Inserts|257519011|257524011|Industrial|-unknown-
+Drilling Inserts|257519011|257520011|Industrial|-unknown-
+Grooving Inserts|257519011|257523011|Industrial|-unknown-
+Milling Inserts|257519011|257521011|Industrial|-unknown-
+Parting Inserts|257519011|331550011|Industrial|-unknown-
+Profiling Inserts|257519011|331551011|Industrial|-unknown-
+Spade Drill Inserts|257519011|342529011|Industrial|-unknown-
+Turning Inserts|257519011|257522011|Industrial|-unknown-
+Live Centers|383598011|1265143011|Industrial|-unknown-
+Milling Cutters|383598011|256302011|Industrial|-unknown-
+End Mills|256302011|256305011|Industrial|-unknown-
+Corner Radius End Mills|256305011|340046011|Industrial|-unknown-
+Corner Rounding End Mills|256305011|340045011|Industrial|-unknown-
+Square Nose End Mills|256305011|2382225011|Industrial|-unknown-
+Tapered End Mills|256305011|340047011|Industrial|-unknown-
+Face Mills|256302011|256306011|Industrial|-unknown-
+Slotting Cutters|256302011|256311011|Industrial|-unknown-
+Threading Dies|383598011|256320011|Industrial|-unknown-
+Hex Threading Dies|256320011|256321011|Industrial|-unknown-
+Round Threading Dies|256320011|256322011|Industrial|-unknown-
+Threading Taps|383598011|256324011|Industrial|-unknown-
+Hand Threading Taps|256324011|256326011|Industrial|-unknown-
+Pipe Taps|256324011|340041011|Industrial|-unknown-
+Screw Threaded Insert Taps|256324011|340042011|Industrial|-unknown-
+Spiral Flute Threading Taps|256324011|256327011|Industrial|-unknown-
+Spiral Point Threading Taps|256324011|256328011|Industrial|-unknown-
+Thread Forming Threading Taps|256324011|256329011|Industrial|-unknown-
+Thread Milling Taps|256324011|340043011|Industrial|-unknown-
+Electronic Components|16310161|306506011|Industrial|-unknown-
+Circuit Protection Products|306506011|306507011|Industrial|-unknown-
+Electromechanical Products|306506011|306528011|Industrial|-unknown-
+Controllers|306528011|306529011|Industrial|-unknown-
+Motor Speed Controllers|306529011|306530011|Industrial|-unknown-
+Temperature Controllers|306529011|306533011|Industrial|-unknown-
+Electronic Component Motor Drives|306528011|306575011|Industrial|-unknown-
+Electronic Component Motors|306528011|306577011|Industrial|-unknown-
+Switches|306528011|306588011|Industrial|-unknown-
+Toggle Switches|306588011|306596011|Industrial|-unknown-
+Electronic Decade Boxes|306506011|1265103011|Industrial|-unknown-
+Fiber Optic Products|306506011|306611011|Industrial|-unknown-
+Electric Component Fiber Optic Transceivers|306611011|306627011|Industrial|-unknown-
+Fiber Optic Connectors|306611011|306612011|Industrial|-unknown-
+Interconnects|306506011|306629011|Industrial|-unknown-
+Cable Assemblies|306629011|306630011|Industrial|-unknown-
+Sockets|306629011|306693011|Industrial|-unknown-
+Terminal Blocks|306629011|306708011|Industrial|-unknown-
+Terminals|306629011|306719011|Industrial|-unknown-
+Fork Terminals|306719011|306725011|Industrial|-unknown-
+Idc Electrical Terminals|306719011|306727011|Industrial|-unknown-
+Ring Terminals|306719011|306730011|Industrial|-unknown-
+Screw Terminals|306719011|306731011|Industrial|-unknown-
+Snap Plug Terminals|306719011|306732011|Industrial|-unknown-
+Spade Terminals|306719011|306733011|Industrial|-unknown-
+Wire|306629011|306738011|Industrial|-unknown-
+Optoelectronic Products|306506011|306743011|Industrial|-unknown-
+Lamps|306743011|306747011|Industrial|-unknown-
+Electronic Component LED Lamps|306747011|306752011|Industrial|-unknown-
+HID Lamps|306747011|306750011|Industrial|-unknown-
+Incandescent Lamps|306747011|306751011|Industrial|-unknown-
+Passive Components: Capacitors, Resistors, Inductors, Transducers, Transformers, Attenuators|306506011|306767011|Industrial|-unknown-
+Capacitors|306767011|306788011|Industrial|-unknown-
+Resistors|306767011|306804011|Industrial|-unknown-
+Fixed Resistors|306804011|306805011|Industrial|-unknown-
+Transformers|306767011|306828011|Industrial|-unknown-
+Audio Transformers|306828011|306829011|Industrial|-unknown-
+Electronic Power Transformers|306828011|306830011|Industrial|-unknown-
+Semiconductor Products|306506011|306831011|Industrial|-unknown-
+Digital Signal Processors|306831011|306832011|Industrial|-unknown-
+Diodes|306831011|306838011|Industrial|-unknown-
+Schottky Diodes|306838011|306839011|Industrial|-unknown-
+Zener Diodes|306838011|306841011|Industrial|-unknown-
+Semiconductor Timing Management Products: Clock Generators, Clock Integrated Circuits, Delay Lines|306831011|306899011|Industrial|-unknown-
+Signal Components|306831011|306873011|Industrial|-unknown-
+Amplifiers|306873011|306874011|Industrial|-unknown-
+Transistors|306831011|306910011|Industrial|-unknown-
+BJT Transistors|306910011|306911011|Industrial|-unknown-
+Darlington Transistors|306910011|306913011|Industrial|-unknown-
+IGBT Transistors|306910011|306916011|Industrial|-unknown-
+MOSFET Transistors|306910011|306919011|Industrial|-unknown-
+Sensors|306506011|306923011|Industrial|-unknown-
+Acceleration Sensors|306923011|306924011|Industrial|-unknown-
+Current Sensors|306923011|306925011|Industrial|-unknown-
+Electronic Component Flow Sensors|306923011|306928011|Industrial|-unknown-
+Electronic Component Photoelectric Sensors|306923011|306933011|Industrial|-unknown-
+Electronic Pressure Sensors|306923011|306935011|Industrial|-unknown-
+Proximity Sensors|306923011|306936011|Industrial|-unknown-
+Thermal Management Products|306506011|306943011|Industrial|-unknown-
+Desktop Computer Heatsinks|306943011|306944011|Industrial|-unknown-
+Electronic Cooling Fans|306943011|306945011|Industrial|-unknown-
+Fasteners|16310161|383599011|Industrial|-unknown-
+Anchors|383599011|16409341|Industrial|-unknown-
+Adhesive Anchors|16409341|16409351|Industrial|-unknown-
+Drive Anchors|16409341|16409381|Industrial|-unknown-
+Drop In Anchors|16409341|16409391|Industrial|-unknown-
+Expansion Shield Anchors|16409341|16409401|Industrial|-unknown-
+Screw Anchors|16409341|16409431|Industrial|-unknown-
+T Anchors|16409341|16409461|Industrial|-unknown-
+Wedge Anchors|16409341|16409471|Industrial|-unknown-
+Bolts|383599011|16409491|Industrial|-unknown-
+Carriage Bolts|16409491|16409521|Industrial|-unknown-
+Connector Bolts|16409491|16409541|Industrial|-unknown-
+Elevator Bolts|16409491|16409551|Industrial|-unknown-
+Expansion Bolts|16409491|16409561|Industrial|-unknown-
+Eyebolts|16409491|16409571|Industrial|-unknown-
+Flange Bolts|16409491|16409581|Industrial|-unknown-
+Hanger Bolts|16409491|16409591|Industrial|-unknown-
+Hex Bolts|16409491|16409601|Industrial|-unknown-
+J Bolts|16409491|16409611|Industrial|-unknown-
+Square Head Bolts|16409491|16409661|Industrial|-unknown-
+Step Bolts|16409491|16409671|Industrial|-unknown-
+Stove Bolts|16409491|16409681|Industrial|-unknown-
+T Handle Bolts|16409491|16409721|Industrial|-unknown-
+T Slot Bolts|16409491|16409741|Industrial|-unknown-
+T-Bolts|16409491|16409701|Industrial|-unknown-
+Tap Bolts|16409491|307019011|Industrial|-unknown-
+Toggle Bolts|16409491|16409731|Industrial|-unknown-
+Hardware Biscuits|383599011|16409481|Industrial|-unknown-
+Industrial Expansion Plugs|383599011|979140011|Industrial|-unknown-
+Industrial Tolerance Rings|383599011|979141011|Industrial|-unknown-
+Nuts|383599011|16409861|Industrial|-unknown-
+Acorn Nuts|16409861|16409871|Industrial|-unknown-
+Allen Nuts|16409861|16409881|Industrial|-unknown-
+Barrel Nuts|16409861|16409901|Industrial|-unknown-
+Binding Nuts|16409861|16409911|Industrial|-unknown-
+Cage Nuts|16409861|16409921|Industrial|-unknown-
+Cap Nuts|16409861|16409931|Industrial|-unknown-
+Coupling Nuts|16409861|16409941|Industrial|-unknown-
+Eye Nuts|16409861|16409951|Industrial|-unknown-
+Flange Nuts|16409861|16409961|Industrial|-unknown-
+Hardware Locknuts|16409861|16410001|Industrial|-unknown-
+Hardware Nut Inserts|16409861|16410011|Industrial|-unknown-
+Hex Nuts|16409861|16409981|Industrial|-unknown-
+J-Nuts|16409861|16409991|Industrial|-unknown-
+Jam Nuts|16409861|307020011|Industrial|-unknown-
+Panel Nuts|16409861|307021011|Industrial|-unknown-
+Push Nuts|16409861|16410031|Industrial|-unknown-
+Rivet Nuts|16409861|16410051|Industrial|-unknown-
+Self Clinching Nuts|16409861|317399011|Industrial|-unknown-
+Slotted Nuts|16409861|16410071|Industrial|-unknown-
+Speed Nuts|16409861|16410081|Industrial|-unknown-
+Square Nuts|16409861|16410091|Industrial|-unknown-
+T Nuts|16409861|16410131|Industrial|-unknown-
+T Slot Nuts|16409861|16410141|Industrial|-unknown-
+Thumb Nuts|16409861|16410121|Industrial|-unknown-
+U-Nuts|16409861|16410151|Industrial|-unknown-
+Weld Nuts|16409861|307022011|Industrial|-unknown-
+Wing Nuts|16409861|16410161|Industrial|-unknown-
+Pins|383599011|16410171|Industrial|-unknown-
+Clevis Pins|16410171|16410201|Industrial|-unknown-
+Coil Pins|16410171|16410211|Industrial|-unknown-
+Cotter Pins|16410171|16410221|Industrial|-unknown-
+Dowel Pins|16410171|16410231|Industrial|-unknown-
+Drive Pins|16410171|16410241|Industrial|-unknown-
+Escutcheon Pins|16410171|16410251|Industrial|-unknown-
+Floating Locating Pins|16410171|16410271|Industrial|-unknown-
+Grooved Pins|16410171|16410281|Industrial|-unknown-
+Hardware Hairpin Clips|16410171|16410291|Industrial|-unknown-
+Hardware Pin Blanks|16410171|16410351|Industrial|-unknown-
+Hitch Pins|16410171|16410311|Industrial|-unknown-
+Jig &amp; Fixture Pins|16410171|16410321|Industrial|-unknown-
+Linchpins|16410171|16410331|Industrial|-unknown-
+Panel Pins|16410171|16410341|Industrial|-unknown-
+Press Fit Locating Pins|16410171|16410361|Industrial|-unknown-
+Quick-Release Pins|16410171|16410371|Industrial|-unknown-
+L Handle Quick Release Pins|16410371|979143011|Industrial|-unknown-
+Ring Handle Quick Release Pins|16410371|979144011|Industrial|-unknown-
+Round Head Quick Release Pins|16410371|979142011|Industrial|-unknown-
+T-handle Quick Release Pins|16410371|979145011|Industrial|-unknown-
+Safety Lock Pins|16410171|16410381|Industrial|-unknown-
+Spring Pins|16410171|16410401|Industrial|-unknown-
+Tab Lock Pins|16410171|16410411|Industrial|-unknown-
+Weld In Quick Pins|16410171|16410431|Industrial|-unknown-
+Yoke End Locking Pins|16410171|16410441|Industrial|-unknown-
+Retaining Rings|383599011|16410451|Industrial|-unknown-
+Rivets|383599011|16410461|Industrial|-unknown-
+Hardware Blind Rivets|16410461|16410471|Industrial|-unknown-
+Solid Rivets|16410461|16410491|Industrial|-unknown-
+Split Rivets|16410461|16410501|Industrial|-unknown-
+Tubular Rivets|16410461|16410511|Industrial|-unknown-
+Screws|383599011|16403521|Industrial|-unknown-
+Binding Screws|16403521|16410521|Industrial|-unknown-
+Captive Screws|16403521|16410541|Industrial|-unknown-
+Cement Board Screws|16403521|307024011|Industrial|-unknown-
+Concrete Screws|16403521|307023011|Industrial|-unknown-
+Decking Screws|16403521|16410551|Industrial|-unknown-
+Machine Screw Kits|16403521|350669011|Industrial|-unknown-
+Machine Screws|16403521|16403531|Industrial|-unknown-
+Panel Screws|16403521|16410571|Industrial|-unknown-
+Self-Tapping Screws|16403521|317398011|Industrial|-unknown-
+Self Drilling Screws|317398011|307025011|Industrial|-unknown-
+Sheet Metal Screw Kits|317398011|350672011|Industrial|-unknown-
+Sheet Metal Screws|317398011|16410591|Industrial|-unknown-
+Sheetrock Screws|317398011|16410561|Industrial|-unknown-
+Thread Forming &amp; Cutting Screws|317398011|16410611|Industrial|-unknown-
+Set Screw Kits|16403521|350670011|Industrial|-unknown-
+Set Screws|16403521|16410581|Industrial|-unknown-
+Shoulder Screws|16403521|16410601|Industrial|-unknown-
+Socket Cap Screw Kits|16403521|350671011|Industrial|-unknown-
+Socket Cap Screws|16403521|16410531|Industrial|-unknown-
+Thumb Screws|16403521|16410621|Industrial|-unknown-
+Wood Screw Kits|16403521|350673011|Industrial|-unknown-
+Wood Screws|16403521|16410631|Industrial|-unknown-
+Spacers & Standoffs|383599011|16413321|Industrial|-unknown-
+Hex Spacers|16413321|16413341|Industrial|-unknown-
+Round Spacers|16413321|16413331|Industrial|-unknown-
+Threaded Inserts|383599011|16410701|Industrial|-unknown-
+Threaded Rods & Studs|383599011|16410711|Industrial|-unknown-
+Bi Directional Threaded End Rods &amp; Studs|16410711|16410741|Industrial|-unknown-
+Equal Thread Length Rods &amp; Studs|16410711|16410721|Industrial|-unknown-
+Fully Threaded Rods & Studs|16410711|16410731|Industrial|-unknown-
+Press In Captive Studs|16410711|16410761|Industrial|-unknown-
+Unequal Thread Length Studs|16410711|16410811|Industrial|-unknown-
+Washers|383599011|16410821|Industrial|-unknown-
+Belleville Washers|16410821|16410831|Industrial|-unknown-
+Cup Washers|16410821|323585011|Industrial|-unknown-
+Finishing Washers|16410821|16410871|Industrial|-unknown-
+Flange Washers|16410821|16410881|Industrial|-unknown-
+Flat Washers|16410821|16410891|Industrial|-unknown-
+Hardware Shoulder Washers|16410821|2526654011|Industrial|-unknown-
+Lock Washers|16410821|16410901|Industrial|-unknown-
+Retaining Washers|16410821|323586011|Industrial|-unknown-
+Rivet Washers|16410821|16410911|Industrial|-unknown-
+Sealing Washers|16410821|16410921|Industrial|-unknown-
+Slotted Washers|16410821|16410931|Industrial|-unknown-
+Spherical Washers|16410821|16410941|Industrial|-unknown-
+Spring Washers|16410821|16410951|Industrial|-unknown-
+Square Washers|16410821|16410961|Industrial|-unknown-
+Wave Washers|16410821|16410981|Industrial|-unknown-
+Filtration|16310161|3061625011|Industrial|-unknown-
+Lab Filters|3061625011|318079011|Industrial|-unknown-
+Inline Filters|318079011|393364011|Industrial|-unknown-
+Science Lab Air Sampling Filters|318079011|393363011|Industrial|-unknown-
+Science Lab Centrifugal Filters|318079011|318081011|Industrial|-unknown-
+Science Lab Filter Membranes|318079011|393366011|Industrial|-unknown-
+Science Lab Glass Fiber Filters|318079011|393367011|Industrial|-unknown-
+Science Lab Qualitative Filter Paper|318079011|393368011|Industrial|-unknown-
+Science Lab Quantitative Filter Paper|318079011|393369011|Industrial|-unknown-
+Science Lab Syringe Filters|318079011|318082011|Industrial|-unknown-
+Science Lab Ultrafilteration Filters|318079011|393370011|Industrial|-unknown-
+Food Service|16310161|3021450011|Industrial|-unknown-
+Hardware|16310161|16412251|Industrial|-unknown-
+Bumpers|16412251|16412281|Industrial|-unknown-
+Catches|16412251|16412341|Industrial|-unknown-
+Chains|16412251|16412351|Industrial|-unknown-
+Loop Chains|16412351|16412381|Industrial|-unknown-
+Sash Chains|16412351|16412401|Industrial|-unknown-
+Twist Chains|16412351|16412411|Industrial|-unknown-
+Grommets|16412251|16409771|Industrial|-unknown-
+Continuous Grommets|16409771|16409781|Industrial|-unknown-
+Grommet Kits|16409771|16409801|Industrial|-unknown-
+Plain Washer Grommets|16409771|16409811|Industrial|-unknown-
+Snap Grommets|16409771|16409831|Industrial|-unknown-
+Handles & Pulls|16412251|16412441|Industrial|-unknown-
+Adjustable Handles|16412441|16412451|Industrial|-unknown-
+Ball Knob Handles|16412441|16412461|Industrial|-unknown-
+Crank Handles|16412441|16412471|Industrial|-unknown-
+Folding Case Handles|16412441|16412481|Industrial|-unknown-
+Pull Handles|16412441|16412491|Industrial|-unknown-
+Rope &amp; Chain Pulls|16412441|16412501|Industrial|-unknown-
+Tapered Handles|16412441|16412511|Industrial|-unknown-
+Hardware Braces|16412251|16412261|Industrial|-unknown-
+Hardware Drawer Slides|16412251|16412421|Industrial|-unknown-
+Hardware Lock Bolts|16412251|16409851|Industrial|-unknown-
+Hardware Support Arms|16412251|16412431|Industrial|-unknown-
+Hinges|16412251|16412531|Industrial|-unknown-
+Bearing Hinges|16412531|16412541|Industrial|-unknown-
+Butt Hinges|16412531|16412551|Industrial|-unknown-
+Concealed Hinges|16412531|16412561|Industrial|-unknown-
+Continuous Hinges|16412531|16412571|Industrial|-unknown-
+Flag Hinges|16412531|16412591|Industrial|-unknown-
+Pin Hinges|16412531|16412631|Industrial|-unknown-
+Pivot Hinges|16412531|16412641|Industrial|-unknown-
+Slip Joint & Lift-Off Hinges|16412531|16412651|Industrial|-unknown-
+Spring Hinges|16412531|16412661|Industrial|-unknown-
+Stop Hinges|16412531|16412671|Industrial|-unknown-
+Strap Hinges|16412531|16412681|Industrial|-unknown-
+T Hinges|16412531|16412691|Industrial|-unknown-
+Weld On Hinges|16412531|16412701|Industrial|-unknown-
+Hooks|16412251|16412711|Industrial|-unknown-
+Magnetic Hooks|16412711|16412731|Industrial|-unknown-
+Over Door Hooks|16412711|16412751|Industrial|-unknown-
+Pegboard Hooks|16412711|16412761|Industrial|-unknown-
+S Hooks|16412711|16412781|Industrial|-unknown-
+Knobs & Hand Wheels|16412251|16412791|Industrial|-unknown-
+Ball Knobs|16412791|16412801|Industrial|-unknown-
+Female Ball Knobs|16412801|979109011|Industrial|-unknown-
+Male Ball Knobs|16412801|979108011|Industrial|-unknown-
+Control Knobs|16412791|16412811|Industrial|-unknown-
+Fluted Knobs|16412791|16412821|Industrial|-unknown-
+Female Fluted Knobs|16412821|979111011|Industrial|-unknown-
+Male Fluted Knobs|16412821|979110011|Industrial|-unknown-
+Four Arm Knobs: Female Four Arm Knobs, Male Four Arm Knobs|16412791|16412831|Industrial|-unknown-
+Female Four Arm Knobs|16412831|979113011|Industrial|-unknown-
+Male Four Arm Knobs|16412831|979112011|Industrial|-unknown-
+Hand Wheels|16412791|16412841|Industrial|-unknown-
+Knurled Knobs|16412791|16412851|Industrial|-unknown-
+Female Knurled Knobs|16412851|979115011|Industrial|-unknown-
+Male Knurled Knobs|16412851|979114011|Industrial|-unknown-
+Push-Pull Knobs: Female Push-Pull Knobs, Male Push-Pull Knobs|16412791|16412861|Industrial|-unknown-
+Shift Knobs|16412791|16412871|Industrial|-unknown-
+Star Knobs|16412791|16412881|Industrial|-unknown-
+T-Knobs|16412791|16412891|Industrial|-unknown-
+Female T Knobs|16412891|979119011|Industrial|-unknown-
+Male T Knobs|16412891|979118011|Industrial|-unknown-
+Tapered Knobs: Female Tapered Knobs, Male Tapered Knobs|16412791|979120011|Industrial|-unknown-
+Female Tapered Knobs|979120011|979122011|Industrial|-unknown-
+Male Tapered Knobs|979120011|979121011|Industrial|-unknown-
+Trigon & Three Arm Knobs|16412791|16412901|Industrial|-unknown-
+Male Three Arm Knobs|16412901|979123011|Industrial|-unknown-
+Wing Knobs|16412791|979125011|Industrial|-unknown-
+Female Wing Knobs|979125011|979127011|Industrial|-unknown-
+Latches|16412251|16412911|Industrial|-unknown-
+Cam Latches|16412911|16412921|Industrial|-unknown-
+Compression Latches|16412911|16412931|Industrial|-unknown-
+Draw Latches & Tension Latches|16412911|16412941|Industrial|-unknown-
+Hold-Down Latches|16412911|16412951|Industrial|-unknown-
+Hook Latches|16412911|16412961|Industrial|-unknown-
+Push-to-Close & Slam Latches|16412911|16412971|Industrial|-unknown-
+Snaps|16412251|16410641|Industrial|-unknown-
+Bolt Snaps|16410641|16410651|Industrial|-unknown-
+Spring Snaps|16410641|16410671|Industrial|-unknown-
+Trigger Snaps|16410641|16410681|Industrial|-unknown-
+Hydraulics, Pneumatics & Plumbing|16310161|3021479011|Industrial|-unknown-
+Fittings|3021479011|3021480011|Industrial|-unknown-
+Industrial Hose Fittings: Hose Clamps, Camlock Fittings, Single Ear Clamps|3021480011|383665011|Industrial|-unknown-
+Camlock Fittings|383665011|580142011|Industrial|-unknown-
+Hose Clamps|383665011|256338011|Industrial|-unknown-
+Ratcheting Hose Clamps|256338011|979132011|Industrial|-unknown-
+T-Bolt Hose Clamps|256338011|979131011|Industrial|-unknown-
+Worm Gear Hose Clamps|256338011|979130011|Industrial|-unknown-
+Single Ear Clamps|383665011|979135011|Industrial|-unknown-
+Industrial Pipe Fittings|3021480011|383612011|Industrial|-unknown-
+Tube Fittings|3021480011|383602011|Industrial|-unknown-
+Barbed Fittings|383602011|383604011|Industrial|-unknown-
+Barbed Elbow Fittings|383604011|700729011|Industrial|-unknown-
+Barbed Fitting Kits|383604011|700724011|Industrial|-unknown-
+Barbed Manifold Fittings|383604011|700731011|Industrial|-unknown-
+Barbed Press In Plugs|383604011|700725011|Industrial|-unknown-
+Barbed Reducer Fittings|383604011|700726011|Industrial|-unknown-
+Barbed Straight Fittings|383604011|700727011|Industrial|-unknown-
+Barbed Tee Fittings|383604011|700732011|Industrial|-unknown-
+Barbed Y Fittings|383604011|700728011|Industrial|-unknown-
+Compression Fittings|383602011|383614011|Industrial|-unknown-
+Compression Elbow Fittings|383614011|700758011|Industrial|-unknown-
+Luer Fittings|383602011|383606011|Industrial|-unknown-
+Luer Cap Fittings|383606011|700746011|Industrial|-unknown-
+Luer Injection Sites|383606011|700747011|Industrial|-unknown-
+Luer Lock Rings|383606011|700748011|Industrial|-unknown-
+Luer Nuts|383606011|700749011|Industrial|-unknown-
+Luer Plugs|383606011|700750011|Industrial|-unknown-
+Luer Stopcocks|383606011|700751011|Industrial|-unknown-
+Luer Tee Fittings|383606011|700753011|Industrial|-unknown-
+Luer-to-barbed Fittings|383606011|383608011|Industrial|-unknown-
+Luer To Barbed Elbow Fittings|383608011|700788011|Industrial|-unknown-
+Luer To Barbed Straight Fittings|383608011|700791011|Industrial|-unknown-
+Luer-to-barbed Bulkhead Fittings|383608011|700786011|Industrial|-unknown-
+Luer-to-barbed Panel Mount Fittings|383608011|700789011|Industrial|-unknown-
+Luer-to-barbed Tee Fittings|383608011|700792011|Industrial|-unknown-
+Luer-to-threaded Fittings|383606011|383607011|Industrial|-unknown-
+Luer To Threaded Bulkhead Fittings|383607011|700795011|Industrial|-unknown-
+Push To Connect Tube Fittings|383602011|580146011|Industrial|-unknown-
+Quick-connect Fittings|383602011|383609011|Industrial|-unknown-
+Sanitary Tube Fittings|383602011|580147011|Industrial|-unknown-
+Threaded To Barbed Tube Fittings|383602011|383605011|Industrial|-unknown-
+Threaded Tube Fittings|383602011|383603011|Industrial|-unknown-
+Welded Tube Fittings|383602011|700741011|Industrial|-unknown-
+Hoses|3021479011|256330011|Industrial|-unknown-
+Chemical Hoses|256330011|256334011|Industrial|-unknown-
+Duct Hoses|256330011|256335011|Industrial|-unknown-
+Hose Assemblies|256330011|256337011|Industrial|-unknown-
+Hydraulic Hoses|256330011|256339011|Industrial|-unknown-
+Industrial Vacuum Hoses|256330011|256340011|Industrial|-unknown-
+Suction Hoses|256330011|256343011|Industrial|-unknown-
+Water Hoses|256330011|256344011|Industrial|-unknown-
+Welding Hoses|256330011|256345011|Industrial|-unknown-
+Industrial Pumps: Centrifugal Pumps, Rotary Vane Pumps, Gear Pumps, Peristaltic Metering Pumps, Jet Pumps|3021479011|1265113011|Industrial|-unknown-
+Flexible Impeller Pumps|1265113011|1265120011|Industrial|-unknown-
+Industrial Diaphgram Pumps|1265113011|1265115011|Industrial|-unknown-
+Industrial Drum Pumps|1265113011|1265118011|Industrial|-unknown-
+Industrial Gear Pumps|1265113011|1265114011|Industrial|-unknown-
+Industrial Peristaltic Metering Pumps|1265113011|1265119011|Industrial|-unknown-
+Industrial Piston Pumps|1265113011|1265123011|Industrial|-unknown-
+Submersible Pumps|1265113011|1265116011|Industrial|-unknown-
+Pipes|3021479011|3062886011|Industrial|-unknown-
+Tubing|3021479011|383597011|Industrial|-unknown-
+Glass Tubing|383597011|16414121|Industrial|-unknown-
+Heat-shrink Tubing|383597011|700782011|Industrial|-unknown-
+Thin Wall Heat Shrink Tubing|700782011|700784011|Industrial|-unknown-
+Industrial Rubber Tubing|383597011|700785011|Industrial|-unknown-
+Metal Tubing|383597011|16414261|Industrial|-unknown-
+Metal Capillary Tubing|16414261|700775011|Industrial|-unknown-
+Metal Hollow Bar|16414261|700774011|Industrial|-unknown-
+Metal Hypodermic Tubing|16414261|700776011|Industrial|-unknown-
+Metal Industrial Wall Tubing|16414261|700772011|Industrial|-unknown-
+Plastic Tubing|383597011|16414401|Industrial|-unknown-
+Plastic Flex Tubing|16414401|700777011|Industrial|-unknown-
+Plastic Heavy Wall Tubing|16414401|700780011|Industrial|-unknown-
+Plastic Hollow Bar|16414401|700779011|Industrial|-unknown-
+Plastic Industrial Wall Tubing|16414401|700778011|Industrial|-unknown-
+Plastic Thin Wall Tubing|16414401|700781011|Industrial|-unknown-
+Valves|3021479011|383615011|Industrial|-unknown-
+Industrial Ball Valves|383615011|1265144011|Industrial|-unknown-
+Industrial Butterfly Valves|383615011|1265145011|Industrial|-unknown-
+Industrial Check Valves|383615011|1265146011|Industrial|-unknown-
+Industrial Control Valves|383615011|1265147011|Industrial|-unknown-
+Industrial Diaphragm Valves|383615011|1265151011|Industrial|-unknown-
+Industrial Gate Valves|383615011|1265149011|Industrial|-unknown-
+Industrial Globe Valves|383615011|1265150011|Industrial|-unknown-
+Industrial Solenoid Valves|383615011|1265148011|Industrial|-unknown-
+Janitorial & Sanitation Supplies|16310161|317971011|Industrial|-unknown-
+Cleaning Chemicals|317971011|3310240011|Industrial|-unknown-
+All-Purpose Cleaners - Cleaning Chemicals: Industrial &amp; Scientific|3310240011|3310241011|Industrial|-unknown-
+Dish Detergents - Cleaning Chemicals: Industrial &amp; Scientific|3310240011|3310244011|Industrial|-unknown-
+Dishwasher Detergents|3310240011|3310245011|Industrial|-unknown-
+Furniture & Wood Polishers|3310240011|3310246011|Industrial|-unknown-
+Glass Cleaners|3310240011|3310247011|Industrial|-unknown-
+Laundry Supplies|3310240011|3310248011|Industrial|-unknown-
+Anti-static Sprays - Laundry Supplies: Industrial &amp; Scientific|3310248011|3310249011|Industrial|-unknown-
+Bleach - Laundry Supplies: Industrial &amp; Scientific|3310248011|3310250011|Industrial|-unknown-
+Laundry Detergent|3310248011|3310253011|Industrial|-unknown-
+Laundry Starch - Laundry Supplies: Industrial &amp; Scientific|3310248011|3310256011|Industrial|-unknown-
+Lint Removers - Laundry Supplies: Industrial &amp; Scientific|3310248011|3310257011|Industrial|-unknown-
+Stain Removers - Laundry Supplies: Industrial &amp; Scientific|3310248011|3310258011|Industrial|-unknown-
+Metal Polishes - Cleaning Chemicals: Industrial &amp; Scientific|3310240011|3310259011|Industrial|-unknown-
+Cleaning Tools|317971011|3310260011|Industrial|-unknown-
+Cleaning Brushes - Cleaning Tools: Industrial &amp; Scientific|3310260011|3310261011|Industrial|-unknown-
+Microfiber Cloths - Cleaning Tools: Industrial &amp; Scientific|3310260011|3310268011|Industrial|-unknown-
+Scouring Pads - Cleaning Tools: Industrial &amp; Scientific|3310260011|3310269011|Industrial|-unknown-
+Sponges - Cleaning Tools: Industrial &amp; Scientific|3310260011|3310270011|Industrial|-unknown-
+Squeegees - Cleaning Tools: Industrial &amp; Scientific|3310260011|3310271011|Industrial|-unknown-
+Toilet Plungers &amp; Holders - Cleaning Tools: Industrial &amp; Scientific|3310260011|3310272011|Industrial|-unknown-
+Floor Care|317971011|3256960011|Industrial|-unknown-
+Floor &amp; Carpet Cleaning Supplies - Floor Care: Industrial &amp; Scientific: &amp; More|3256960011|3310273011|Industrial|-unknown-
+Carpet Cleaners &amp; Deodorizers - Floor &amp; Carpet Cleaning Supplies: Industrial &amp; Scientific|3310273011|3310274011|Industrial|-unknown-
+Carpet Steamer Accessories - Floor &amp; Carpet Cleaning Supplies: Industrial &amp; Scientific|3310273011|3310275011|Industrial|-unknown-
+Carpet Steamers - Floor &amp; Carpet Cleaning Supplies: Industrial &amp; Scientific|3310273011|3310276011|Industrial|-unknown-
+Carpet Sweepers|3310273011|3310277011|Industrial|-unknown-
+Floor Polishers - Floor &amp; Carpet Cleaning Supplies: Industrial &amp; Scientific|3310273011|3310280011|Industrial|-unknown-
+Mopping Supplies - Floor Care: Industrial &amp; Scientific|3256960011|3278156011|Industrial|-unknown-
+Accessories - Mopping Supplies: Industrial &amp; Scientific|3278156011|3278157011|Industrial|-unknown-
+Mop Handles - Accessories: Industrial &amp; Scientific|3278157011|3278158011|Industrial|-unknown-
+Refill Sponges - Accessories: Industrial &amp; Scientific|3278157011|3278159011|Industrial|-unknown-
+Buckets - Mopping Supplies: Industrial &amp; Scientific|3278156011|3278161011|Industrial|-unknown-
+Wet Mops - Mopping Supplies: Industrial &amp; Scientific|3278156011|3278162011|Industrial|-unknown-
+Sweeping Supplies|3256960011|3278163011|Industrial|-unknown-
+Broom Handles|3278163011|3278164011|Industrial|-unknown-
+Brooms - Sweeping Supplies: Industrial &amp; Scientific: Push Brooms, Hand Brooms, Angle Brooms &amp; More|3278163011|3278166011|Industrial|-unknown-
+Angle Brooms|3278166011|3278167011|Industrial|-unknown-
+Dustpans - Sweeping Supplies: Industrial &amp; Scientific|3278163011|3278170011|Industrial|-unknown-
+Vacuums|3256960011|3256961011|Industrial|-unknown-
+Indoor Vacuum Accessories - Vacuums: Industrial &amp; Scientific: Vacuum Filters, Vacuum Bags &amp; More|3256961011|3256962011|Industrial|-unknown-
+Vacuum Bags|3256962011|3256963011|Industrial|-unknown-
+Canister Bags|3256963011|3256964011|Industrial|-unknown-
+Handheld Bags|3256963011|3256965011|Industrial|-unknown-
+Upright Bags|3256963011|3256966011|Industrial|-unknown-
+Vacuum Belts|3256962011|3256967011|Industrial|-unknown-
+Vacuum Filters|3256962011|3256969011|Industrial|-unknown-
+Handheld Filters|3256969011|3256971011|Industrial|-unknown-
+Upright Filters|3256969011|3256972011|Industrial|-unknown-
+Indoor Vacuums|3256961011|3256977011|Industrial|-unknown-
+Canister Vacuums|3256977011|3256978011|Industrial|-unknown-
+Handheld Vacuums|3256977011|3256979011|Industrial|-unknown-
+Robotic Vacuums|3256977011|3256980011|Industrial|-unknown-
+Stick Vacuums & Electric Brooms|3256977011|3256981011|Industrial|-unknown-
+Upright Vacuums|3256977011|3256982011|Industrial|-unknown-
+Wet-Dry Vacuum Accessories|3256961011|3256983011|Industrial|-unknown-
+Wet-Dry Vacuums - Floor Care: Industrial &amp; Scientific|3256961011|3256984011|Industrial|-unknown-
+Industrial Lavatory Baby Changing Stations|317971011|1265153011|Industrial|-unknown-
+Industrial Lavatory Stall Parts|317971011|1265152011|Industrial|-unknown-
+Odor & Drain Maintainers|317971011|3310284011|Industrial|-unknown-
+Air Fresheners - Odor &amp; Drain Maintainers: Industrial &amp; Scientific: Spray Air Fresheners &amp; More|3310284011|3310285011|Industrial|-unknown-
+Drain Cleaning Equipment - Odor &amp; Drain Maintainers: Industrial &amp; Scientific|3310284011|3310290011|Industrial|-unknown-
+Drain Openers - Odor &amp; Drain Maintainers: Industrial &amp; Scientific|3310284011|3310291011|Industrial|-unknown-
+Janitorial Deodorizers|3310284011|3310292011|Industrial|-unknown-
+Paper Products|317971011|3310293011|Industrial|-unknown-
+Facial Tissues - Paper Products: Industrial &amp; Scientific|3310293011|3310295011|Industrial|-unknown-
+Napkin Dispeners - Paper Products: Industrial &amp; Scientific|3310293011|3311873011|Industrial|-unknown-
+Paper Towel Dispensers &amp; Holders - Paper Products: Industrial &amp; Scientific: Paper Towel Dispeners &amp; More|3310293011|3326569011|Industrial|-unknown-
+Paper Towels|3310293011|3310298011|Industrial|-unknown-
+Toilet Tissue - Paper Products: Industrial &amp; Scientific|3310293011|3310294011|Industrial|-unknown-
+Toilet Tissue Dispensers - Paper Products: Industrial &amp; Scientific|3310293011|3311872011|Industrial|-unknown-
+Personal Care Products|317971011|3310301011|Industrial|-unknown-
+Feminine Hygiene Products - Personal Care Products: Industrial &amp; Scientific: Tampons &amp; More|3310301011|3310302011|Industrial|-unknown-
+Hand Creams &amp; Lotions - Personal Care Products: Industrial &amp; Scientific: Hand Lotions, Hand Creams &amp; More|3310301011|3310309011|Industrial|-unknown-
+Hand Sanitizers - Personal Care Products: Industrial &amp; Scientific|3310301011|3310312011|Industrial|-unknown-
+Hand Soaps|3310301011|3310313011|Industrial|-unknown-
+Sanitary Products Receptacles - Personal Care Products: Industrial &amp; Scientific|3310301011|3311875011|Industrial|-unknown-
+Restroom Fixtures|317971011|3310316011|Industrial|-unknown-
+Bathroom Sink Faucets - Restroom Fixtures: Industrial &amp; Scientific|3310316011|3310317011|Industrial|-unknown-
+Hand Dryers|3310316011|3310318011|Industrial|-unknown-
+Toilet Seats|3310316011|3310320011|Industrial|-unknown-
+Toilet Tanks - Restroom Fixtures: Industrial &amp; Scientific|3310316011|3310321011|Industrial|-unknown-
+Toilets - Restroom Fixtures: Industrial &amp; Scientific: Two-Piece Toilets, One-Piece Toilets &amp; More|3310316011|3310322011|Industrial|-unknown-
+One-Piece Toilets - Restroom Fixtures: Industrial &amp; Scientific|3310322011|3310323011|Industrial|-unknown-
+Two-Piece Toilets|3310322011|3310324011|Industrial|-unknown-
+Science Lab Detergents|317971011|317976011|Industrial|-unknown-
+Science Lab Disinfectants|317971011|317977011|Industrial|-unknown-
+Science Lab Disposable Wipes|317971011|317979011|Industrial|-unknown-
+Science Lab Glassware Washing Solutions|317971011|317978011|Industrial|-unknown-
+Waste Receptacles & Liners|317971011|3310326011|Industrial|-unknown-
+Smoking Receptacles|3310326011|3310328011|Industrial|-unknown-
+Trash Bags &amp; Liners - Waste Receptacles &amp; Liners: Industrial &amp; Scientific: &amp; More|3310326011|3310329011|Industrial|-unknown-
+Can Liners|3310329011|3310330011|Industrial|-unknown-
+Trash Cans - Waste Receptacles &amp; Liners: Industrial &amp; Scientific|3310326011|3310331011|Industrial|-unknown-
+Wire Brushes|317971011|1265107011|Industrial|-unknown-
+Lab & Scientific Products|16310161|317970011|Industrial|-unknown-
+Lab Chemicals|317970011|3013597011|Industrial|-unknown-
+Chemical Acids|3013597011|3013598011|Industrial|-unknown-
+Chemical Bases|3013597011|3013600011|Industrial|-unknown-
+Chemical Buffers|3013597011|3013601011|Industrial|-unknown-
+Chemical Standards|3013597011|3013603011|Industrial|-unknown-
+Lab Cleaning Brushes|317970011|317972011|Industrial|-unknown-
+Science Lab Antistatic Brushes|317972011|317973011|Industrial|-unknown-
+Science Lab Beaker Cleaning Brushes|317972011|317974011|Industrial|-unknown-
+Science Lab Tube Cleaning Brushes|317972011|317975011|Industrial|-unknown-
+Lab Consumables|317970011|2616713011|Industrial|-unknown-
+Lab Boiling Stones|2616713011|2620829011|Industrial|-unknown-
+Lab Stoppers|2616713011|393449011|Industrial|-unknown-
+Rubber Stoppers|393449011|393458011|Industrial|-unknown-
+Science Lab Cap Plugs|393449011|393456011|Industrial|-unknown-
+Science Lab Corks|393449011|393457011|Industrial|-unknown-
+Lab Swabs|2616713011|2620830011|Industrial|-unknown-
+Lab Weights|2616713011|318112011|Industrial|-unknown-
+Microscope Slides & Accessories|2616713011|318114011|Industrial|-unknown-
+Microscope Slide Holders|318114011|318115011|Industrial|-unknown-
+Microscope Slides|318114011|318116011|Industrial|-unknown-
+pH Test Strips|2616713011|3013605011|Industrial|-unknown-
+Science Lab Agar Media|2616713011|318050011|Industrial|-unknown-
+Science Lab Sample Bags|2616713011|393328011|Industrial|-unknown-
+Science Lab Specimen Collection Supplies|2616713011|318129011|Industrial|-unknown-
+Lab Equipment|317970011|317980011|Industrial|-unknown-
+Autoclave Equipment|317980011|317981011|Industrial|-unknown-
+Science Lab Autoclaves|317981011|393225011|Industrial|-unknown-
+Cages & Aquariums|317980011|393251011|Industrial|-unknown-
+Centrifuges|317980011|317983011|Industrial|-unknown-
+Benchtop Centrifuges|317983011|317984011|Industrial|-unknown-
+Desiccators & Accessories|317980011|393237011|Industrial|-unknown-
+Science Lab Desiccator Accessories|393237011|393240011|Industrial|-unknown-
+Science Lab Non Vacuum Desiccators|393237011|393239011|Industrial|-unknown-
+Science Lab Vacuum Desiccators|393237011|393238011|Industrial|-unknown-
+Electrophoresis Systems|317980011|317987011|Industrial|-unknown-
+Science Lab Electrophoresis Accessories|317987011|393227011|Industrial|-unknown-
+Furnace Equipment|317980011|317997011|Industrial|-unknown-
+Science Lab Furnace Accessories|317997011|393228011|Industrial|-unknown-
+Science Lab Furnaces|317997011|393229011|Industrial|-unknown-
+Homogenizers & Accessories|317980011|318001011|Industrial|-unknown-
+Science Lab Homogenizer Accessories|318001011|393230011|Industrial|-unknown-
+Science Lab Homogenizers|318001011|393485011|Industrial|-unknown-
+Ice Makers|317980011|318004011|Industrial|-unknown-
+Incubators & Accessories|317980011|318007011|Industrial|-unknown-
+Science Lab Co2 Incubators|318007011|318008011|Industrial|-unknown-
+Science Lab Hybridization Incubators|318007011|318010011|Industrial|-unknown-
+Science Lab Incubator Accessories|318007011|393231011|Industrial|-unknown-
+Instrument Supports & Apparatus|317980011|393442011|Industrial|-unknown-
+Lab Clamps|393442011|318068011|Industrial|-unknown-
+Lab Distillation Apparatus|393442011|2620831011|Industrial|-unknown-
+Science Lab Support Rings|393442011|318130011|Industrial|-unknown-
+Lab Baths &amp; Accessories: Circulating Baths, Water Baths, Bath Accessories|317980011|393241011|Industrial|-unknown-
+Science Lab Bath Accessories|393241011|393243011|Industrial|-unknown-
+Science Lab Circulating Baths|393241011|393242011|Industrial|-unknown-
+Science Lab Water Baths|393241011|318029011|Industrial|-unknown-
+Lab Shakers & Accessories|317980011|318012011|Industrial|-unknown-
+Science Lab Shaker Accessories|318012011|393232011|Industrial|-unknown-
+Microscope Equipment|317980011|393246011|Industrial|-unknown-
+Science Lab Microscope Accessories|393246011|393250011|Industrial|-unknown-
+Ovens|317980011|318021011|Industrial|-unknown-
+Science Lab Convection Ovens|318021011|393234011|Industrial|-unknown-
+Science Lab Vacuum Ovens|318021011|393235011|Industrial|-unknown-
+Science Lab Bunsen Burners|317980011|317982011|Industrial|-unknown-
+Science Lab Cryogenic Freezers|317980011|317996011|Industrial|-unknown-
+Science Lab Electroporators|317980011|317992011|Industrial|-unknown-
+Science Lab Evaporators|317980011|317993011|Industrial|-unknown-
+Science Lab Fermenters|317980011|317994011|Industrial|-unknown-
+Science Lab Freeze Driers|317980011|317995011|Industrial|-unknown-
+Science Lab Glassware Washers|317980011|317998011|Industrial|-unknown-
+Science Lab Heat Blocks|317980011|317999011|Industrial|-unknown-
+Science Lab Heating Mantles|317980011|318000011|Industrial|-unknown-
+Science Lab Hot Plates|317980011|318002011|Industrial|-unknown-
+Science Lab Immersion Heaters|317980011|318006011|Industrial|-unknown-
+Science Lab Power Supply Units|317980011|318022011|Industrial|-unknown-
+Science Lab Pump Accessories|317980011|393233011|Industrial|-unknown-
+Science Lab Pumps|317980011|393484011|Industrial|-unknown-
+Science Lab Thermal Cyclers|317980011|318024011|Industrial|-unknown-
+Science Lab Vacuum Chambers|317980011|318025011|Industrial|-unknown-
+Science Lab Vacuum Traps|317980011|318028011|Industrial|-unknown-
+Stirrers|317980011|318023011|Industrial|-unknown-
+Science Lab Stirrer Bars|318023011|393236011|Industrial|-unknown-
+Water Purification Equipment|317980011|318030011|Industrial|-unknown-
+Science Lab Water Purification System Accessories|318030011|393245011|Industrial|-unknown-
+Science Lab Water Purification Units|318030011|393244011|Industrial|-unknown-
+Lab Furniture|317970011|318031011|Industrial|-unknown-
+Lab Racks|318031011|2618631011|Industrial|-unknown-
+Lab Freestanding Storage Racks|2618631011|2620844011|Industrial|-unknown-
+Lab Washing Racks|2618631011|2620845011|Industrial|-unknown-
+Science Lab Bottle Racks|2618631011|393415011|Industrial|-unknown-
+Science Lab Drying Racks|2618631011|393414011|Industrial|-unknown-
+Science Lab Tube Racks|2618631011|318133011|Industrial|-unknown-
+Science Lab Benches|318031011|318032011|Industrial|-unknown-
+Science Lab Desks|318031011|318034011|Industrial|-unknown-
+Science Lab Dispensers|318031011|318078011|Industrial|-unknown-
+Science Lab Lockers|318031011|318035011|Industrial|-unknown-
+Science Lab Seats|318031011|318036011|Industrial|-unknown-
+Science Lab Utility Islands|318031011|318037011|Industrial|-unknown-
+Lab Instruments|317970011|393252011|Industrial|-unknown-
+Balances|393252011|393253011|Industrial|-unknown-
+Science Lab Electronic Toploading Balances|393253011|393256011|Industrial|-unknown-
+Chromatography Columns & Supplies|393252011|393424011|Industrial|-unknown-
+Chromatography IC Columns|393424011|393429011|Industrial|-unknown-
+Science Lab Chromotography HPLC Columns|393424011|393428011|Industrial|-unknown-
+TLC Chromatography|393424011|393433011|Industrial|-unknown-
+Industrial & Scientific|393252011|393258011|Industrial|-unknown-
+Conductivity Meters|393258011|393261011|Industrial|-unknown-
+Electroscopes & Van de Graffs|393258011|393279011|Industrial|-unknown-
+Science Lab Anemometers &amp; Flowmeters: Flowmeters, Anemometers|393258011|393267011|Industrial|-unknown-
+Science Lab Barometers|393258011|393259011|Industrial|-unknown-
+Science Lab Calorimeters|393258011|393260011|Industrial|-unknown-
+Science Lab Dissolved Oxygen Meters|393258011|393262011|Industrial|-unknown-
+Science Lab Fluorometers|393258011|393277011|Industrial|-unknown-
+Science Lab Hydrometers|393258011|393263011|Industrial|-unknown-
+Science Lab Luminometers|393258011|393276011|Industrial|-unknown-
+Science Lab Oscilloscopes|393258011|393269011|Industrial|-unknown-
+Science Lab Osmometers|393258011|393270011|Industrial|-unknown-
+Science Lab PH Meters|393258011|393271011|Industrial|-unknown-
+Science Lab Photometers &amp; Light Meters|393258011|393278011|Industrial|-unknown-
+Science Lab Spectrometers|393258011|393264011|Industrial|-unknown-
+Science Lab Turbidity Meters|393258011|393273011|Industrial|-unknown-
+Science Lab Viscometers|393258011|393274011|Industrial|-unknown-
+Spectrophotometer & Colorimeter Accessories|393258011|393266011|Industrial|-unknown-
+Thermometers & Accessories|393258011|393280011|Industrial|-unknown-
+Digital Thermometer|393280011|393284011|Industrial|-unknown-
+Science Lab Bi Metal Thermometers|393280011|393282011|Industrial|-unknown-
+Science Lab Non Mercury Thermometers|393280011|393283011|Industrial|-unknown-
+Science Lab Thermometer Accessories|393280011|393281011|Industrial|-unknown-
+Pipettes|393252011|318122011|Industrial|-unknown-
+Ostwald Folin Pipettes|318122011|393398011|Industrial|-unknown-
+Pasteur Pipettes|318122011|318123011|Industrial|-unknown-
+Science Lab Aspirating Pipettes|318122011|393401011|Industrial|-unknown-
+Science Lab Bacterialogical Pipettes|318122011|393399011|Industrial|-unknown-
+Science Lab Dropping Pipettes|318122011|393402011|Industrial|-unknown-
+Science Lab Microcapillary Pipettes|318122011|393400011|Industrial|-unknown-
+Science Lab Serological Pipettes|318122011|318124011|Industrial|-unknown-
+Science Lab Volumetric Pipettes|318122011|393397011|Industrial|-unknown-
+Pipettors & Accessories|393252011|318126011|Industrial|-unknown-
+Multichannel Pipettors|318126011|318127011|-unknown-|-unknown-
+Science Lab Pipettor Accessories|318126011|393404011|Industrial|-unknown-
+Science Lab Data Management Equipment|393252011|393286011|Industrial|-unknown-
+Science Lab Light Sources|393252011|393287011|Industrial|-unknown-
+Lab Utensils|317970011|318038011|Industrial|-unknown-
+Cell Scrapers & Spreaders|318038011|393333011|Industrial|-unknown-
+Lab Knives & Scalpels|318038011|393331011|Industrial|-unknown-
+Lab Spoons|318038011|318043011|Industrial|-unknown-
+Science Lab Dissecting Instruments|318038011|318039011|Industrial|-unknown-
+Science Lab Ladles|318038011|393329011|Industrial|-unknown-
+Science Lab Needles|318038011|318120011|Industrial|-unknown-
+Science Lab Samplers|318038011|318040011|Industrial|-unknown-
+Science Lab Scissors|318038011|393332011|Industrial|-unknown-
+Science Lab Sharps Collections|318038011|393334011|Industrial|-unknown-
+Science Lab Spatulas|318038011|318042011|Industrial|-unknown-
+Science Lab Stirring Rods|318038011|318048011|Industrial|-unknown-
+Sieves|318038011|393335011|Industrial|-unknown-
+Syringes|318038011|318131011|Industrial|-unknown-
+Labware|317970011|318049011|Industrial|-unknown-
+Beakers|318049011|318051011|Industrial|-unknown-
+Burettes|318049011|318052011|Industrial|-unknown-
+Automatic Burettes|318052011|393341011|Industrial|-unknown-
+Digital Burettes|318052011|393342011|Industrial|-unknown-
+Lab Standard Burettes|318052011|2620834011|Industrial|-unknown-
+Schellbach Burettes|318052011|393343011|Industrial|-unknown-
+Condensers|318049011|318053011|Industrial|-unknown-
+Crucibles|318049011|318058011|Industrial|-unknown-
+Cuvettes|318049011|318063011|Industrial|-unknown-
+Lab Ampules|318049011|2620832011|Industrial|-unknown-
+Lab Bottles|318049011|318067011|Industrial|-unknown-
+Centrifuge Bottles|318067011|393351011|Industrial|-unknown-
+Science Lab Dispensing Bottles|318067011|393357011|Industrial|-unknown-
+Science Lab Environmental Bottles|318067011|393352011|Industrial|-unknown-
+Science Lab Fluorinated Bottles|318067011|393360011|Industrial|-unknown-
+Science Lab Media Bottles|318067011|393354011|Industrial|-unknown-
+Science Lab Reagent Bottles|318067011|393359011|Industrial|-unknown-
+Science Lab Roller Bottles|318067011|393438011|Industrial|-unknown-
+Science Lab Serum Bottles|318067011|393358011|Industrial|-unknown-
+Science Lab Wash Bottles|318067011|393361011|Industrial|-unknown-
+Science Lab Weighing Bottles|318067011|393362011|Industrial|-unknown-
+Lab Dishes|318049011|318072011|Industrial|-unknown-
+Science Lab Cell Culture Dishes|318072011|393441011|Industrial|-unknown-
+Science Lab Evaporation Dishes|318072011|318073011|Industrial|-unknown-
+Science Lab Petri Dishes|318072011|318074011|Industrial|-unknown-
+Science Lab Watch Glasses|318072011|318076011|Industrial|-unknown-
+Lab Flasks|318049011|318083011|Industrial|-unknown-
+Boiling Flasks|318083011|393371011|Industrial|-unknown-
+Cell Culture Flasks|318083011|393372011|Industrial|-unknown-
+Dewar Flasks|318083011|318064011|Industrial|-unknown-
+Distilling Flasks|318083011|393374011|Industrial|-unknown-
+Erlenmeyer Flasks|318083011|318085011|Industrial|-unknown-
+Kjeldahl Flasks|318083011|393376011|Industrial|-unknown-
+Science Lab Filtering Flasks|318083011|393378011|Industrial|-unknown-
+Volumetric Flasks|318083011|318087011|Industrial|-unknown-
+Lab Funnels|318049011|318088011|Industrial|-unknown-
+Filtering Funnels|318088011|393382011|Industrial|-unknown-
+Lab Buchner Funnels|318088011|2620841011|Industrial|-unknown-
+Lab Short Stem Funnels|318088011|2620843011|Industrial|-unknown-
+Science Lab Addition Funnels|318088011|393380011|Industrial|-unknown-
+Science Lab Filling Funnels|318088011|393381011|Industrial|-unknown-
+Science Lab Separatory Funnels|318088011|393379011|Industrial|-unknown-
+Lab Jars|318049011|318089011|Industrial|-unknown-
+Lab Tubes|318049011|318094011|Industrial|-unknown-
+Science Lab Drying Tubes|318094011|318101011|Industrial|-unknown-
+Science Lab High Speed Centrifuge Tubes|318094011|318098011|Industrial|-unknown-
+Science Lab Micro Centrifuge Tubes|318094011|318099011|Industrial|-unknown-
+Science Lab PCR Tubes|318094011|393388011|Industrial|-unknown-
+Lab Vials|318049011|318111011|Industrial|-unknown-
+Science Lab Autosampler Vials|318111011|393394011|Industrial|-unknown-
+Science Lab Epa Vials|318111011|393395011|Industrial|-unknown-
+Science Lab Sample Vials|318111011|393391011|Industrial|-unknown-
+Science Lab Scintillation Vials|318111011|393390011|Industrial|-unknown-
+Microplates|318049011|318118011|Industrial|-unknown-
+Science Lab Assay Microplates|318118011|393423011|Industrial|-unknown-
+Science Lab Cell Culture Microplates|318118011|393421011|Industrial|-unknown-
+Science Lab Coated Microplates|318118011|393420011|Industrial|-unknown-
+Science Lab Filtering Microplates|318118011|393419011|Industrial|-unknown-
+Science Lab Genomic Microplates|318118011|393422011|Industrial|-unknown-
+Science Lab Nonbinding Microplates|318118011|393416011|Industrial|-unknown-
+Science Lab Small Volume Microplates|318118011|393418011|Industrial|-unknown-
+Science Lab Storage Microplates|318118011|393417011|Industrial|-unknown-
+Science Lab Carboys|318049011|393443011|Industrial|-unknown-
+Science Lab Cylinders|318049011|393349011|Industrial|-unknown-
+Science Lab Mortars &amp; Pestles|318049011|318119011|Industrial|-unknown-
+Science Lab Well Plates|318049011|318134011|Industrial|-unknown-
+Microbiology Supplies|317970011|393446011|Industrial|-unknown-
+Science Lab Cell Culture Media|393446011|393452011|Industrial|-unknown-
+Material Handling Products|16310161|256346011|Industrial|-unknown-
+Casters|256346011|16412291|Industrial|-unknown-
+Ball Casters|16412291|16412301|Industrial|-unknown-
+Plate Casters|16412291|383663011|Industrial|-unknown-
+Stem Casters|16412291|383662011|Industrial|-unknown-
+Coil Chains|256346011|16412371|Industrial|-unknown-
+Dollies|256346011|256347011|Industrial|-unknown-
+Drum Handling Equipment|256346011|401559011|Industrial|-unknown-
+Drum &amp; Pail Deheaders|401559011|401562011|Industrial|-unknown-
+Drum &amp; Pail Faucets|401559011|401564011|Industrial|-unknown-
+Drum &amp; Pail Heaters|401559011|401560011|Industrial|-unknown-
+Drum &amp; Pail Liners|401559011|401563011|Industrial|-unknown-
+Drum &amp; Pail Mixers|401559011|401561011|Industrial|-unknown-
+Drum &amp; Pail Opener Closers|401559011|401566011|Industrial|-unknown-
+Drum-and-pail Lids|401559011|401565011|Industrial|-unknown-
+Festoon Kits|256346011|256349011|Industrial|-unknown-
+Forklift Booms|256346011|3003667011|Industrial|-unknown-
+Forklifts|256346011|256350011|Industrial|-unknown-
+Hoist Accessories|256346011|256352011|Industrial|-unknown-
+HVAC Equipment|256346011|720590011|Industrial|-unknown-
+HVAC Blowers|720590011|720594011|Industrial|-unknown-
+HVAC Fans & Circulators|720590011|720592011|Industrial|-unknown-
+Industrial HVAC Condensate Pumps|720590011|1265155011|Industrial|-unknown-
+Industrial HVAC Controls|720590011|720593011|Industrial|-unknown-
+Hydraulic Lifting Cylinders|256346011|256361011|Industrial|-unknown-
+Hydraulic Lifting Pumps|256346011|256362011|Industrial|-unknown-
+Industrial Light Towers|256346011|3003668011|Industrial|-unknown-
+Jack Accessories|256346011|256363011|Industrial|-unknown-
+Jacks|256346011|256364011|Industrial|-unknown-
+Bottle Jacks|256364011|256365011|Industrial|-unknown-
+Floor Jacks|256364011|256366011|Industrial|-unknown-
+Pump Jacks|256364011|256367011|Industrial|-unknown-
+Tongue Jacks|256364011|256368011|Industrial|-unknown-
+Wall Jacks|256364011|256369011|Industrial|-unknown-
+Lift Tables|256346011|256370011|Industrial|-unknown-
+Lifting Accessories|256346011|256371011|-unknown-|-unknown-
+Grab Hooks|256371011|256372011|-unknown-|-unknown-
+Hoist Rings|256371011|256373011|-unknown-|-unknown-
+Lift Magnets|256371011|256374011|-unknown-|-unknown-
+Lifting Clamps|256371011|256375011|-unknown-|-unknown-
+Lifting Cranes|256346011|256376011|Industrial|-unknown-
+Bridge Cranes|256376011|256377011|Industrial|-unknown-
+Gantry Cranes|256376011|256378011|Industrial|-unknown-
+Hydraulic Cranes|256376011|256379011|Industrial|-unknown-
+Jib Cranes|256376011|256380011|Industrial|-unknown-
+Winch Cranes|256376011|256381011|Industrial|-unknown-
+Load Binders|256346011|256382011|Industrial|-unknown-
+Loading Dock Levelers|256346011|1265125011|Industrial|-unknown-
+Loading Dock Plates|256346011|1265126011|Industrial|-unknown-
+Machine Tool Safety Accessories|256346011|401568011|Industrial|-unknown-
+Manual Hoists|256346011|256354011|Industrial|-unknown-
+Hand Chain Hoists|256354011|256355011|Industrial|-unknown-
+Lever Hoists|256354011|256356011|Industrial|-unknown-
+Pulley Hoists|256354011|256357011|Industrial|-unknown-
+Manual Winches|256346011|256404011|Industrial|-unknown-
+Material Lifts|256346011|3003669011|Industrial|-unknown-
+Pallet Strappers|256346011|401572011|Industrial|-unknown-
+Pallet Trucks|256346011|256383011|Industrial|-unknown-
+Pallets|256346011|256384011|Industrial|-unknown-
+Panel Carriers|256346011|256385011|Industrial|-unknown-
+Personnel Lifts|256346011|3003670011|Industrial|-unknown-
+Platform Trucks|256346011|256386011|Industrial|-unknown-
+Pneumatic Equipment|256346011|1265132011|Industrial|-unknown-
+Industrial Air Cylinder Accessories|1265132011|1265135011|Industrial|-unknown-
+Power Hoists|256346011|256358011|Industrial|-unknown-
+Air Hoists|256358011|256359011|Industrial|-unknown-
+Electric Hoists|256358011|256360011|Industrial|-unknown-
+Power Winches|256346011|256405011|Industrial|-unknown-
+Ramps|256346011|256393011|Industrial|-unknown-
+Rigging|256346011|383596011|Industrial|-unknown-
+Cable &amp; Wire Rope|383596011|16413891|Industrial|-unknown-
+Industrial Slings: Web Slings, Wire Rope Slings, Chain Slings, Round Slings|383596011|3006899011|Industrial|-unknown-
+Rigging Blocks|383596011|256394011|Industrial|-unknown-
+Mounted Blocks|256394011|256395011|Industrial|-unknown-
+Shell Blocks|256394011|256396011|Industrial|-unknown-
+Snatch Blocks|256394011|256397011|Industrial|-unknown-
+Wire Rope Clips|383596011|979139011|Industrial|-unknown-
+Wire Rope Crimping Loop Sleeves|383596011|979136011|Industrial|-unknown-
+Roller Stands|256346011|256399011|Industrial|-unknown-
+Securing Straps|256346011|256400011|Industrial|-unknown-
+Service Carts|256346011|256401011|Industrial|-unknown-
+Trolleys|256346011|256402011|Industrial|-unknown-
+Wheels|256346011|16413351|Industrial|-unknown-
+Pallet &amp; Lift Truck Wheels|16413351|16413391|Industrial|-unknown-
+V Grooved Wheels|16413351|16413411|Industrial|-unknown-
+Materials|16310161|16310191|Industrial|-unknown-
+Ceramics|16310191|16413981|Industrial|-unknown-
+Ceramic Discs|16413981|16414011|Industrial|-unknown-
+Ceramic Rods|16413981|16414021|Industrial|-unknown-
+Ceramic Sheets|16413981|16414031|Industrial|-unknown-
+Fabrics, Fibers & Textiles|16310191|16414051|Industrial|-unknown-
+Felt|16414051|1265138011|Industrial|-unknown-
+Felt Cords|1265138011|1265139011|Industrial|-unknown-
+Felt Sheets|1265138011|1265141011|Industrial|-unknown-
+Felt Strips|1265138011|1265142011|Industrial|-unknown-
+Glass|16310191|16414061|Industrial|-unknown-
+Glass Rods|16414061|16414101|Industrial|-unknown-
+Glass Sheets|16414061|16414111|Industrial|-unknown-
+Metals & Alloys|16310191|16414131|Industrial|-unknown-
+Industrial & Scientific|16414131|16310091|-unknown-|-unknown-
+Featured Categories|16310091|51555011|Industrial|-unknown-
+Metal & Alloy Sheets|16414131|16414241|Industrial|-unknown-
+Expanded Metal &amp; Alloy Sheets|16414241|2983249011|-unknown-|-unknown-
+Perforated Metal & Alloy Sheets|16414241|2983250011|-unknown-|-unknown-
+Solid Metal &amp; Alloy Sheets|16414241|2983251011|Industrial|-unknown-
+Metal & Alloy Wire|16414131|16414431|-unknown-|-unknown-
+Magnet Wire|16414431|310354011|-unknown-|-unknown-
+Music Wire|16414431|310355011|-unknown-|-unknown-
+Metal Angles|16414131|16414141|Industrial|-unknown-
+Metal Bars|16414131|16414161|Industrial|-unknown-
+Metal Cubes|16414131|16414171|Industrial|-unknown-
+Metal Foil|16414131|16414191|Industrial|-unknown-
+Metal Hexagonal Bars|16414131|16414201|Industrial|-unknown-
+Metal I Beams|16414131|16414211|Industrial|-unknown-
+Metal Mesh|16414131|16414221|Industrial|-unknown-
+Metal Plates|16414131|401576011|Industrial|-unknown-
+Metal Rods|16414131|16414231|Industrial|-unknown-
+Metal Spheres|16414131|16414151|Industrial|-unknown-
+Metal T Bars|16414131|16414251|Industrial|-unknown-
+Metal U Channels|16414131|16414271|Industrial|-unknown-
+Rubber|16310191|350666011|Industrial|-unknown-
+Rubber Spheres|350666011|350667011|Industrial|-unknown-
+Wood|16310191|16414441|Industrial|-unknown-
+Wood &amp; Timber Dowel Rods|16414441|16414481|Industrial|-unknown-
+Measurement & Inspection Products|16310161|256409011|Industrial|-unknown-
+Borescopes|256409011|401578011|Industrial|-unknown-
+Calibration Standard Rods|256409011|256410011|Industrial|-unknown-
+Calipers|256409011|256411011|Industrial|-unknown-
+Digital Calipers|256411011|2476630011|Industrial|-unknown-
+Vernier Calipers|256411011|256414011|Industrial|-unknown-
+Chamfer Gauges|256409011|401579011|Industrial|-unknown-
+Countersink Gauges|256409011|401580011|Industrial|-unknown-
+Depth Gauges|256409011|256415011|Industrial|-unknown-
+Force Gauges|256409011|401582011|Industrial|-unknown-
+Gage Blocks & Accessories|256409011|3340400011|Industrial|-unknown-
+Gauge Balls|256409011|401583011|Industrial|-unknown-
+Hardware Pin Gauges|256409011|401593011|Industrial|-unknown-
+Height Gauges|256409011|401587011|Industrial|-unknown-
+Industrial Tools Protractors|256409011|256416011|Industrial|-unknown-
+Linear Distance Indicators|256409011|3012163011|Industrial|-unknown-
+Dial Indicators|3012163011|3012165011|Industrial|-unknown-
+Electronic Indicators|3012163011|3012166011|Industrial|-unknown-
+Test Indicators|3012163011|256421011|Industrial|-unknown-
+Magnetic Bases|256409011|401589011|Industrial|-unknown-
+Micrometers|256409011|256419011|Industrial|-unknown-
+Optical Inspection Apparatus|256409011|401591011|Industrial|-unknown-
+Machine Tool Inspection Mirrors|401591011|1265137011|Industrial|-unknown-
+Machine Tool Lamps|401591011|1265136011|Industrial|-unknown-
+Optical Measurement Apparatus|256409011|401592011|Industrial|-unknown-
+Replicating Materials|256409011|401595011|Industrial|-unknown-
+Ring Gauges|256409011|401596011|Industrial|-unknown-
+Roughness Tester|256409011|401597011|Industrial|-unknown-
+Snap Gauges|256409011|401598011|Industrial|-unknown-
+Space Blocks|256409011|401599011|Industrial|-unknown-
+Straight Edges|256409011|401600011|Industrial|-unknown-
+Surface Roughness Comparators|256409011|401601011|Industrial|-unknown-
+Surface Roughness Gauges|256409011|401602011|Industrial|-unknown-
+Torque Gauges|256409011|401604011|Industrial|-unknown-
+V Blocks|256409011|401605011|Industrial|-unknown-
+Video Inspection Equipment|256409011|401606011|Industrial|-unknown-
+Occupational Health & Safety Products|16310161|318135011|Industrial|-unknown-
+Emergency Response Equipment|318135011|393317011|Industrial|-unknown-
+Science Lab Eye Wash Units|393317011|318137011|Industrial|-unknown-
+Science Lab Fall Protection Hardware|393317011|393319011|Industrial|-unknown-
+Science Lab First Aid Supplies|393317011|393320011|Industrial|-unknown-
+Science Lab Showers|393317011|318140011|Industrial|-unknown-
+Hazardous Material Handling|318135011|393321011|Industrial|-unknown-
+Hazardous Storage Equipment|393321011|401567011|Industrial|-unknown-
+Hazardous Storage Cabinets|401567011|401635011|Industrial|-unknown-
+Hazardous Storage Cans|401567011|401636011|Industrial|-unknown-
+Hazardous Storage Drums|401567011|401637011|Industrial|-unknown-
+Hazardous Storage Lockers|401567011|401638011|Industrial|-unknown-
+Industrial Secondary Containment Equipment|393321011|401570011|Industrial|-unknown-
+Science Lab Biohazard Waste Containers|393321011|393322011|Industrial|-unknown-
+Science Lab Drums|393321011|393323011|Industrial|-unknown-
+Science Lab Matting|393321011|393324011|Industrial|-unknown-
+Science Lab Safety Cones &amp; Flags: Flags, Cones|393321011|393326011|Industrial|-unknown-
+Science Lab Safety Storage Cabinets|393321011|393325011|Industrial|-unknown-
+Spill Control Supplies|393321011|318146011|Industrial|-unknown-
+Waste Disposal Bags|393321011|318147011|Industrial|-unknown-
+Science Lab Biohazard Waste Disposal Bags|318147011|318148011|Industrial|-unknown-
+Science Lab Radioactive Waste Disposal Bags|318147011|318149011|Industrial|-unknown-
+Industrial Warning Alarms|318135011|1265104011|Industrial|-unknown-
+Industrial Warning Signs|318135011|1265105011|Industrial|-unknown-
+Lockout Tagout Locks &amp; Tags|318135011|1265106011|Industrial|-unknown-
+Personal Protective Equipment|318135011|393292011|Industrial|-unknown-
+Caps, Hoods & Hairnets|393292011|393295011|Industrial|-unknown-
+Face & Eye Protection|393292011|2681305011|Industrial|-unknown-
+Lab Goggles & Glasses|2681305011|2681344011|Industrial|-unknown-
+Science Lab Face Shields|2681305011|393327011|Industrial|-unknown-
+Science Lab Goggles|2681305011|318138011|Industrial|-unknown-
+Gloves|393292011|318139011|Industrial|-unknown-
+Controlled Environment Gloves|318139011|393302011|Industrial|-unknown-
+Science Lab Chemical Resistant Gloves|318139011|393300011|Industrial|-unknown-
+Science Lab Cut Resistant Gloves|318139011|393303011|Industrial|-unknown-
+Science Lab Glove Liners|318139011|393305011|Industrial|-unknown-
+Science Lab Beard Covers|393292011|393293011|Industrial|-unknown-
+Science Lab Boot &amp; Shoe Covers|393292011|393294011|Industrial|-unknown-
+Science Lab Chemical Splash Clothing|393292011|393309011|Industrial|-unknown-
+Science Lab Coats &amp; Jackets|393292011|393299011|Industrial|-unknown-
+Science Lab Controlled Environment Disposable Clothing|393292011|393296011|Industrial|-unknown-
+Science Lab Coveralls|393292011|393308011|Industrial|-unknown-
+Science Lab Ear Muffs|393292011|393311011|Industrial|-unknown-
+Science Lab ESD Supplies|393292011|393316011|Industrial|-unknown-
+Science Lab Gowns &amp; Aprons|393292011|393298011|Industrial|-unknown-
+Science Lab Oven Mitts|393292011|318141011|Industrial|-unknown-
+Science Lab Radiation Protection Supplies|393292011|318142011|Industrial|-unknown-
+Science Lab Radioactive Labels|393292011|318144011|Industrial|-unknown-
+Science Lab Sleeves|393292011|393297011|Industrial|-unknown-
+Shoes & Boots|393292011|393310011|Industrial|-unknown-
+Power & Hand Tools|16310161|3021459011|Industrial|-unknown-
+Industrial Hand Tools|3021459011|2233994011|Industrial|-unknown-
+Nailers & Staplers|2233994011|2233997011|Industrial|-unknown-
+Screwdrivers|2233994011|2233995011|Industrial|-unknown-
+Shears|2233994011|2233996011|Industrial|-unknown-
+Wrenches|2233994011|2233998011|Industrial|-unknown-
+Industrial Power Tools|3021459011|2234002011|Industrial|-unknown-
+Workholding|3021459011|979147011|Industrial|-unknown-
+Vertical Hold Down Clamps|979147011|979151011|Industrial|-unknown-
+Wire Rope Clamps|979147011|979154011|Industrial|-unknown-
+Power Transmission Products|16310161|16310181|Industrial|-unknown-
+Bearings|16310181|16410991|Industrial|-unknown-
+Ball Bearings|16410991|16411041|Industrial|-unknown-
+Self Aligning Ball Bearings|16411041|16411081|Industrial|-unknown-
+Thin Section Ball Bearings|16411041|16411091|Industrial|-unknown-
+Ball Transfers|16410991|16411111|Industrial|-unknown-
+Bearing Housings|16410991|16411121|Industrial|-unknown-
+Bushed Bearings|16410991|16411141|Industrial|-unknown-
+Fluid Bearings|16410991|16411161|Industrial|-unknown-
+Insert Bearings|16410991|16411181|Industrial|-unknown-
+Magnetic Bearings|16410991|16411211|Industrial|-unknown-
+Mounted Bearings|16410991|16411221|Industrial|-unknown-
+Pillow Block Bearings|16411221|220003011|Industrial|-unknown-
+Precision Balls|16410991|16411231|Industrial|-unknown-
+Rod End Bearings|16410991|16411241|Industrial|-unknown-
+Roller Bearings|16410991|16411251|Industrial|-unknown-
+Cylindrical Roller Bearings|16411251|16411271|Industrial|-unknown-
+Needle Roller Bearings|16411251|16411291|Industrial|-unknown-
+Tapered Roller Bearings|16411251|16411311|Industrial|-unknown-
+Belts|16310181|16411341|Industrial|-unknown-
+Industrial Belt &amp; Chain Tensioners|16411341|16411351|Industrial|-unknown-
+Brakes & Clutches|16310181|16411471|Industrial|-unknown-
+Industrial Mechanical Clutches|16411471|16411581|Industrial|-unknown-
+Chains|16310181|16411631|Industrial|-unknown-
+Roller Chains|16411631|16411651|Industrial|-unknown-
+Control Cables|16310181|16411671|Industrial|-unknown-
+Mechanical Control Cable Accessories|16411671|16411681|Industrial|-unknown-
+Mechanical Control Cable Assemblies|16411671|16411691|Industrial|-unknown-
+Couplings, Collars & Universal Joiners|16310181|16411711|Industrial|-unknown-
+Flexible Couplings|16411711|16411721|Industrial|-unknown-
+Beam Couplings|16411721|16411731|Industrial|-unknown-
+Bellows Couplings|16411721|16411741|Industrial|-unknown-
+Disc Couplings|16411721|16411761|Industrial|-unknown-
+Gear &amp; Sleeve Couplings|16411721|16411781|Industrial|-unknown-
+Grid Couplings|16411721|16411791|Industrial|-unknown-
+Roller Chain Couplings|16411721|16411821|Industrial|-unknown-
+Sliding Block Couplings|16411721|16411841|Industrial|-unknown-
+Spider Couplings|16411721|16411861|Industrial|-unknown-
+Rigid Couplings|16411711|16411881|Industrial|-unknown-
+Clamp On Couplings|16411881|16411891|Industrial|-unknown-
+Shaft Collars|16411711|16411911|Industrial|-unknown-
+Clamp On Shaft Collars|16411911|16411921|Industrial|-unknown-
+Quick Lock Shaft Collars|16411911|16411951|Industrial|-unknown-
+Set-Screw Shaft Collars|16411911|16411961|Industrial|-unknown-
+Shaft Hub Locking Devices|16411711|16411971|Industrial|-unknown-
+Enclosures & Cases|16310181|16412021|Industrial|-unknown-
+Gears|16310181|16412081|Industrial|-unknown-
+Bevel Gears|16412081|16412091|Industrial|-unknown-
+Change Gears|16412081|16412101|Industrial|-unknown-
+Helical Gears|16412081|16412141|Industrial|-unknown-
+Internal Gears|16412081|16412171|-unknown-|-unknown-
+Rack &amp; Pinion Gears|16412081|16412191|Industrial|-unknown-
+Spur Gears|16412081|16412201|Industrial|-unknown-
+Worm Gears|16412081|16412211|Industrial|-unknown-
+Industrial Fluids|16310181|16414281|Industrial|-unknown-
+Linear Motion Products|16310181|16411201|Industrial|-unknown-
+Ball Screws|16411201|350657011|Industrial|-unknown-
+Ball Slides|16411201|350661011|Industrial|-unknown-
+Ball Splines|16411201|350656011|Industrial|-unknown-
+Cross Roller Guides|16411201|350658011|Industrial|-unknown-
+Linear Bearings|16411201|238905011|Industrial|-unknown-
+Linear Ball Bearings|238905011|16411061|Industrial|-unknown-
+Linear Roller Bearings|238905011|16411281|Industrial|-unknown-
+Track Runner Bearings|238905011|16411321|Industrial|-unknown-
+Cam Follower Bearings|16411321|220008011|Industrial|-unknown-
+Linear Motion Actuators|16411201|350654011|Industrial|-unknown-
+Linear Motion Guide Actuators|16411201|350662011|Industrial|-unknown-
+Linear Motion Guides|16411201|979107011|Industrial|-unknown-
+Roller Tables|16411201|350660011|Industrial|-unknown-
+Slide Packs|16411201|350659011|Industrial|-unknown-
+Slide Rails|16411201|350663011|Industrial|-unknown-
+Mechanical Gearboxes|16310181|16412071|Industrial|-unknown-
+Pulleys|16310181|1258851011|Industrial|-unknown-
+Idler Belt Pulleys|1258851011|16411391|Industrial|-unknown-
+Round Belt Pulleys|1258851011|16411401|Industrial|-unknown-
+Timing Pulleys|1258851011|16411441|Industrial|-unknown-
+V Belt Pulleys|1258851011|16411451|Industrial|-unknown-
+Ratchets &amp; Pawls|16310181|16412231|Industrial|-unknown-
+Roller Chain Sprockets|16310181|16411641|Industrial|-unknown-
+Shafting|16310181|16413661|Industrial|-unknown-
+Flexible Shafts|16413661|16413671|Industrial|-unknown-
+Springs|16310181|16413811|Industrial|-unknown-
+Air Springs|16413811|16413821|Industrial|-unknown-
+Compression Springs|16413811|16413831|Industrial|-unknown-
+Constant Force Springs|16413811|16413841|Industrial|-unknown-
+Flat Springs|16413811|383664011|Industrial|-unknown-
+Gas Springs|16413811|16413861|Industrial|-unknown-
+Torsion Springs|16413811|16413881|Industrial|-unknown-
+Science Education|16310161|393459011|Industrial|-unknown-
+Science Lab Biology Classroom Supplies|393459011|393460011|Industrial|-unknown-
+Science Lab Environmental Science Classroom Supplies|393459011|393462011|Industrial|-unknown-
+Science Lab Forensic Science Classroom Supplies|393459011|393464011|-unknown-|-unknown-
+Science Lab Geography Classroom Supplies|393459011|393466011|Industrial|-unknown-
+Tapes, Adhesives & Sealants|16310161|256225011|Industrial|-unknown-
+Adhesive Accelerators|256225011|401522011|Industrial|-unknown-
+Adhesive Dispensers|256225011|401527011|Industrial|-unknown-
+Adhesive Dots|256225011|401523011|Industrial|-unknown-
+Adhesive Primers|256225011|401524011|Industrial|-unknown-
+Adhesive Tapes|256225011|256159011|Industrial|-unknown-
+Adhesive Hook &amp; Loop Strips|256159011|401521011|Industrial|-unknown-
+Duct Tape|256159011|256160011|Industrial|-unknown-
+Electrical Tape|256159011|256161011|Industrial|-unknown-
+Industrial Filament Tape|256159011|256162011|Industrial|-unknown-
+Teflon Tape|256159011|256166011|Industrial|-unknown-
+Aerosol Adhesives|256225011|401541011|Industrial|-unknown-
+Caulk|256225011|256233011|Industrial|-unknown-
+Adhesive Caulk|256233011|256234011|Industrial|-unknown-
+Fire Barrier Caulk|256233011|256235011|Industrial|-unknown-
+High Temperature Caulk|256233011|256236011|Industrial|-unknown-
+Latex Caulk|256233011|256237011|Industrial|-unknown-
+Rope Caulk|256233011|256238011|Industrial|-unknown-
+Silicone Caulk|256233011|256239011|Industrial|-unknown-
+Contact Cements|256225011|256242011|Industrial|-unknown-
+Cyanoacrylate Adhesives|256225011|256243011|Industrial|-unknown-
+Epoxy Adhesives|256225011|256244011|Industrial|-unknown-
+Metal Filled Epoxies|256244011|256245011|Industrial|-unknown-
+Tile Epoxy Adhesives|256244011|256246011|Industrial|-unknown-
+Ethylene Vinyl Acetate Adhesives|256225011|256247011|Industrial|-unknown-
+Hot Melt Adhesives|256225011|256248011|Industrial|-unknown-
+Industrial Coatings|256225011|16413451|Industrial|-unknown-
+Industrial Lubricants|256225011|401536011|Industrial|-unknown-
+Industrial Sealants|256225011|401538011|Industrial|-unknown-
+Gasket Sealants: Gasket Makers, Gasket Removers|401538011|256228011|Industrial|-unknown-
+Gasket Making Compounds|256228011|401553011|Industrial|-unknown-
+Gasket Removing Compounds|256228011|401554011|Industrial|-unknown-
+Joint Sealants|401538011|256229011|Industrial|-unknown-
+Thread Sealants|401538011|256230011|Industrial|-unknown-
+Polyvinyl Acetate Adhesives|256225011|256249011|Industrial|-unknown-
+Resorcinol Adhesives|256225011|256250011|Industrial|-unknown-
+Retaining Compounds|256225011|256231011|Industrial|-unknown-
+Threadlocking Adhesives|256225011|256232011|Industrial|-unknown-
+Urea Resin Adhesives|256225011|256252011|Industrial|-unknown-
+Urethane Adhesives|256225011|256253011|Industrial|-unknown-
+Polyurethane Adhesives|256253011|256254011|Industrial|-unknown-

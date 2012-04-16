@@ -1,0 +1,211 @@
+Products|3760911|11055981|Beauty|-unknown-
+Bath & Body|11055981|11055991|Beauty|-unknown-
+Bath|11055991|11056211|Beauty|-unknown-
+Bath Bombs|11056211|11056221|Beauty|-unknown-
+Bath Oils|11056211|11056261|Beauty|-unknown-
+Bath Pearls &amp; Flakes|11056211|11056231|Beauty|-unknown-
+Bath Salts|11056211|11056251|Beauty|-unknown-
+Bubble Bath|11056211|11056241|Beauty|-unknown-
+Tub Tea|11056211|11056271|Beauty|-unknown-
+Bath Sets|11055991|11056581|Beauty|-unknown-
+Bathing Accessories|11055991|11056491|Beauty|-unknown-
+Bath Mitts &amp; Cloths|11056491|11056511|Beauty|-unknown-
+Bath Pillows|11056491|11056521|Beauty|-unknown-
+Bath Trays|11056491|11056531|Beauty|-unknown-
+Eye Masks|11056491|11056541|Beauty|-unknown-
+Loofahs, Sponges &amp; Poufs|11056491|11056551|Beauty|-unknown-
+Shower Caps|11056491|11056571|Beauty|-unknown-
+Cleansers|11055991|11056281|Beauty|-unknown-
+Soaps|11056281|11056341|HealthPersonalCare|-unknown-
+Scrubs & Body Treatments|11055991|11056421|Beauty|-unknown-
+Body Scrubs|11056421|11056471|Beauty|-unknown-
+Body Souffles &amp; Mousse|11056421|11056481|Beauty|-unknown-
+Beauty Tools & Accessories|11055981|11062741|Beauty|-unknown-
+Bags & Cases|11062741|11062751|Beauty|-unknown-
+Cosmetic Refillable Containers|11062751|11062781|Beauty|-unknown-
+Makeup Brush Bags|11062751|11062761|Beauty|-unknown-
+Toiletry Bags|11062751|387321011|Beauty|-unknown-
+Tote Bags|11062751|11062791|Beauty|-unknown-
+Train Cases|11062751|11062801|Beauty|-unknown-
+Travel Cases &amp; Holders|11062751|11062811|Beauty|-unknown-
+Cotton & Swabs|11062741|3784921|Beauty|-unknown-
+Cotton Balls|3784921|3784931|Beauty|-unknown-
+Facial Steamers|11062741|3786861|Beauty|-unknown-
+Hair Coloring Tools|11062741|3784151|Beauty|-unknown-
+Brushes, Combs &amp; Needles|3784151|3784171|Beauty|-unknown-
+Hair Color Applicator Bottles|3784151|3784161|Beauty|-unknown-
+Hair Color Mixing Bowls|3784151|3784191|Beauty|-unknown-
+Hair Color Removers|3784151|3784201|Beauty|-unknown-
+Makeup Brushes & Tools|11062741|11059391|Beauty|-unknown-
+Blotting Paper|11059391|11058701|Beauty|-unknown-
+Brush Kits|11059391|11059511|Beauty|-unknown-
+Brushes & Applicators|11059391|11059401|Beauty|-unknown-
+Cosmetic Pencil Sharpeners|11059391|11059521|Beauty|-unknown-
+Eyelash Tools|11059391|11059471|Beauty|-unknown-
+Fake Eyelashes|11059471|11059491|Beauty|-unknown-
+Makeup Sponges, Puffs &amp; Wedges|11059391|11059501|Beauty|-unknown-
+Treatment Tools|11059391|11059531|Beauty|-unknown-
+Blemish Tools|11059531|11059541|Beauty|-unknown-
+Face Cleansing Brushes|11059531|11059551|Beauty|-unknown-
+Mirrors|11062741|11063411|Beauty|-unknown-
+Makeup Mirrors|11063411|3785121|Beauty|-unknown-
+Shower Mirrors|11063411|3785131|Beauty|-unknown-
+Nail Tools|11062741|11063461|Beauty|-unknown-
+Cuticle Pushers|11063461|11063491|Beauty|-unknown-
+Cuticle Scissors|11063461|11063501|Beauty|-unknown-
+False Nails|11063461|3784781|Beauty|-unknown-
+Foot Rasps|11063461|11063611|Beauty|-unknown-
+Nail Brushes|11063461|11063531|Beauty|-unknown-
+Nail Files &amp; Buffers|11063461|11063551|Beauty|-unknown-
+Nail Tools Sets &amp; Kits|11063461|3784911|Beauty|-unknown-
+Spa Slippers|11063461|11063681|Beauty|-unknown-
+Toe Separators|11063461|11063691|Beauty|-unknown-
+Styling Tools|11062741|11058091|Beauty|-unknown-
+Braiders|11058091|3784241|Beauty|-unknown-
+Brushes|11058091|11058121|Beauty|-unknown-
+Combs|11058091|11058131|Beauty|-unknown-
+Diffusers|11058091|11058111|Beauty|-unknown-
+Hair Cutting Kits|11058091|3006301011|Beauty|-unknown-
+Hair Dryers|11058091|11058141|Beauty|-unknown-
+Hair Rollers|11058091|3784371|Beauty|-unknown-
+Hot-Air Brushes|11058091|11058221|Beauty|-unknown-
+Irons|11058091|11058231|Beauty|-unknown-
+Crimping Irons|11058231|3784341|Beauty|-unknown-
+Curling Irons|11058231|11058251|Beauty|-unknown-
+Flattening Irons|11058231|11058261|Beauty|-unknown-
+Styling Accessories|11058091|11057971|Beauty|-unknown-
+Barrettes|11057971|11057981|Beauty|-unknown-
+Hair Drying Towels|11057971|3784491|Beauty|-unknown-
+Hair Sticks|11057971|11058041|Beauty|-unknown-
+Hair Styling Clips|11057971|3784401|Beauty|-unknown-
+Hair Styling Pins|11057971|3784391|HealthPersonalCare|-unknown-
+Headbands|11057971|11058051|Beauty|-unknown-
+Ponytail Holders|11057971|11058071|Beauty|-unknown-
+Body, Face, and Hand Lotions, Antiaging Creams, Cleansers, Massage Oils, Baby Oils, Exfoliators, Toners, Sun Tan Products and More|11055981|11060451|Beauty|-unknown-
+Body|11060451|11060521|Beauty|-unknown-
+Moisturizers|11060521|11060661|Beauty|-unknown-
+Body Butter|11060661|11060671|Beauty|-unknown-
+Body Creams|11060661|11060681|Beauty|-unknown-
+Body Lotions|11060661|14024031|Beauty|-unknown-
+Body Oils|11060661|11060691|Beauty|-unknown-
+Eyes|11060451|11061941|Beauty|-unknown-
+Dark Circle Treatments|11061941|11061961|Beauty|-unknown-
+Eye Masks|11061941|11061971|Beauty|-unknown-
+Face|11060451|11060711|Beauty|-unknown-
+Cleansers|11060711|11060901|Beauty|-unknown-
+Cleansing Strips|11060901|11061191|Beauty|-unknown-
+Exfoliators|11060711|11061091|Beauty|-unknown-
+Exfoliating Scrubs|11061091|11061161|Beauty|-unknown-
+Masks|11061091|11061121|Beauty|-unknown-
+Polishes|11061091|11061151|Beauty|-unknown-
+Face Moisturizers|11060711|11061301|Beauty|-unknown-
+Face Treatments|11060711|11062031|Beauty|-unknown-
+Hands & Nails|11060451|11062211|Beauty|-unknown-
+Cuticle Care|11062211|11062221|Beauty|-unknown-
+Cuticle Creams &amp; Oils|11062221|11062231|Beauty|-unknown-
+Cuticle Removers|11062221|11062241|HealthPersonalCare|-unknown-
+Cuticle Repair|11062221|11062251|HealthPersonalCare|-unknown-
+Hand Creams &amp; Lotions|11062211|11062261|Beauty|-unknown-
+Hand Soaps|11062211|11062271|Beauty|-unknown-
+Moisturizing Gloves|11062211|11062281|Beauty|-unknown-
+Nail Treatments|11062211|11062291|Beauty|-unknown-
+Nail Growth Products|11062291|11062311|Beauty|-unknown-
+Nail Repair|11062291|11062321|Beauty|-unknown-
+Nail Ridge Filler|11062291|11062351|Beauty|-unknown-
+Nail Strengtheners|11062291|11062331|Beauty|-unknown-
+Paraffin Baths|11062211|3787271|Beauty|-unknown-
+Maternity Skin Care|11060451|11062371|Beauty|-unknown-
+Skin Care Sets|11060451|11062581|Beauty|-unknown-
+Sun|11060451|11062591|Beauty|-unknown-
+After Sun Skin Care|11062591|11062601|Beauty|-unknown-
+Self-Tanners &amp; Bronzers|11062591|11062641|Beauty|-unknown-
+Skin Protection|11062591|11062651|Beauty|-unknown-
+Tanning Oils|11062591|11062731|Beauty|-unknown-
+Fragrance|11055981|11056591|Beauty|-unknown-
+Children's Fragrance|11056591|11056711|Beauty|-unknown-
+Men's|11056591|11056761|Beauty|-unknown-
+Men's Cologne|11056761|11059721|Beauty|-unknown-
+Sets|11056591|11056891|Beauty|-unknown-
+Women's|11056591|11056931|Beauty|-unknown-
+Essential Oils|11056931|11057091|Beauty|-unknown-
+Women's Body Sprays|11056931|3783161|Beauty|-unknown-
+Women's Cologne|11056931|11057051|Beauty|-unknown-
+Women's Eau de Toilette|11056931|11057081|Beauty|-unknown-
+Women's Fragrance Sets|11056931|11057111|Beauty|-unknown-
+Gift Sets|11055981|11057131|Beauty|-unknown-
+Makeup|11055981|11058281|Beauty|-unknown-
+Body Makeup: Body Paint, Bronzing Powder, Body Glitter, Concealer, Temporary Tattoos, Henna|11058281|11058291|Beauty|-unknown-
+Body Glitter|11058291|11058301|Beauty|-unknown-
+Body Paint|11058291|702382011|Beauty|-unknown-
+Bronzers|11058291|11058311|Beauty|-unknown-
+Concealer|11058291|11058321|Beauty|-unknown-
+Henna Body Paint|11058291|702383011|HealthPersonalCare|-unknown-
+Temporary Tattoos|11058291|702384011|Beauty|-unknown-
+Eyes|11058281|11058331|Beauty|-unknown-
+Concealer &amp; Base|11058331|11058341|Beauty|-unknown-
+Eye Glitter &amp; Shimmer Makeup|11058331|3006286011|HealthPersonalCare|-unknown-
+Eye Shadow|11058331|11058361|Beauty|-unknown-
+Eyebrow Color|11058331|11058451|Beauty|-unknown-
+Eyeliner|11058331|11058521|Beauty|-unknown-
+Liner &amp; Shadow Combinations|11058331|11058381|Beauty|-unknown-
+Mascara|11058331|11058611|Beauty|-unknown-
+Face|11058281|11058691|Beauty|-unknown-
+Blush|11058691|11058711|Beauty|-unknown-
+Bronzers &amp; Highlighters|11058691|11058781|Beauty|-unknown-
+Concealers &amp; Neutralizers|11058691|11058791|Beauty|-unknown-
+Face Powder|11058691|11058971|Beauty|-unknown-
+Foundation Makeup|11058691|11058871|Beauty|-unknown-
+Foundation Primers|11058691|388109011|Beauty|-unknown-
+Lips|11058281|11059031|Beauty|-unknown-
+Lip Gloss|11059031|11059041|Beauty|-unknown-
+Lip Stains|11059031|11059051|Beauty|-unknown-
+Lipstick|11059031|11059111|Beauty|-unknown-
+Lipstick Primers|11059031|11059221|Beauty|-unknown-
+Makeup Palettes|11058281|2265896011|Beauty|-unknown-
+Makeup Remover|11058281|11059231|Beauty|-unknown-
+Eye Makeup Remover|11059231|11059241|Beauty|-unknown-
+Face Makeup Remover|11059231|11059251|Beauty|-unknown-
+Lips Makeup Removers|11059231|3782991|Beauty|-unknown-
+Makeup Sets|11058281|11059301|Beauty|-unknown-
+Nails|11058281|11059311|Beauty|-unknown-
+Nail Art Supplies|11059311|13106071|Beauty|-unknown-
+Nail Thickening Solution Nail Polish|11059311|3782871|Beauty|-unknown-
+Nail Top &amp; Base Coats|11059311|11059361|Beauty|-unknown-
+Men's Grooming|11055981|11059581|Beauty|-unknown-
+Hair Styling Products, Shampoos, Hair Colors, Hair Loss Products, Hair Sprays, Conditioners, and More|11059581|11057241|Beauty|-unknown-
+Conditioners|11057241|11057251|Beauty|-unknown-
+Hair Care Sets|11057241|11057441|Beauty|-unknown-
+Hair Color|11057241|11057451|Beauty|-unknown-
+Chemical Hair Dyes|11057451|10728531|Beauty|-unknown-
+Hair Color Correctors|11057451|3781671|Beauty|-unknown-
+Hair Color Primers|11057451|3781651|Beauty|-unknown-
+Hair Color Refreshers|11057451|3781661|Beauty|-unknown-
+Hennas|11057451|3781641|Beauty|-unknown-
+Hair Loss Products|11057241|11057561|Beauty|-unknown-
+Hair Growth Treatments|11057561|11057581|Beauty|-unknown-
+Hair Loss Conditioners|11057561|11057571|Beauty|-unknown-
+Hair Loss Shampoos|11057561|11057631|Beauty|-unknown-
+Hair Loss Styling Products|11057561|3781871|Beauty|-unknown-
+Hair Perms & Texturizers|11057241|3781901|Beauty|-unknown-
+Hair Texturizers|3781901|3799601|Beauty|-unknown-
+Hair Relaxers|11057241|3781951|Beauty|-unknown-
+Hair Relaxer Conditioners|3781951|3782001|Beauty|-unknown-
+Hair Relaxing Creams|3781951|702373011|Beauty|-unknown-
+Hair Relaxing Gels|3781951|702374011|Beauty|-unknown-
+Hair Relaxing Lotions|3781951|702375011|Beauty|-unknown-
+Scalp Treatments|11057241|11057431|Beauty|-unknown-
+Shampoos|11057241|11057651|Beauty|-unknown-
+Shampoos Plus Conditioner|11057241|3781381|Beauty|-unknown-
+Styling Products|11057241|11057841|Beauty|-unknown-
+Braid Maintenance|11057841|3782071|Beauty|-unknown-
+Hair Creams, Gels &amp; Lotions|11057841|11057871|Beauty|-unknown-
+Hair Curl Enhancers|11057841|3781751|Beauty|-unknown-
+Hair Extensions & Wigs|11057841|13105931|Beauty|-unknown-
+Hair Extensions|13105931|702379011|Beauty|-unknown-
+Hairpieces|13105931|702380011|Beauty|-unknown-
+Wigs|13105931|702381011|Beauty|-unknown-
+Hair Sprays|11057841|11057891|Beauty|-unknown-
+Hair Styling Mousses &amp; Foams|11057841|11057901|Beauty|-unknown-
+Hair Styling Pomades &amp; Waxes|11057841|11057931|Beauty|-unknown-
+Hair Styling Serums|11057841|382803011|Beauty|-unknown-
+Shaving &amp; Hair Removal: Health &amp; Personal Care|11059581|11060281|-unknown-|-unknown-

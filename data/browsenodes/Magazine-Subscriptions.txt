@@ -1,0 +1,605 @@
+Magazines By Price|599858|305952011|Magazines|-unknown-
+$10 & Under Magazines|305952011|305954011|Magazines|-unknown-
+$10 To $15 Magazines|305952011|305955011|Magazines|-unknown-
+$15 To $20 Magazines|305952011|305956011|Magazines|-unknown-
+$20 To $25 Magazines|305952011|305957011|Magazines|-unknown-
+Magazines $12 or Less|305952011|1297884011|Magazines|-unknown-
+Magazines $8 or Less|305952011|1297883011|Magazines|-unknown-
+Subjects|599858|599872|Magazines|-unknown-
+Arts & Photography|599872|602314|Magazines|-unknown-
+Architecture|602314|252063011|Magazines|-unknown-
+Art|602314|637714|Magazines|-unknown-
+Art History|602314|252064011|Magazines|-unknown-
+Fashion|602314|252094011|Magazines|-unknown-
+Commercial|252094011|252095011|Magazines|-unknown-
+Graphic Design|602314|13006691|-unknown-|-unknown-
+Photography|602314|637716|HealthPersonalCare|-unknown-
+Automotive|599872|602316|Magazines|-unknown-
+Buyers' Guides|602316|252119011|Baby|-unknown-
+Customize|602316|252121011|-unknown-|-unknown-
+Electronics|602316|252123011|Magazines|-unknown-
+Foreign|602316|252124011|Automotive|-unknown-
+History|602316|252125011|Beauty|-unknown-
+Industry|602316|252126011|Magazines|-unknown-
+Jeeps, Trucks & Off-Road|602316|638984|Books|-unknown-
+Motorcycles & ATVs|602316|638986|-unknown-|-unknown-
+Sport Utility Vehicles|602316|252132011|MP3Downloads|-unknown-
+Brides & Weddings|599872|602318|Magazines|-unknown-
+Gowns|602318|252138011|GourmetFood|-unknown-
+Business & Investing|599872|602320|Electronics|-unknown-
+Accounting|602320|1115882|Magazines|-unknown-
+Advertising|602320|1115896|Magazines|-unknown-
+Business Life|602320|252140011|Magazines|-unknown-
+Business Management|602320|1115890|Magazines|-unknown-
+Human Resources|1115890|1115892|Magazines|-unknown-
+Entrepreneurship|602320|742410|-unknown-|-unknown-
+Finance|602320|3018031|Magazines|-unknown-
+Public Finance|3018031|1115888|Magazines|-unknown-
+Human Resources|602320|252196011|Magazines|-unknown-
+Industries & Professions|602320|252197011|Magazines|-unknown-
+Insurance|252197011|1115914|Magazines|-unknown-
+Real Estate|252197011|1115916|Magazines|-unknown-
+International|602320|1115902|Magazines|-unknown-
+Marketing & Sales|602320|1115906|Magazines|-unknown-
+Personal Finance|602320|742408|Magazines|-unknown-
+Small Business & Entrepreneurship|602320|252241011|Photo|-unknown-
+Children's|599872|602322|Magazines|-unknown-
+Art & Music|602322|252253011|Magazines|-unknown-
+By Age|602322|252254011|Baby|-unknown-
+12 and Up|252254011|354665011|Magazines|-unknown-
+Ages 4-8|252254011|252255011|Magazines|-unknown-
+Ages 9-12|252254011|252256011|Magazines|-unknown-
+Baby-3|252254011|252257011|Magazines|-unknown-
+Educational|602322|252258011|Magazines|-unknown-
+Entertainment|602322|354668011|Magazines|-unknown-
+Family Fun|602322|252259011|-unknown-|-unknown-
+Girls|602322|354669011|Magazines|-unknown-
+Outdoor Fun|602322|252260011|Magazines|-unknown-
+Reference|602322|252261011|Magazines|-unknown-
+Religion|602322|354670011|Magazines|-unknown-
+Science|602322|252262011|Magazines|-unknown-
+Sports & Activities|602322|252263011|Magazines|-unknown-
+Computers & Internet|599872|602324|MP3Downloads|-unknown-
+Apple|602324|252269011|Magazines|-unknown-
+Business & Culture|602324|252280011|Magazines|-unknown-
+Databases|602324|252342011|Magazines|-unknown-
+Digital Music & Computer Audio|602324|252353011|PCHardware|-unknown-
+Games & Strategy Guides|602324|252362011|Magazines|-unknown-
+Graphic Design|602324|252367011|Magazines|-unknown-
+Microsoft|602324|252402011|Magazines|-unknown-
+Operating Systems|602324|252411011|Magazines|-unknown-
+Web Development|602324|252438011|Magazines|-unknown-
+Cooking, Food & Wine|599872|602334|Magazines|-unknown-
+Baking|602334|252445011|Magazines|-unknown-
+Beer & Brewing|602334|351240011|Magazines|-unknown-
+Culinary Arts & Techniques|602334|252451011|Magazines|-unknown-
+Drinks & Beverages|602334|252452011|Automotive|-unknown-
+Quick & Easy|602334|252463011|Magazines|-unknown-
+Recipes & Techniques|602334|351239011|Grocery|-unknown-
+Reference|602334|252464011|Magazines|-unknown-
+Regional & International|602334|252465011|Magazines|-unknown-
+Restaurants & Commercial|602334|252493011|Magazines|-unknown-
+Special Diet|602334|252494011|HealthPersonalCare|-unknown-
+Healthy|252494011|252496011|Automotive|-unknown-
+Special Occasions|602334|252500011|Magazines|-unknown-
+Vegetables & Vegetarian|602334|252501011|Magazines|-unknown-
+Wine|602334|637744|Magazines|-unknown-
+Education|599872|252511011|Magazines|-unknown-
+Electronics & Audio|599872|602326|Magazines|-unknown-
+Audio Equipment|602326|637764|-unknown-|-unknown-
+Home Theaters|602326|1028098|Magazines|-unknown-
+Musical Instruments|602326|637762|-unknown-|-unknown-
+Entertainment|599872|602328|DVD|-unknown-
+Comics &amp; Graphic Novels|602328|13016201|Magazines|-unknown-
+Comic Strips|13016201|252264011|Magazines|-unknown-
+History & Price Guides|13016201|252267011|Magazines|-unknown-
+Movies|602328|637722|Magazines|-unknown-
+Music|602328|602354|DVD|-unknown-
+Pop Culture|602328|252618011|Magazines|-unknown-
+Puzzles & Games|602328|602336|Magazines|-unknown-
+Crosswords|602336|637726|Magazines|-unknown-
+Gambling|602336|252640011|Magazines|-unknown-
+Role Playing & Fantasy|602336|642766|Magazines|-unknown-
+Science Fiction & Fantasy|602328|13006681|Magazines|-unknown-
+Tabloids|602328|726925011|Magazines|-unknown-
+Television|602328|13006651|Baby|-unknown-
+Video & Electronic Games|602328|252650011|Magazines|-unknown-
+Fashion & Style|599872|602332|Magazines|-unknown-
+Beauty|602332|13006751|Electronics|-unknown-
+Men's|602332|637728|GourmetFood|-unknown-
+Women's|602332|637730|Magazines|-unknown-
+Gay &amp; Lesbian|599872|602338|Magazines|-unknown-
+Biographies & Memoirs|602338|252663011|Magazines|-unknown-
+History|602338|252668011|Magazines|-unknown-
+Lesbians|602338|372910011|Magazines|-unknown-
+News & Politics|602338|372912011|Magazines|-unknown-
+Parenting & Families|602338|252671011|Magazines|-unknown-
+Transgender|602338|372911011|Magazines|-unknown-
+Travel|602338|252672011|Magazines|-unknown-
+Health, Mind & Body|599872|602340|Magazines|-unknown-
+Diets & Weight Loss|602340|252693011|Magazines|-unknown-
+Men's|602340|637754|Magazines|-unknown-
+Nutrition|602340|252828011|GourmetFood|-unknown-
+Women's|602340|637756|Magazines|-unknown-
+History|599872|602342|Magazines|-unknown-
+Americas|602342|252904011|GourmetFood|-unknown-
+Ancient|602342|252984011|Books|-unknown-
+Asia|602342|252986011|Magazines|-unknown-
+Australia & Oceania|602342|252987011|Magazines|-unknown-
+Europe|602342|252988011|Magazines|-unknown-
+Middle East|602342|252990011|Magazines|-unknown-
+Military|602342|252991011|Magazines|-unknown-
+Military Science|602342|252992011|Magazines|-unknown-
+United States|602342|253014011|Magazines|-unknown-
+World|602342|253015011|Baby|-unknown-
+Home & Garden|599872|602344|Classical|-unknown-
+Animal Care &amp; Pets|602344|602360|Electronics|-unknown-
+Cats|602360|253018011|Magazines|-unknown-
+Dogs|602360|253019011|Beauty|-unknown-
+Essays|602360|253020011|Magazines|-unknown-
+Fish & Aquariums|602360|253021011|Magazines|-unknown-
+Horses|602360|253023011|Kitchen|-unknown-
+Miscellaneous|602360|253024011|Electronics|-unknown-
+Reptiles & Amphibians|602360|253026011|Magazines|-unknown-
+Antiques &amp; Collectibles|602344|16014521|Magazines|-unknown-
+Americana|16014521|253027011|Magazines|-unknown-
+Art|16014521|253028011|Magazines|-unknown-
+Care & Restoration|16014521|253031011|Books|-unknown-
+Coins & Medals|16014521|253033011|Tools|-unknown-
+Dolls|16014521|253034011|-unknown-|-unknown-
+Firearms & Weapons|16014521|253035011|-unknown-|-unknown-
+Furniture|16014521|253036011|Magazines|-unknown-
+Glass & Glassware|16014521|253038011|HealthPersonalCare|-unknown-
+Jewelry|16014521|253039011|Electronics|-unknown-
+Kitchenware|16014521|253040011|Grocery|-unknown-
+Military|16014521|253042011|Grocery|-unknown-
+Political|16014521|253043011|Music|-unknown-
+Porcelain & China|16014521|253045011|GourmetFood|-unknown-
+Postcards|16014521|349068011|Magazines|-unknown-
+Records|16014521|253046011|Magazines|-unknown-
+Reference|16014521|253047011|Magazines|-unknown-
+Sports Cards & Memorabilia|16014521|253049011|Magazines|-unknown-
+Stamps|16014521|253050011|DVD|-unknown-
+Teddy Bears|16014521|253051011|GourmetFood|-unknown-
+Textiles & Costume|16014521|253052011|Magazines|-unknown-
+Toys|16014521|253053011|Magazines|-unknown-
+Transportation|16014521|253054011|Magazines|-unknown-
+Country Life|602344|349062011|-unknown-|-unknown-
+Crafts &amp; Hobbies|602344|769100|Magazines|-unknown-
+Applique|769100|253055011|Magazines|-unknown-
+Baskets|769100|253056011|Magazines|-unknown-
+Beadwork|769100|253057011|Magazines|-unknown-
+Candlemaking|769100|253059011|Magazines|-unknown-
+Crafts for Children|769100|253060011|DVD|-unknown-
+Cross-Stitch|769100|253062011|Classical|-unknown-
+Dye|769100|253067011|Magazines|-unknown-
+Embroidery|769100|253068011|Magazines|-unknown-
+Flower Arranging|769100|253070011|PCHardware|-unknown-
+Framing|769100|253071011|Magazines|-unknown-
+Glass & Glassware|769100|253073011|Magazines|-unknown-
+Jewelry|769100|253074011|Industrial|-unknown-
+Lace & Tatting|769100|253076011|Magazines|-unknown-
+Lapidary|769100|253077011|Magazines|-unknown-
+Metal Work|769100|253079011|Magazines|-unknown-
+Miniatures|769100|253080011|Magazines|-unknown-
+Model Trains|769100|253082011|Magazines|-unknown-
+Models|769100|253083011|Magazines|-unknown-
+Needlecrafts|769100|13006711|Magazines|-unknown-
+Crocheting|13006711|253084011|Magazines|-unknown-
+Embroidery|13006711|253086011|Magazines|-unknown-
+Knitting|13006711|253087011|Magazines|-unknown-
+Lace & Tatting|13006711|253088011|Magazines|-unknown-
+Needlepoint|13006711|253089011|Magazines|-unknown-
+Needlework|13006711|253090011|Magazines|-unknown-
+Patchwork|13006711|253091011|Baby|-unknown-
+Sewing|13006711|253093011|Grocery|-unknown-
+Needlework|769100|253095011|-unknown-|-unknown-
+Painting|769100|253097011|Magazines|-unknown-
+Pottery & Ceramics|769100|253101011|Industrial|-unknown-
+Quilts & Quilting|769100|253104011|Grocery|-unknown-
+Radio Operation|769100|642768|-unknown-|-unknown-
+Rubber Stamping|769100|253107011|Classical|-unknown-
+Sewing|769100|253111011|Shoes|-unknown-
+Stenciling|769100|253114011|Magazines|-unknown-
+Textile Arts|769100|253116011|Classical|-unknown-
+Woodworking|769100|637742|-unknown-|-unknown-
+Wreathmaking|769100|253120011|Magazines|-unknown-
+Design & Decoration|602344|637734|DVD|-unknown-
+Entertaining|602344|253121011|Magazines|-unknown-
+Expert Advice|602344|253126011|Magazines|-unknown-
+Farming|602344|349064011|Automotive|-unknown-
+Gardening & Horticulture|602344|637736|Magazines|-unknown-
+Flowers|637736|13006731|Kitchen|-unknown-
+Fruit|637736|253127011|Automotive|-unknown-
+Herbs|637736|253130011|Kitchen|-unknown-
+House Plants|637736|253131011|Magazines|-unknown-
+Japanese Gardens|637736|253132011|Magazines|-unknown-
+Landscape|637736|253133011|Miscellaneous|-unknown-
+Organic|637736|253134011|Magazines|-unknown-
+Outdoor & Recreational Areas|637736|253135011|Magazines|-unknown-
+Shade|637736|253146011|Magazines|-unknown-
+Soil|637736|253148011|Baby|-unknown-
+Techniques|637736|253149011|Magazines|-unknown-
+Trees|637736|253157011|Magazines|-unknown-
+Vegetables|637736|253158011|HealthPersonalCare|-unknown-
+Weed & Pest Control|637736|253159011|Magazines|-unknown-
+Wild Plants|637736|253160011|Magazines|-unknown-
+Home Design|602344|253161011|Magazines|-unknown-
+Kitchens|253161011|349066011|Magazines|-unknown-
+How-to & Home Improvements|602344|637738|Magazines|-unknown-
+Interior Design|602344|253194011|Magazines|-unknown-
+Log Homes|602344|349061011|Magazines|-unknown-
+Luxury Homes|602344|349063011|Magazines|-unknown-
+Regional|602344|637740|Magazines|-unknown-
+East|637740|349059011|Magazines|-unknown-
+International|637740|349060011|Magazines|-unknown-
+Northeast|637740|349054011|Magazines|-unknown-
+Southeast|637740|349055011|Classical|-unknown-
+Southwest|637740|349053011|MP3Downloads|-unknown-
+West|637740|349058011|-unknown-|-unknown-
+Small Homes & Cottages|602344|253205011|-unknown-|-unknown-
+Sustainable Living|602344|253206011|Magazines|-unknown-
+International Publications|599872|602346|Baby|-unknown-
+Australia|602346|16257941|Magazines|-unknown-
+Austria|602346|16257991|Beauty|-unknown-
+Belgium|602346|16258001|Automotive|-unknown-
+Brazil|602346|16258021|Magazines|-unknown-
+Canada|602346|16257851|Magazines|-unknown-
+Chile|602346|16258031|Magazines|-unknown-
+China|602346|16257861|Automotive|-unknown-
+Colombia|602346|16258041|Magazines|-unknown-
+Croatia|602346|16258051|Magazines|-unknown-
+Denmark|602346|16258071|Magazines|-unknown-
+Egypt|602346|16258081|Magazines|-unknown-
+Finland|602346|16258091|Magazines|-unknown-
+France|602346|16257871|Magazines|-unknown-
+Germany|602346|16257881|Magazines|-unknown-
+Hong Kong|602346|16258111|Magazines|-unknown-
+India|602346|16258131|Magazines|-unknown-
+Ireland|602346|16258141|Magazines|-unknown-
+Israel|602346|16258151|Books|-unknown-
+Netherlands|602346|16257951|Magazines|-unknown-
+New Zealand|602346|16258191|Magazines|-unknown-
+Norway|602346|16258181|Magazines|-unknown-
+Portugal|602346|16258211|Automotive|-unknown-
+Romania|602346|16258221|Magazines|-unknown-
+Russia|602346|16257911|Magazines|-unknown-
+Scotland|602346|16258241|Magazines|-unknown-
+South Africa|602346|16258231|Classical|-unknown-
+South Korea|602346|16258161|Magazines|-unknown-
+Spain|602346|16257921|Grocery|-unknown-
+Sweden|602346|16258261|Magazines|-unknown-
+Taiwan: Republic of China|602346|16258271|Magazines|-unknown-
+Turkey|602346|16258281|Magazines|-unknown-
+Ukraine|602346|16258291|Magazines|-unknown-
+United Kingdom|602346|16257931|Magazines|-unknown-
+Large Print|599872|253238011|Magazines|-unknown-
+Law|599872|253239011|Magazines|-unknown-
+Lifestyle &amp; Cultures|599872|602348|Magazines|-unknown-
+Literary Magazine|599872|602350|DVD|-unknown-
+Art|602350|253320011|Automotive|-unknown-
+By Region|602350|253321011|Magazines|-unknown-
+California|253321011|253322011|Automotive|-unknown-
+Mid-Atlantic|253321011|253324011|-unknown-|-unknown-
+Midwest|253321011|253325011|Magazines|-unknown-
+Pacific Northwest & Alaska|253321011|253330011|Classical|-unknown-
+South|253321011|253331011|WirelessAccessories|-unknown-
+Literature & Fiction|602350|253336011|GourmetFood|-unknown-
+Mystery & Suspense|602350|253337011|Magazines|-unknown-
+News & Politics|602350|253338011|Magazines|-unknown-
+Poetry & Poets|602350|253339011|Magazines|-unknown-
+Men's Interest|599872|602352|Automotive|-unknown-
+Adult|602352|253340011|Automotive|-unknown-
+Entertainment|602352|350576011|Magazines|-unknown-
+Movies and Music Magazines|599872|253352011|Magazines|-unknown-
+News and Politics Magazine Subscriptions|599872|602358|Magazines|-unknown-
+Ideas & Commentary|602358|742402|Magazines|-unknown-
+Newsletters|599872|16416041|Magazines|-unknown-
+Newspapers|599872|1040160|Magazines|-unknown-
+Arts & Entertainment|1040160|1200004|Baby|-unknown-
+Business & Finance|1040160|1200006|Magazines|-unknown-
+Current Events|1040160|1200014|Magazines|-unknown-
+General Interest|1040160|1200016|DVD|-unknown-
+Law & Government|1040160|1200012|Magazines|-unknown-
+Lifestyles, Cultures & Religions|1040160|1200010|Classical|-unknown-
+Science & Technology|1040160|1200008|Baby|-unknown-
+Outdoors & Nature|599872|253359011|Industrial|-unknown-
+Birdwatching|253359011|253360011|Magazines|-unknown-
+Conservation|253359011|253361011|Magazines|-unknown-
+Ecology & Ecosystems|253359011|253362011|Magazines|-unknown-
+Environmental Awareness|253359011|253363011|Magazines|-unknown-
+Fauna|253359011|253364011|Magazines|-unknown-
+Flora|253359011|253365011|Magazines|-unknown-
+Hiking & Camping|253359011|253366011|Magazines|-unknown-
+Hunting & Fishing|253359011|253367011|Magazines|-unknown-
+Natural Resources|253359011|253376011|Classical|-unknown-
+Nature Writing|253359011|253382011|Magazines|-unknown-
+Outdoor Recreation|253359011|253383011|Magazines|-unknown-
+Travel|253359011|253400011|Magazines|-unknown-
+Parenting & Families|599872|602330|Magazines|-unknown-
+Parenting|602330|253410011|Electronics|-unknown-
+Professional &amp; Trade|599872|1115660|Magazines|-unknown-
+Architecture|1115660|1115772|Baby|-unknown-
+Arts|1115660|1115770|Magazines|-unknown-
+Aesthetics|1115770|1115794|-unknown-|-unknown-
+Crafts & Collectibles|1115770|1115782|Magazines|-unknown-
+Decorative Arts|1115770|1115790|Grocery|-unknown-
+Painting|1115770|1115788|Magazines|-unknown-
+Performing Arts|1115770|1115778|Magazines|-unknown-
+Photography|1115770|1115780|GourmetFood|-unknown-
+Sculpture|1115770|1115784|Magazines|-unknown-
+Education|1115660|1115918|Magazines|-unknown-
+History of Education|1115918|1115922|Magazines|-unknown-
+Special Aspects|1115918|1115926|Baby|-unknown-
+Theory & Practice|1115918|1115924|Magazines|-unknown-
+Engineering|1115660|1115662|Magazines|-unknown-
+Automotive|1115662|1115670|Magazines|-unknown-
+Bridge Building|1115662|1115964|-unknown-|-unknown-
+Chemical|1115662|1115942|Magazines|-unknown-
+Chemical Technology|1115662|1115968|Magazines|-unknown-
+Civil|1115662|1115944|Magazines|-unknown-
+Computer Technology|1115662|1115946|Magazines|-unknown-
+Electrical & Electronics|1115662|1115948|Magazines|-unknown-
+Environmental|1115662|1115952|Magazines|-unknown-
+Highway|1115662|1115960|DVD|-unknown-
+Hydraulic|1115662|1115958|Magazines|-unknown-
+Industrial, Manufacturing & Operational Systems|1115662|253683011|-unknown-|-unknown-
+Manufacturing|253683011|1115970|-unknown-|-unknown-
+Mechanical|1115662|1115966|Magazines|-unknown-
+Mining & Metallurgy|1115662|1115950|Magazines|-unknown-
+Petroleum, Mining & Geological|1115662|1115956|-unknown-|-unknown-
+Railroad|1115662|1115962|Magazines|-unknown-
+Entertainment & Media|1115660|1115868|Magazines|-unknown-
+Television & Radio|1115868|1115870|Electronics|-unknown-
+Firefighting & Prevention|1115660|316826011|Magazines|-unknown-
+Humanities & Social Sciences|1115660|1115664|Magazines|-unknown-
+Anthropology & Folklore|1115664|1115856|Magazines|-unknown-
+Economics & Economic Theory|1115664|1115860|Magazines|-unknown-
+Geography|1115664|1116356|Magazines|-unknown-
+History|1115664|1116292|Magazines|-unknown-
+Archaeology|1116292|1116354|Magazines|-unknown-
+By Region|1116292|1116314|Magazines|-unknown-
+Asia & Oceania|1116314|1116340|Magazines|-unknown-
+Balkan Peninsula|1116314|1200206|-unknown-|-unknown-
+Continental Europe|1116314|1116320|Magazines|-unknown-
+France|1116320|1116322|Magazines|-unknown-
+Germany|1116320|1116324|Magazines|-unknown-
+Italy|1116320|1116328|Magazines|-unknown-
+Spain & Portugal|1116320|1116332|Magazines|-unknown-
+Switzerland|1116320|1116334|Magazines|-unknown-
+Eastern Europe & Russia|1116314|1116336|Magazines|-unknown-
+Great Britain|1116314|1116318|Magazines|-unknown-
+Mediterranean Europe|1116314|1116330|Classical|-unknown-
+Scandinavia|1116314|1116338|-unknown-|-unknown-
+History of Civilization|1116292|1116352|Magazines|-unknown-
+History of Scholarship|1116292|1116350|Magazines|-unknown-
+Language & Literature|1115664|1115796|Magazines|-unknown-
+Classical Languages & Literature|1115796|1115810|Magazines|-unknown-
+East Asian, African & Oceania Languages & Literature|1115796|1115820|Magazines|-unknown-
+English Language|1115796|1115802|Magazines|-unknown-
+English Literature|1115796|1115818|Magazines|-unknown-
+Germanic Languages|1115796|1115800|Magazines|-unknown-
+Germanic Literature|1115796|1115816|Magazines|-unknown-
+Romance Languages|1115796|1115798|Magazines|-unknown-
+Military Science|1115664|1115750|Magazines|-unknown-
+Armies & Defense|1115750|1115754|Magazines|-unknown-
+Artillery|1115750|1115764|Magazines|-unknown-
+Infantry|1115750|1115768|-unknown-|-unknown-
+Marines|1115750|1115758|Magazines|-unknown-
+Navigation|1115750|1115760|Magazines|-unknown-
+Navy|1115750|1115756|Magazines|-unknown-
+Political Science|1115664|1115862|Magazines|-unknown-
+Psychology|1115664|1115866|Magazines|-unknown-
+Religion & Spirituality|1115664|1115858|Magazines|-unknown-
+Buddhism|1115858|1116302|-unknown-|-unknown-
+Christianity|1115858|1116306|Magazines|-unknown-
+Islam, Bahaism & Other Religions|1115858|1116308|-unknown-|-unknown-
+Judaism|1115858|1116304|Magazines|-unknown-
+Sociology|1115664|1115844|Magazines|-unknown-
+Social History, Problems & Reform|1115844|1115848|MP3Downloads|-unknown-
+Law|1115660|1115974|-unknown-|-unknown-
+Government & Policy|1115974|1115976|Beauty|-unknown-
+Taxation|1115974|1115980|Magazines|-unknown-
+Medicine|1115660|1116172|Magazines|-unknown-
+Alternative & Holistic|1116172|1116212|Magazines|-unknown-
+Dentistry|1116172|1116186|Magazines|-unknown-
+Obstetrics & Gynecology|1116172|1116202|Books|-unknown-
+Pharmacology|1116172|1116192|Magazines|-unknown-
+Public Health|1116172|1116194|Magazines|-unknown-
+Specialties|1116172|253968011|Magazines|-unknown-
+Dermatology|253968011|1116210|Magazines|-unknown-
+Ophthalmology|253968011|1116198|Magazines|-unknown-
+Pediatrics|253968011|1116208|Magazines|-unknown-
+Science & Technology|1115660|1115666|Books|-unknown-
+Biological & Natural Sciences|1115666|1116220|Magazines|-unknown-
+Agricultural Sciences|1116220|1116222|Automotive|-unknown-
+Forestry|1116222|1116226|Magazines|-unknown-
+Botany|1116220|1116240|Magazines|-unknown-
+Human Anatomy|1116220|1116232|Magazines|-unknown-
+Microbiology|1116220|1116236|Magazines|-unknown-
+Physiology|1116220|1116234|Magazines|-unknown-
+Zoology|1116220|1116244|Magazines|-unknown-
+Chemistry|1115666|1116250|Magazines|-unknown-
+Earth Sciences|1115666|1116252|DVD|-unknown-
+Cartography|1116252|1116254|Beauty|-unknown-
+Environmental Science|1116252|1116256|Books|-unknown-
+Geography|1116252|1116260|Magazines|-unknown-
+Geology|1116252|1116262|Magazines|-unknown-
+Physics|1115666|1116264|Photo|-unknown-
+Technology|1115666|1116266|Magazines|-unknown-
+Chemical Technology|1116266|1116270|Magazines|-unknown-
+Computers & Internet|1116266|1116272|Magazines|-unknown-
+Sports & Leisure|1115660|1115674|Industrial|-unknown-
+Games & Toys|1115674|1115706|Magazines|-unknown-
+Sports|1115674|1115676|Magazines|-unknown-
+Auto Racing|1115676|1115678|Magazines|-unknown-
+Aviation|1115676|1115680|-unknown-|-unknown-
+Baseball|1115676|1115682|Magazines|-unknown-
+Basketball|1115676|1115684|Magazines|-unknown-
+Boating|1115676|1115686|Magazines|-unknown-
+Football|1115676|1115688|Magazines|-unknown-
+Golf|1115676|1115692|Magazines|-unknown-
+Water Sports|1115676|1115700|Magazines|-unknown-
+Travel|1115674|1115702|Magazines|-unknown-
+Reference|599872|254105011|Magazines|-unknown-
+Atlases & Almanacs|254105011|254106011|Magazines|-unknown-
+Regional Publications|599872|254109011|-unknown-|-unknown-
+Science & Nature|599872|602364|Magazines|-unknown-
+Archaeology|602364|254173011|Music|-unknown-
+Astronomy|602364|254174011|Magazines|-unknown-
+Aeronautics & Astronautics|254174011|254175011|Magazines|-unknown-
+Astronomy|254174011|254176011|-unknown-|-unknown-
+Cosmology|254174011|254179011|Magazines|-unknown-
+Star-Gazing|254174011|254183011|Magazines|-unknown-
+Telescopes|254174011|254184011|Magazines|-unknown-
+UFOs|254174011|254185011|Magazines|-unknown-
+Behavioral Sciences|602364|254187011|Magazines|-unknown-
+Biological Sciences|602364|254192011|Magazines|-unknown-
+Anatomy|254192011|254193011|-unknown-|-unknown-
+Bioinformatics|254192011|254197011|Magazines|-unknown-
+Biology|254192011|254198011|Magazines|-unknown-
+Biotechnology|254192011|254212011|Magazines|-unknown-
+Research|254192011|254251011|Magazines|-unknown-
+Chemistry|602364|254270011|Magazines|-unknown-
+Earth Sciences|602364|254314011|Magazines|-unknown-
+Atmospheric Sciences|254314011|254315011|Magazines|-unknown-
+Climatology|254314011|254323011|Magazines|-unknown-
+Meteorology|254314011|254365011|-unknown-|-unknown-
+History & Philosophy|602364|254417011|Magazines|-unknown-
+Medicine|602364|254491011|Grocery|-unknown-
+Nature & Ecology|602364|602356|Magazines|-unknown-
+Physics|602364|254527011|Magazines|-unknown-
+Reference|602364|254593011|Beauty|-unknown-
+Social Sciences|602364|1039940|Magazines|-unknown-
+Science Fiction &amp; Fantasy|599872|254618011|Magazines|-unknown-
+Fantasy|254618011|254619011|Magazines|-unknown-
+Gaming|254618011|254626011|Magazines|-unknown-
+Science Fiction|254618011|254627011|Magazines|-unknown-
+Writing|254618011|254633011|Beauty|-unknown-
+Spanish-Language|599872|1040158|Magazines|-unknown-
+Sports &amp; Leisure|599872|602366|Industrial|-unknown-
+Aviation|602366|254634011|Magazines|-unknown-
+Baseball|602366|3018001|Magazines|-unknown-
+Basketball|602366|3018011|Magazines|-unknown-
+Boating|602366|637772|Magazines|-unknown-
+Extreme Sports|602366|254638011|Magazines|-unknown-
+Football|602366|3018021|Magazines|-unknown-
+Golf|602366|769052|-unknown-|-unknown-
+Hiking & Camping|602366|655462|-unknown-|-unknown-
+Hockey|602366|254639011|Magazines|-unknown-
+Horses & Riding|602366|655464|Magazines|-unknown-
+Hunting & Fishing|602366|637770|-unknown-|-unknown-
+Individual Sports|602366|254640011|Magazines|-unknown-
+Cycling|254640011|254645011|-unknown-|-unknown-
+Golf|254640011|254647011|Magazines|-unknown-
+Gymnastics|254640011|254648011|Magazines|-unknown-
+Horses|254640011|254649011|Magazines|-unknown-
+Running & Jogging|254640011|254652011|-unknown-|-unknown-
+Tennis|254640011|254654011|-unknown-|-unknown-
+Triathlon|254640011|254655011|Magazines|-unknown-
+Mountaineering|602366|254676011|Magazines|-unknown-
+Racket Sports|602366|254685011|HomeGarden|-unknown-
+Running & Biking|602366|657758|Magazines|-unknown-
+Skiing & Snowboarding|602366|637776|-unknown-|-unknown-
+Soccer|602366|13015531|Magazines|-unknown-
+Training|602366|254694011|-unknown-|-unknown-
+Water Sports|602366|655460|Magazines|-unknown-
+Boating|655460|254697011|-unknown-|-unknown-
+Canoeing & Kayaking|655460|254698011|-unknown-|-unknown-
+Sailing|655460|254701011|-unknown-|-unknown-
+Scuba & Snorkel|655460|254702011|-unknown-|-unknown-
+Surfing|655460|254703011|Magazines|-unknown-
+Swimming|655460|254704011|-unknown-|-unknown-
+Teens|599872|602368|Magazines|-unknown-
+Fashion & Style|602368|254714011|Magazines|-unknown-
+Transportation|599872|254716011|Photo|-unknown-
+Automotive|254716011|254717011|Magazines|-unknown-
+Aviation|254716011|254718011|Magazines|-unknown-
+Ships & Boats|254716011|254726011|Magazines|-unknown-
+Travel &amp; Regional|599872|602370|Magazines|-unknown-
+United States|602370|254762011|Magazines|-unknown-
+Regions|254762011|637780|Magazines|-unknown-
+South|637780|657956|Magazines|-unknown-
+East South Central|657956|254768011|HealthPersonalCare|-unknown-
+South Atlantic|657956|254770011|Toys|-unknown-
+West South Central|657956|657958|Magazines|-unknown-
+West|637780|657960|Magazines|-unknown-
+Mountain|657960|254772011|Magazines|-unknown-
+Pacific|657960|254773011|Kitchen|-unknown-
+States|254762011|254774011|Automotive|-unknown-
+Alabama|254774011|254775011|Magazines|-unknown-
+Arizona|254774011|254780011|-unknown-|-unknown-
+Grand Canyon|254780011|254782011|Magazines|-unknown-
+Phoenix|254780011|254783011|Magazines|-unknown-
+Tucson|254780011|254784011|-unknown-|-unknown-
+Arkansas|254774011|254785011|Magazines|-unknown-
+California|254774011|254786011|Magazines|-unknown-
+Disneyland|254786011|254788011|Magazines|-unknown-
+Los Angeles|254786011|254790011|Magazines|-unknown-
+Sacramento|254786011|254793011|Magazines|-unknown-
+San Diego|254786011|254794011|Magazines|-unknown-
+San Francisco|254786011|254795011|Magazines|-unknown-
+San Jose|254786011|254796011|Magazines|-unknown-
+Sequoia|254786011|254798011|Magazines|-unknown-
+Yosemite|254786011|254799011|Magazines|-unknown-
+Colorado|254774011|254800011|Magazines|-unknown-
+Boulder|254800011|254802011|Magazines|-unknown-
+Colorado Springs|254800011|254803011|-unknown-|-unknown-
+Denver|254800011|254804011|Magazines|-unknown-
+Rocky Mountain National Park|254800011|254806011|Magazines|-unknown-
+Connecticut|254774011|254807011|Magazines|-unknown-
+Delaware|254774011|254810011|Jewelry|-unknown-
+Florida|254774011|254811011|Baby|-unknown-
+Disney World|254811011|254812011|Magazines|-unknown-
+Jacksonville|254811011|254814011|Magazines|-unknown-
+Miami|254811011|254816011|Magazines|-unknown-
+Tampa|254811011|254818011|Magazines|-unknown-
+Georgia|254774011|254819011|Magazines|-unknown-
+Atlanta|254819011|254820011|Magazines|-unknown-
+Idaho|254774011|254830011|Magazines|-unknown-
+Illinois|254774011|254833011|DVD|-unknown-
+Chicago|254833011|254834011|Magazines|-unknown-
+Indiana|254774011|254836011|Magazines|-unknown-
+Iowa|254774011|254839011|Magazines|-unknown-
+Kansas|254774011|254840011|Magazines|-unknown-
+Kentucky|254774011|254841011|Magazines|-unknown-
+Louisville|254841011|254844011|Automotive|-unknown-
+Louisiana|254774011|254845011|Magazines|-unknown-
+New Orleans|254845011|254847011|Magazines|-unknown-
+Maine|254774011|254848011|-unknown-|-unknown-
+Maryland|254774011|254849011|Magazines|-unknown-
+Baltimore|254849011|254850011|Magazines|-unknown-
+Michigan|254774011|254856011|Magazines|-unknown-
+Mississippi|254774011|254862011|Magazines|-unknown-
+Missouri|254774011|254863011|Magazines|-unknown-
+Kansas City|254863011|254866011|Magazines|-unknown-
+St. Louis|254863011|254867011|Magazines|-unknown-
+Montana|254774011|254868011|Magazines|-unknown-
+Nebraska|254774011|254869011|Toys|-unknown-
+Nevada|254774011|254870011|Magazines|-unknown-
+Las Vegas|254870011|254872011|-unknown-|-unknown-
+New Hampshire|254774011|254874011|-unknown-|-unknown-
+New Jersey|254774011|254875011|DVD|-unknown-
+New York|254774011|254880011|Magazines|-unknown-
+Brooklyn|254880011|254882011|-unknown-|-unknown-
+Long Island|254880011|254886011|Magazines|-unknown-
+New York City|254880011|254887011|Magazines|-unknown-
+Niagara Falls|254880011|254888011|Magazines|-unknown-
+Ohio|254774011|254894011|HealthPersonalCare|-unknown-
+Cincinnati|254894011|254895011|Magazines|-unknown-
+Cleveland|254894011|254896011|Magazines|-unknown-
+Oklahoma|254774011|254898011|Magazines|-unknown-
+Oregon|254774011|254899011|Magazines|-unknown-
+Portland|254899011|254901011|Magazines|-unknown-
+Pennsylvania|254774011|254902011|Magazines|-unknown-
+Philadelphia|254902011|254904011|KindleStore|-unknown-
+Pittsburgh|254902011|254905011|HomeGarden|-unknown-
+Rhode Island|254774011|254906011|-unknown-|-unknown-
+South Dakota|254774011|254913011|Magazines|-unknown-
+Virginia|254774011|254930011|Magazines|-unknown-
+Richmond|254930011|254932011|Magazines|-unknown-
+West Virginia|254774011|254942011|Magazines|-unknown-
+Wisconsin|254774011|254943011|Magazines|-unknown-
+Madison|254943011|254945011|HomeGarden|-unknown-
+Milwaukee|254943011|254946011|-unknown-|-unknown-
+Washington, D.C.|254762011|254951011|-unknown-|-unknown-

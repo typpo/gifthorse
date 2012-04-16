@@ -1,0 +1,53 @@
+Air Tools|251266011|552684|Tools|-unknown-
+Air Blowguns|552684|3753851|Tools|-unknown-
+Air Chisels|552684|3753861|Tools|-unknown-
+Air Combo Packs|552684|552688|Tools|-unknown-
+Air Ratchet Wrenches|552684|3753881|Tools|-unknown-
+Air Saws|552684|3753891|HomeGarden|-unknown-
+Air Screwdrivers|552684|552718|Tools|-unknown-
+Sanders & Grinders|552684|552716|Tools|-unknown-
+Air Grinders|552716|686956011|Tools|-unknown-
+Air Sanders|552716|686955011|Tools|-unknown-
+Cordless Power Tools|251266011|552738|Tools|-unknown-
+Combo Packs|552738|552742|Tools|-unknown-
+Cordless Impact Drivers &amp; Wrenches|552738|552748|Tools|-unknown-
+Cordless In-Line Screwdrivers|552738|552750|HomeGarden|-unknown-
+Cordless Nailers|552738|552758|Tools|-unknown-
+Cordless Rotary Hammers|552738|552762|Tools|-unknown-
+Cordless Rotary Tools|552738|552764|Tools|-unknown-
+Cordless Staplers|552738|552778|Tools|-unknown-
+Drills|552738|561138|Tools|-unknown-
+Saws|552738|552766|Tools|-unknown-
+Cordless Reciprocating Saws|552766|552776|Tools|-unknown-
+Woodworking Shop|251266011|541016|Tools|-unknown-
+Assembly|541016|350565011|Tools|-unknown-
+Clamps & Vises|350565011|16426481|Tools|-unknown-
+Cutting|541016|350558011|Tools|-unknown-
+Band Saws|350558011|16426701|Tools|-unknown-
+Hand Saws: Handsaws|350558011|16426571|Tools|-unknown-
+Miter Saws|350558011|16426781|Tools|-unknown-
+Panel Saws|350558011|16426791|Tools|-unknown-
+Radial-Arm Saws|350558011|16426821|Tools|-unknown-
+Scroll Saws|350558011|16426861|Tools|-unknown-
+Measuring & Layout|541016|350554011|Tools|-unknown-
+Jigs|350554011|16426981|Tools|-unknown-
+Marking Tools|350554011|350556011|Tools|-unknown-
+Router Templates|350554011|350557011|Tools|-unknown-
+Rulers|350554011|350555011|Tools|-unknown-
+Tape Measures|350554011|16426541|Tools|-unknown-
+Shaping|541016|350559011|Tools|-unknown-
+Chisels: Wood Chisels|350559011|16426471|Tools|-unknown-
+Drill Bits & Sets|350559011|350560011|Tools|-unknown-
+Drill Presses|350559011|16426741|Tools|-unknown-
+Files &amp; Rasps: Files And Rasps|350559011|350561011|Tools|-unknown-
+Hand Planes|350559011|16426491|Tools|-unknown-
+Jointers|350559011|16426761|Tools|-unknown-
+Lathes: Power Lathes|350559011|16426771|Tools|-unknown-
+Mortisers|350559011|350562011|Tools|-unknown-
+Planers: Power Planers|350559011|16426801|Tools|-unknown-
+Rotary Tools: Power Rotary Tools|350559011|16426831|Tools|-unknown-
+Router Bits: Router Bits|350559011|350563011|Tools|-unknown-
+Routers: Power Routers|350559011|16426841|Tools|-unknown-
+Shapers: Power Shapers|350559011|16426871|Tools|-unknown-
+Turning Tools|350559011|350564011|Tools|-unknown-
+Woodworking|541016|294060011|Tools|-unknown-

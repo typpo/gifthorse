@@ -1,0 +1,103 @@
+Categories|3367581|3880591|Jewelry|-unknown-
+Accessories|3880591|3888431|Jewelry|-unknown-
+Jewelry Boxes & Organizers|3888431|3743851|Jewelry|-unknown-
+Jewelry Armoires|3743851|16350281|Jewelry|-unknown-
+Jewelry Chests|3743851|16350321|Jewelry|-unknown-
+Jewelry Rolls|3743851|3888531|Jewelry|-unknown-
+Jewelry Towers|3743851|16350341|Jewelry|-unknown-
+Jewelry Trays|3743851|16350351|Jewelry|-unknown-
+Jewelry Cleaning &amp; Care Products|3888431|13830051|Jewelry|-unknown-
+Ankle Bracelets|3880591|3885271|Jewelry|-unknown-
+Body Jewelry|3880591|3885201|Jewelry|-unknown-
+Belly Chains|3885201|3885221|Jewelry|-unknown-
+Piercing Jewelry|3885201|3885231|Jewelry|-unknown-
+Barbells|3885231|2450760011|Jewelry|-unknown-
+Body Piercing Plugs|3885231|2450767011|Jewelry|-unknown-
+Body Piercing Retainers|3885231|2450771011|Jewelry|-unknown-
+Body Piercing Screws|3885231|2450773011|Jewelry|-unknown-
+Body Piercing Tunnels|3885231|2450776011|Jewelry|-unknown-
+Rings|3885231|2450769011|Jewelry|-unknown-
+Toe Rings|3885201|3885241|Jewelry|-unknown-
+Bracelets & Bangles|3880591|3885251|Jewelry|-unknown-
+Bangles|3885251|3885281|Jewelry|-unknown-
+Beaded Bracelets|3885251|3885291|Jewelry|-unknown-
+Charm Bracelet|3885251|3885431|Jewelry|-unknown-
+Cuff Bracelets|3885251|3885441|Jewelry|-unknown-
+ID Bracelets|3885251|3885451|Jewelry|-unknown-
+Link Bracelet|3885251|3885461|Jewelry|-unknown-
+Stretch Bracelets|3885251|2738209011|Jewelry|-unknown-
+Tennis Bracelet|3885251|3885481|Jewelry|-unknown-
+Wrap|3885251|2738210011|Jewelry|-unknown-
+Brooches and Pins|3880591|3885491|Jewelry|-unknown-
+Charms|3880591|3885701|Jewelry|-unknown-
+Children's Jewelry|3880591|3880601|Jewelry|-unknown-
+Boys' Jewelry|3880601|3880611|Jewelry|-unknown-
+Boys Bracelets|3880611|3880801|Jewelry|-unknown-
+Boys Chains|3880611|3880841|Jewelry|-unknown-
+Boys Cuff Links|3880611|3880851|Jewelry|-unknown-
+Boys Rings|3880611|3880891|Jewelry|-unknown-
+Boys Tie Clips|3880611|3880921|Jewelry|-unknown-
+Girls' Jewelry|3880601|3880961|Jewelry|-unknown-
+Anklets|3880961|3881481|Jewelry|-unknown-
+Bracelets|3880961|3881461|Jewelry|-unknown-
+Charm|3881461|3881501|Jewelry|-unknown-
+Girls Bangles|3881461|3881491|Jewelry|-unknown-
+Girls Cuff Bracelets|3881461|3881511|Jewelry|-unknown-
+Girls Identification Bracelets|3881461|3881521|Jewelry|-unknown-
+Link|3881461|3881531|Jewelry|-unknown-
+Brooches & Pins|3880961|3881551|Jewelry|-unknown-
+Earrings|3880961|3881621|Jewelry|-unknown-
+Girls Ball Earrings|3881621|3881641|Jewelry|-unknown-
+Girls Hoop Earrings|3881621|3881731|Jewelry|-unknown-
+Stud|3881621|3881791|Jewelry|-unknown-
+Necklaces & Pendants|3880961|3881811|Jewelry|-unknown-
+Chains|3881811|3881821|Jewelry|-unknown-
+Girls Pendants|3881811|3881851|Jewelry|-unknown-
+Lockets|3881811|3881831|Apparel|-unknown-
+Rings|3880961|3881961|Jewelry|-unknown-
+Earrings|3880591|3885911|Jewelry|-unknown-
+Clip-On Earrings|3885911|3886191|Jewelry|-unknown-
+Dangle Earrings|3885911|3886081|Watches|-unknown-
+Diamond Earrings|3885911|3886091|Jewelry|-unknown-
+Ear Cuffs &amp; Wrap|3885911|2746357011|Jewelry|-unknown-
+Earring Jackets|3885911|3886111|Jewelry|-unknown-
+Hoop Earrings|3885911|3886171|Jewelry|-unknown-
+Stud Earrings|3885911|3886231|Jewelry|-unknown-
+Gemstones|3880591|370742011|Jewelry|-unknown-
+Jewelry Sets|3880591|3898891|Jewelry|-unknown-
+Men's Jewelry|3880591|3887881|Jewelry|-unknown-
+Bracelets|3887881|3888081|Jewelry|-unknown-
+Cuff Links|3887881|3888131|Jewelry|-unknown-
+Men's Necklaces|3887881|3888121|Jewelry|-unknown-
+Mens Earrings|3887881|3888141|-unknown-|-unknown-
+Tie Clip|3887881|3888391|Jewelry|-unknown-
+Tie Pins|3887881|3888411|Jewelry|-unknown-
+Necklaces & Pendants|3880591|3886281|Jewelry|-unknown-
+Choker Necklaces|3886281|3886911|Jewelry|-unknown-
+Lockets|3886281|3886931|Jewelry|-unknown-
+Pearl Necklace|3886281|3886941|Jewelry|-unknown-
+Pendant Enhancers|3886281|2743861011|Jewelry|-unknown-
+Pendants|3886281|3887001|Jewelry|-unknown-
+Strand Necklaces|3886281|2738218011|Jewelry|-unknown-
+Y Necklaces|3886281|3887241|Jewelry|-unknown-
+Novelty Jewelry|3880591|2516784011|Jewelry|-unknown-
+Novelty Body Jewelry|2516784011|2516512011|-unknown-|-unknown-
+Novelty Bracelets|2516784011|2516513011|Jewelry|-unknown-
+Novelty Brooches &amp; Pins|2516784011|2516514011|Jewelry|-unknown-
+Novelty Earrings|2516784011|2516516011|Jewelry|-unknown-
+Novelty Jewelry Necklaces &amp; Pendants|2516784011|2516517011|Jewelry|-unknown-
+Novelty Jewelry Rings|2516784011|2516518011|Jewelry|-unknown-
+Religious Jewelry|3880591|3893691|Jewelry|-unknown-
+Religious Bracelets|3893691|3915191|Jewelry|-unknown-
+Religious Brooches and Pins|3893691|3915201|Jewelry|-unknown-
+Religious Earrings|3893691|3915221|Jewelry|-unknown-
+Religious Necklaces and Pendants|3893691|3915231|Jewelry|-unknown-
+Rings|3880591|3887251|Jewelry|-unknown-
+Engagement &amp; Wedding Jewelry: Shop engagement rings, wedding rings, wedding bands, eternity bands, anniversary bands, and more|3887251|3890321|Baby|-unknown-
+Wedding & Engagement Rings|3880591|16014541|Jewelry|-unknown-
+Anniversary Rings|16014541|16265811|Jewelry|-unknown-
+Engagement Rings|16014541|3890311|Jewelry|-unknown-
+Eternity Rings|16014541|2691274011|Jewelry|-unknown-
+Promise Rings|16014541|3887591|Jewelry|-unknown-
+Wedding Bands|16014541|3890411|Jewelry|-unknown-
+Wedding Ring Sets|16014541|3890601|Jewelry|-unknown-
