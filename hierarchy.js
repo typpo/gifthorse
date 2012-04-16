@@ -20,7 +20,7 @@ var tree;
     var parts = line.split('\t');
     if (parts.length < 4)
       return true;  // skip this line
-    var name = parts[0];
+    var name = parts[0].toLowerCase();
     var parent_id = parts[1];
     var id = parts[2];
     var product_group = parts[3];
@@ -37,7 +37,6 @@ var tree;
         id: id,
       });
       node = node.children[node.children.length-1];
-      bn_index[id] = node;
     }
     else {
       var parent_node = bn_index[parent_id];
@@ -46,22 +45,23 @@ var tree;
           name: name,
           id: id,
         });
+        node = node.children[node.children.length-1];
       }
       else {
         return false; // not done
       }
-
-      bn_index[id] = node;
-      if (!name_index[name])
-        name_index[name] = [];
-      name_index[name].push(node);
     }
+
+    bn_index[id] = node;
+    if (!name_index[name])
+      name_index[name] = [];
+    name_index[name].push(node);
+
     return true;  // all done
   }
 
   while (lines.length > 0) {
     var child_line = lines.shift();
-
     if (!process_line(child_line)) {
       lines.push(child_line);
     }
@@ -70,9 +70,10 @@ var tree;
 })()
 
 function closestDistanceFromNodeName(bn_id, name) {
-  var nodes = name_index[name];
+  var nodes = name_index[name.toLowerCase()];
+  console.log(nodes);
   return _.min(_.map(nodes, function(node) {
-    return distanceBetweenBrowseNodes(node.data.id, bn);
+    return distanceBetweenBrowseNodes(node.data.id, bn_id);
   }));
 }
 
@@ -103,6 +104,7 @@ function distanceBetweenBrowseNodes(id_a, id_b) {
 }
 
 function browseNodeExists(name) {
+  name = name.toLowerCase();
   return name_index[name] && name_index[name].length > 0;
 }
 
@@ -113,4 +115,4 @@ module.exports = {
 }
 console.log(distanceBetweenBrowseNodes('2210604011','2206260011'))
 console.log(distanceBetweenBrowseNodes('374783011','3409906011'))
-console.log(closestDistanceFromNodeName('374783011','Elephant'))
+console.log(closestDistanceFromNodeName('374783011','sports Collectibles'))
