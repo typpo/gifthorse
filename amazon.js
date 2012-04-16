@@ -242,6 +242,16 @@ function getTopSuggestionsForNode(bn, query, cb) {
   });
 } // end addNode
 
+function distanceToNodeName(bid, nodename) {
+  nodename = stemmer(nodename);
+  hierarchy.distanceToNodeName(bid, nodename);
+}
+
+function browseNodeExists(nodename) {
+  nodename = stemmer(nodename);
+  hierarchy.browseNodeExists(nodename);
+}
+
 // Walks the ancestor/child tree of a BrowseNode
 // callback(err, ancestorCount)
 // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/FindingBrowseNodes.html

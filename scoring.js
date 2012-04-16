@@ -6,7 +6,7 @@
 // reviews
 
 // TODO boost for exact match on browse node name, and boost any nearby nodes
-// *** this is the key!
+// TODO classifer for search queries to browse nodes
 
 module.exports = {
   DEPTH_WEIGHT: 1,    // multiplier applied for each level in the amazon hierarchy

@@ -1,18 +1,19 @@
-// Amazon browse node hierarchy
+//
+// Amazon browse node hierarchy search and manipulation
+//
 
 var Arboreal = require('./lib/arboreal.js')
   , fs = require('fs')
   , _ = require('underscore')
   , assert = require('assert')
+  , stemmer = require('porter-stemmer').stemmer
 
 var bn_index = {};    // map from unique id to single node
 var name_index = {};  // map from name to list of nodes
+var names_set = [];  // set of browse node names
 var tree;
 
 (function loadHierarchyData() {
-  tree = new Arboreal();
-
-  var lines = fs.readFileSync('./data/browsenodes/all.txt', 'utf-8').split('\n');
 
   function process_line(line) {
     // Returns true if parent has already been added and the node was added,
@@ -57,20 +58,25 @@ var tree;
       name_index[name] = [];
     name_index[name].push(node);
 
-    return true;  // all done
+    return true;  // all done with this line
   }
 
+  tree = new Arboreal();
+  var lines = fs.readFileSync('./data/browsenodes/all.txt', 'utf-8').split('\n');
   while (lines.length > 0) {
     var child_line = lines.shift();
     if (!process_line(child_line)) {
       lines.push(child_line);
     }
   }
+  names_set = _.keys(name_index);
   console.log('Success: Loaded browse node hierarchy.');
 })()
 
-function closestDistanceFromNodeName(bn_id, name) {
+function distanceToNodeName(bn_id, name) {
   var nodes = name_index[name.toLowerCase()];
+  if (!nodes || nodes.length < 1)
+    return Number.MAX_VALUE;
   return _.min(_.map(nodes, function(node) {
     return distanceBetweenBrowseNodes(node.data.id, bn_id);
   }));
@@ -80,7 +86,6 @@ function distanceBetweenBrowseNodes(id_a, id_b) {
   // TODO right now this assumes one is in the subtree of the other
   var a = bn_index[id_a];
   var b = bn_index[id_b];
-
   if (!a)
     throw new Error('No such browse node: ' + id_a);
   if (!b)
@@ -88,17 +93,14 @@ function distanceBetweenBrowseNodes(id_a, id_b) {
 
   function getDist(start_node, id_find) {
     var depth = Number.MAX_VALUE;
-    var found_node = false;
     start_node.traverseDown(function(node) {
       if (node.data.id == id_find) {
-        found_node = true;
         depth = node.depth - start_node.depth;
         return false;
       }
     });
     return depth;
   }
-
   return Math.min(getDist(a, id_b), getDist(b, id_a));
 }
 
@@ -107,13 +109,25 @@ function browseNodeExists(name) {
   return name_index[name] && name_index[name].length > 0;
 }
 
+function fuzzyBrowseNodeMatch(search) {
+  search = stemmer(search.toLowerCase());
+  for (var i=0; i < names_set.length; i++) {
+    var name = names_set[i];
+    if (name.indexOf(search) > -1 || search.indexOf(name) > -1) {
+      return true;
+    }
+  }
+  return false;
+}
+
 module.exports = {
   browseNodeExists: browseNodeExists,
-  closestDistanceFromNodeName: closestDistanceFromNodeName,
   distanceBetweenBrowseNodes: distanceBetweenBrowseNodes,
+  distanceToNodeName: distanceToNodeName,
+  fuzzyBrowseNodeMatch: fuzzyBrowseNodeMatch,
 }
 
 assert.equal(distanceBetweenBrowseNodes('2210604011','2206260011'), 1)
 assert.equal(distanceBetweenBrowseNodes('374783011','3409906011'), 1)
-assert.equal(closestDistanceFromNodeName('374783011','sports Collectibles'), 0)
-assert.equal(closestDistanceFromNodeName('374790011','sports Collectibles'), 1)
+assert.equal(distanceToNodeName('374783011','sPorts Collectibles'), 0)
+assert.equal(distanceToNodeName('374790011','spoRts Collectibles'), 1)
