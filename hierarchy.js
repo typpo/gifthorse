@@ -71,7 +71,6 @@ var tree;
 
 function closestDistanceFromNodeName(bn_id, name) {
   var nodes = name_index[name.toLowerCase()];
-  console.log(nodes);
   return _.min(_.map(nodes, function(node) {
     return distanceBetweenBrowseNodes(node.data.id, bn_id);
   }));
@@ -109,10 +108,12 @@ function browseNodeExists(name) {
 }
 
 module.exports = {
-  closestDistanceFromNodeName: closestDistanceFromNodeName,
   browseNodeExists: browseNodeExists,
+  closestDistanceFromNodeName: closestDistanceFromNodeName,
   distanceBetweenBrowseNodes: distanceBetweenBrowseNodes,
 }
-console.log(distanceBetweenBrowseNodes('2210604011','2206260011'))
-console.log(distanceBetweenBrowseNodes('374783011','3409906011'))
-console.log(closestDistanceFromNodeName('374783011','sports Collectibles'))
+
+assert.equal(distanceBetweenBrowseNodes('2210604011','2206260011'), 1)
+assert.equal(distanceBetweenBrowseNodes('374783011','3409906011'), 1)
+assert.equal(closestDistanceFromNodeName('374783011','sports Collectibles'), 0)
+assert.equal(closestDistanceFromNodeName('374790011','sports Collectibles'), 1)
