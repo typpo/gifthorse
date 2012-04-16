@@ -73,6 +73,7 @@ var tree;
   console.log('Success: Loaded browse node hierarchy.');
 })()
 
+/*
 function distanceToNodeName(bn_id, name) {
   var nodes = name_index[name.toLowerCase()];
   if (!nodes || nodes.length < 1)
@@ -81,27 +82,52 @@ function distanceToNodeName(bn_id, name) {
     return distanceBetweenBrowseNodes(node.data.id, bn_id);
   }));
 }
+*/
 
-function distanceBetweenBrowseNodes(id_a, id_b) {
+function distanceBetweenNodes(a, b) {
   // TODO right now this assumes one is in the subtree of the other
-  var a = bn_index[id_a];
-  var b = bn_index[id_b];
-  if (!a)
-    throw new Error('No such browse node: ' + id_a);
-  if (!b)
-    throw new Error('No such browse node: ' + id_b);
-
-  function getDist(start_node, id_find) {
+  function getDist(start_node, end_node) {
     var depth = Number.MAX_VALUE;
     start_node.traverseDown(function(node) {
-      if (node.data.id == id_find) {
+      if (node.data.id == end_node.data.id) {
         depth = node.depth - start_node.depth;
         return false;
       }
     });
     return depth;
   }
-  return Math.min(getDist(a, id_b), getDist(b, id_a));
+  return Math.min(getDist(a, b), getDist(b, a));
+}
+
+function distanceBetweenNodeIds(id_a, id_b) {
+  var a = bn_index[id_a];
+  var b = bn_index[id_b];
+  if (!a)
+    throw new Error('No such browse node: ' + a);
+  if (!b)
+    throw new Error('No such browse node: ' + a);
+  return Math.abs(a.depth - b.depth);
+}
+
+function distanceBetweenNodeNames(name_a, name_b) {
+  var nodes_a = name_index[name_a.toLowerCase()];
+  var nodes_b = name_index[name_b.toLowerCase()];
+  if (!nodes_a || nodes_a.length < 1)
+    return Number.MAX_VALUE;
+  if (!nodes_b || nodes_b.length < 1)
+    return Number.MAX_VALUE;
+
+  // minimum distance from any node in A to any node in B
+  return _.reduce(nodes_a, function(memo, node_a) {
+    // minimum distance from this node in A to any node in B
+    var min_dist = _.reduce(nodes_b, function(memo, node_b) {
+      var d = distanceBetweenNodes(node_a, node_b);
+      if (d < memo) return d;
+      return memo;
+    }, Number.MAX_VALUE);
+    if (min_dist < memo) return min_dist;
+    return memo;
+  }, Number.MAX_VALUE);
 }
 
 function browseNodeExists(name) {
@@ -126,13 +152,17 @@ function getTreeNodeById(bid) {
 
 module.exports = {
   browseNodeExists: browseNodeExists,
-  distanceBetweenBrowseNodes: distanceBetweenBrowseNodes,
-  distanceToNodeName: distanceToNodeName,
+  distanceBetweenNodeNames: distanceBetweenNodeNames,
   fuzzyBrowseNodeMatch: fuzzyBrowseNodeMatch,
   getTreeNodeById: getTreeNodeById,
 }
 
-assert.equal(distanceBetweenBrowseNodes('2210604011','2206260011'), 1)
-assert.equal(distanceBetweenBrowseNodes('374783011','3409906011'), 1)
-assert.equal(distanceToNodeName('374783011','sPorts Collectibles'), 0)
-assert.equal(distanceToNodeName('374790011','spoRts Collectibles'), 1)
+assert.equal(distanceBetweenNodeIds('2210604011','2206260011'), 1)
+assert.equal(distanceBetweenNodeIds('374783011','3409906011'), 1)
+//assert.equal(distanceToNodeName('374783011','sPorts Collectibles'), 0)
+//assert.equal(distanceToNodeName('374790011','spoRts Collectibles'), 1)
+assert.equal(distanceBetweenNodeNames('sports collectibles', 'hard hats'), 1);
+
+function test(a,b) {
+  console.log(a, b);
+}

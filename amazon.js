@@ -95,12 +95,12 @@ function runSearch(query, cb) {
     // half as much as the next popular category
     categories = _.keys(bindings_count)
       .filter(function(a) {
-        return true;//(bindings_count[a] >= 2)
+        return (bindings_count[a] >= 2)
       })
       .sort(function(a, b) {
         return bindings_count[b] - bindings_count[a];
       })
-      .slice(0, 2);
+      //.slice(0, 2);
 
     winston.info('categories count: ', bindings_count);
     winston.info('qualifying top categories: ', categories)
@@ -132,7 +132,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       node_counts[name]++;
 
       // Don't query duplicate nodes
-      if (bn.Name in seen ||
+      if (seen[name] ||
           EXCLUDE_NODES.indexOf(bn.Name) > -1) {
         return false;
       }
@@ -146,7 +146,6 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
           requestComplete();
         });
       });
-
       seen[name] = true;
     } // end checkNode
 
@@ -214,9 +213,9 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
 // callback(err, item, depth)
 function getTopSuggestionsForNode(bn, query, cb) {
   console.log('getting the top suggestions for', bn.Name);
-  var node = hierarchy.getTreeNodeById(bid);
+  var node = hierarchy.getTreeNodeById(bn.BrowseNodeId);
   if (!node) {
-    cb(new Error("Couldn't find browse node " + bid), null, null);
+    cb(new Error("Couldn't find browse node " + bn.BrowseNodeId), null, null);
     return;
   }
 
@@ -299,8 +298,8 @@ function bnLookup(bn, responsegroup, cb) {
   });
 }
 
-function distanceToNodeName(bid, nodename) {
-  return hierarchy.distanceToNodeName(bid, stemmer(nodename));
+function distanceBetweenNodeNames(n1, n2) {
+  return hierarchy.distanceBetweenNodeNames(n1, n2);
 }
 
 function browseNodeExists(nodename) {
