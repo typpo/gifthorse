@@ -2,12 +2,12 @@ var  _ = require('underscore')
   , freebase = require('freebase')
   , winston = require('winston')
   , stemmer = require('porter-stemmer').stemmer
-  , record = require('./record.js')
-  , config = require('./config.js')
-  , redis = require('./redis.js')
+  , record = require('../record.js')
+  , config = require('../config.js')
+  , redis = require('../redis.js')
+  , suggest = require('../suggest.js')
+  , scoring = require('../scoring.js')
   , amazon_static = require('./static.js')
-  , scoring = require('./scoring.js')
-  , suggest = require('./suggest.js')
   , hierarchy = require('./hierarchy.js')
 
 var OperationHelper = require('apac').OperationHelper;

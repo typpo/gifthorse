@@ -2,7 +2,7 @@
 // Amazon browse node hierarchy search and manipulation
 //
 
-var Arboreal = require('./lib/arboreal.js')
+var Arboreal = require('../lib/arboreal.js')
   , fs = require('fs')
   , _ = require('underscore')
   , assert = require('assert')
