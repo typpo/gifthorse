@@ -70,7 +70,7 @@ var tree;
     }
   }
   names_set = _.keys(name_index);
-  console.log('Success: Loaded browse node hierarchy.');
+  console.log('Success: Loaded browse node hierarchy (' + names_set.length + ' nodes).');
 })()
 
 /*
