@@ -42,6 +42,7 @@ module.exports = {
 
     // Fuzzy matching things against query
     query = stemmer(query);
+    // TODO tokenize and stem this shit first, otherwise 'skiing' will match 'skills'
     if (new RegExp(query, 'i').test(result.item.Title)) {
       result.score *= this.NAME_FUZZY_MATCH_WEIGHT;
     }
