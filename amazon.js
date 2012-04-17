@@ -62,7 +62,7 @@ function runSearch(query, cb) {
       cb(err, null);
       return;
     }
-    if (results.Items.Request.IsValid == 'False') {
+    if (results.Items.Request.IsValid === 'False') {
       winston.info(results.Items.Request.Errors);
       cb(err, null);
       return;
@@ -132,8 +132,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       node_counts[name]++;
 
       // Don't query duplicate nodes
-      if (seen[name] ||
-          EXCLUDE_NODES.indexOf(bn.Name) > -1) {
+      if (seen[name] || EXCLUDE_NODES.indexOf(bn.Name) > -1) {
         return false;
       }
 
@@ -155,7 +154,6 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
         return;
 
       var browsenode = item.BrowseNodes.BrowseNode;
-
       if (_.isArray(browsenode)) {
         _.map(browsenode, checkNode);
       }
@@ -167,12 +165,10 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
 
   // Fire request queue, collect responses and create scores
   var completed = 0;
-  _.map(pending_request_fns, function(fn) {
-    fn();
-  });
+  _.map(pending_request_fns, function(fn) {fn();});
   function requestComplete() {
     completed++;
-    if (completed == pending_request_fns.length) {
+    if (completed === pending_request_fns.length) {
       console.log('top category browse nodes breakdown: ', node_counts);
       console.log(top_gifted_items);
 
@@ -215,7 +211,7 @@ function topSuggestionsForNode(bn, query, cb) {
   // We omit overly general browse nodes...must be at least N deep in hierarchy
   // but not when browse node name matches query name, eg. for 'Shopping'
   // TODO make this variable, based on average ancestor depth
-  if (node.depth > 2 || query.toLowerCase() == bn.Name.toLowerCase()) {
+  if (node.depth > 2 || query.toLowerCase() === bn.Name.toLowerCase()) {
     giftSuggestionsForNode(bn, function(err, items) {
       if (err) {
         cb(err, null, node.depth);

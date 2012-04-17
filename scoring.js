@@ -6,6 +6,7 @@ var stemmer = require('porter-stemmer').stemmer
 // items that are purchased
 // similarity to search
 // reviews
+// blacklist
 
 // TODO boost for exact match on browse node name, and boost any nearby nodes
 //  prefer exact match nodes and their children
@@ -37,11 +38,7 @@ module.exports = {
     // Final adjustments for the candidate in this browsenode category
     // Returns True if result should be shown
 
-    // Penalize long boring items
-    if (result.item.Title.length > this.LENGTH_WEIGHT_THRESHOLD) {
-      //result.score *= this.LENGTH_WEIGHT;
-    }
-
+    // Fuzzy matching things against query
     query = stemmer(query);
     if (new RegExp(query, 'i').test(result.item.Title)) {
       result.score *= this.NAME_FUZZY_MATCH_WEIGHT;
@@ -51,10 +48,15 @@ module.exports = {
     }
 
     // Penalize books :(
-    if (result.item.ProductGroup == 'Book' || result.item.ProductGroup == 'eBooks') {
+    if (result.item.ProductGroup === 'Book' || result.item.ProductGroup === 'eBooks') {
       result.score *= this.BOOK_WEIGHT;
     }
+    // Penalize long boring items
+    if (result.item.Title.length > this.LENGTH_WEIGHT_THRESHOLD) {
+      //result.score *= this.LENGTH_WEIGHT;
+    }
 
+    // Boost depending on how we found the item
     if (result.item.type.indexOf('MostWishedFor') > -1) {
       result.score *= this.WISHEDFOR_WEIGHT;
     }
@@ -63,7 +65,7 @@ module.exports = {
     }
     if (result.item.type.indexOf('TopSellers') > -1) {
       result.score *= this.TOPSELLERS_WEIGHT;
-      if (result.item.type.length == 1) {
+      if (result.item.type.length === 1) {
         // Don't show something that is *only* a top seller
         return false;
       }

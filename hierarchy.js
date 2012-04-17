@@ -89,7 +89,7 @@ function distanceBetweenNodes(a, b) {
   function getDist(start_node, end_node) {
     var depth = Number.MAX_VALUE;
     start_node.traverseDown(function(node) {
-      if (node.data.id == end_node.data.id) {
+      if (node.data.id === end_node.data.id) {
         depth = node.depth - start_node.depth;
         return false;
       }
