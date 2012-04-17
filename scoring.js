@@ -11,6 +11,8 @@ var stemmer = require('porter-stemmer').stemmer
 // TODO boost for exact match on browse node name, and boost any nearby nodes
 //  prefer exact match nodes and their children
 // TODO classifer for search queries to browse nodes
+//
+// TODO automatically force categories if there is a stemmed match, eg. Elephants for query "elephant"
 
 module.exports = {
   DEPTH_WEIGHT: 1,    // multiplier applied for each level in the amazon hierarchy
