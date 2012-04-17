@@ -6,7 +6,8 @@ var  _ = require('underscore')
   , config = require('./config.js')
   , redis = require('./redis.js')
   , amazon_static = require('./static.js')
-  , scoring= require('./scoring.js')
+  , scoring = require('./scoring.js')
+  , suggest = require('./suggest.js')
   , hierarchy = require('./hierarchy.js')
 
 var OperationHelper = require('apac').OperationHelper;
