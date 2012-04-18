@@ -13,6 +13,9 @@ var stemmer = require('porter-stemmer').stemmer
 // TODO classifer for search queries to browse nodes
 //
 // TODO automatically force categories if there is a stemmed match, eg. Elephants for query "elephant"
+//
+// TODO when deduping, also don't show results that are too similar, eg. for elephants there are like
+// 10 books with "(An Elephant and Piggie Book)"
 
 module.exports = {
   DEPTH_WEIGHT: 1,    // multiplier applied for each level in the amazon hierarchy

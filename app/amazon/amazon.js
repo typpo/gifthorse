@@ -179,7 +179,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
         _.each(bn_items, function(bn_item) {
           var result = {
             // compute a base score
-            score: 1.0 * top_gifted_item_depths[bn_key] * scoring.DEPTH_WEIGHT
+            score: 1.0 /** top_gifted_item_depths[bn_key] * scoring.DEPTH_WEIGHT*/
               * node_counts[bn_key] * scoring.NODE_COUNT_WEIGHT,
             item: bn_item,
             bName: bn_key,
@@ -191,6 +191,10 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
 
       // TODO still need to get rid of duplicates
       // and probably give them a boost with scoring.CROSS_BROWSENODE_WEIGHT
+      //
+      // TODO when deduping, also don't show results that are too similar, eg. for elephants there are like
+      // 10 books with "(An Elephant and Piggie Book)"
+      // http://stackoverflow.com/questions/70560/how-do-i-compare-phrases-for-similarity
 
       if (final_item_list.length > 0) {
         cb(null, final_item_list);
