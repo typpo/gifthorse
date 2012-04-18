@@ -2,21 +2,27 @@
 // The interface for suggesting related SEARCH QUERIES
 //
 
+//var CSV_FILE = './data/turk/us/all.csv';
+var CSV_FILE = './data/test/all.csv';
+
 var fs = require('fs')
   , _ = require('underscore')
-  , stemmer = require('porter-stemmer').stemmer
+  //, stemmer = require('porter-stemmer').stemmer
+
+var stemmer  = function(a) {return a;}; // placeholder because the other stemming shit sucks
 
 var people = [];
 (function loadGiftData() {
-  var lines = fs.readFileSync('./data/turk/us/all.csv', 'utf-8').split('\n');
+  var lines = fs.readFileSync(CSV_FILE, 'utf-8').split('\n');
   _.each(lines, function(line) {
     var parts = line.split(',');
     if (parts.length < 3) return true;
-    var p1 = stemmer(parts[0].toLowerCase()),
-      p2 = stemmer(parts[1].toLowerCase()),
-      p3 = stemmer(parts[2].toLowerCase());
+    var pid = parts[0],
+      p1 = stemmer(parts[1].toLowerCase()),
+      p2 = stemmer(parts[2].toLowerCase()),
+      p3 = stemmer(parts[3].toLowerCase());
 
-    // TODO clean more
+    // TODO clean more?
 
     var person = {};
     person[p1] = 1;
@@ -24,17 +30,28 @@ var people = [];
     person[p3] = 1;
     people.push(person);
   });
+
+  suggestions({
+    cooking: 1,
+    hiking: 1,
+    camping: 1,
+  }, 2);
 })();
 
 function sum(arr) {
   return _.reduce(arr, function(memo, num){ return memo + num; }, 0);
 }
 
-function bestMatch(poi) {
+function normalizePerson(person) {
   var normalized_person = {};
-  for (var x in poi) {
-    normalized_person[stemmer(x.toLowerCase())] = poi[x];
+  for (var x in person) {
+    normalized_person[stemmer(x.toLowerCase())] = person[x];
   }
+  return normalized_person;
+}
+
+function bestMatch(poi) {
+  var normalized_person = normalizePerson(poi);
   return _.reduce(people, function(memo, person) {
     var pscore = pearson(normalized_person, person);
     if (pscore > memo[0])
@@ -45,15 +62,13 @@ function bestMatch(poi) {
 
 
 function suggestions(poi, n) {
-  var normalized_person = {};
-  for (var x in poi) {
-    normalized_person[stemmer(x.toLowerCase())] = poi[x];
-  }
+  var normalized_person = normalizePerson(poi);
 
   var scores_for_queries = {};
   // compute weighted scores for each query
-  return _.map(people, function(person) {
+  _.map(people, function(person) {
     var pscore = pearson(normalized_person, person);
+    console.log(normalized_person, 'vs', person, '=', pscore);
     for (var q in person) {
       if (!scores_for_queries[q])
         scores_for_queries[q] = 0;
@@ -62,9 +77,13 @@ function suggestions(poi, n) {
   });
 
   // choose the top N scores for queries
-  return _.keys(scores_for_queries).sort(function(a,b) {
-    return scores_for_queries[a] - scores_for_queries[b];
+  var ret =_.chain(scores_for_queries).keys().sort(function(a,b) {
+    return scores_for_queries[b] - scores_for_queries[a];
+  }).reject(function(x) {
+    return x in normalized_person;
   }).slice(0, n);
+  console.log(ret);
+  return ret;
 }
 
 // Calculates Pearson correlation between two objects of the form:
@@ -79,13 +98,12 @@ function suggestions(poi, n) {
 //  bears: 1,
 // }
 //
-function pearson(v1, v2) {
+function pearson(obj1, obj2) {
   var vs = [];
   var n = 0;
-  for (var i=0; i < v1.length; i++) {
-    var val = v1[i];
-    if (val in v2) {
-      vs.push([v1[val], v2[val]]);
+  for (val in obj1) {
+    if (val in obj2) {
+      vs.push([obj1[val], obj2[val]]);
       n++;
     }
   }
@@ -107,6 +125,7 @@ function pearson(v1, v2) {
 
   // Calculate Pearson score
   var num = p_sum-(sum1*sum2/n)
+  console.log(num)
   var temp = Math.max((sum1_sq-Math.pow(sum1,2)/n) * (sum2_sq-Math.pow(sum2,2)/n), 0)
   if (temp)
     return num / sqrt(temp);
