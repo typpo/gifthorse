@@ -62,6 +62,14 @@ function bestMatchPerson(poi) {
   }, [0, {}]);
 }
 
+function suggestionsFromQueries(queries, n) {
+  var p = {};
+  _.each(queries, function(kw) {
+    p[kw]=1;
+  });
+  return suggestions(p, n);
+}
+
 function suggestions(poi, n) {
   var normalized_person = normalizePerson(poi);
 
@@ -130,7 +138,7 @@ function pearson(obj1, obj2) {
   return 1;
 }
 
-module.export = {
+module.exports = {
   bestMatchPerson: bestMatchPerson,
-  suggestions: suggestions,
+  suggestionsFromQueries: suggestionsFromQueries,
 }

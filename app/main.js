@@ -5,6 +5,7 @@ var express = require('express')
   , app = express.createServer()
   , config = require('./config.js')
   , amazon = require('./amazon/amazon.js')
+  , suggest = require('./brain/suggest.js')
 
 // Express config
 app.set('views', __dirname + '/views');
@@ -30,7 +31,11 @@ app.get('/lookup/:keyword', function(req, res) {
   amazon.search(req.params.keyword, function(err, item) {
     res.send(item);
   });
+});
 
+app.get('/suggest/:keywords', function(req, res) {
+  var kws = req.params.keywords.split(',');
+  res.send(suggest.suggestionsFromQueries(kws, 2));
 });
 
 var port = process.env.PORT || 8080;
