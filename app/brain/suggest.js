@@ -31,11 +31,13 @@ var people = [];
     people.push(person);
   });
 
+  /*
   suggestions({
     cooking: 1,
     hiking: 1,
     camping: 1,
   }, 2);
+  */
 })();
 
 function sum(arr) {
@@ -50,7 +52,7 @@ function normalizePerson(person) {
   return normalized_person;
 }
 
-function bestMatch(poi) {
+function bestMatchPerson(poi) {
   var normalized_person = normalizePerson(poi);
   return _.reduce(people, function(memo, person) {
     var pscore = pearson(normalized_person, person);
@@ -60,7 +62,6 @@ function bestMatch(poi) {
   }, [0, {}]);
 }
 
-
 function suggestions(poi, n) {
   var normalized_person = normalizePerson(poi);
 
@@ -68,7 +69,7 @@ function suggestions(poi, n) {
   // compute weighted scores for each query
   _.map(people, function(person) {
     var pscore = pearson(normalized_person, person);
-    console.log(normalized_person, 'vs', person, '=', pscore);
+    //console.log(normalized_person, 'vs', person, '=', pscore);
     for (var q in person) {
       if (!scores_for_queries[q])
         scores_for_queries[q] = 0;
@@ -77,13 +78,11 @@ function suggestions(poi, n) {
   });
 
   // choose the top N scores for queries
-  var ret =_.chain(scores_for_queries).keys().sort(function(a,b) {
+  return _.chain(scores_for_queries).keys().sort(function(a,b) {
     return scores_for_queries[b] - scores_for_queries[a];
   }).reject(function(x) {
     return x in normalized_person;
-  }).slice(0, n);
-  console.log(ret);
-  return ret;
+  }).slice(0, n).value();
 }
 
 // Calculates Pearson correlation between two objects of the form:
@@ -125,7 +124,6 @@ function pearson(obj1, obj2) {
 
   // Calculate Pearson score
   var num = p_sum-(sum1*sum2/n)
-  console.log(num)
   var temp = Math.max((sum1_sq-Math.pow(sum1,2)/n) * (sum2_sq-Math.pow(sum2,2)/n), 0)
   if (temp)
     return num / sqrt(temp);
@@ -133,5 +131,6 @@ function pearson(obj1, obj2) {
 }
 
 module.export = {
-  bestMatch: bestMatch,
+  bestMatchPerson: bestMatchPerson,
+  suggestions: suggestions,
 }
