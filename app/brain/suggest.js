@@ -36,11 +36,35 @@ function bestMatch(poi) {
     normalized_person[stemmer(x.toLowerCase())] = poi[x];
   }
   return _.reduce(people, function(memo, person) {
-    var pscore = pearson(personOfInterest, person);
-    if (pscore < 1 && pscore > memo[0])
+    var pscore = pearson(normalized_person, person);
+    if (pscore > memo[0])
       return [pscore, person];
     return memo;
   }, [0, {}]);
+}
+
+
+function suggestions(poi, n) {
+  var normalized_person = {};
+  for (var x in poi) {
+    normalized_person[stemmer(x.toLowerCase())] = poi[x];
+  }
+
+  var scores_for_queries = {};
+  // compute weighted scores for each query
+  return _.map(people, function(person) {
+    var pscore = pearson(normalized_person, person);
+    for (var q in person) {
+      if (!scores_for_queries[q])
+        scores_for_queries[q] = 0;
+      scores_for_queries[q] += pscore * person[q];
+    }
+  });
+
+  // choose the top N scores for queries
+  return _.keys(scores_for_queries).sort(function(a,b) {
+    return scores_for_queries[a] - scores_for_queries[b];
+  }).slice(0, n);
 }
 
 // Calculates Pearson correlation between two objects of the form:
