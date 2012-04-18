@@ -2,7 +2,7 @@ var  _ = require('underscore')
   , freebase = require('freebase')
   , winston = require('winston')
   , stemmer = require('porter-stemmer').stemmer
-  , record = require('../brain/log_behavior.js')
+  , log_behavior = require('../brain/log_behavior.js')
   , suggest = require('../brain/suggest.js')
   , config = require('../config.js')
   , redis = require('../redis.js')
@@ -17,7 +17,7 @@ var opHelper = new OperationHelper({
   assocId:   config.amazon.associate,
 });
 
-var EXCLUDE_BINDINGS = ['Amazon Instant Video', /*'Kindle Edition',*/
+var EXCLUDE_BINDINGS = [/*'Amazon Instant Video',*/ /*'Kindle Edition',*/
     'MP3 Download', 'Personal Computers', ];
 
 var EXCLUDE_NODES = ['Just Arrived', 'Just arrived', 'All product', 'Deep discounts'];
@@ -171,6 +171,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
     completed++;
     if (completed === pending_request_fns.length) {
       console.log('top category browse nodes breakdown: ', node_counts);
+      // TODO if there's not enough variety, need to find similar things
       console.log(top_gifted_items);
 
       var final_item_list = [];
@@ -244,18 +245,20 @@ function giftSuggestionsForNode(bn, cb) {
         return true;
       }
 
-      // Top item of this list type
-      var best_item = item_set.TopItem[0];
-      if (EXCLUDE_PRODUCT_GROUPS.indexOf(best_item.ProductGroup) > -1) {
-        return true;
-      }
-      if (topitem_map[best_item.ASIN]) {
-        topitem_map[best_item.ASIN].type.push(item_set.Type);
-      }
-      else {
-        best_item.type = [item_set.Type];
-        topitem_map[best_item.ASIN] = best_item;
-      }
+      // Top items of this list type
+      //var best_item = item_set.TopItem[0];
+      _.each(item_set.TopItem, function(best_item) {
+        if (EXCLUDE_PRODUCT_GROUPS.indexOf(best_item.ProductGroup) > -1) {
+          return true;
+        }
+        if (topitem_map[best_item.ASIN]) {
+          topitem_map[best_item.ASIN].type.push(item_set.Type);
+        }
+        else {
+          best_item.type = [item_set.Type];
+          topitem_map[best_item.ASIN] = best_item;
+        }
+      });
     });
     cb(null, _.values(topitem_map));
   });

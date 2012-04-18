@@ -1,6 +1,9 @@
 //
 // Save stuff for later analysis.
 //
+// TODO log when someone 'already has this' - strong signal to serve that for
+// future searches of the same query
+//
 
 var mongo = require('mongodb')
   , mutil = require('../util/mongo.js')
