@@ -21,7 +21,7 @@ module.exports = {
   DEPTH_WEIGHT: 1,    // multiplier applied for each level in the amazon hierarchy
   NODE_COUNT_WEIGHT: 1.2,
 
-  DUPLICATE_WEIGHT: 1.1,    // boost applied each successive time an item appears in results
+  DUPLICATE_WEIGHT: 1.5,    // boost applied each successive time an item appears in results
   CROSS_BROWSENODE_WEIGHT: 1.4, // duplicates across browse nodes- this means item was best in two categories
 
   BROWSENODE_EXACT_MATCH_WEIGHT: 3,
@@ -29,6 +29,8 @@ module.exports = {
   BROWSENODE_DISTANCE_INVERSE_WEIGHT: 1.6,
 
   NAME_FUZZY_MATCH_WEIGHT: 3,
+
+  FUZZY_MATCH_EXCLUDE: ['reading'],   // some queries are too generic and we don't want to give them special weight
 
   LENGTH_WEIGHT: 0.7,
   LENGTH_WEIGHT_THRESHOLD: 100,  // apply length weight to anything with this long of a title
@@ -44,13 +46,23 @@ module.exports = {
     // Returns True if result should be shown
 
     // Fuzzy matching things against query
-    query = stemmer(query);
-    // TODO tokenize and stem this shit first, otherwise 'skiing' will match 'skills'
-    if (new RegExp(query, 'i').test(result.item.Title)) {
-      result.score *= this.NAME_FUZZY_MATCH_WEIGHT;
+    var skip_fuzzy_matches = false;
+    for (var i=0; i < this.FUZZY_MATCH_EXCLUDE.length; i++) {
+      var excludeme = this.FUZZY_MATCH_EXCLUDE[i];
+      if (new RegExp(excludeme, 'i').test('query')) {
+        skip_fuzzy_matches = true;
+      }
     }
-    if (new RegExp(query, 'i').test(result.bName)) {
-      result.score *= this.BROWSENODE_FUZZY_MATCH_WEIGHT;
+
+    if (skip_fuzzy_matches) {
+      query = stemmer(query);
+      // TODO tokenize and stem this shit first, otherwise 'skiing' will match 'skills'
+      if (new RegExp(query, 'i').test(result.item.Title)) {
+        result.score *= this.NAME_FUZZY_MATCH_WEIGHT;
+      }
+      if (new RegExp(query, 'i').test(result.bName)) {
+        result.score *= this.BROWSENODE_FUZZY_MATCH_WEIGHT;
+      }
     }
 
     // Penalize books :(

@@ -171,12 +171,11 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
     completed++;
     if (completed === pending_request_fns.length) {
       console.log('top category browse nodes breakdown: ', node_counts);
-      // TODO if there's not enough variety, need to find similar things
-      console.log(top_gifted_items);
+      //console.log(top_gifted_items);
 
-      var final_item_list = [];
-      _.each(top_gifted_items, function(bn_items, bn_key) {
-        _.each(bn_items, function(bn_item) {
+      var result_list = [];
+      _.map(top_gifted_items, function(bn_items, bn_key) {
+        _.map(bn_items, function(bn_item) {
           var result = {
             // compute a base score
             score: 1.0 /** top_gifted_item_depths[bn_key] * scoring.DEPTH_WEIGHT*/
@@ -185,19 +184,35 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
             bName: bn_key,
           };
           scoring.adjustResultScore(result, query);
-          final_item_list.push(result);
+          result_list.push(result);
         });
       });
 
-      // TODO still need to get rid of duplicates
-      // and probably give them a boost with scoring.CROSS_BROWSENODE_WEIGHT
-      //
       // TODO when deduping, also don't show results that are too similar, eg. for elephants there are like
       // 10 books with "(An Elephant and Piggie Book)"
       // http://stackoverflow.com/questions/70560/how-do-i-compare-phrases-for-similarity
+      // TODO also use CROSS_BROWSENODE_WEIGHT
 
-      if (final_item_list.length > 0) {
-        cb(null, final_item_list);
+      // dedup by title
+      var title_counts = {};
+      var title_to_result = {};
+      _.map(result_list, function(result) {
+        var title = result.item.Title;
+        if (!title_counts[title]) {
+          title_counts[title] = 0;
+          title_to_result[title] = result;
+        }
+        title_counts[title]++;
+      });
+
+      var deduped_results = _.chain(title_to_result).map(function(result, title) {
+        result.score *= scoring.DUPLICATE_WEIGHT * title_counts[title];
+        return result;
+      }).values().value();
+
+      // TODO if there's not enough variety, get additional results
+      if (deduped_results.length > 0) {
+        cb(null, deduped_results);
       }
       else
         cb(null, null);
