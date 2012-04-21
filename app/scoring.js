@@ -54,7 +54,7 @@ module.exports = {
       }
     }
 
-    if (skip_fuzzy_matches) {
+    if (!skip_fuzzy_matches) {
       query = stemmer(query);
       // TODO tokenize and stem this shit first, otherwise 'skiing' will match 'skills'
       if (new RegExp(query, 'i').test(result.item.Title)) {

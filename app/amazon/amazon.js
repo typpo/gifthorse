@@ -17,6 +17,9 @@ var opHelper = new OperationHelper({
   assocId:   config.amazon.associate,
 });
 
+var BN_LOOKUP_QUERY_PARAMS = ['MostGifted','MostWishedFor','TopSellers'];
+var BN_LOOKUP_QUERY_STRING = BN_LOOKUP_QUERY_PARAMS.join(',');
+
 var EXCLUDE_BINDINGS = [/*'Amazon Instant Video',*/ /*'Kindle Edition',*/
     'MP3 Download', 'Personal Computers', ];
 
@@ -93,7 +96,7 @@ function runSearch(query, cb) {
 
     // Choose the most interesting/popular categories
     // TODO instead of a threshold of 2, make it so that the threshold is
-    // half as much as the next popular category
+    // half of the most popular category
     categories = _.keys(bindings_count)
       .filter(function(a) {
         return (bindings_count[a] >= 2)
@@ -106,8 +109,8 @@ function runSearch(query, cb) {
     winston.info('categories count: ', bindings_count);
     winston.info('qualifying top categories: ', categories)
 
-      // TODO handle when categories is empty :(
-      // eg. for "romance"
+    // TODO handle when categories is empty :(
+    // eg. for "romance"
 
     getTopGiftsForCategories(categories, bindings_map, query, cb);
   });
@@ -193,7 +196,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       // http://stackoverflow.com/questions/70560/how-do-i-compare-phrases-for-similarity
       // TODO also use CROSS_BROWSENODE_WEIGHT
 
-      // dedup by title
+      // dedup by title, not ASIN (because things like paperback vs hardcover have different ASINs)
       var title_counts = {};
       var title_to_result = {};
       _.map(result_list, function(result) {
@@ -248,7 +251,7 @@ function topSuggestionsForNode(bn, query, cb) {
 } // end addNode
 
 function giftSuggestionsForNode(bn, cb) {
-  bnLookup(bn, "MostGifted,MostWishedFor", function(err, results) {
+  bnLookup(bn, BN_LOOKUP_QUERY_STRING, function(err, results) {
     if (err) {
       cb(err, null);
       return;

@@ -22,10 +22,18 @@ app.use(express.bodyParser());
 
 /* Homepage */
 app.get('/', function(req, res) {
-  res.render('index', {
-
-  });
+  homepage(req, res, {});
 });
+
+app.get('/pbj', function(req, res) {
+  homepage(req, res, {admin:true});
+});
+
+function homepage(req, res, opts) {
+  res.render('index', {
+    admin: opts.admin,
+  });
+}
 
 app.get('/lookup/:keyword', function(req, res) {
   amazon.search(req.params.keyword, function(err, item) {
