@@ -9,6 +9,7 @@ var  _ = require('underscore')
   , scoring = require('../scoring.js')
   , amazon_static = require('./static.js')
   , hierarchy = require('./hierarchy.js')
+  , reviews = require('./reviews.js')
 
 var OperationHelper = require('apac').OperationHelper;
 var opHelper = new OperationHelper({
