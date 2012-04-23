@@ -9,8 +9,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-
 }
 
 .logo {
@@ -32,15 +30,17 @@ body {
 }
 
 .outline {
-  border: 1px solid;
+  border: 1px solid #ffa000;
   padding: 10px;
-  padding-left: 25px;
 
   -moz-border-radius: 15px;
   border-radius: 15px;
 
   background-color: #fff;
+}
 
+.results {
+  padding-left: 25px;
 }
 
 .topcontainer {

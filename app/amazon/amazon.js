@@ -194,7 +194,10 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       // TODO when deduping, also don't show results that are too similar, eg. for elephants there are like
       // 10 books with "(An Elephant and Piggie Book)"
       // http://stackoverflow.com/questions/70560/how-do-i-compare-phrases-for-similarity
+      //
       // TODO also use CROSS_BROWSENODE_WEIGHT
+      //
+      // TODO limit results to a couple per browse node - so you don't get 9999 ski books and 9999 socks
 
       // dedup by title, not ASIN (because things like paperback vs hardcover have different ASINs)
       var title_counts = {};
@@ -295,8 +298,16 @@ function reviews() {
 
 }
 
+function itemLookup(ASIN, cb) {
+  // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/ItemLookup.html
+
+
+
+}
+
 function bnLookup(bn, responsegroup, cb) {
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/BrowseNodeLookup.html
+  // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/UsingSearchBinstoFindItems.html
   // TODO cache this
   opHelper.execute('BrowseNodeLookup', {
     'ResponseGroup': responsegroup,
