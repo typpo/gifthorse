@@ -93,7 +93,7 @@ function _recordClickForQuery(qid, rid, attr, cb) {
 
 function _recordClickForItem(asin, attr, cb) {
   var redis = redis.getConnection();
-  redis.incr('clicks:' + asin + ':' + attr);
+  redis.incr('gifthorse:clicks:' + asin + ':' + attr);
 }
 
 

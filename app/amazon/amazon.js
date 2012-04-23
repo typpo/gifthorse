@@ -42,9 +42,6 @@ function search(keyword, /*opts, */cb) {
   //sorting http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/SortingbyPopularityPriceorCondition.html
   //search http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/CommonItemSearchParameters.html
 
-
-  // TODO map common queries with extraneous words
-
   runSearch(keyword, cb);
 }
 
@@ -197,10 +194,9 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       // http://stackoverflow.com/questions/70560/how-do-i-compare-phrases-for-similarity
       //
       // TODO also use CROSS_BROWSENODE_WEIGHT
-      //
-      // TODO limit results to a couple per browse node - so you don't get 9999 ski books and 9999 socks
 
-      // dedup by title, not ASIN (because things like paperback vs hardcover have different ASINs)
+      // We dedup by title, not ASIN (because things like paperback
+      // vs hardcover have different ASINs)
       var title_counts = {};
       var title_to_result = {};
       _.map(result_list, function(result) {
@@ -252,7 +248,7 @@ function topSuggestionsForNode(bn, query, cb) {
     console.log('omitting', bn.Name);
     cb(null, null, null);
   }
-} // end addNode
+}
 
 function giftSuggestionsForNode(bn, cb) {
   bnLookup(bn, BN_LOOKUP_QUERY_STRING, function(err, results) {
@@ -335,7 +331,6 @@ function browseNodeExists(nodename) {
 function fuzzyBrowseNodeMatch(nodename) {
   return hierarchy.fuzzyBrowseNodeMatch(nodename);
 }
-
 
 module.exports = {
   search: search,

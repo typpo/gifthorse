@@ -1,8 +1,5 @@
 function getConnection() {
-  if (process.env.NODE_ENV == 'production')
-    redis = require('redis-url').connect(process.env.REDISTOGO_URL);
-  else
-    redis = require('redis-url').connect();
+  return redisurl.connect(process.env.REDISTOGO_URL || 'redis://localhost:6379');
 }
 
 module.exports = {
