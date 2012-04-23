@@ -1,9 +1,6 @@
 //
 // Save stuff for later analysis.
 //
-// TODO log when someone 'already has this' - strong signal to serve that for
-// future searches of the same query
-//
 // We log a couple things:
 // - The queries that people run
 // - The results that people get
@@ -12,13 +9,19 @@
 
 var mongo = require('mongodb')
   , mutil = require('../util/mongo.js')
+  , rutil = require('../util/redis.js')
 
-var COLL_NAME = 'queries';
+var QUERY_COLLECTION = 'queries';
+var ITEM_COLLECTION = 'items';
+
+var CLICK_THROUGH_ATTR = 'clickthrough',
+    CLICK_HIDE_ATTR = 'clickhide',
+    CLICK_ALREADYHAVE_ATTR = 'clickalreadyhave';
 
 // Takes a list of queries
 // cb(err, queryId)
 function recordQueries(sessionid, queries, cb) {
-  mutil.getCollection(COLL_NAME, function(err, collection) {
+  mutil.getCollection(QUERY_COLLECTION, function(err, collection) {
     if (err) {
       cb(true);
       return;
@@ -35,7 +38,7 @@ function recordQueries(sessionid, queries, cb) {
 }
 
 function recordResults(qid, results, cb) {
-  mutil.getCollection(COLL_NAME, function(err, collection) {
+  mutil.getCollection(QUERY_COLLECTION, function(err, collection) {
     if (err) {
       cb(true);
       return;
@@ -50,18 +53,23 @@ function recordResults(qid, results, cb) {
 
 }
 
-function recordClickThrough(qid, rid, cb) {
-  return recordGenericClick(qid, rid, 'clickthrough', cb);
+function recordClickThrough(qid, rid, asin, cb) {
+  return recordGenericClick(qid, rid, CLICK_THROUGH_ATTR, asin, cb);
 }
-function recordClickHide(qid, rid, cb) {
-  return recordGenericClick(qid, rid, 'clickhide', cb);
+function recordClickHide(qid, rid, asin, cb) {
+  return recordGenericClick(qid, rid, CLICK_HIDE_ATTR, asin, cb);
 }
-function recordClickAlreadyHave(qid, rid, cb) {
-  return recordGenericClick(qid, rid, 'clickalreadyhave', cb);
+function recordClickAlreadyHave(qid, rid, asin, cb) {
+  return recordGenericClick(qid, rid, CLICK_ALREADYHAVE_ATTR, asin, cb);
 }
 
-function recordGenericClick(qid, rid, attr, cb) {
-  mutil.getCollection(COLL_NAME, function(err, collection) {
+function recordGenericClick(qid, rid, attr, asin, cb) {
+  _recordClickForQuery(qid, rid, attr, function() {});
+  _recordClickForItem(asin, attr, function() {});
+}
+
+function _recordClickForQuery(qid, rid, attr, cb) {
+  mutil.getCollection(QUERY_COLLECTION, function(err, collection) {
     if (err) {
       cb(true);
       return;
@@ -73,6 +81,7 @@ function recordGenericClick(qid, rid, attr, cb) {
           cb(true);
           return;
         }
+        // update query
         obj.results[rid][attr] = true;
         collection.update({_id: new mongo.ObjectID(qid)}, {results:obj.results},
           function(err) {
@@ -80,6 +89,11 @@ function recordGenericClick(qid, rid, attr, cb) {
         });
     });
   });
+}
+
+function _recordClickForItem(asin, attr, cb) {
+  var redis = redis.getConnection();
+  redis.incr('clicks:' + asin + ':' + attr);
 }
 
 
