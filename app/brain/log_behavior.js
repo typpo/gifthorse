@@ -101,5 +101,6 @@ module.exports = {
   recordQueries: recordQueries,
   recordResults: recordResults,
   recordClickThrough: recordClickThrough,
+  recordGenericClick: recordGenericClick,
 
 }
