@@ -3,12 +3,14 @@ var  _ = require('underscore')
   , winston = require('winston')
   , stemmer = require('porter-stemmer').stemmer
   , log_behavior = require('../brain/log_behavior.js')
-  , suggest = require('../brain/suggest.js')
   , config = require('../config.js')
   , scoring = require('../scoring.js')
   , amazon_static = require('./static.js')
   , hierarchy = require('./hierarchy.js')
   , reviews = require('./reviews.js')
+
+  , suggest = require('../brain/suggest.js')
+  , log_behavior = require('../brain/log_behavior.js')
 
 var OperationHelper = require('apac').OperationHelper;
 var opHelper = new OperationHelper({
@@ -34,14 +36,27 @@ var MAP_BINDINGS = {
 
 function search(keyword, /*opts, */cb) {
   // Search Amazon for a keyword
-  // TODO options:
-  //  maxprice
-  //  minprice
   //
   //sorting http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/SortingbyPopularityPriceorCondition.html
   //search http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/CommonItemSearchParameters.html
 
-  runSearch(keyword, cb);
+  var final_err, final_results, final_qid;
+  var trigger = _.after(2, function() {
+    final_results.qid = final_qid;
+    cb(final_err, final_results);
+  });
+
+  runSearch(keyword, function(err, results) {
+    final_err = final_err || err;
+    final_results = results;
+    trigger();
+  });
+
+  log_behavior.recordQueries('sessid', [keyword], function(err, qid) {
+    final_err = final_err || err;
+    final_qid = qid;
+    trigger();
+  });
 }
 
 // cb(err, result)

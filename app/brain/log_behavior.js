@@ -21,6 +21,8 @@ var CLICK_THROUGH_ATTR = 'clickthrough',
 // Takes a list of queries
 // cb(err, queryId)
 function recordQueries(sessionid, queries, cb) {
+  console.log('Sess', sessionid, 'queried:', queries);
+
   mutil.getCollection(QUERY_COLLECTION, function(err, collection) {
     if (err) {
       cb(true);
