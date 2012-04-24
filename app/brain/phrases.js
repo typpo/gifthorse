@@ -3,6 +3,10 @@
 //
 // Maybe overlapping ngrams would be better
 //
+// this is useful when deduping, also don't show results that are too similar, eg. for elephants there are like
+// 10 books with "(An Elephant and Piggie Book)"
+// http://stackoverflow.com/questions/70560/how-do-i-compare-phrases-for-similarity
+//
 
 function cleanstring(str) {
   return str.replace(/[^\w\s]|_/g, "")

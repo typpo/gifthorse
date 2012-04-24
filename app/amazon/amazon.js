@@ -203,10 +203,6 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
         });
       });
 
-      // TODO when deduping, also don't show results that are too similar, eg. for elephants there are like
-      // 10 books with "(An Elephant and Piggie Book)"
-      // http://stackoverflow.com/questions/70560/how-do-i-compare-phrases-for-similarity
-      //
       // TODO also use CROSS_BROWSENODE_WEIGHT
 
       // We dedup by title, not ASIN (because things like paperback
@@ -227,7 +223,6 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
         return result;
       }).values().value();
 
-      // TODO if there's not enough variety, get additional results
       if (deduped_results.length > 0) {
         cb(null, deduped_results);
       }
