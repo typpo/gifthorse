@@ -306,15 +306,24 @@ function reviews() {
 
 function itemLookup(ASIN, cb) {
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/ItemLookup.html
-
-
-
+  opHelper.execute('ItemLookup', {
+    'ItemId': ASIN,
+    'ReviewSort': '-HelpfulVotes',
+    'TruncateReviewsAt': 100,
+    'ResponseGroup': 'Reviews,Offers,SalesRank,Images',
+    }, function(error, results) {
+      if (error) {
+        winston.error('Error: ' + error + "\n")
+        cb(error, null);
+        return;
+      }
+      cb(null, results);
+  });
 }
 
 function bnLookup(bn, responsegroup, cb) {
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/BrowseNodeLookup.html
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/UsingSearchBinstoFindItems.html
-  // TODO cache this
   opHelper.execute('BrowseNodeLookup', {
     'ResponseGroup': responsegroup,
     'BrowseNodeId': bn.BrowseNodeId,
