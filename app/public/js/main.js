@@ -1,4 +1,4 @@
-if (!GH) GH = {};
+if (typeof GH === 'undefined' || !GH) GH = {};
 
 GH.Main = {
   search_running: false,
@@ -9,7 +9,10 @@ GH.Main = {
     me.search_running = false;
 
     $('#search1').focus();
-    $('#search').on('click', DoSearch);
+    $('#search').on('click', function() {
+      me.DoSearch();
+      return false;
+    });
   },
 
   DoSearch: function() {
@@ -49,7 +52,7 @@ GH.Main = {
     $('#loading').hide();
 
     var resultdiv = $('#results').empty();
-    var sorted_results = data.sort(function(a,b) {
+    var sorted_results = data.results.sort(function(a,b) {
       return b.score - a.score;
     });
 
@@ -62,7 +65,7 @@ GH.Main = {
       }));
 
       $row.find('.vote-like').on('click', function() {
-        me.ItemFeedback(null, idx, result.item.ASIN, 'clickthrough');
+        me.ItemFeedback(data.qid, idx, result.item.ASIN, 'clickthrough');
       });
       $row.find('.vote-dislike').on('click', function() {
         // ..

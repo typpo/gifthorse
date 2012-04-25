@@ -19,3 +19,8 @@ function getCollection(collName, cb) {
   }); // end mongo connection
 }
 
+
+module.exports = {
+  getCollection: getCollection,
+
+}

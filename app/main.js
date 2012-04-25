@@ -53,6 +53,7 @@ app.get('/suggest/:keywords', function(req, res) {
 app.get('/click/:qid/:rid/:asin/:attr', function(req, res) {
   log_behavior.recordGenericClick(req.params.qid, req.params.rid,
                                 req.params.attr, req.params.asin);
+  res.send('ok');
 });
 
 var port = process.env.PORT || 8080;

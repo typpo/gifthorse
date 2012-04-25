@@ -42,8 +42,12 @@ function search(keyword, /*opts, */cb) {
 
   var final_err, final_results, final_qid;
   var trigger = _.after(2, function() {
-    final_results.qid = final_qid;
-    cb(final_err, final_results);
+    log_behavior.recordResults(final_qid, final_results, function() {
+      cb(final_err, {
+        results: final_results,
+        qid: final_qid,
+      });
+    });
   });
 
   runSearch(keyword, function(err, results) {

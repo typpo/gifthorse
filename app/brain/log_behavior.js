@@ -30,24 +30,33 @@ function recordQueries(sessionid, queries, cb) {
     }
 
     collection.insert({queries: queries, sid: sessionid}, function(err, docs) {
-      if (!err && docs.length > 0)
+      if (!err && docs.length > 0) {
+        console.log('Recorded queries successfully');
         cb(null, docs[0]._id);
-      else
+      }
+      else {
         cb(true);
+      }
     });
 
   });
 }
 
 function recordResults(qid, results, cb) {
+  console.log('Recording results for', qid);
   mutil.getCollection(QUERY_COLLECTION, function(err, collection) {
     if (err) {
       cb(true);
       return;
     }
 
-    collection.update({_id: new mongo.ObjectID(qid)}, {results:results},
+    collection.findAndModify(
+      {_id: new mongo.ObjectID(qid+'')},
+      [['_id','asc']],
+      {$set: {results:results}},
+      {safe: true},
       function(err) {
+        if (!err) console.log('Recorded results successfully');
         cb(err);
     });
 
@@ -71,6 +80,7 @@ function recordGenericClick(qid, rid, attr, asin, cb) {
 }
 
 function _recordClickForQuery(qid, rid, attr, cb) {
+  console.log('Recording click for query', qid,rid,attr);
   mutil.getCollection(QUERY_COLLECTION, function(err, collection) {
     if (err) {
       cb(true);
@@ -79,14 +89,19 @@ function _recordClickForQuery(qid, rid, attr, cb) {
 
     collection.findOne({_id: new mongo.ObjectID(qid)},
       function(err, obj) {
-        if (err || obj.results.length < rid + 1) {
+        if (err || !obj || obj.results.length < rid + 1) {
           cb(true);
           return;
         }
         // update query
         obj.results[rid][attr] = true;
-        collection.update({_id: new mongo.ObjectID(qid)}, {results:obj.results},
+        collection.findAndModify(
+          {_id: new mongo.ObjectID(qid+'')},
+          [['_id','asc']],
+          {$set: {results:obj.results}},
+          {safe: true},
           function(err) {
+            if (!err) console.log('Recorded click successfully');
             cb(err);
         });
     });
@@ -94,8 +109,9 @@ function _recordClickForQuery(qid, rid, attr, cb) {
 }
 
 function _recordClickForItem(asin, attr, cb) {
-  var redis = redis.getConnection();
-  redis.incr('gifthorse:clicks:' + asin + ':' + attr);
+  var redis = rutil.getConnection();
+  if (redis)
+    redis.incr('gifthorse:clicks:' + asin + ':' + attr);
 }
 
 
