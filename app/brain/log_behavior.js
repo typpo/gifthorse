@@ -93,6 +93,7 @@ function _recordClickForQuery(qid, rid, attr, cb) {
           cb(true);
           return;
         }
+
         // update query
         obj.results[rid][attr] = true;
         collection.findAndModify(

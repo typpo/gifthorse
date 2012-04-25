@@ -64,11 +64,23 @@ GH.Main = {
         score: Math.floor(result.score * 100)
       }));
 
+      var feedback = function(attr) {
+        me.ItemFeedback(data.qid, idx, result.item.ASIN, attr);
+      }
       $row.find('.vote-like').on('click', function() {
-        me.ItemFeedback(data.qid, idx, result.item.ASIN, 'clickthrough');
+        feedback('clickthrough');
       });
       $row.find('.vote-dislike').on('click', function() {
-        // ..
+        feedback('clickhide');
+      });
+      $row.find('.vote-already-have').on('click', function() {
+        feedback('clickalreadyhave');
+      });
+      $row.find('.vote-admin-boost').on('click', function() {
+        feedback('clickadminboost');
+      });
+      $row.find('.vote-admin-deboost').on('click', function() {
+        feedback('clickadmindeboost');
       });
 
       resultdiv.append($row);
