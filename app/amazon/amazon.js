@@ -194,6 +194,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
 
       var result_list = [];
       _.map(top_gifted_items, function(bn_items, bn_key) {
+        var tmp_result_list = [];
         _.map(bn_items, function(bn_item) {
           var result = {
             // compute a base score
@@ -203,8 +204,17 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
             bName: bn_key,
           };
           scoring.adjustResultScore(result, query);
-          result_list.push(result);
+          tmp_result_list.push(result);
         });
+
+        // tmp_result_list contains ALL results for this browsenode.
+        // We need to cut it down to prevent an obscene amount of similar
+        // results.
+        var truncated_result_list = tmp_result_list.sort(function(a, b) {
+          return b.score - a.score;
+        }).slice(0,1);
+
+        result_list.push.apply(result_list, truncated_result_list);
       });
 
       // TODO also use CROSS_BROWSENODE_WEIGHT

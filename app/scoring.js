@@ -70,6 +70,8 @@ module.exports = {
       result.score *= this.BOOK_WEIGHT;
     }
     // Penalize long boring items
+    if (!result.item.Title) return false;
+
     if (result.item.Title.length > this.LENGTH_WEIGHT_THRESHOLD) {
       //result.score *= this.LENGTH_WEIGHT;
     }

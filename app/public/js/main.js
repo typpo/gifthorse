@@ -19,7 +19,7 @@ GH.Main = {
     var me = this;
     if (me.search_running) return false;
     me.search_running = true;
-    $(this).addClass('disabled');
+    $('#search').addClass('disabled');
 
     $('#loading').show();
     $('#results').hide();
@@ -61,6 +61,7 @@ GH.Main = {
         title: result.item.Title,
         link: result.item.DetailPageURL,
         type: result.item.type,
+        bn: result.bName,
         score: Math.floor(result.score * 100)
       }));
 
