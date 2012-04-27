@@ -39,8 +39,10 @@ function genericLookup(key, cb) {
         return;
       }
       cb(err, JSON.parse(reply));
-      redis.end();
     });
+  }
+  else {
+    cb(true, null);
   }
 }
 
@@ -48,7 +50,6 @@ function genericSave(key, result) {
   if (redis) {
     // TODO setex
     redis.set(key, JSON.stringify(result));
-    redis.end();
   }
 }
 
