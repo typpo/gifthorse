@@ -34,7 +34,7 @@ GH.Main = {
       },
       error: function() {
         $('#loading').hide();
-        $('#results').empty().text('Sorry, there was a problem talking with the item search server.').show();
+        $('#results').empty().text('Sorry, there was a problem getting your search results. :(').show();
         $('#search').removeClass('disabled');
         me.search_running = false;
       },
