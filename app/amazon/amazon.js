@@ -260,10 +260,23 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
             count_final_result();
             return;
           }
-          else if (itemobj.LargeImage)
-            result.image = itemobj.LargeImage.URL;
-          else if (itemobj.ImageSets)
-            result.image = itemobj.ImageSets.ImageSet.LargeImage.URL;
+          else if (itemobj.LargeImage) {
+            result.image = itemobj.LargeImage ? itemobj.LargeImage.URL : itemobj.MediumImage.URL;
+          }
+          else if (itemobj.ImageSets && itemobj.ImageSets.ImageSet) {
+            var iset = itemobj.ImageSets.ImageSet;
+            if(Object.prototype.toString.call(iset) === '[object Array]' ) {
+              // this is fucked up
+              iset = iset[0];
+            }
+
+            if (iset.LargeImage)
+              result.image = iset.LargeImage.URL
+            else if (iset.MediumImage)
+              result.image = iset.MediumImage.URL;
+            else if (iset.SmallImage)
+              result.image = iset.SmallImage.URL;
+          }
           else {
             count_final_result();
             return;
