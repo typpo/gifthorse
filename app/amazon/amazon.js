@@ -8,6 +8,7 @@ var  _ = require('underscore')
   , amazon_static = require('./static.js')
   , hierarchy = require('./hierarchy.js')
   , reviews = require('./reviews.js')
+  , cache = require('./cache.js')
 
   , suggest = require('../brain/suggest.js')
   , log_behavior = require('../brain/log_behavior.js')
@@ -237,11 +238,25 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
         return result;
       }).values().value();
 
-      if (deduped_results.length > 0) {
-        cb(null, deduped_results);
-      }
-      else
-        cb(null, null);
+      var add_final_result = _.after(deduped_results.length, function() {
+        if (deduped_results.length > 0) {
+          cb(null, deduped_results);
+        }
+        else {
+          cb(null, null);
+        }
+      });
+
+      var this_is_it = [];
+      _.map(deduped_results, function(result) {
+        itemLookup(result.item.ASIN, function(err, itemlookup_result) {
+          if (err || !itemlookup_result) return;
+          result.image = itemlookup_result.Items.Item.LargeImage.URL;
+          this_is_it.push(result);
+          add_final_result();
+        });
+      });
+
     }
   }
 }
@@ -318,20 +333,26 @@ function reviews() {
 
 }
 
-function itemLookup(ASIN, cb) {
+function itemLookup(asin, cb) {
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/ItemLookup.html
+
+  var maybe = cache.getItemLookup(asin);
+  if (maybe)
+    return maybe;
+
   opHelper.execute('ItemLookup', {
-    'ItemId': ASIN,
+    'ItemId': asin,
     'ReviewSort': '-HelpfulVotes',
     'TruncateReviewsAt': 100,
     'ResponseGroup': 'Reviews,Offers,SalesRank,Images',
-    }, function(error, results) {
+    }, function(error, result) {
       if (error) {
         winston.error('Error: ' + error + "\n")
         cb(error, null);
         return;
       }
-      cb(null, results);
+      cache.saveItemLookup(asin, result);
+      cb(null, result);
   });
 }
 

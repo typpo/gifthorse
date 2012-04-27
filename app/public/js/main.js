@@ -62,6 +62,7 @@ GH.Main = {
         link: result.item.DetailPageURL,
         type: result.item.type,
         bn: result.bName,
+        image: result.image,
         score: Math.floor(result.score * 100)
       }));
 
