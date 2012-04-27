@@ -80,9 +80,11 @@ GH.Main = {
       });
       $row.find('.vote-admin-boost').on('click', function() {
         feedback('clickadminboost');
+        $(this).parent().parent().parent().hide('fast');
       });
       $row.find('.vote-admin-deboost').on('click', function() {
         feedback('clickadmindeboost');
+        $(this).parent().parent().parent().hide('fast');
       });
 
       resultdiv.append($row);

@@ -250,6 +250,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       var this_is_it = [];
       console.log('Gathering final itemlookup results..');
       _.map(deduped_results, function(result) {
+        // look up item to get its image
         itemLookup(result.item.ASIN, function(err, itemlookup_result) {
           if (err || !itemlookup_result) {
             count_final_result();
