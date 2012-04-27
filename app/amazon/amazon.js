@@ -213,7 +213,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
         // results.
         var truncated_result_list = tmp_result_list.sort(function(a, b) {
           return b.score - a.score;
-        }).slice(0,1);
+        }).slice(0,2);
 
         result_list.push.apply(result_list, truncated_result_list);
       });
@@ -251,7 +251,16 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       _.map(deduped_results, function(result) {
         itemLookup(result.item.ASIN, function(err, itemlookup_result) {
           if (err || !itemlookup_result) return;
-          result.image = itemlookup_result.Items.Item.LargeImage.URL;
+          var itemobj = itemlookup_result.Items.Item;
+          if (!itemobj)
+            return;
+          else if (itemobj.MediumImage)
+            result.image = itemobj.MediumImage.URL;
+          else if (itemobj.ImageSets)
+            result.image = itemobj.ImageSets.ImageSet.MediumImage.URL;
+          else
+            return;
+
           this_is_it.push(result);
           add_final_result();
         });
