@@ -1,6 +1,19 @@
 var mongo = require('mongodb')
   , mutil = require('../util/mongo.js')
   , rutil = require('../util/redis.js')
+  , _ = require('underscore')
+
+var redis = rutil.getConnection();
+redis.on('end', function() {
+  redis = _.throttle(function() {
+    rutil.getConnection();
+  }, 10000);  // don't reconnect more than once every 10s
+});
+
+redis.on('error', function(err) {
+  console.log('redis err', err);
+
+});
 
 function getItemLookup(asin, cb) {
   genericLookup('gifthorse:items:' + asin, cb);
@@ -19,7 +32,6 @@ function saveBNLookup(bnkey, result) {
 }
 
 function genericLookup(key, cb) {
-  var redis = rutil.getConnection();
   if (redis) {
     var r = redis.get(key, function(err, reply) {
       if (err || !reply) {
@@ -33,7 +45,6 @@ function genericLookup(key, cb) {
 }
 
 function genericSave(key, result) {
-  var redis = rutil.getConnection();
   if (redis) {
     // TODO setex
     redis.set(key, JSON.stringify(result));
