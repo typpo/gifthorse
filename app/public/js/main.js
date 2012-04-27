@@ -33,9 +33,8 @@ GH.Main = {
         me.ParseResults(data);
       },
       error: function() {
-        //alert('ajax error');
         $('#loading').hide();
-        $('#results').empty().text('ajax error').show();
+        $('#results').empty().text('Sorry, there was a problem talking with the item search server.').show();
         $('#search').removeClass('disabled');
         me.search_running = false;
       },
@@ -71,9 +70,10 @@ GH.Main = {
       }
       $row.find('.vote-like').on('click', function() {
         feedback('clickthrough');
-      });
+      }).attr('href', result.item.DetailPageURL);
       $row.find('.vote-dislike').on('click', function() {
         feedback('clickhide');
+        $(this).parent().parent().parent().hide('fast');
       });
       $row.find('.vote-already-have').on('click', function() {
         feedback('clickalreadyhave');

@@ -1,18 +1,29 @@
 <script type="text/template" id="template-result">
-<img src="<%= image %>" style="height:auto;width:100px;"/>
-<h2> &#9758; <span id="item-title"><%= title %></span></h2>
-<h3> Gift match score: <%= score %> (<%= type %>) (<%= bn %>)</h3>
-<h3>  <a href="<%= link %>" id="item-link" target="_blank">link</a></h3>
-span
-    a#vote-like.vote-like.btn.btn-large.btn-success Yes
-span
-    a#vote-dislike.vote-dislike.btn.btn-large.btn-danger No
-span
-    a#vote-already-have.vote-already-have.btn.btn-large.btn-info Already have
-- if (admin)
-  div.admin-options
+<div class="row" style="border-bottom: 1px dotted #000; padding: 15px 0 15px 5px; margin-left:0">
+<div class="span2">
+<a href="<%= link %>" id="item-link" target="_blank" border="0">
+<img src="<%= image %>" style="height:auto;width:250px;"/>
+</a>
+</div>
+<div class="span4">
+<h3> &#9758; <span id="item-title"><%= title %></span></h3>
+<h5> Gift match score: <%= score %> (<%= type %>) (<%= bn %>)</h5>
+div(style='padding-top:10px;')
+  span
+      a#vote-like.vote-like.btn.btn-large.btn-success(target='_blank') Look!
+  span(style='padding-left:10px')
+      //
+        a#vote-dislike.vote-dislike.btn.btn-large.btn-danger Hide this
+      a#vote-dislike.vote-dislike(style='cursor: pointer;') Hide
+  //
     span
-      a#vote-admin-boost.vote-admin-boost.btn Admin boost
-    span
-      a#vote-admin-deboost.vote-admin-deboost.btn Admin deboost
+        a#vote-already-have.vote-already-have.btn.btn-large.btn-info Already have
+  - if (admin)
+    div.admin-options
+      span
+        a#vote-admin-boost.vote-admin-boost.btn Admin boost
+      span
+        a#vote-admin-deboost.vote-admin-deboost.btn Admin deboost
+</div>
+</div>
 </script>

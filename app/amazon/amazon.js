@@ -238,7 +238,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
         return result;
       }).values().value();
 
-      var add_final_result = _.after(deduped_results.length, function() {
+      var count_final_result = _.after(deduped_results.length, function() {
         if (deduped_results.length > 0) {
           cb(null, deduped_results);
         }
@@ -248,21 +248,29 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       });
 
       var this_is_it = [];
+      console.log('Gathering final itemlookup results..');
       _.map(deduped_results, function(result) {
         itemLookup(result.item.ASIN, function(err, itemlookup_result) {
-          if (err || !itemlookup_result) return;
+          if (err || !itemlookup_result) {
+            count_final_result();
+            return;
+          }
           var itemobj = itemlookup_result.Items.Item;
-          if (!itemobj)
+          if (!itemobj) {
+            count_final_result();
             return;
-          else if (itemobj.MediumImage)
-            result.image = itemobj.MediumImage.URL;
+          }
+          else if (itemobj.LargeImage)
+            result.image = itemobj.LargeImage.URL;
           else if (itemobj.ImageSets)
-            result.image = itemobj.ImageSets.ImageSet.MediumImage.URL;
-          else
+            result.image = itemobj.ImageSets.ImageSet.LargeImage.URL;
+          else {
+            count_final_result();
             return;
+          }
 
           this_is_it.push(result);
-          add_final_result();
+          count_final_result();
         });
       });
 
@@ -345,40 +353,54 @@ function reviews() {
 function itemLookup(asin, cb) {
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/ItemLookup.html
 
-  var maybe = cache.getItemLookup(asin);
-  if (maybe)
-    return maybe;
+  cache.getItemLookup(asin, function(err, reply) {
+    if (!err && reply) {
+      console.log('used cache');
+      cb(null, reply)
+      return;
+    }
 
-  opHelper.execute('ItemLookup', {
-    'ItemId': asin,
-    'ReviewSort': '-HelpfulVotes',
-    'TruncateReviewsAt': 100,
-    'ResponseGroup': 'Reviews,Offers,SalesRank,Images',
-    }, function(error, result) {
-      if (error) {
-        winston.error('Error: ' + error + "\n")
-        cb(error, null);
-        return;
-      }
-      cache.saveItemLookup(asin, result);
-      cb(null, result);
+    opHelper.execute('ItemLookup', {
+      'ItemId': asin,
+      'ReviewSort': '-HelpfulVotes',
+      'TruncateReviewsAt': 100,
+      'ResponseGroup': 'Reviews,Offers,SalesRank,Images',
+      }, function(error, result) {
+        if (error) {
+          winston.error('Error: ' + error + "\n")
+          cb(error, null);
+          return;
+        }
+        cache.saveItemLookup(asin, result);
+        cb(null, result);
+    });
+
   });
 }
 
 function bnLookup(bn, responsegroup, cb) {
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/BrowseNodeLookup.html
   // http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/UsingSearchBinstoFindItems.html
-  opHelper.execute('BrowseNodeLookup', {
-    'ResponseGroup': responsegroup,
-    'BrowseNodeId': bn.BrowseNodeId,
-    }, function(error, results) {
-      if (error) {
-        winston.error('Error: ' + error + "\n")
-        cb(error, null);
-        return;
-      }
-      //console.log('bnLookup', responsegroup, bn.Name, '-->');
-      cb(null, results);
+  var bnkey = bn.BrowseNodeId + ':' + responsegroup;
+  cache.getBNLookup(bnkey, function(err, reply) {
+    if (!err && reply) {
+      console.log('used bn cache');
+      cb(null, reply)
+      return;
+    }
+
+    opHelper.execute('BrowseNodeLookup', {
+      'ResponseGroup': responsegroup,
+      'BrowseNodeId': bn.BrowseNodeId,
+      }, function(error, results) {
+        if (error) {
+          winston.error('Error: ' + error + "\n")
+          cb(error, null);
+          return;
+        }
+        cache.saveBNLookup(bnkey, results);
+        cb(null, results);
+    });
   });
 }
 
