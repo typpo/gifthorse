@@ -1,6 +1,7 @@
 *~
 *.swp
 *.swo
+*.rdb
 .monitor
 nohup.out
 npm-debug.log
