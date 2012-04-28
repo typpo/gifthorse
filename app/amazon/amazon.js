@@ -247,65 +247,69 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
 
   // Add manual browsenode mappings for this search result
   var premapped_bns = manual_browsenode_mapping.lookupQuery(query);
-  console.log(query, ' - adding', premapped_bns.length, 'premapped browse nodes');
-  _.map(premapped_bns, function(bn) {
-    if (!node_counts[bn.Name]) node_counts[bn.Name] = 0
-    node_counts[bn.Name] += 5;    // artificially inflate node counts
-    // TODO this code is duped below
-    pending_request_fns.push(function() {
-      topSuggestionsForNode(bn, query, function(err, results, depth) {
-        if (!err && results && results.length > 0) {
-          top_gifted_items[bn.Name] = results;
-          top_gifted_item_depths[bn.Name] = depth;
-        }
-        requestComplete();
-      });
-    });
-  });
-
-  // Loop through all of the top categories for this search result
-  _.map(categories, function(cat) {
-    winston.info('lookup category ' + cat);
-    var items = bindings_map[cat];
-    var seen = {};
-
-    function checkNode(bn) {
-      var name = bn.Name;
-      if (!node_counts[name])
-        node_counts[name] = 0;
-      node_counts[name]++;
-
-      // Don't query duplicate nodes
-      if (seen[name] || EXCLUDE_NODES.indexOf(bn.Name) > -1) {
-        return false;
-      }
-
+  if (premapped_bns.length > 0) {
+    console.log(query, ' - adding', premapped_bns.length, 'premapped browse nodes');
+    _.map(premapped_bns, function(bn) {
+      if (!node_counts[bn.Name]) node_counts[bn.Name] = 0
+      node_counts[bn.Name] += 8;    // artificially inflate node counts
+      // TODO this code is duped below
       pending_request_fns.push(function() {
         topSuggestionsForNode(bn, query, function(err, results, depth) {
           if (!err && results && results.length > 0) {
-            top_gifted_items[bn.Name] = results;
-            top_gifted_item_depths[bn.Name] = depth;
+            top_gifted_items[bn.BrowseNodeId] = results;
+            top_gifted_item_depths[bn.BrowseNodeId] = depth;
           }
           requestComplete();
         });
       });
-      seen[name] = true;
-    } // end checkNode
+    });
+  }
+  else {
 
-    // Get all the items in this category and look up their browse node
-    _.map(items, function(item) {
-      if (!item.BrowseNodes)
-        return;
+    // Loop through all of the top categories for this search result
+    _.map(categories, function(cat) {
+      winston.info('lookup category ' + cat);
+      var items = bindings_map[cat];
+      var seen = {};
 
-      var browsenode = item.BrowseNodes.BrowseNode;
-      if (_.isArray(browsenode)) {
-        _.map(browsenode, checkNode);
-      }
-      else {
-        checkNode(browsenode);
-      }
-    }); // end items loop
-  }); // end categories loop
+      function checkNode(bn) {
+        var name = bn.Name;
+        if (!node_counts[name])
+          node_counts[name] = 0;
+        node_counts[name]++;
+
+        // Don't query duplicate nodes
+        if (seen[name] || EXCLUDE_NODES.indexOf(bn.Name) > -1) {
+          return false;
+        }
+
+        pending_request_fns.push(function() {
+          topSuggestionsForNode(bn, query, function(err, results, depth) {
+            if (!err && results && results.length > 0) {
+              top_gifted_items[bn.BrowseNodeId] = results;
+              top_gifted_item_depths[bn.BrowseNodeId] = depth;
+            }
+            requestComplete();
+          });
+        });
+        seen[name] = true;
+      } // end checkNode
+
+      // Get all the items in this category and look up their browse node
+      _.map(items, function(item) {
+        if (!item.BrowseNodes)
+          return;
+
+        var browsenode = item.BrowseNodes.BrowseNode;
+        if (_.isArray(browsenode)) {
+          _.map(browsenode, checkNode);
+        }
+        else {
+          checkNode(browsenode);
+        }
+      }); // end items loop
+    }); // end categories loop
+  }
 
   // Fire request queue
   _.map(pending_request_fns, function(fn) {fn();});
