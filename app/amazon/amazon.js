@@ -13,6 +13,8 @@ var  _ = require('underscore')
   , suggest = require('../brain/suggest.js')
   , log_behavior = require('../brain/log_behavior.js')
 
+  , manual_browsenode_mapping = require('./manual_browsenode_mapping.js')
+
 var OperationHelper = require('apac').OperationHelper;
 var opHelper = new OperationHelper({
   awsId:     config.amazon.key,
@@ -92,12 +94,8 @@ function runSearch(query, cb) {
     var bindings_count = {};
     var bindings_map = {};
 
-    console.log(results.Items);
-
     // Grab item bindings (categories) from general search results
     _.map(results.Items.Item, function(item) {
-      //winston.info(item);
-
       var binding = item.ItemAttributes.Binding;
       binding = MAP_BINDINGS[binding] || binding;
       if (!binding || EXCLUDE_BINDINGS.indexOf(binding) > -1) {
@@ -127,7 +125,6 @@ function runSearch(query, cb) {
     winston.info('qualifying top categories: ', categories)
 
     // TODO handle when categories is empty :(
-    // eg. for "romance"
 
     getTopGiftsForCategories(categories, bindings_map, query, cb);
   });
@@ -139,6 +136,24 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
   var top_gifted_items = {};  // map from browse node name to items
   var top_gifted_item_depths = {};  // map from browse node name to their depth in amazon browse node hierarchy
   var pending_request_fns = [];
+
+  // Add manual browsenode mappings for this search result
+  var premapped_bns = manual_browsenode_mapping.lookupQuery(query);
+  if (premapped_bns) {
+    console.log(query, ' - adding', premapped_bns.length, 'premapped browse nodes');
+    _.map(premapped_bns, function(bn) {
+      // TODO this code is duped below
+      pending_request_fns.push(function() {
+        topSuggestionsForNode(bn, query, function(err, results, depth) {
+          if (!err && results && results.length > 0) {
+            top_gifted_items[bn.Name] = results;
+            top_gifted_item_depths[bn.Name] = depth;
+          }
+          requestComplete();
+        });
+      });
+    });
+  }
 
   // Loop through all of the top categories for this search result
   _.map(categories, function(cat) {
@@ -189,7 +204,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
   _.map(pending_request_fns, function(fn) {fn();});
   function requestComplete() {
     completed++;
-    if (completed === pending_request_fns.length) {
+    if (completed === pending_request_fns.length + premapped_bns.length) {
       console.log('top category browse nodes breakdown: ', node_counts);
       //console.log(top_gifted_items);
 
