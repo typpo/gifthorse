@@ -16,6 +16,7 @@ var BROWSENODE_MAP = {
     {BrowseNodeId:'2342470011', Name: 'Skiing'},
     {BrowseNodeId:'16690', Name: 'Skiing'},
     {BrowseNodeId:'16694', Name: 'Downhill Skiing Books'},
+    {BrowseNodeId:'2342473011', Name: 'Cross-Country Skiing'},
   ],
 };
 

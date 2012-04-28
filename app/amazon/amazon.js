@@ -250,8 +250,8 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
   if (premapped_bns.length > 0) {
     console.log(query, ' - adding', premapped_bns.length, 'premapped browse nodes');
     _.map(premapped_bns, function(bn) {
-      if (!node_counts[bn.Name]) node_counts[bn.Name] = 0
-      node_counts[bn.Name] += 8;    // artificially inflate node counts
+      if (!node_counts[bn.BrowseNodeId]) node_counts[bn.BrowseNodeId] = 0
+      node_counts[bn.BrowseNodeId] += 8;    // artificially inflate node counts
       // TODO this code is duped below
       pending_request_fns.push(function() {
         topSuggestionsForNode(bn, query, function(err, results, depth) {
@@ -274,9 +274,9 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
 
       function checkNode(bn) {
         var name = bn.Name;
-        if (!node_counts[name])
-          node_counts[name] = 0;
-        node_counts[name]++;
+        if (!node_counts[bn.BrowseNodeId])
+          node_counts[bn.BrowseNodeId] = 0;
+        node_counts[bn.BrowseNodeId]++;
 
         // Don't query duplicate nodes
         if (seen[name] || EXCLUDE_NODES.indexOf(bn.Name) > -1) {
