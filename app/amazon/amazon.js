@@ -239,8 +239,8 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       }).values().value();
 
       var count_final_result = _.after(deduped_results.length, function() {
-        if (deduped_results.length > 0) {
-          cb(null, deduped_results);
+        if (this_is_it.length > 0) {
+          cb(null, this_is_it);
         }
         else {
           cb(null, null);
@@ -266,7 +266,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
           }
           else if (itemobj.ImageSets && itemobj.ImageSets.ImageSet) {
             var iset = itemobj.ImageSets.ImageSet;
-            if(Object.prototype.toString.call(iset) === '[object Array]' ) {
+            if(Object.prototype.toString.call(iset) === '[object Array]') {
               // this is fucked up
               iset = iset[0];
             }
