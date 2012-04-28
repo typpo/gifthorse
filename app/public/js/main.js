@@ -73,18 +73,18 @@ GH.Main = {
       }).attr('href', result.item.DetailPageURL);
       $row.find('.vote-dislike').on('click', function() {
         feedback('clickhide');
-        $(this).parent().parent().parent().hide('fast');
+        $(this).parent().parent().parent().parent().hide('fast');
       });
       $row.find('.vote-already-have').on('click', function() {
         feedback('clickalreadyhave');
       });
       $row.find('.vote-admin-boost').on('click', function() {
         feedback('clickadminboost');
-        $(this).parent().parent().parent().hide('fast');
+        $(this).parent().parent().parent().parent().parent().hide('fast');
       });
       $row.find('.vote-admin-deboost').on('click', function() {
         feedback('clickadmindeboost');
-        $(this).parent().parent().parent().hide('fast');
+        $(this).parent().parent().parent().parent().parent().hide('fast');
       });
 
       resultdiv.append($row);
