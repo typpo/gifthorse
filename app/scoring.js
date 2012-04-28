@@ -30,7 +30,7 @@ module.exports = {
 
   NAME_FUZZY_MATCH_WEIGHT: 3,
 
-  FUZZY_MATCH_EXCLUDE: ['reading'],   // some queries are too generic and we don't want to give them special weight
+  FUZZY_MATCH_EXCLUDE: ['read'],   // some queries are too generic and we don't want to give them special weight
 
   LENGTH_WEIGHT: 0.7,
   LENGTH_WEIGHT_THRESHOLD: 100,  // apply length weight to anything with this long of a title
@@ -49,7 +49,7 @@ module.exports = {
     var skip_fuzzy_matches = false;
     for (var i=0; i < this.FUZZY_MATCH_EXCLUDE.length; i++) {
       var excludeme = this.FUZZY_MATCH_EXCLUDE[i];
-      if (new RegExp(excludeme, 'i').test('query')) {
+      if (new RegExp(excludeme, 'i').test(query)) {
         skip_fuzzy_matches = true;
       }
     }

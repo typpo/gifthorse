@@ -22,7 +22,7 @@ var BROWSENODE_MAP = {
 })()
 
 function lookupQuery(q) {
-  return BROWSENODE_MAP[stemmer(q)];
+  return BROWSENODE_MAP[stemmer(q)] || [];
 }
 
 module.exports = {
