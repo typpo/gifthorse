@@ -249,7 +249,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
 
       var this_is_it = [];
       console.log('Gathering final itemlookup results..');
-      _.map(deduped_results, function(result) {
+      _.map(deduped_results.slice(0, 20), function(result) {
         // look up item to get its image
         itemLookup(result.item.ASIN, function(err, itemlookup_result) {
           if (err || !itemlookup_result) {
@@ -369,7 +369,6 @@ function itemLookup(asin, cb) {
 
   cache.getItemLookup(asin, function(err, reply) {
     if (!err && reply) {
-      console.log('used cache');
       cb(null, reply)
       return;
     }
@@ -398,7 +397,6 @@ function bnLookup(bn, responsegroup, cb) {
   var bnkey = bn.BrowseNodeId + ':' + responsegroup;
   cache.getBNLookup(bnkey, function(err, reply) {
     if (!err && reply) {
-      console.log('used bn cache');
       cb(null, reply)
       return;
     }

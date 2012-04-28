@@ -68,6 +68,7 @@ GH.Main = {
       var feedback = function(attr) {
         me.ItemFeedback(data.qid, idx, result.item.ASIN, attr);
       }
+
       $row.find('.vote-like').on('click', function() {
         feedback('clickthrough');
       }).attr('href', result.item.DetailPageURL);
@@ -96,6 +97,7 @@ GH.Main = {
   },
 
   ItemFeedback: function(qid, rid, asin, verb) {
+                  console.log(qid, rid, asin, verb);
     $.ajax({
       type: 'GET',
       url: '/click/' + qid + '/' + rid + '/' + asin + '/' + verb,
