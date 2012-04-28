@@ -5,9 +5,9 @@ var mongo = require('mongodb')
 
 var redis = rutil.getConnection();
 redis.on('end', function() {
-  redis = _.throttle(function() {
-    rutil.getConnection();
-  }, 10000);  // don't reconnect more than once every 10s
+  (_.throttle(function() {
+    redis = rutil.getConnection();
+  }, 10000))();  // don't reconnect more than once every 10s
 });
 
 redis.on('error', function(err) {
