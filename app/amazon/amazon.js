@@ -114,7 +114,7 @@ function runSearch(query, cb) {
     // half of the most popular category
     categories = _.keys(bindings_count)
       .filter(function(a) {
-        return (bindings_count[a] >= 2)
+        return true; //return (bindings_count[a] >= 2)
       })
       .sort(function(a, b) {
         return bindings_count[b] - bindings_count[a];
@@ -264,8 +264,32 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       });
     });
   }
-  else {
+  else if (true) {
+    // TODO try to find matches in names of browse nodes
 
+    var keyword_treenodes = hierarchy.nodesForQuery(query);
+    _.map(keyword_treenodes, function(tn) {
+      var bn = {
+        BrowseNodeId: tn.data.id,
+        Name: tn.data.name,
+      };
+
+      if (!node_counts[bn.BrowseNodeId]) node_counts[bn.BrowseNodeId] = 0
+      node_counts[bn.BrowseNodeId] += 8;    // artificially inflate node counts
+      // TODO this code is duped below
+      pending_request_fns.push(function() {
+        topSuggestionsForNode(bn, query, function(err, results, depth) {
+          if (!err && results && results.length > 0) {
+            top_gifted_items[bn.BrowseNodeId] = results;
+            top_gifted_item_depths[bn.BrowseNodeId] = depth;
+          }
+          requestComplete();
+        });
+      });
+    });
+
+  }
+  else {
     // Loop through all of the top categories for this search result
     _.map(categories, function(cat) {
       winston.info('lookup category ' + cat);
@@ -346,6 +370,10 @@ function giftSuggestionsForNode(bn, cb) {
   bnLookup(bn, BN_LOOKUP_QUERY_STRING, function(err, results) {
     if (err) {
       cb(err, null);
+      return;
+    }
+    if (!results.BrowseNodes.BrowseNode) {
+      console.log('skipped empty bn lookup for', bn.Name);
       return;
     }
     if (results.BrowseNodes.BrowseNode.TopItemSet.length < 1) {

@@ -7,9 +7,11 @@ var Arboreal = require('../lib/arboreal.js')
   , _ = require('underscore')
   , assert = require('assert')
   , stemmer = require('porter-stemmer').stemmer
+  , stopwords = require('../brain/stopwords.js')
 
 var bn_index = {};    // map from unique id to single node
 var name_index = {};  // map from name to list of nodes
+var keyword_index = {};   // map from keyword to list of nodes
 var names_set = [];  // set of browse node names
 var tree;
 
@@ -58,6 +60,8 @@ var tree;
       name_index[name] = [];
     name_index[name].push(node);
 
+    addToKeywordIndex(name, node);
+
     return true;  // all done with this line
   }
 
@@ -70,7 +74,7 @@ var tree;
     }
   }
   names_set = _.keys(name_index);
-  console.log('Success: Loaded browse node hierarchy (' + names_set.length + ' nodes).');
+  console.log('Success: Loaded browse node hierarchy (' + names_set.length + ' nodes, ' + _.keys(keyword_index).length + ' keywords).');
 })()
 
 /*
@@ -150,8 +154,34 @@ function getTreeNodeById(bid) {
   return bn_index[bid];
 }
 
+function addToKeywordIndex(name, node) {
+  // tokenize and stem name
+  _.chain(name.split(' ')).map(function(word) {
+    return stemmer(word.toLowerCase());
+  }).reject(function(word) {
+    return stopwords.STOPWORDS[word] === true;
+  }).map(function(word) {
+    if (!keyword_index[word])
+      keyword_index[word] = [];
+    keyword_index[word].push(node);
+  });
+}
+
+function nodesForQuery(q) {
+  return _.reduce(q.split(' '), function(memo, kw) {
+    memo.push.apply(memo, nodesForKeyword(kw));
+    return memo;
+  }, []);
+}
+
+function nodesForKeyword(kw) {
+  return keyword_index[stemmer(kw.toLowerCase())];
+}
+
 module.exports = {
   browseNodeExists: browseNodeExists,
+  nodesForKeyword: nodesForKeyword,
+  nodesForQuery: nodesForQuery,
   distanceBetweenNodeNames: distanceBetweenNodeNames,
   fuzzyBrowseNodeMatch: fuzzyBrowseNodeMatch,
   getTreeNodeById: getTreeNodeById,
