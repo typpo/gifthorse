@@ -28,21 +28,57 @@ var BN_LOOKUP_QUERY_STRING = BN_LOOKUP_QUERY_PARAMS.join(',');
 var EXCLUDE_BINDINGS = [/*'Amazon Instant Video',*/ /*'Kindle Edition',*/
     'MP3 Download', 'Personal Computers', ];
 
-var EXCLUDE_NODES = ['Just Arrived', 'Just arrived', 'All product', 'Deep discounts'];
+var EXCLUDE_NODES = ['Just Arrived', 'Just arrived', 'All product',
+    'Deep discounts'];
 
-var EXCLUDE_PRODUCT_GROUPS = ['Mobile Application', 'Magazine', 'Automotive Parts and Accessories'];
+var EXCLUDE_PRODUCT_GROUPS = ['Mobile Application', 'Magazine',
+    'Automotive Parts and Accessories'];
 
 var MAP_BINDINGS = {
   'Blu-ray': 'Video',
   'DVD': 'Video',
 }
 
-function search(keyword, /*opts, */cb) {
-  // Search Amazon for a keyword
-  //
-  //sorting http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/SortingbyPopularityPriceorCondition.html
-  //search http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/CommonItemSearchParameters.html
+function search(queries, cb) {
+  // TODO these should share qids
 
+  var qs = queries.split(',');
+  var compiled_results = [];
+
+  var search_completed = _.after(qs.length, function() {
+
+    if (compiled_results.length < 1) {
+      cb(true, null);
+      return;
+    }
+
+    var cb_results = [];
+    var max_len = _.max(_.map(compiled_results, function(r) { return r.results.length; }));
+    for (var i=0; i < max_len; i++) {
+      for (var j=0; j < compiled_results.length; j++) {
+        var list = compiled_results[j].results;
+        if (list && list.length > i) {
+          cb_results.push(list[i]);
+        }
+      }
+    }
+
+    cb(null, {
+      results: cb_results,
+      qid: 42,
+    });
+  });
+
+  _.map(qs, function(q, idx) {
+    searchKeyword(q, function(err, results) {
+      if (!err)
+        compiled_results[idx] = results;
+      search_completed();
+    });
+  });
+}
+
+function searchKeyword(keyword, cb) {
   var final_err, final_results, final_qid;
   var trigger = _.after(2, function() {
     log_behavior.recordResults(final_qid, final_results, function() {

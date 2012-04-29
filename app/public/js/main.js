@@ -27,7 +27,7 @@ GH.Main = {
 
     $.ajax({
       type: 'GET',
-      url: '/lookup/' + $('#search1').val(),
+      url: '/lookup/' + $('#search1').val() + ',' + $('#search2').val(),
       //data: data,
       success: function(data) {
         me.ParseResults(data);

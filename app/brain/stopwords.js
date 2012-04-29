@@ -1,3 +1,4 @@
+// add more? http://meta.wikimedia.org/wiki/MySQL_4.0.20_stop_word_list
 module.exports = {
   STOPWORDS: [
   {"a":true},
