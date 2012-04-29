@@ -200,6 +200,9 @@ function getTopGiftsForCategories(query, cb) {
         });
       });
     });
+
+    // Fire request queue
+    _.map(pending_request_fns, function(fn) {fn();});
   }
   else if (keyword_treenodes && keyword_treenodes.length > 0) {
     console.log('Using keyword browsenodes');
@@ -228,6 +231,9 @@ function getTopGiftsForCategories(query, cb) {
         });
       });
     });
+
+    // Fire request queue
+    _.map(pending_request_fns, function(fn) {fn();});
   }
   else {
     // Loop through all of the top categories for this search result
@@ -275,11 +281,12 @@ function getTopGiftsForCategories(query, cb) {
           }
         }); // end items loop
       }); // end categories loop
+
+      // Fire request queue
+      _.map(pending_request_fns, function(fn) {fn();});
     });
   }
 
-  // Fire request queue
-  _.map(pending_request_fns, function(fn) {fn();});
 }
 
 // callback(err, item, depth)
