@@ -30,7 +30,7 @@ var EXCLUDE_BINDINGS = [/*'Amazon Instant Video',*/ /*'Kindle Edition',*/
 
 var EXCLUDE_NODES = ['Just Arrived', 'Just arrived', 'All product', 'Deep discounts'];
 
-var EXCLUDE_PRODUCT_GROUPS = ['Mobile Application', 'eBooks'];
+var EXCLUDE_PRODUCT_GROUPS = ['Mobile Application']//, 'eBooks'];
 
 var MAP_BINDINGS = {
   'Blu-ray': 'Video',
@@ -267,7 +267,7 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
   else if (true) {
     // TODO try to find matches in names of browse nodes
 
-    var keyword_treenodes = hierarchy.nodesForQuery(query);
+    var keyword_treenodes = hierarchy.nodesForQuery(query).slice(0,5);
     _.map(keyword_treenodes, function(tn) {
       var bn = {
         BrowseNodeId: tn.data.id,
