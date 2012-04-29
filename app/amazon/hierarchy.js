@@ -209,7 +209,3 @@ assert.equal(distanceBetweenNodeIds('374783011','3409906011'), 1)
 //assert.equal(distanceToNodeName('374783011','sPorts Collectibles'), 0)
 //assert.equal(distanceToNodeName('374790011','spoRts Collectibles'), 1)
 assert.equal(distanceBetweenNodeNames('sports collectibles', 'hard hats'), 1);
-
-function test(a,b) {
-  console.log(a, b);
-}

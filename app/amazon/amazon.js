@@ -286,7 +286,6 @@ function getTopGiftsForCategories(query, cb) {
       _.map(pending_request_fns, function(fn) {fn();});
     });
   }
-
 }
 
 // callback(err, item, depth)
