@@ -30,7 +30,7 @@ var EXCLUDE_BINDINGS = [/*'Amazon Instant Video',*/ /*'Kindle Edition',*/
 
 var EXCLUDE_NODES = ['Just Arrived', 'Just arrived', 'All product', 'Deep discounts'];
 
-var EXCLUDE_PRODUCT_GROUPS = ['Mobile Application']//, 'eBooks'];
+var EXCLUDE_PRODUCT_GROUPS = ['Mobile Application', 'Magazine']//, 'eBooks'];
 
 var MAP_BINDINGS = {
   'Blu-ray': 'Video',
@@ -247,8 +247,9 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
 
   // Add manual browsenode mappings for this search result
   var premapped_bns = manual_browsenode_mapping.lookupQuery(query);
+  var keyword_treenodes = hierarchy.nodesForQuery(query);
   if (premapped_bns.length > 0) {
-    console.log(query, ' - adding', premapped_bns.length, 'premapped browse nodes');
+    console.log('Using premapped browsenodes');
     _.map(premapped_bns, function(bn) {
       if (!node_counts[bn.BrowseNodeId]) node_counts[bn.BrowseNodeId] = 0
       node_counts[bn.BrowseNodeId] += 8;    // artificially inflate node counts
@@ -264,10 +265,14 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
       });
     });
   }
-  else if (true) {
-    // TODO try to find matches in names of browse nodes
-
-    var keyword_treenodes = hierarchy.nodesForQuery(query).slice(0,5);
+  else if (keyword_treenodes.length > 0) {
+    console.log('Using keyword browsenodes');
+    // TODO what happens if there's only one match?  Shoudl this be combined withi
+    // the next case?
+    keyword_treenodes = keyword_treenodes.sort(function(a, b) {
+      // in the case of exact match, prefer broader browse node categories
+      return a.depth - b.depth;
+    }).slice(0, 5);
     _.map(keyword_treenodes, function(tn) {
       var bn = {
         BrowseNodeId: tn.data.id,
@@ -287,10 +292,11 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
         });
       });
     });
-
   }
   else {
     // Loop through all of the top categories for this search result
+    // TODO only need to run the search, etc. if we're going with this case
+    console.log('Using search browsenodes');
     _.map(categories, function(cat) {
       winston.info('lookup category ' + cat);
       var items = bindings_map[cat];
@@ -341,7 +347,6 @@ function getTopGiftsForCategories(categories, bindings_map, query, cb) {
 
 // callback(err, item, depth)
 function topSuggestionsForNode(bn, query, cb) {
-  console.log('getting the top suggestions for', bn.Name);
   var node = hierarchy.getTreeNodeById(bn.BrowseNodeId);
   if (!node) {
     cb(new Error("Couldn't find browse node " + bn.BrowseNodeId), null, null);
@@ -352,6 +357,7 @@ function topSuggestionsForNode(bn, query, cb) {
   // but not when browse node name matches query name, eg. for 'Shopping'
   // TODO make this variable, based on average ancestor depth
   if (node.depth > 2 || query.toLowerCase() === bn.Name.toLowerCase()) {
+    console.log('getting the top suggestions for', bn.Name);
     giftSuggestionsForNode(bn, function(err, items) {
       if (err) {
         cb(err, null, node.depth);
@@ -374,6 +380,7 @@ function giftSuggestionsForNode(bn, cb) {
     }
     if (!results.BrowseNodes.BrowseNode) {
       console.log('skipped empty bn lookup for', bn.Name);
+      cb(err, null);
       return;
     }
     if (results.BrowseNodes.BrowseNode.TopItemSet.length < 1) {

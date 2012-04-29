@@ -30,7 +30,7 @@ module.exports = {
 
   NAME_FUZZY_MATCH_WEIGHT: 3,
 
-  FUZZY_MATCH_EXCLUDE: ['read'],   // some queries are too generic and we don't want to give them special weight
+  FUZZY_MATCH_EXCLUDE: ['read','movie'],   // some queries are too generic and we don't want to give them special weight
 
   LENGTH_WEIGHT: 0.7,
   LENGTH_WEIGHT_THRESHOLD: 100,  // apply length weight to anything with this long of a title
