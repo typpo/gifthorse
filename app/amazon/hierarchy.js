@@ -168,10 +168,22 @@ function addToKeywordIndex(name, node) {
 }
 
 function nodesForQuery(q) {
+  /*
   return _.reduce(q.split(' '), function(memo, kw) {
     memo.push.apply(memo, nodesForKeyword(kw));
     return memo;
   }, []);
+  */
+
+  var qs = q.split(' ');
+  var ret = [];
+  for (var i=0; i < qs.length; i++) {
+    var r = nodesForKeyword(qs[i]);
+    if (!r || r.length < 1)
+      return null;
+    ret.push.apply(ret, r);
+  }
+  return ret;
 }
 
 function nodesForKeyword(kw) {

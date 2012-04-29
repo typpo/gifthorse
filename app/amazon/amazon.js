@@ -152,7 +152,7 @@ function getTopGiftsForCategories(query, cb) {
           }
           else if (itemobj.ImageSets && itemobj.ImageSets.ImageSet) {
             var iset = itemobj.ImageSets.ImageSet;
-            if(Object.prototype.toString.call(iset) === '[object Array]') {
+            if(_.isArray(iset)) {
               // this is fucked up
               iset = iset[0];
             }
@@ -201,7 +201,7 @@ function getTopGiftsForCategories(query, cb) {
       });
     });
   }
-  else if (keyword_treenodes.length > 0) {
+  else if (keyword_treenodes && keyword_treenodes.length > 0) {
     console.log('Using keyword browsenodes');
     // TODO what happens if there's only one match?  Shoudl this be combined withi
     // the next case?
