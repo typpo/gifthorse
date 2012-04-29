@@ -43,10 +43,10 @@ function search(queries, cb) {
   // TODO these should share qids
 
   var qs = queries.split(',');
+  var compiled_qid;
   var compiled_results = [];
 
-  var search_completed = _.after(qs.length, function() {
-
+  var search_completed = _.after(qs.length + 1, function() {  // +1 for recordQueries
     if (compiled_results.length < 1) {
       cb(true, null);
       return;
@@ -63,9 +63,14 @@ function search(queries, cb) {
       }
     }
 
-    cb(null, {
+    var final_results = {
+      qid: compiled_qid,
       results: cb_results,
-      qid: 42,
+    };
+    cb(null, final_results);
+
+    // Record these results
+    log_behavior.recordResults(compiled_qid, final_results, function() {
     });
   });
 
@@ -76,29 +81,20 @@ function search(queries, cb) {
       search_completed();
     });
   });
+
+
+  // Recoed this query to get qid
+  log_behavior.recordQueries('sessid', qs, function(err, qid) {
+    compiled_qid = qid;
+    search_completed();
+  });
 }
 
 function searchKeyword(keyword, cb) {
-  var final_err, final_results, final_qid;
-  var trigger = _.after(2, function() {
-    log_behavior.recordResults(final_qid, final_results, function() {
-      cb(final_err, {
-        results: final_results,
-        qid: final_qid,
-      });
-    });
-  });
-
   getTopGiftsForCategories(keyword, function(err, results) {
-    final_err = final_err || err;
-    final_results = results;
-    trigger();
-  });
-
-  log_behavior.recordQueries('sessid', [keyword], function(err, qid) {
-    final_err = final_err || err;
-    final_qid = qid;
-    trigger();
+    cb(err, {
+      results: results,
+    });
   });
 }
 
