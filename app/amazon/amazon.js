@@ -40,8 +40,6 @@ var MAP_BINDINGS = {
 }
 
 function search(queries, cb) {
-  // TODO these should share qids
-
   var qs = queries.split(',');
   var compiled_qid;
   var compiled_results = [];
@@ -53,10 +51,10 @@ function search(queries, cb) {
     }
 
     var cb_results = [];
-    var max_len = _.max(_.map(compiled_results, function(r) { return r.results.length; }));
+    var max_len = _.max(_.map(compiled_results, function(r) { return r.length; }));
     for (var i=0; i < max_len; i++) {
       for (var j=0; j < compiled_results.length; j++) {
-        var list = compiled_results[j].results;
+        var list = compiled_results[j];
         if (list && list.length > i) {
           cb_results.push(list[i]);
         }
@@ -90,15 +88,7 @@ function search(queries, cb) {
   });
 }
 
-function searchKeyword(keyword, cb) {
-  getTopGiftsForCategories(keyword, function(err, results) {
-    cb(err, {
-      results: results,
-    });
-  });
-}
-
-function getTopGiftsForCategories(query, cb) {
+function searchKeyword(query, cb) {
   // Grab the amazon browse nodes for these categories (bindings)
   var node_counts = {};
   var top_gifted_items = {};  // map from browse node name to items
@@ -508,7 +498,6 @@ function amazonSearch(query, cb) {
     winston.info('categories count: ', bindings_count);
     winston.info('qualifying top categories: ', categories)
 
-    //getTopGiftsForCategories(categories, bindings_map, query, cb);
     cb(null, categories, bindings_map);
   });
 }
