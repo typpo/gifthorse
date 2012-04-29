@@ -40,7 +40,8 @@ var MAP_BINDINGS = {
 }
 
 function search(queries, cb) {
-  var qs = queries.split(',');
+  var qs = _.chain(queries.split(',')).map(function(q) { return q.trim(); })
+    .reject(function(q) { return q == '';}).value();
   var compiled_qid;
   var compiled_results = [];
 
@@ -51,6 +52,7 @@ function search(queries, cb) {
     }
 
     var cb_results = [];
+    // TODO normalize scores ?
     var max_len = _.max(_.map(compiled_results, function(r) { return r.length; }));
     for (var i=0; i < max_len; i++) {
       for (var j=0; j < compiled_results.length; j++) {
