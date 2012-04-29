@@ -191,7 +191,7 @@ function getTopGiftsForCategories(query, cb) {
       node_counts[bn.BrowseNodeId] += 8;    // artificially inflate node counts
       // TODO this code is duped below
       pending_request_fns.push(function() {
-        topSuggestionsForNode(bn, query, function(err, results, depth) {
+        topSuggestionsForNode(bn, query, true, function(err, results, depth) {
           if (!err && results && results.length > 0) {
             top_gifted_items[bn.BrowseNodeId] = results;
             top_gifted_item_depths[bn.BrowseNodeId] = depth;
@@ -219,7 +219,7 @@ function getTopGiftsForCategories(query, cb) {
       node_counts[bn.BrowseNodeId] += 8;    // artificially inflate node counts
       // TODO this code is duped below
       pending_request_fns.push(function() {
-        topSuggestionsForNode(bn, query, function(err, results, depth) {
+        topSuggestionsForNode(bn, query, true, function(err, results, depth) {
           if (!err && results && results.length > 0) {
             top_gifted_items[bn.BrowseNodeId] = results;
             top_gifted_item_depths[bn.BrowseNodeId] = depth;
@@ -250,7 +250,7 @@ function getTopGiftsForCategories(query, cb) {
           }
 
           pending_request_fns.push(function() {
-            topSuggestionsForNode(bn, query, function(err, results, depth) {
+            topSuggestionsForNode(bn, query, false, function(err, results, depth) {
               if (!err && results && results.length > 0) {
                 top_gifted_items[bn.BrowseNodeId] = results;
                 top_gifted_item_depths[bn.BrowseNodeId] = depth;
@@ -283,17 +283,19 @@ function getTopGiftsForCategories(query, cb) {
 }
 
 // callback(err, item, depth)
-function topSuggestionsForNode(bn, query, cb) {
+// force_search - generate gift suggestions for this browse node
+// regardless of any rules on hierarchy position
+function topSuggestionsForNode(bn, query, force_search, cb) {
   var node = hierarchy.getTreeNodeById(bn.BrowseNodeId);
   if (!node) {
     cb(new Error("Couldn't find browse node " + bn.BrowseNodeId), null, null);
     return;
   }
 
-  // We omit overly general browse nodes...must be at least N deep in hierarchy
+  // By default, we omit overly general browse nodes...must be at least N deep in hierarchy
   // but not when browse node name matches query name, eg. for 'Shopping'
   // TODO make this variable, based on average ancestor depth
-  if (node.depth > 2 || query.toLowerCase() === bn.Name.toLowerCase()) {
+  if (force_search || node.depth > 2 || query.toLowerCase() === bn.Name.toLowerCase()) {
     console.log('getting the top suggestions for', bn.Name);
     giftSuggestionsForNode(bn, function(err, items) {
       if (err) {

@@ -176,14 +176,19 @@ function nodesForQuery(q) {
   */
 
   var qs = q.split(' ');
-  var ret = [];
+  var matches = [];
   for (var i=0; i < qs.length; i++) {
     var r = nodesForKeyword(qs[i]);
     if (!r || r.length < 1)
       return null;
-    ret.push.apply(ret, r);
+    matches.push(_.map(r, function(n) {
+      return n.data.id;
+    }));
   }
-  return ret;
+  var bnids = _.intersect.apply(this, matches);
+  return _.map(bnids, function(id) {
+    return getTreeNodeById(id);
+  });
 }
 
 function nodesForKeyword(kw) {
