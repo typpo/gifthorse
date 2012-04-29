@@ -20,9 +20,18 @@ var BROWSENODE_MAP = {
   ],
 };
 
+var EQUIV_MAP = {
+  'reading': ['books',],
+};
+
 (function() {
   for (var key in BROWSENODE_MAP) {
     BROWSENODE_MAP[stemmer(key)] = BROWSENODE_MAP[key];
+    var equivs = EQUIV_MAP[key];
+    if (equivs) {
+      for (var i=0; i < equivs.length; i++)
+        BROWSENODE_MAP[stemmer(equivs[i])] = BROWSENODE_MAP[key];
+    }
   }
 })()
 

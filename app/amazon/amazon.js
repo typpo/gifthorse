@@ -30,7 +30,7 @@ var EXCLUDE_BINDINGS = [/*'Amazon Instant Video',*/ /*'Kindle Edition',*/
 
 var EXCLUDE_NODES = ['Just Arrived', 'Just arrived', 'All product', 'Deep discounts'];
 
-var EXCLUDE_PRODUCT_GROUPS = ['Mobile Application', 'Magazine']//, 'eBooks'];
+var EXCLUDE_PRODUCT_GROUPS = ['Mobile Application', 'Magazine', 'Automotive Parts and Accessories'];
 
 var MAP_BINDINGS = {
   'Blu-ray': 'Video',
@@ -323,11 +323,12 @@ function giftSuggestionsForNode(bn, cb) {
       cb(err, null);
       return;
     }
-    if (!results.BrowseNodes.BrowseNode) {
+    if (!results.BrowseNodes.BrowseNode || !results.BrowseNodes.BrowseNode.TopItemSet) {
       console.log('skipped empty bn lookup for', bn.Name);
       cb(err, null);
       return;
     }
+
     if (results.BrowseNodes.BrowseNode.TopItemSet.length < 1) {
       cb("Empty TopItemSet result for " + bn.Name, null);
       return;
