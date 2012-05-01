@@ -36,6 +36,7 @@ module.exports = {
   LENGTH_WEIGHT_THRESHOLD: 100,  // apply length weight to anything with this long of a title
 
   BOOK_WEIGHT: 0.1, // applied to books and ebooks
+  NO_BOOK_WEIGHT_FOR_QUERIES: ['read', 'book', 'comic'],    // don't apply the book weight if they're looking for books
 
   WISHEDFOR_WEIGHT: 1.9,  // boost if it was wished for
   GIFTED_WEIGHT: 1.7, // boost if it was in a most gifted list
@@ -54,19 +55,20 @@ module.exports = {
       }
     }
 
+    var stemmed_query = stemmer(query);
     if (!skip_fuzzy_matches) {
-      query = stemmer(query);
       // TODO tokenize and stem this shit first, otherwise 'skiing' will match 'skills'
-      if (new RegExp(query, 'i').test(result.item.Title)) {
+      if (new RegExp(stemmed_query, 'i').test(result.item.Title)) {
         result.score *= this.NAME_FUZZY_MATCH_WEIGHT;
       }
-      if (new RegExp(query, 'i').test(result.bName)) {
+      if (new RegExp(stemmed_query, 'i').test(result.bName)) {
         result.score *= this.BROWSENODE_FUZZY_MATCH_WEIGHT;
       }
     }
 
     // Penalize books :(
-    if (result.item.ProductGroup === 'Book' || result.item.ProductGroup === 'eBooks') {
+    if ((result.item.ProductGroup === 'Book' || result.item.ProductGroup === 'eBooks')
+        && this.NO_BOOK_WEIGHT_FOR_QUERIES.indexOf(stemmed_query) < 0) {
       result.score *= this.BOOK_WEIGHT;
     }
     // Penalize long boring items
