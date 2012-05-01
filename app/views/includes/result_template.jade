@@ -7,14 +7,18 @@
 </div>
 <div class="span4">
 <h3> &#9758; <span id="item-title"><%= title %></span></h3>
-<h5> Gift match score: <%= score %> (<%= type %>) (<%= bn %>)</h5>
+- if (admin)
+  <h5> Gift match score: <%= score %> (<%= type %>) (<%= bn %>)</h5>
+h6
+  <%= type_html %>
 div(style='padding-top:10px;')
   span
       a#vote-like.vote-like.btn.btn-large.btn-success(target='_blank') Look!
   span(style='padding-left:10px')
       //
         a#vote-dislike.vote-dislike.btn.btn-large.btn-danger Hide this
-      a#vote-dislike.vote-dislike(style='cursor: pointer;') Hide
+      <a class="vote-like" href="<%= link %>" target="_blank">See reviews</a>
+      a#vote-dislike.vote-dislike(style='cursor: pointer;padding-left:8px') Hide
   //
     span
         a#vote-already-have.vote-already-have.btn.btn-large.btn-info Already have

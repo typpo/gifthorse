@@ -3,6 +3,11 @@ if (typeof GH === 'undefined' || !GH) GH = {};
 GH.Main = {
   search_running: false,
   last_result: null,
+  gifted_markup: {
+    //'MostGifted': '&#x2713; This item is a top Amazon gift',
+    'MostWishedFor': '&#x2713; This item appears on many Amazon wish lists',
+    'TopSellers': '&#x2713; This item is a top seller'
+  },
   Init: function() {
     var me = this;
     me.last_result = null;
@@ -60,6 +65,7 @@ GH.Main = {
         title: result.item.Title,
         link: result.item.DetailPageURL,
         type: result.item.type,
+        type_html: me.ItemTypeToHTML(result.item.type),
         bn: result.bName,
         image: result.image,
         score: Math.floor(result.score * 100)
@@ -109,6 +115,24 @@ GH.Main = {
     });
   },
 
+  ItemTypeToHTML: function(type) {
+    var ret = '';
+    var added = false;
+    for (var i=0; i < type.length; i++) {
+      var html  = this.gifted_markup[type[i]];
+      if (html) {
+        if (!added) {
+          added = true;
+          ret += html;
+        }
+        else
+          ret += '<br>' + html;
+      }
+    }
+    return ret;
+  },
+
+  _dummy: undefined
 };
 
 $(function() {

@@ -89,11 +89,10 @@ function _recordClickForQuery(qid, rid, attr, cb) {
 
     collection.findOne({_id: new mongo.ObjectID(qid)},
       function(err, obj) {
-        if (err || !obj || obj.results.length < rid + 1) {
+        if (err || !obj || obj.results.length < rid + 1 || !obj.results[rid]) {
           cb(true);
           return;
         }
-
         // update query
         obj.results[rid][attr] = true;
         collection.findAndModify(
