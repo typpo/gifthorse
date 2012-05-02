@@ -146,7 +146,7 @@ function searchKeyword(query, cb) {
       var deduped_results = _.chain(title_to_result).map(function(result, title) {
         result.score *= scoring.DUPLICATE_WEIGHT * title_counts[title];
         return result;
-      }).values().value();
+      }).values().value().slice(0,20);
 
       var count_final_result = _.after(deduped_results.length, function() {
         if (this_is_it.length > 0) {
@@ -158,8 +158,7 @@ function searchKeyword(query, cb) {
       });
 
       var this_is_it = [];
-      console.log('Gathering final itemlookup results..');
-      _.map(deduped_results.slice(0, 20), function(result) {
+      _.map(deduped_results, function(result) {
         // look up item to get its image
         itemLookup(result.item.ASIN, function(err, itemlookup_result) {
           if (err || !itemlookup_result) {
