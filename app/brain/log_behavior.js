@@ -110,8 +110,14 @@ function _recordClickForQuery(qid, rid, attr, cb) {
 
 function _recordClickForItem(asin, attr, cb) {
   var redis = rutil.getConnection();
-  if (redis)
-    redis.incr('gifthorse:clicks:' + asin + ':' + attr);
+  if (redis) {
+    try {
+      redis.incr('gifthorse:clicks:' + asin + ':' + attr);
+    }
+    catch (e) {
+      console.log('redis connection failed');
+    }
+  }
 }
 
 
