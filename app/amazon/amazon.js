@@ -205,6 +205,16 @@ function searchKeyword(query, cb) {
   // Build request queue
   var pending_request_fns = [];
 
+  function fire_pending_queue() {
+    // Fire request queue
+    if (pending_request_fns.length < 1) {
+      cb(null, []);
+    }
+    else {
+      _.map(pending_request_fns, function(fn) {fn();});
+    }
+  }
+
   // Add manual browsenode mappings for this search result
   var premapped_bns = manual_browsenode_mapping.lookupQuery(query);
   var keyword_treenodes = hierarchy.nodesForQuery(query);
@@ -225,8 +235,7 @@ function searchKeyword(query, cb) {
       });
     });
 
-    // Fire request queue
-    _.map(pending_request_fns, function(fn) {fn();});
+    fire_pending_queue();
   }
   else if (keyword_treenodes && keyword_treenodes.length > 0) {
     console.log('Using keyword browsenodes');
@@ -256,8 +265,7 @@ function searchKeyword(query, cb) {
       });
     });
 
-    // Fire request queue
-    _.map(pending_request_fns, function(fn) {fn();});
+    fire_pending_queue();
   }
   else {
     // Loop through all of the top categories for this search result
@@ -306,8 +314,7 @@ function searchKeyword(query, cb) {
         }); // end items loop
       }); // end categories loop
 
-      // Fire request queue
-      _.map(pending_request_fns, function(fn) {fn();});
+      fire_pending_queue();
     });
   }
 }
