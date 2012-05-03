@@ -55,7 +55,6 @@ GH.Main = {
 
   ParseResults: function(data) {
     var me = this;
-    console.log(data);
     me.last_result = data;
     $('#loading').hide();
 
@@ -107,7 +106,6 @@ GH.Main = {
   },
 
   ItemFeedback: function(qid, rid, asin, verb) {
-                  console.log(qid, rid, asin, verb);
     $.ajax({
       type: 'GET',
       url: '/click/' + qid + '/' + rid + '/' + asin + '/' + verb,
