@@ -48,7 +48,7 @@ GH.Main = {
       dataType: 'json'
     });
 
-    mixpanel.track('search', {q1: search1, q2: search2});
+    //mixpanel.track('search', {q1: search1, q2: search2});
 
     return false;
   },
@@ -117,12 +117,13 @@ GH.Main = {
       },
       dataType: 'json'
     });
-    mixpanel.track('click', {
+    /*mixpanel.track('click', {
       qid: qid,
       rid: rid,
       asin: asin,
       verb: verb
     });
+    */
   },
 
   ItemTypeToHTML: function(type) {
