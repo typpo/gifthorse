@@ -146,7 +146,7 @@ function searchKeyword(query, cb) {
       var deduped_results = _.chain(title_to_result).map(function(result, title) {
         result.score *= scoring.DUPLICATE_WEIGHT * title_counts[title];
         return result;
-      }).values().value();
+      }).values().value().slice(0,20);
 
       var count_final_result = _.after(deduped_results.length, function() {
         if (this_is_it.length > 0) {
@@ -158,8 +158,7 @@ function searchKeyword(query, cb) {
       });
 
       var this_is_it = [];
-      console.log('Gathering final itemlookup results..');
-      _.map(deduped_results.slice(0, 20), function(result) {
+      _.map(deduped_results, function(result) {
         // look up item to get its image
         itemLookup(result.item.ASIN, function(err, itemlookup_result) {
           if (err || !itemlookup_result) {
@@ -205,6 +204,16 @@ function searchKeyword(query, cb) {
   // Build request queue
   var pending_request_fns = [];
 
+  function fire_pending_queue() {
+    // Fire request queue
+    if (pending_request_fns.length < 1) {
+      cb(null, []);
+    }
+    else {
+      _.map(pending_request_fns, function(fn) {fn();});
+    }
+  }
+
   // Add manual browsenode mappings for this search result
   var premapped_bns = manual_browsenode_mapping.lookupQuery(query);
   var keyword_treenodes = hierarchy.nodesForQuery(query);
@@ -225,8 +234,7 @@ function searchKeyword(query, cb) {
       });
     });
 
-    // Fire request queue
-    _.map(pending_request_fns, function(fn) {fn();});
+    fire_pending_queue();
   }
   else if (keyword_treenodes && keyword_treenodes.length > 0) {
     console.log('Using keyword browsenodes');
@@ -256,8 +264,7 @@ function searchKeyword(query, cb) {
       });
     });
 
-    // Fire request queue
-    _.map(pending_request_fns, function(fn) {fn();});
+    fire_pending_queue();
   }
   else {
     // Loop through all of the top categories for this search result
@@ -306,8 +313,7 @@ function searchKeyword(query, cb) {
         }); // end items loop
       }); // end categories loop
 
-      // Fire request queue
-      _.map(pending_request_fns, function(fn) {fn();});
+      fire_pending_queue();
     });
   }
 }
