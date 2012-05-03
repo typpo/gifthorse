@@ -30,9 +30,11 @@ GH.Main = {
     $('#results').hide();
     $('#bottom').show();
 
+    var search1 = $('#search1').val();
+    var search2 = $('#search2').val();
     $.ajax({
       type: 'GET',
-      url: '/lookup/' + $('#search1').val() + ',' + $('#search2').val(),
+      url: '/lookup/' + search1 + ',' + search2,
       //data: data,
       success: function(data) {
         me.ParseResults(data);
@@ -45,6 +47,8 @@ GH.Main = {
       },
       dataType: 'json'
     });
+
+    mixpanel.track('search', {q1: search1, q2: search2});
 
     return false;
   },
@@ -112,6 +116,12 @@ GH.Main = {
       error: function() {
       },
       dataType: 'json'
+    });
+    mixpanel.track('click', {
+      qid: qid,
+      rid: rid,
+      asin: asin,
+      verb: verb
     });
   },
 
