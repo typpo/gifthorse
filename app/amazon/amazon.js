@@ -52,8 +52,10 @@ function search(queries, cb) {
     }
 
     var cb_results = [];
-    // TODO normalize scores ?
-    var max_len = _.max(_.map(compiled_results, function(r) { return r.length; }));
+    var max_len = _.max(_.map(compiled_results, function(r) {
+      if (!r) return 0;
+      return r.length;
+    }));
     for (var i=0; i < max_len; i++) {
       for (var j=0; j < compiled_results.length; j++) {
         var list = compiled_results[j];
@@ -148,6 +150,7 @@ function searchKeyword(query, cb) {
         return result;
       }).values().value().slice(0,20);
 
+      var this_is_it = [];
       var count_final_result = _.after(deduped_results.length, function() {
         if (this_is_it.length > 0) {
           cb(null, this_is_it);
@@ -157,7 +160,6 @@ function searchKeyword(query, cb) {
         }
       });
 
-      var this_is_it = [];
       _.map(deduped_results, function(result) {
         // look up item to get its image
         itemLookup(result.item.ASIN, function(err, itemlookup_result) {
