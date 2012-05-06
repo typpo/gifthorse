@@ -51,6 +51,7 @@ function search(queries, cb) {
       return;
     }
 
+    // TODO boost duplicates, browse nodes, matching substrings between both
     var cb_results = [];
     var max_len = _.max(_.map(compiled_results, function(r) {
       if (!r) return 0;
