@@ -1,7 +1,7 @@
 {
     "name": "App"
   , "dependencies": {
-      "express": "2.5.2"
+      "express": "latest"
       , "jade": "0.14.2"
       , "apac": "latest"
       , "connect-redis": "1.2.0"
